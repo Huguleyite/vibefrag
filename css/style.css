@@ -105,9 +105,9 @@ p { color: var(--color-text-muted); }
   gap: 24px;
 }
 .nav__logo {
-  font-size: 1.25rem;
+  font-size: 1.625rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   color: var(--color-text);
 }
 .nav__logo span { color: var(--color-accent); }
@@ -137,19 +137,38 @@ p { color: var(--color-text-muted); }
 
 /* --- Hero --- */
 .hero {
-  padding: 80px 0 72px;
+  padding: 88px 0 80px;
   text-align: center;
+  background: linear-gradient(180deg, #F4F0E8 0%, var(--color-bg) 100%);
 }
 .hero__eyebrow {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-accent-dk);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-.hero__title { margin-bottom: 20px; color: var(--color-text); }
+.hero__eyebrow::before,
+.hero__eyebrow::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--color-accent);
+  opacity: 0.6;
+}
+.hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 6vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
 .hero__subtitle {
   font-size: 1.125rem;
   color: var(--color-text-muted);
@@ -256,35 +275,26 @@ p { color: var(--color-text-muted); }
   line-height: 1.2;
 }
 
-/* Notes pyramid */
-.frag-card__notes { display: flex; flex-direction: column; gap: 6px; }
+/* Notes pyramid — inline text (no chips) */
+.frag-card__notes { display: flex; flex-direction: column; gap: 5px; }
 .frag-card__note-row {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  align-items: baseline;
+  gap: 10px;
 }
 .frag-card__note-label {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-text-light);
-  min-width: 36px;
-  padding-top: 3px;
+  min-width: 28px;
+  flex-shrink: 0;
 }
-.frag-card__chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.chip {
-  background: var(--color-chip-bg);
-  color: var(--color-chip-text);
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 3px 10px;
-  border-radius: var(--radius-pill);
-  white-space: nowrap;
+.frag-card__note-text {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
 }
 
 /* Scent family tag */
@@ -382,7 +392,7 @@ p { color: var(--color-text-muted); }
   color: var(--color-accent-dk);
   margin-bottom: 10px;
 }
-.page-hero h1 { margin-bottom: 10px; }
+.page-hero h1 { margin-bottom: 10px; font-family: var(--font-serif); }
 .page-hero p { font-size: 1.0625rem; max-width: 540px; }
 
 /* --- Filters / Tag Bar --- */

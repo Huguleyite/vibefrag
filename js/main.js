@@ -14,9 +14,9 @@ const VibeFrag = {
 
     const notesHTML = `
       <div class="frag-card__notes">
-        ${top    ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Top</span><div class="frag-card__chips">${this.chips(notes.top || [])}</div></div>` : ''}
-        ${middle ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Mid</span><div class="frag-card__chips">${this.chips(notes.middle || notes.mid || [])}</div></div>` : ''}
-        ${base   ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Base</span><div class="frag-card__chips">${this.chips(notes.base || [])}</div></div>` : ''}
+        ${top    ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Top</span><span class="frag-card__note-text">${top}</span></div>` : ''}
+        ${middle ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Mid</span><span class="frag-card__note-text">${middle}</span></div>` : ''}
+        ${base   ? `<div class="frag-card__note-row"><span class="frag-card__note-label">Base</span><span class="frag-card__note-text">${base}</span></div>` : ''}
       </div>`;
 
     const released = frag.released ? `<span class="frag-card__date">${this.formatDate(frag.released)}</span>` : '';
@@ -38,10 +38,6 @@ const VibeFrag = {
           ${link}
         </div>
       </article>`;
-  },
-
-  chips(arr) {
-    return arr.map(n => `<span class="chip">${n}</span>`).join('');
   },
 
   formatDate(str) {

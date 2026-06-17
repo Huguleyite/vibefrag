@@ -1,121 +1,149 @@
 {
   "meta": {
     "lastUpdated": "2026-06-17",
-    "note": "Seeded with verified flagship fragrances. Weekly pipeline will prepend new releases automatically.",
-    "version": "1.0"
+    "note": "Seeded with verified 2026 releases sourced from W Magazine, May 2026. Weekly pipeline will prepend new entries automatically.",
+    "version": "1.1"
   },
   "releases": [
     {
-      "id": "mfk-baccarat-rouge-540-extrait",
-      "name": "Baccarat Rouge 540 Extrait de Parfum",
-      "house": "Maison Francis Kurkdjian",
-      "released": "2024-01",
+      "id": "lv-ambre-levant-2026",
+      "name": "Ambre Levant",
+      "house": "Louis Vuitton",
+      "released": "2026-01",
       "category": "U",
-      "family": "Floral Woody Musk",
+      "family": "Oriental Spicy",
       "notes": {
-        "top":    ["Saffron", "Jasmine"],
-        "middle": ["Amberwood", "Ambrofix"],
-        "base":   ["Fir Resin", "Cedar"]
+        "top":    ["Mandarin", "Cardamom", "Saffron"],
+        "middle": ["Cinnamon", "White Pepper", "Rose"],
+        "base":   ["Labdanum", "Incense", "Ambergris"]
       },
-      "source_url": "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Baccarat-Rouge-540-Extrait-de-Parfum-34979.html"
+      "source_url": "https://us.louisvuitton.com/eng-us/products/ambre-levant-nvprod7160001v/LP0367"
     },
     {
-      "id": "creed-aventus-2024",
-      "name": "Aventus",
-      "house": "Creed",
-      "released": "2024-03",
-      "category": "M",
-      "family": "Fruity Chypre",
-      "notes": {
-        "top":    ["Pineapple", "Bergamot", "Black Currant", "Apple"],
-        "middle": ["Rose", "Dry Birch", "Jasmine", "Patchouli"],
-        "base":   ["Musk", "Oakmoss", "Ambergris", "Vanilla"]
-      },
-      "source_url": "https://www.fragrantica.com/perfume/Creed/Aventus-10521.html"
-    },
-    {
-      "id": "tf-oud-wood-parfum",
-      "name": "Oud Wood Parfum",
-      "house": "Tom Ford",
-      "released": "2024-02",
-      "category": "U",
-      "family": "Woody Oriental",
-      "notes": {
-        "top":    ["Oud", "Rosewood"],
-        "middle": ["Cardamom", "Sandalwood", "Vetiver"],
-        "base":   ["Tonka Bean", "Amber", "Musk"]
-      },
-      "source_url": "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-5710.html"
-    },
-    {
-      "id": "dior-sauvage-elixir",
-      "name": "Sauvage Elixir",
-      "house": "Dior",
-      "released": "2021-09",
-      "category": "M",
-      "family": "Woody Spicy",
-      "notes": {
-        "top":    ["Grapefruit", "Cinnamon", "Cardamom", "Nuances"],
-        "middle": ["Lavender", "Licorice"],
-        "base":   ["Sandalwood", "Haitian Vetiver", "Amber"]
-      },
-      "source_url": "https://www.fragrantica.com/perfume/Dior/Sauvage-Elixir-76519.html"
-    },
-    {
-      "id": "byredo-super-cedar",
-      "name": "Super Cedar",
-      "house": "Byredo",
-      "released": "2023-09",
-      "category": "U",
-      "family": "Woody Floral",
-      "notes": {
-        "top":    ["Rosewater"],
-        "middle": ["Cedar", "Orris"],
-        "base":   ["Ambrette Seeds", "Musk"]
-      },
-      "source_url": "https://www.fragrantica.com/perfume/Byredo/Super-Cedar-35099.html"
-    },
-    {
-      "id": "le-labo-santal-33",
-      "name": "Santal 33",
+      "id": "le-labo-violette-30-2026",
+      "name": "Violette 30",
       "house": "Le Labo",
-      "released": "2023-11",
+      "released": "2026-01",
       "category": "U",
+      "family": "Floral Woody",
+      "notes": {
+        "top":    ["Bergamot", "Pink Pepper"],
+        "middle": ["Violet", "Iris"],
+        "base":   ["Cedarwood", "Cashmere", "White Musk"]
+      },
+      "source_url": "https://www.lelabofragrances.com/classic-collection/violette-30/eau-de-parfum"
+    },
+    {
+      "id": "chanel-allure-sport-superleggera-2026",
+      "name": "Allure Homme Sport Superleggera",
+      "house": "Chanel",
+      "released": "2026-02",
+      "category": "M",
+      "family": "Fresh Woody Aromatic",
+      "notes": {
+        "top":    ["Grapefruit", "Bergamot", "Lemon"],
+        "middle": ["Neroli", "Lavender", "Geranium"],
+        "base":   ["Cedar", "Vetiver", "White Musk"]
+      },
+      "source_url": "https://www.chanel.com/us/fragrance/p/123410/allure-homme-sport-superleggera-eau-de-parfum-spray/"
+    },
+    {
+      "id": "ysl-libre-berry-crush-2026",
+      "name": "Libre Berry Crush",
+      "house": "YSL",
+      "released": "2026-02",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top":    ["Raspberry", "Pink Pepper", "Citrus"],
+        "middle": ["Orange Blossom", "Rose", "Violet"],
+        "base":   ["Coconut", "Vanilla", "White Musk"]
+      },
+      "source_url": "https://www.yslbeautyus.com/fragrance/womens-fragrances/libre/libre-berry-crush/WW-51508YSL.html"
+    },
+    {
+      "id": "tf-taormina-orange-2026",
+      "name": "Taormina Orange",
+      "house": "Tom Ford",
+      "released": "2026-02",
+      "category": "U",
+      "family": "Citrus Aromatic",
+      "notes": {
+        "top":    ["Blood Orange", "Bergamot", "Neroli"],
+        "middle": ["Orange Blossom", "Jasmine"],
+        "base":   ["Sandalwood", "White Musk", "Amber"]
+      },
+      "source_url": "https://www.tomfordbeauty.com/products/taormina-orange-eau-de-parfum"
+    },
+    {
+      "id": "hermes-musc-pallida-2026",
+      "name": "Musc Pallida",
+      "house": "Hermès",
+      "released": "2026-03",
+      "category": "U",
+      "family": "Floral Musky",
+      "notes": {
+        "top":    ["Bergamot", "Aldehydes"],
+        "middle": ["Iris Pallida", "Violet", "Rose"],
+        "base":   ["Cashmere Wood", "Sandalwood", "White Musk"]
+      },
+      "source_url": "https://www.hermes.com/us/en/product/musc-pallida-eau-de-parfum-V117337V0/"
+    },
+    {
+      "id": "dior-cuir-saddle-2026",
+      "name": "Cuir Saddle",
+      "house": "Dior",
+      "released": "2026-03",
+      "category": "U",
+      "family": "Leathery Floral",
+      "notes": {
+        "top":    ["Pink Pepper", "Bergamot"],
+        "middle": ["Rose", "Iris", "Peony"],
+        "base":   ["Leather", "Amber", "Musk"]
+      },
+      "source_url": "https://www.dior.com/en_us/beauty/products/cuir-saddle-Y0000167.html"
+    },
+    {
+      "id": "bvlgari-man-wood-essence-2026",
+      "name": "Man Wood Essence",
+      "house": "Bulgari",
+      "released": "2026-03",
+      "category": "M",
       "family": "Woody Aromatic",
       "notes": {
-        "top":    ["Cardamom", "Iris", "Violet"],
-        "middle": ["Ambrox", "Sandalwood", "Papyrus"],
-        "base":   ["Cedar", "Leather", "Musk"]
+        "top":    ["Sichuan Pepper", "Bergamot"],
+        "middle": ["Cypress", "Juniper Berry"],
+        "base":   ["Cashmere Wood", "Patchouli", "Vetiver"]
       },
-      "source_url": "https://www.fragrantica.com/perfume/Le-Labo/Santal-33-17424.html"
+      "source_url": "https://www.bulgari.com/en-us/product/42373"
     },
     {
-      "id": "chanel-bleu-edp",
-      "name": "Bleu de Chanel EDP",
-      "house": "Chanel",
-      "released": "2024-05",
-      "category": "M",
-      "family": "Aromatic Fougère",
-      "notes": {
-        "top":    ["Grapefruit", "Lemon", "Mint", "Pink Pepper"],
-        "middle": ["Ginger", "Jasmine", "Iso E Super", "Labdanum"],
-        "base":   ["Incense", "Vetiver", "Cedar", "Sandalwood"]
-      },
-      "source_url": "https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-Eau-de-Parfum-20889.html"
-    },
-    {
-      "id": "ysl-libre-intense",
-      "name": "Libre Intense",
-      "house": "YSL",
-      "released": "2023-08",
+      "id": "byredo-sister-dreamer-2026",
+      "name": "Sister Dreamer",
+      "house": "Byredo",
+      "released": "2026-04",
       "category": "F",
-      "family": "Floral Woody Musk",
+      "family": "Floral Woody",
       "notes": {
-        "top":    ["Bergamot", "Grapefruit", "Blackcurrant"],
-        "middle": ["Jasmine", "Lavender", "Orange Blossom"],
-        "base":   ["Cedar", "Musk", "Vanilla"]
+        "top":    ["Pink Pepper", "Juniper"],
+        "middle": ["Geranium", "Gardenia", "Wildflowers"],
+        "base":   ["Sandalwood", "Amber", "Musk"]
       },
-      "source_url": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Intense-72131.html"
+      "source_url": "https://www.byredo.com/us_en/p/sister-dreamer-eau-de-parfum-100ml"
+    },
+    {
+      "id": "gucci-lignum-idealis-2026",
+      "name": "Lignum Idealis",
+      "house": "Gucci",
+      "released": "2026-04",
+      "category": "U",
+      "family": "Woody Spicy",
+      "notes": {
+        "top":    ["Juniper", "Cardamom"],
+        "middle": ["Sandalwood", "Cypress"],
+        "base":   ["Sequoia Wood", "Oakmoss", "Musk"]
+      },
+      "source_url": "https://www.nordstrom.com/s/the-alchemists-garden-lignum-idealis-eau-de-parfum/8868311"
     }
   ]
 }
