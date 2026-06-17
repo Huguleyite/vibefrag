@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find My Scent — VibeFrag</title>
+  <title>The Cabinet — VibeFrag</title>
   <meta name="description" content="5 questions. Three picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
   <link rel="canonical" href="https://vibefrag.com/quiz/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vibefrag.com/quiz/">
-  <meta property="og:title" content="Find My Scent — VibeFrag">
+  <meta property="og:title" content="The Cabinet — VibeFrag">
   <meta property="og:description" content="5 questions. Three picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,6 +201,7 @@
     }
     .card-shop:hover { background: var(--tier-color); color: var(--void); }
 
+    .q-nav { margin-bottom: 1.5rem; min-height: 2rem; }
     .restart-wrap { text-align: center; margin-top: 2rem; padding-bottom: 4rem; }
 
     /* ── FOOTER ── */
@@ -258,8 +259,8 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="../new-releases.html">New Releases</a></li>
       <li><a href="../houses.html">By House</a></li>
-      <li><a href="../blog/index.html">Editorial</a></li>
-      <li><a href="index.html" class="nav-active">Find My Scent</a></li>
+      <li><a href="../blog/index.html">The Dry Down</a></li>
+      <li><a href="index.html" class="nav-active">The Cabinet</a></li>
     </ul>
   </div>
 </nav>
@@ -278,7 +279,7 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../new-releases.html">New Releases</a></li>
       <li><a href="../houses.html">By House</a></li>
-      <li><a href="../blog/index.html">Editorial</a></li>
+      <li><a href="../blog/index.html">The Dry Down</a></li>
     </ul>
   </div>
 </footer>
@@ -536,10 +537,10 @@
 
   function renderIntro() {
     return `<div class="intro fade-up">
-      <div class="intro-eyebrow">The Occasion Tool</div>
+      <div class="intro-eyebrow">The Cabinet</div>
       <h1 class="intro-title">Find your scent<br>for every occasion.</h1>
       <p class="intro-sub">5 questions. Three picks — a splurge, a designer, and a dupe that smells just as good.</p>
-      <button class="btn-primary" onclick="start()">Find My Scent →</button>
+      <button class="btn-primary" onclick="start()">Open The Cabinet →</button>
     </div>`;
   }
 
@@ -549,13 +550,16 @@
       const cls = i<step-1?'done':i===step-1?'active':'';
       return `<div class="progress-dot ${cls}"></div>`;
     }).join('');
+    const prev = state.answers[q.id] || null;
     const opts = q.options.map(o => `
-      <div class="option" onclick="selectAnswer('${q.id}','${o.value}',${step},this)">
+      <div class="option${prev===o.value?' selected':''}" onclick="selectAnswer('${q.id}','${o.value}',${step},this)">
         <div class="opt-label">${o.label}</div>
         ${o.sub?`<div class="opt-sub">${o.sub}</div>`:''}
       </div>`).join('');
+    const backBtn = step > 1 ? `<div class="q-nav"><button class="btn-ghost" onclick="goBack()">← Back</button></div>` : '<div class="q-nav"></div>';
     return `<div class="fade-up">
       <div class="progress">${dots}</div>
+      ${backBtn}
       <div class="q-header"><div class="q-step">Question ${step} of 5</div><div class="q-text">${q.text}</div></div>
       <div class="options ${q.grid}">${opts}</div>
     </div>`;
@@ -609,6 +613,7 @@
     else app.innerHTML = renderResults();
   }
 
+  function goBack() { if(state.step>1){ state.step--; transitioning=false; render(); } }
   function start() { state.step=1; render(); }
   function selectAnswer(qId,value,step,el) {
     if(transitioning) return; transitioning=true;
