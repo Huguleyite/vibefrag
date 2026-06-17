@@ -3,11 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
   <title>VibeFrag — Find Your Scent for Every Occasion</title>
   <meta name="description" content="Not sure what fragrance to wear? Answer 5 questions and get 3 picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+  <link rel="canonical" href="https://vibefrag.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vibefrag.com/">
+  <meta property="og:site_name" content="VibeFrag">
+  <meta property="og:title" content="VibeFrag — Find Your Scent for Every Occasion">
+  <meta property="og:description" content="Answer 5 questions. Get 3 fragrance picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VibeFrag — Find Your Scent for Every Occasion">
+  <meta name="twitter:description" content="Answer 5 questions. Get 3 fragrance picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+
+  <!-- Fonts — display=swap prevents FOIT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -35,7 +53,7 @@
     /* ── ATMOSPHERE ── */
     .aperture {
       position: fixed;
-      top: -80px; left: 50%; transform: translateX(-50%);
+      top: -80px; left: 50%; transform: translateX(-50%) translateZ(0);
       width: 720px; height: 380px;
       background: radial-gradient(
         ellipse 55% 70% at 50% 15%,
@@ -54,13 +72,19 @@
       background: linear-gradient(to bottom, rgba(210,200,180,0.12) 0%, transparent 100%);
       filter: blur(20px);
     }
+
+    /* contain prevents caustics from triggering full-page reflows */
     .caustics {
       position: fixed; inset: 0;
       pointer-events: none; z-index: 1; overflow: hidden;
+      contain: layout style;
     }
     .caustic {
       position: absolute; border-radius: 50%;
       filter: blur(55px); mix-blend-mode: screen;
+      /* GPU-promote each blob; hint that only transform/opacity change */
+      will-change: transform, opacity;
+      transform: translateZ(0);
     }
     .c1 { width:420px; height:260px; top:4%; left:18%; background:radial-gradient(ellipse,rgba(205,188,160,0.17) 0%,transparent 70%); animation:float1 20s ease-in-out infinite; }
     .c2 { width:320px; height:210px; top:8%; right:12%; background:radial-gradient(ellipse,rgba(185,165,135,0.13) 0%,transparent 70%); animation:float2 25s ease-in-out infinite; }
@@ -72,7 +96,11 @@
     @keyframes float3 { 0%,100%{transform:translate(0,0) scale(1);opacity:.50} 50%{transform:translate(32px,42px) scale(1.20);opacity:.80} }
     @keyframes float4 { 0%,100%{transform:translate(0,0) scale(1);opacity:.70} 35%{transform:translate(-22px,-42px) scale(.80);opacity:.40} 75%{transform:translate(48px,12px) scale(1.10);opacity:.90} }
 
-    .glass-wall { position:fixed; top:0; bottom:0; width:200px; pointer-events:none; z-index:4; }
+    .glass-wall {
+      position:fixed; top:0; bottom:0; width:200px;
+      pointer-events:none; z-index:4;
+      transform: translateZ(0); /* own compositor layer */
+    }
     .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
     .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
     .glass-wall::before {
@@ -104,8 +132,10 @@
       font-weight: 300; font-size: 1.25rem;
       letter-spacing: 0.28em; text-transform: uppercase;
       color: var(--silver); text-decoration: none;
+      position: relative; z-index: 11;
     }
     .nav-logo .frag { color: var(--amber-warm); }
+
     /* Keep nav__links class so main.js setActiveNav() still works */
     .nav-links {
       display: flex; gap: 2.4rem; list-style: none;
@@ -127,6 +157,21 @@
       border-color: rgba(200,180,140,0.55);
       color: var(--silver);
     }
+
+    /* Hamburger button — hidden on desktop */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      padding: 0.5rem; position: relative; z-index: 11;
+    }
+    .nav-hamburger span {
+      display: block; width: 22px; height: 1px;
+      background: var(--silver); transition: all 0.3s ease;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
     /* ── LAYOUT ── */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
@@ -225,7 +270,7 @@
     }
     .see-all:hover { color: var(--amber-warm); }
 
-    /* ── FRAGRANCE CARDS ── */
+    /* ── FRAGRANCE CARDS — blur reduced 24px→14px for GPU relief ── */
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -233,8 +278,8 @@
     }
     .frag-card {
       background: var(--amber-ghost);
-      backdrop-filter: blur(24px) saturate(130%);
-      -webkit-backdrop-filter: blur(24px) saturate(130%);
+      backdrop-filter: blur(14px) saturate(130%);
+      -webkit-backdrop-filter: blur(14px) saturate(130%);
       border: 1px solid var(--glass-border);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.13), 0 8px 40px rgba(0,0,0,.50);
       padding: 1.6rem;
@@ -301,7 +346,7 @@
     }
     .frag-card__link:hover { color: var(--silver); }
 
-    /* ── HOUSE CARDS ── */
+    /* ── HOUSE CARDS — blur reduced 18px→10px ── */
     .houses-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -309,8 +354,8 @@
     }
     .house-card {
       background: var(--amber-ghost);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border: 1px solid var(--glass-border);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
       padding: 1rem 1.1rem;
@@ -332,12 +377,12 @@
       color: var(--silver); letter-spacing: 0.02em; line-height: 1.2;
     }
 
-    /* ── QUIZ CTA BANNER ── */
+    /* ── QUIZ CTA BANNER — blur reduced 20px→12px ── */
     .quiz-banner { padding: 0 0 6rem; }
     .quiz-banner-inner {
       background: rgba(176,133,88,0.08);
-      backdrop-filter: blur(20px) saturate(120%);
-      -webkit-backdrop-filter: blur(20px) saturate(120%);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(176,133,88,0.20);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 8px 40px rgba(0,0,0,0.4);
       padding: 4.5rem 2rem;
@@ -365,13 +410,13 @@
       color: var(--silver-mid); font-weight: 200; letter-spacing: 0.03em;
     }
 
-    /* ── FOOTER ── */
+    /* ── FOOTER — blur reduced 12px→8px ── */
     footer {
       position: relative; z-index: 5;
       padding: 2.5rem 3rem;
       border-top: 1px solid rgba(255,255,255,0.06);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
     .footer-inner {
       display: flex; justify-content: space-between; align-items: center;
@@ -400,6 +445,72 @@
       color: var(--silver-mid); font-size: 0.8rem;
       letter-spacing: 0.1em; padding: 2rem; text-align: center;
     }
+
+    /* ══════════════════════════════════════════
+       MOBILE BREAKPOINTS
+    ══════════════════════════════════════════ */
+
+    /* Shrink glass walls at tablet width */
+    @media (max-width: 960px) {
+      .glass-wall { width: 100px; }
+    }
+
+    /* Hide glass walls on phones — too narrow */
+    @media (max-width: 640px) {
+      .glass-wall { display: none; }
+    }
+
+    /* Mobile nav */
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-inner { padding: 1.2rem 0; }
+
+      /* Show hamburger */
+      .nav-hamburger { display: flex; }
+
+      /* Full-screen nav overlay (hidden by default) */
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(9, 9, 11, 0.97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.8rem;
+        z-index: 10;
+      }
+      .nav-links.nav-open { display: flex; }
+
+      .nav-links a {
+        font-size: 0.85rem;
+        letter-spacing: 0.26em;
+      }
+      .nav-links a.nav-cta {
+        font-size: 0.85rem;
+        padding: 0.7rem 2rem;
+      }
+
+      /* Layout */
+      .container { padding: 0 1.5rem; }
+      .hero { padding: 7rem 1.5rem 5rem; }
+
+      /* Footer stack */
+      footer { padding: 2rem 1.5rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+      .footer-links { flex-wrap: wrap; gap: 1.2rem; }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+      .hero h1 .setup { letter-spacing: 0.08em; }
+      .card-grid { grid-template-columns: 1fr; }
+      .houses-grid { grid-template-columns: repeat(2, 1fr); }
+      .quiz-banner-inner { padding: 3rem 1.5rem; }
+      .hero-actions { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
@@ -420,8 +531,11 @@
 <nav>
   <div class="nav-inner">
     <a href="/" class="nav-logo">Vibe<span class="frag">Frag</span></a>
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <!-- nav__links kept for main.js setActiveNav() compatibility -->
-    <ul class="nav-links nav__links">
+    <ul class="nav-links nav__links" id="nav-links">
       <li><a href="new-releases.html">New Releases</a></li>
       <li><a href="houses.html">By House</a></li>
       <li><a href="blog/index.html">Editorial</a></li>
@@ -486,7 +600,7 @@
         <span class="eyebrow">Five Questions. Three Picks.</span>
         <h2>Not sure where to start?</h2>
         <p>Tell us the occasion, the season, and your budget. We'll match you to a Splurge, a Designer, and a Dupe.</p>
-        <a href="quiz/index.html" class="btn-primary">Find My Scent →</a>
+        <a href="quiz/index.html" class="btn-primary">Take the Quiz →</a>
       </div>
     </div>
   </section>
@@ -511,6 +625,34 @@
 
 <script src="js/main.js"></script>
 <script>
+  /* ── PERFORMANCE: pause caustic animations when tab is hidden ── */
+  document.addEventListener('visibilitychange', () => {
+    const state = document.hidden ? 'paused' : 'running';
+    document.querySelectorAll('.caustic').forEach(el => {
+      el.style.animationPlayState = state;
+    });
+  });
+
+  /* ── MOBILE: hamburger nav toggle ── */
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks  = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    // Close menu when a link is tapped
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('nav-open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  /* ── DATA: load releases + houses ── */
   (async () => {
     // New releases — show 6 most recent
     const releasesEl = document.getElementById('home-releases');
