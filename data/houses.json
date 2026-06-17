@@ -1,6 +1,7 @@
 {
   "meta": { "lastUpdated": "2026-06-17" },
   "houses": [
+    { "name": "Louis Vuitton",               "tier": "Splurge",   "origin": "France" },
     { "name": "Creed",                      "tier": "Splurge",   "origin": "France/UK" },
     { "name": "Tom Ford",                   "tier": "Splurge",   "origin": "USA" },
     { "name": "Maison Francis Kurkdjian",   "tier": "Splurge",   "origin": "France" },
@@ -15,6 +16,7 @@
     { "name": "Serge Lutens",               "tier": "Splurge",   "origin": "France" },
     { "name": "Frederic Malle",             "tier": "Splurge",   "origin": "France" },
     { "name": "Nishane",                    "tier": "Splurge",   "origin": "Turkey" },
+    { "name": "Bulgari",                    "tier": "Designer",  "origin": "Italy" },
     { "name": "Chanel",                     "tier": "Designer",  "origin": "France" },
     { "name": "Dior",                       "tier": "Designer",  "origin": "France" },
     { "name": "Hermès",                     "tier": "Designer",  "origin": "France" },

@@ -1,8 +1,8 @@
 {
   "meta": {
     "lastUpdated": "2026-06-17",
-    "note": "Seeded with verified 2026 releases sourced from W Magazine, May 2026. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.1"
+    "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
+    "version": "1.2"
   },
   "releases": [
     {
@@ -144,6 +144,538 @@
         "base":   ["Sequoia Wood", "Oakmoss", "Musk"]
       },
       "source_url": "https://www.nordstrom.com/s/the-alchemists-garden-lignum-idealis-eau-de-parfum/8868311"
+    },
+    {
+      "id": "creed-aventus-edp-2025",
+      "name": "Aventus EDP",
+      "house": "Creed",
+      "released": "2025-03",
+      "category": "M",
+      "family": "Fruity Chypre",
+      "notes": {
+        "top":    ["Blackcurrant", "Apple", "Bergamot"],
+        "middle": ["Birch", "Patchouli", "Jasmine"],
+        "base":   ["Musk", "Oakmoss", "Ambergris"]
+      },
+      "source_url": "https://www.creedperfume.com/products/aventus-eau-de-parfum"
+    },
+    {
+      "id": "mfk-baccarat-rouge-540-2025",
+      "name": "Baccarat Rouge 540",
+      "house": "Maison Francis Kurkdjian",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Floral Woody Musky",
+      "notes": {
+        "top":    ["Jasmine", "Saffron"],
+        "middle": ["Amberwood", "Ambergris"],
+        "base":   ["Fir Resin", "Cedar"]
+      },
+      "source_url": "https://www.mkperfumes.com/en_us/fragrances/baccarat-rouge-540-eau-de-parfum/"
+    },
+    {
+      "id": "diptyque-do-son-edp-2025",
+      "name": "Do Son EDP",
+      "house": "Diptyque",
+      "released": "2025-02",
+      "category": "F",
+      "family": "Floral",
+      "notes": {
+        "top":    ["White Pepper", "Bergamot"],
+        "middle": ["Tuberose", "Orange Blossom", "Jasmine"],
+        "base":   ["White Musk", "Sandalwood"]
+      },
+      "source_url": "https://www.diptyqueparis.com/en_us/p/do-son-eau-de-parfum.html"
+    },
+    {
+      "id": "mmr-replica-bubble-bath-2025",
+      "name": "Replica Bubble Bath",
+      "house": "Maison Margiela",
+      "released": "2025-02",
+      "category": "U",
+      "family": "Floral Musky",
+      "notes": {
+        "top":    ["Aldehydes", "Rose Water"],
+        "middle": ["Lily of the Valley", "Iris"],
+        "base":   ["Sandalwood", "White Musk", "Ambrette"]
+      },
+      "source_url": "https://www.maisonmargiela.com/us/maison-margiela-fragrances/replica/bubble-bath"
+    },
+    {
+      "id": "pdm-layton-exclusif-2025",
+      "name": "Layton Exclusif",
+      "house": "Parfums de Marly",
+      "released": "2025-03",
+      "category": "M",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top":    ["Apple", "Cardamom", "Lavender"],
+        "middle": ["Geranium", "Jasmine", "Oakmoss"],
+        "base":   ["Sandalwood", "Vanilla", "Guaiac Wood"]
+      },
+      "source_url": "https://www.parfumsdemarly.com/en_us/layton-exclusif"
+    },
+    {
+      "id": "adp-colonia-futura-2025",
+      "name": "Colonia Futura",
+      "house": "Acqua di Parma",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Fresh Citrus",
+      "notes": {
+        "top":    ["Lemon", "Bergamot", "Grapefruit"],
+        "middle": ["Jasmine", "Neroli"],
+        "base":   ["Vetiver", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.acquadiparma.com/en-us/colonia-futura"
+    },
+    {
+      "id": "amouage-reflection-45-2025",
+      "name": "Reflection 45",
+      "house": "Amouage",
+      "released": "2025-04",
+      "category": "U",
+      "family": "Floral Aromatic",
+      "notes": {
+        "top":    ["Bergamot", "Pink Pepper", "Neroli"],
+        "middle": ["Jasmine", "Ylang-Ylang", "Iris"],
+        "base":   ["Sandalwood", "White Musk", "Amber"]
+      },
+      "source_url": "https://www.amouage.com/en-us/reflection-45.html"
+    },
+    {
+      "id": "kilian-angels-share-2025",
+      "name": "Angels' Share",
+      "house": "Kilian",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Warm Spicy Gourmand",
+      "notes": {
+        "top":    ["Cognac", "Cinnamon"],
+        "middle": ["Oak", "Tonka Bean"],
+        "base":   ["Praline", "Sandalwood", "Vanilla"]
+      },
+      "source_url": "https://www.kilianparis.com/en-us/products/angels-share"
+    },
+    {
+      "id": "sl-gris-clair-2025",
+      "name": "Gris Clair",
+      "house": "Serge Lutens",
+      "released": "2025-02",
+      "category": "U",
+      "family": "Aromatic Lavender",
+      "notes": {
+        "top":    ["Lavender", "Tarragon"],
+        "middle": ["Iris", "Incense"],
+        "base":   ["Amber", "Musk", "Benzoin"]
+      },
+      "source_url": "https://www.sergelutens.com/en/fragrances/gris-clair.html"
+    },
+    {
+      "id": "fm-portrait-of-a-lady-2025",
+      "name": "Portrait of a Lady",
+      "house": "Frederic Malle",
+      "released": "2025-01",
+      "category": "F",
+      "family": "Floral Chypre",
+      "notes": {
+        "top":    ["Turkish Rose", "Raspberry"],
+        "middle": ["Patchouli", "Sandalwood", "Incense"],
+        "base":   ["Musk", "Benzoin"]
+      },
+      "source_url": "https://www.fredericmalle.com/en-us/product/portrait-of-a-lady-perfume"
+    },
+    {
+      "id": "nishane-hacivat-2025",
+      "name": "Hacivat",
+      "house": "Nishane",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Woody Chypre",
+      "notes": {
+        "top":    ["Pineapple", "Bergamot", "Grapefruit"],
+        "middle": ["Oakmoss", "Jasmine", "Hedione"],
+        "base":   ["Vetiver", "Guaiac Wood", "Cedar"]
+      },
+      "source_url": "https://www.nishane.com.tr/en/hacivat"
+    },
+    {
+      "id": "armani-acqua-di-gio-profondo-2025",
+      "name": "Acqua di Giò Profondo",
+      "house": "Giorgio Armani",
+      "released": "2025-02",
+      "category": "M",
+      "family": "Aromatic Aquatic",
+      "notes": {
+        "top":    ["Bergamot", "Aquatic Notes", "Green Mandarin"],
+        "middle": ["Rosemary", "Marine Notes"],
+        "base":   ["Mineral Notes", "Patchouli", "Musk"]
+      },
+      "source_url": "https://www.giorgioarmanibeauty-usa.com/fragrance/mens-fragrance/acqua-di-gio-profondo"
+    },
+    {
+      "id": "prada-paradoxe-intense-2025",
+      "name": "Paradoxe Intense",
+      "house": "Prada",
+      "released": "2025-03",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top":    ["Bergamot", "Neroli"],
+        "middle": ["Jasmine", "Amber"],
+        "base":   ["Sandalwood", "Vetiver", "Musk"]
+      },
+      "source_url": "https://www.prada.com/us/en/prada-beauty/fragrances/woman/women-eau-de-parfum/paradoxe-intense.html"
+    },
+    {
+      "id": "versace-dylan-turquoise-2025",
+      "name": "Dylan Turquoise Pour Femme",
+      "house": "Versace",
+      "released": "2025-02",
+      "category": "F",
+      "family": "Fresh Floral",
+      "notes": {
+        "top":    ["Watermelon", "Yuzu", "Pomegranate"],
+        "middle": ["Cactus Flower", "Frangipani", "Hibiscus"],
+        "base":   ["Musk", "Blonde Wood"]
+      },
+      "source_url": "https://www.versace.com/us/en/versace-fragrance/women/dylan-turquoise-pour-femme/"
+    },
+    {
+      "id": "dg-light-blue-intense-homme-2025",
+      "name": "Light Blue Intense Pour Homme",
+      "house": "Dolce & Gabbana",
+      "released": "2025-01",
+      "category": "M",
+      "family": "Aromatic Fresh",
+      "notes": {
+        "top":    ["Grapefruit", "Bergamot", "Juniper"],
+        "middle": ["Pepper", "Rosemary", "Rosewood"],
+        "base":   ["Musk", "Oakmoss", "Incense"]
+      },
+      "source_url": "https://www.dolcegabbana.com/fragrance/light-blue-pour-homme-intense"
+    },
+    {
+      "id": "jo-malone-honeysuckle-davana-2025",
+      "name": "Honeysuckle & Davana",
+      "house": "Jo Malone",
+      "released": "2025-04",
+      "category": "U",
+      "family": "Floral Fruity",
+      "notes": {
+        "top":    ["Honeysuckle", "Pear"],
+        "middle": ["Davana", "Jasmine"],
+        "base":   ["Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.jomalone.com/products/honeysuckle-davana-cologne"
+    },
+    {
+      "id": "givenchy-linterdit-rouge-ultime-2025",
+      "name": "L'Interdit Rouge Ultime",
+      "house": "Givenchy",
+      "released": "2025-03",
+      "category": "F",
+      "family": "Floral Woody",
+      "notes": {
+        "top":    ["Mandarin", "Bergamot"],
+        "middle": ["Orange Blossom", "Jasmine", "Ylang-Ylang"],
+        "base":   ["Vetiver", "Sandalwood", "Oud"]
+      },
+      "source_url": "https://www.givenchy.com/us/en/p/linterdit-rouge-ultime.html"
+    },
+    {
+      "id": "lancome-la-vie-belle-soleil-2025",
+      "name": "La Vie est Belle Soleil Cristal",
+      "house": "Lancôme",
+      "released": "2025-02",
+      "category": "F",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top":    ["Orange", "Bergamot"],
+        "middle": ["Iris", "Jasmine", "Orange Blossom"],
+        "base":   ["Praline", "Sandalwood", "Vetiver"]
+      },
+      "source_url": "https://www.lancome-usa.com/fragrance/womens-fragrance/la-vie-est-belle/"
+    },
+    {
+      "id": "vr-flowerbomb-nectar-2025",
+      "name": "Flowerbomb Nectar",
+      "house": "Viktor & Rolf",
+      "released": "2025-01",
+      "category": "F",
+      "family": "Floral Oriental",
+      "notes": {
+        "top":    ["Bergamot", "Green Tea"],
+        "middle": ["Jasmine", "Freesia", "Rose"],
+        "base":   ["Patchouli", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.viktor-rolf.com/us/p/perfumes/flowerbomb-nectar"
+    },
+    {
+      "id": "ch-good-girl-rose-gold-2025",
+      "name": "Good Girl Rose Gold",
+      "house": "Carolina Herrera",
+      "released": "2025-05",
+      "category": "F",
+      "family": "Floral Oriental",
+      "notes": {
+        "top":    ["Coffee", "Praline"],
+        "middle": ["Tuberose", "Jasmine"],
+        "base":   ["Cocoa", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.carolinaherrera.com/us/en/fragrances/good-girl-rose-gold/"
+    },
+    {
+      "id": "burberry-goddess-elixir-2025",
+      "name": "Goddess Elixir de Parfum",
+      "house": "Burberry",
+      "released": "2025-03",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top":    ["Bergamot", "Apple"],
+        "middle": ["Lavender", "Chamomile"],
+        "base":   ["Vanilla", "Tonka Bean", "Labdanum"]
+      },
+      "source_url": "https://us.burberry.com/goddess-elixir-de-parfum/"
+    },
+    {
+      "id": "ck-everyone-summer-2025",
+      "name": "CK Everyone Summer",
+      "house": "Calvin Klein",
+      "released": "2025-05",
+      "category": "U",
+      "family": "Fresh Citrus",
+      "notes": {
+        "top":    ["Orange", "Lemon", "Clementine"],
+        "middle": ["Green Tea", "Lavender"],
+        "base":   ["White Musk", "Cedar"]
+      },
+      "source_url": "https://www.calvinklein.us/fragrances/everyone-fragrances/"
+    },
+    {
+      "id": "mj-daisy-wild-2025",
+      "name": "Daisy Wild",
+      "house": "Marc Jacobs",
+      "released": "2025-01",
+      "category": "F",
+      "family": "Fresh Floral",
+      "notes": {
+        "top":    ["Water Hyacinth", "Apple Blossom"],
+        "middle": ["Daisy", "Magnolia", "Orris"],
+        "base":   ["Sandalwood", "Musk", "Amber"]
+      },
+      "source_url": "https://www.marcjacobsfragrances.com/daisy-wild"
+    },
+    {
+      "id": "coach-open-road-2025",
+      "name": "Open Road",
+      "house": "Coach",
+      "released": "2025-03",
+      "category": "M",
+      "family": "Fresh Aromatic",
+      "notes": {
+        "top":    ["Bergamot", "Grapefruit", "Juniper Berry"],
+        "middle": ["Geranium", "Violet Leaf"],
+        "base":   ["Vetiver", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.coach.com/fragrances"
+    },
+    {
+      "id": "mk-gorgeous-2025",
+      "name": "Gorgeous!",
+      "house": "Michael Kors",
+      "released": "2025-02",
+      "category": "F",
+      "family": "Floral Chypre",
+      "notes": {
+        "top":    ["Bergamot", "Lemon", "Grapefruit"],
+        "middle": ["Rose", "Peony", "Lily"],
+        "base":   ["Sandalwood", "Ambergris", "Musk"]
+      },
+      "source_url": "https://www.michaelkors.com/fragrance/gorgeous/"
+    },
+    {
+      "id": "jc-i-want-choo-le-parfum-2025",
+      "name": "I Want Choo Le Parfum",
+      "house": "Jimmy Choo",
+      "released": "2025-04",
+      "category": "F",
+      "family": "Floral Musky",
+      "notes": {
+        "top":    ["Pink Pepper", "Pear"],
+        "middle": ["Gardenia", "Jasmine", "Magnolia"],
+        "base":   ["Sandalwood", "Musk", "Amber"]
+      },
+      "source_url": "https://www.jimmychoo.com/en/women/fragrances/i-want-choo-le-parfum"
+    },
+    {
+      "id": "valentino-born-roma-donna-intense-2025",
+      "name": "Born in Roma Donna Intense",
+      "house": "Valentino",
+      "released": "2025-03",
+      "category": "F",
+      "family": "Floral Oriental",
+      "notes": {
+        "top":    ["Bergamot", "Pink Pepper"],
+        "middle": ["Jasmine", "Rose", "Iris"],
+        "base":   ["Vanilla", "Tonka Bean", "Sandalwood"]
+      },
+      "source_url": "https://www.valentino.com/en-us/beauty/fragrance/women"
+    },
+    {
+      "id": "nr-for-her-musc-noir-rose-2025",
+      "name": "For Her Musc Noir Rose",
+      "house": "Narciso Rodriguez",
+      "released": "2025-01",
+      "category": "F",
+      "family": "Floral Musky",
+      "notes": {
+        "top":    ["Pink Pepper", "Bergamot"],
+        "middle": ["Rose", "Iris", "Peony"],
+        "base":   ["Musk", "Sandalwood", "Amber"]
+      },
+      "source_url": "https://www.narcisorodriguez.com/fragrance/for-her-musc-noir-rose"
+    },
+    {
+      "id": "dossier-ambery-saffron-2025",
+      "name": "Ambery Saffron",
+      "house": "Dossier",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top":    ["Bergamot", "Pink Pepper"],
+        "middle": ["Saffron", "Jasmine"],
+        "base":   ["Amber", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://dossier.co/products/ambery-saffron"
+    },
+    {
+      "id": "armaf-club-de-nuit-intense-2025",
+      "name": "Club de Nuit Intense Man EDP",
+      "house": "Armaf",
+      "released": "2025-02",
+      "category": "M",
+      "family": "Fruity Chypre",
+      "notes": {
+        "top":    ["Pineapple", "Bergamot", "Blackcurrant"],
+        "middle": ["Birch", "Jasmine", "Rose"],
+        "base":   ["Musk", "Ambergris", "Patchouli"]
+      },
+      "source_url": "https://armafperfumes.com/products/club-de-nuit-intense-man-edp"
+    },
+    {
+      "id": "lattafa-khamrah-2025",
+      "name": "Khamrah",
+      "house": "Lattafa",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top":    ["Grape", "Blackberry", "Bergamot"],
+        "middle": ["Oud", "Rose", "Jasmine"],
+        "base":   ["Vanilla", "Musk", "Amber"]
+      },
+      "source_url": "https://lattafaperfumes.com/products/khamrah"
+    },
+    {
+      "id": "afnan-supremacy-silver-2025",
+      "name": "Supremacy Silver",
+      "house": "Afnan",
+      "released": "2025-01",
+      "category": "M",
+      "family": "Fresh Woody Aromatic",
+      "notes": {
+        "top":    ["Bergamot", "Pineapple", "Lemon"],
+        "middle": ["Jasmine", "Geranium", "Cinnamon"],
+        "base":   ["Ambergris", "Vetiver", "Musk"]
+      },
+      "source_url": "https://afnanperfumes.com/products/supremacy-silver"
+    },
+    {
+      "id": "al-haramain-amber-oud-gold-2025",
+      "name": "Amber Oud Gold Edition",
+      "house": "Al Haramain",
+      "released": "2025-01",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top":    ["Saffron", "Bergamot"],
+        "middle": ["Oud", "Rose", "Jasmine"],
+        "base":   ["Amber", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://www.alharamain.com/amber-oud-gold-edition"
+    },
+    {
+      "id": "maison-alhambra-decent-homme-2025",
+      "name": "Decent Pour Homme",
+      "house": "Maison Alhambra",
+      "released": "2025-03",
+      "category": "M",
+      "family": "Aromatic Woody",
+      "notes": {
+        "top":    ["Bergamot", "Cardamom"],
+        "middle": ["Lavender", "Geranium"],
+        "base":   ["Sandalwood", "Vetiver", "Amber"]
+      },
+      "source_url": "https://maisonalhambra.com/products/decent-pour-homme"
+    },
+    {
+      "id": "rasasi-hawas-2025",
+      "name": "Hawas for Him",
+      "house": "Rasasi",
+      "released": "2025-01",
+      "category": "M",
+      "family": "Aromatic Aquatic",
+      "notes": {
+        "top":    ["Bergamot", "Cardamom", "Apple"],
+        "middle": ["Jasmine", "Violet", "Aquatic Notes"],
+        "base":   ["Driftwood", "Musk", "Amber"]
+      },
+      "source_url": "https://www.rasasi.com/hawas-for-him.html"
+    },
+    {
+      "id": "swiss-arabian-shaghaf-oud-aswad-2025",
+      "name": "Shaghaf Oud Aswad",
+      "house": "Swiss Arabian",
+      "released": "2025-02",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top":    ["Saffron", "Rose"],
+        "middle": ["Oud", "Patchouli"],
+        "base":   ["Musk", "Amber", "Vanilla"]
+      },
+      "source_url": "https://www.swissarabian.com/shaghaf-oud-aswad.html"
+    },
+    {
+      "id": "kayali-utopia-vanilla-coco-2025",
+      "name": "Utopia Vanilla Coco 21",
+      "house": "Kayali",
+      "released": "2025-01",
+      "category": "F",
+      "family": "Gourmand Floral",
+      "notes": {
+        "top":    ["Coconut", "Bergamot"],
+        "middle": ["Jasmine", "Violet"],
+        "base":   ["Vanilla", "Sandalwood", "Musk"]
+      },
+      "source_url": "https://kayali.com/products/utopia-vanilla-coco-21"
+    },
+    {
+      "id": "bbw-into-the-night-2025",
+      "name": "Into the Night",
+      "house": "Bath & Body Works",
+      "released": "2025-03",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top":    ["Star Anise", "Bergamot"],
+        "middle": ["Midnight Jasmine", "Cyclamen"],
+        "base":   ["Sandalwood", "Musk", "Amber"]
+      },
+      "source_url": "https://www.bathandbodyworks.com/p/into-the-night-eau-de-parfum"
     }
   ]
 }

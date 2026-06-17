@@ -528,7 +528,7 @@
     return Object.entries(scores).sort((a,b) => b[1]-a[1])[0][0];
   }
 
-  function getRecommendedTier(b) { return {25_50:'dupe',50_100:'designer',100_200:'designer',200plus:'splurge'}[b]||'designer'; }
+  function getRecommendedTier(b) { return {'25_50':'dupe','50_100':'designer','100_200':'designer','200plus':'splurge'}[b]||'designer'; }
   function getGenderKey(g) { return {masc:'M',fem:'F',unisex:'U',gift:'U'}[g]||'U'; }
 
   let state = { step:0, answers:{} };
