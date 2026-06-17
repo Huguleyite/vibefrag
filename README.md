@@ -1,2 +1,2 @@
-# noteworthyscents
+# vibefrag
 Website repo
