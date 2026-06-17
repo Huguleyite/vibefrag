@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "lastUpdated": "2026-06-17",
+    "note": "Seeded with verified flagship fragrances. Weekly pipeline will prepend new releases automatically.",
+    "version": "1.0"
+  },
+  "releases": [
+    {
+      "id": "mfk-baccarat-rouge-540-extrait",
+      "name": "Baccarat Rouge 540 Extrait de Parfum",
+      "house": "Maison Francis Kurkdjian",
+      "released": "2024-01",
+      "category": "U",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top":    ["Saffron", "Jasmine"],
+        "middle": ["Amberwood", "Ambrofix"],
+        "base":   ["Fir Resin", "Cedar"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Baccarat-Rouge-540-Extrait-de-Parfum-34979.html"
+    },
+    {
+      "id": "creed-aventus-2024",
+      "name": "Aventus",
+      "house": "Creed",
+      "released": "2024-03",
+      "category": "M",
+      "family": "Fruity Chypre",
+      "notes": {
+        "top":    ["Pineapple", "Bergamot", "Black Currant", "Apple"],
+        "middle": ["Rose", "Dry Birch", "Jasmine", "Patchouli"],
+        "base":   ["Musk", "Oakmoss", "Ambergris", "Vanilla"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Creed/Aventus-10521.html"
+    },
+    {
+      "id": "tf-oud-wood-parfum",
+      "name": "Oud Wood Parfum",
+      "house": "Tom Ford",
+      "released": "2024-02",
+      "category": "U",
+      "family": "Woody Oriental",
+      "notes": {
+        "top":    ["Oud", "Rosewood"],
+        "middle": ["Cardamom", "Sandalwood", "Vetiver"],
+        "base":   ["Tonka Bean", "Amber", "Musk"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-5710.html"
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "name": "Sauvage Elixir",
+      "house": "Dior",
+      "released": "2021-09",
+      "category": "M",
+      "family": "Woody Spicy",
+      "notes": {
+        "top":    ["Grapefruit", "Cinnamon", "Cardamom", "Nuances"],
+        "middle": ["Lavender", "Licorice"],
+        "base":   ["Sandalwood", "Haitian Vetiver", "Amber"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Dior/Sauvage-Elixir-76519.html"
+    },
+    {
+      "id": "byredo-super-cedar",
+      "name": "Super Cedar",
+      "house": "Byredo",
+      "released": "2023-09",
+      "category": "U",
+      "family": "Woody Floral",
+      "notes": {
+        "top":    ["Rosewater"],
+        "middle": ["Cedar", "Orris"],
+        "base":   ["Ambrette Seeds", "Musk"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Byredo/Super-Cedar-35099.html"
+    },
+    {
+      "id": "le-labo-santal-33",
+      "name": "Santal 33",
+      "house": "Le Labo",
+      "released": "2023-11",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top":    ["Cardamom", "Iris", "Violet"],
+        "middle": ["Ambrox", "Sandalwood", "Papyrus"],
+        "base":   ["Cedar", "Leather", "Musk"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Le-Labo/Santal-33-17424.html"
+    },
+    {
+      "id": "chanel-bleu-edp",
+      "name": "Bleu de Chanel EDP",
+      "house": "Chanel",
+      "released": "2024-05",
+      "category": "M",
+      "family": "Aromatic Fougère",
+      "notes": {
+        "top":    ["Grapefruit", "Lemon", "Mint", "Pink Pepper"],
+        "middle": ["Ginger", "Jasmine", "Iso E Super", "Labdanum"],
+        "base":   ["Incense", "Vetiver", "Cedar", "Sandalwood"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-Eau-de-Parfum-20889.html"
+    },
+    {
+      "id": "ysl-libre-intense",
+      "name": "Libre Intense",
+      "house": "YSL",
+      "released": "2023-08",
+      "category": "F",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top":    ["Bergamot", "Grapefruit", "Blackcurrant"],
+        "middle": ["Jasmine", "Lavender", "Orange Blossom"],
+        "base":   ["Cedar", "Musk", "Vanilla"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Intense-72131.html"
+    }
+  ]
+}

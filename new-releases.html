@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Releases — VibeFrag</title>
+  <meta name="description" content="The latest fragrance releases — updated weekly. Filter by category, scent family, or house.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">Vibe<span>Frag</span></a>
+      <ul class="nav__links">
+        <li><a href="new-releases.html">New Releases</a></li>
+        <li><a href="houses.html">By House</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html" class="nav__cta">Find My Scent →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="page-hero__label">Updated Weekly</div>
+      <h1>New Releases</h1>
+      <p>The latest from designer houses, niche labs, and indie creators — as they drop.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cat-M">Masculine</button>
+      <button class="filter-btn" data-filter="cat-F">Feminine</button>
+      <button class="filter-btn" data-filter="cat-U">Unisex</button>
+    </div>
+
+    <!-- Count + sort line -->
+    <p id="count-line" style="font-size:0.875rem; color:var(--color-text-muted); margin-bottom:24px;"></p>
+
+    <!-- Cards -->
+    <div class="card-grid" id="releases-grid">
+      <div class="loading">Loading new releases…</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__logo">Vibe<span>Frag</span></div>
+        <div class="footer__tagline">Find your scent for every occasion.</div>
+      </div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="houses.html">By House</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    let allReleases = [];
+
+    (async () => {
+      const grid = document.getElementById('releases-grid');
+      const countLine = document.getElementById('count-line');
+      const data = await VibeFrag.fetchData('data/releases.json');
+
+      if (!data || !data.releases || data.releases.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><h3>Check Back Soon</h3><p>New releases are added every week.</p></div>';
+        return;
+      }
+
+      allReleases = data.releases;
+      renderCards(allReleases);
+      updateCount(allReleases.length, allReleases.length);
+
+      if (data.meta && data.meta.lastUpdated) {
+        countLine.textContent = `${allReleases.length} fragrances · Last updated ${VibeFrag.formatDate(data.meta.lastUpdated)}`;
+      }
+    })();
+
+    function renderCards(list) {
+      const grid = document.getElementById('releases-grid');
+      if (list.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><h3>No results</h3><p>Try a different filter.</p></div>';
+      } else {
+        grid.innerHTML = list.map(f => VibeFrag.renderCard(f)).join('');
+      }
+    }
+
+    function updateCount(shown, total) {
+      const countLine = document.getElementById('count-line');
+      const updated = document.querySelector('[data-meta]');
+      countLine.textContent = shown === total
+        ? `${total} fragrance${total !== 1 ? 's' : ''}`
+        : `${shown} of ${total} fragrances`;
+    }
+
+    // Filter buttons
+    document.getElementById('filter-bar').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      const filtered = filter === 'all'
+        ? allReleases
+        : allReleases.filter(f => {
+            if (filter.startsWith('cat-')) return f.category === filter.replace('cat-', '');
+            return true;
+          });
+
+      renderCards(filtered);
+      updateCount(filtered.length, allReleases.length);
+    });
+  </script>
+</body>
+</html>

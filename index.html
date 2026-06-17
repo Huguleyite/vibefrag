@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeFrag — Find Your Scent for Every Occasion</title>
+  <meta name="description" content="Not sure what fragrance to wear? Answer 5 questions and get 3 picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">Vibe<span>Frag</span></a>
+      <ul class="nav__links">
+        <li><a href="new-releases.html">New Releases</a></li>
+        <li><a href="houses.html">By House</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html" class="nav__cta">Find My Scent →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero__eyebrow">Fragrance Discovery</span>
+      <h1 class="hero__title">Find your scent<br>for every occasion.</h1>
+      <p class="hero__subtitle">Answer five questions. Get three picks — a splurge, a designer, and a dupe — matched to your moment.</p>
+      <div class="hero__actions">
+        <a href="quiz/index.html" class="btn btn--primary">Take the Quiz →</a>
+        <a href="new-releases.html" class="btn btn--ghost">Browse New Releases</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- New Releases Strip -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>New Releases</h2>
+        <a href="new-releases.html" class="see-all">See all →</a>
+      </div>
+      <div class="card-grid" id="home-releases">
+        <div class="loading">Loading latest releases…</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Browse by House -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Browse by House</h2>
+        <a href="houses.html" class="see-all">See all →</a>
+      </div>
+      <div class="houses-grid" id="home-houses">
+        <div class="loading">Loading houses…</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Quiz CTA Banner -->
+  <section class="section--sm">
+    <div class="container" style="text-align:center; padding: 48px 24px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg);">
+      <p class="hero__eyebrow" style="margin-bottom:16px;">The Occasion Tool</p>
+      <h2 style="margin-bottom:12px;">Not sure where to start?</h2>
+      <p style="max-width:440px; margin: 0 auto 28px;">Tell us the occasion, the season, and your budget. We'll match you to a Splurge, a Designer, and a Dupe.</p>
+      <a href="quiz/index.html" class="btn btn--primary">Find My Scent →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__logo">Vibe<span>Frag</span></div>
+        <div class="footer__tagline">Find your scent for every occasion.</div>
+      </div>
+      <ul class="footer__links">
+        <li><a href="new-releases.html">New Releases</a></li>
+        <li><a href="houses.html">By House</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    (async () => {
+      // Load new releases — show 6 most recent on home
+      const releasesEl = document.getElementById('home-releases');
+      const data = await VibeFrag.fetchData('data/releases.json');
+
+      if (!data || !data.releases || data.releases.length === 0) {
+        releasesEl.innerHTML = '<div class="empty-state"><h3>Coming Soon</h3><p>New releases drop weekly.</p></div>';
+      } else {
+        const top6 = data.releases.slice(0, 6);
+        releasesEl.innerHTML = top6.map(f => VibeFrag.renderCard(f)).join('');
+      }
+
+      // Load houses — show top 12
+      const housesEl = document.getElementById('home-houses');
+      const hData = await VibeFrag.fetchData('data/houses.json');
+
+      if (!hData || !hData.houses) {
+        housesEl.innerHTML = '<div class="empty-state"><p>Loading houses…</p></div>';
+      } else {
+        const preview = hData.houses.slice(0, 12);
+        housesEl.innerHTML = preview.map(h => `
+          <a href="houses.html?house=${encodeURIComponent(h.name)}" class="house-card">
+            <div class="house-card__tier">${h.tier}</div>
+            <div class="house-card__name">${h.name}</div>
+          </a>`).join('');
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse by House — VibeFrag</title>
+  <meta name="description" content="Explore fragrances organized by house — from luxury splurge brands to designer staples and budget-friendly dupes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">Vibe<span>Frag</span></a>
+      <ul class="nav__links">
+        <li><a href="new-releases.html">New Releases</a></li>
+        <li><a href="houses.html">By House</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html" class="nav__cta">Find My Scent →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="page-hero__label">Fragrance Houses</div>
+      <h1>Browse by House</h1>
+      <p>Splurge, designer, or dupe — every major house in one place.</p>
+    </div>
+
+    <!-- Tier filters -->
+    <div class="filter-bar" id="tier-filter">
+      <button class="filter-btn active" data-tier="all">All Houses</button>
+      <button class="filter-btn" data-tier="Splurge">Splurge</button>
+      <button class="filter-btn" data-tier="Designer">Designer</button>
+      <button class="filter-btn" data-tier="Dupe">Dupe</button>
+    </div>
+
+    <!-- Houses grid -->
+    <div class="houses-grid" id="houses-grid" style="margin-bottom: 48px;">
+      <div class="loading">Loading houses…</div>
+    </div>
+
+    <!-- Selected house releases -->
+    <div id="house-releases-section" style="display:none;">
+      <hr class="divider" style="margin-bottom:40px;">
+      <div class="section-header">
+        <h2 id="house-releases-title">Releases</h2>
+      </div>
+      <div class="card-grid" id="house-releases-grid"></div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__logo">Vibe<span>Frag</span></div>
+        <div class="footer__tagline">Find your scent for every occasion.</div>
+      </div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-releases.html">New Releases</a></li>
+        <li><a href="blog/index.html">Editorial</a></li>
+        <li><a href="quiz/index.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    let allHouses = [];
+    let allReleases = [];
+    let activeHouse = null;
+
+    (async () => {
+      const [hData, rData] = await Promise.all([
+        VibeFrag.fetchData('data/houses.json'),
+        VibeFrag.fetchData('data/releases.json')
+      ]);
+
+      allHouses   = hData?.houses   || [];
+      allReleases = rData?.releases || [];
+
+      // Check URL param for pre-selected house
+      const params = new URLSearchParams(window.location.search);
+      const preSelect = params.get('house');
+
+      renderHouses(allHouses);
+
+      if (preSelect) {
+        const match = allHouses.find(h => h.name.toLowerCase() === preSelect.toLowerCase());
+        if (match) selectHouse(match.name);
+      }
+    })();
+
+    function renderHouses(list) {
+      const grid = document.getElementById('houses-grid');
+      if (list.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><p>No houses found.</p></div>';
+        return;
+      }
+      grid.innerHTML = list.map(h => `
+        <button class="house-card${activeHouse === h.name ? ' active' : ''}" data-house="${h.name}" onclick="selectHouse('${h.name.replace(/'/g,"\\'")}')">
+          <div class="house-card__tier">${h.tier}</div>
+          <div class="house-card__name">${h.name}</div>
+        </button>`).join('');
+    }
+
+    function selectHouse(name) {
+      activeHouse = activeHouse === name ? null : name;
+
+      // Update active state on cards
+      document.querySelectorAll('.house-card').forEach(c => {
+        c.classList.toggle('active', c.dataset.house === activeHouse);
+      });
+
+      const section = document.getElementById('house-releases-section');
+      const grid    = document.getElementById('house-releases-grid');
+      const title   = document.getElementById('house-releases-title');
+
+      if (!activeHouse) { section.style.display = 'none'; return; }
+
+      const matches = allReleases.filter(f =>
+        (f.house || '').toLowerCase() === activeHouse.toLowerCase()
+      );
+
+      title.textContent = activeHouse;
+      section.style.display = '';
+
+      if (matches.length === 0) {
+        grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><h3>No releases yet</h3><p>New releases from this house will appear here weekly.</p></div>';
+      } else {
+        grid.innerHTML = matches.map(f => VibeFrag.renderCard(f)).join('');
+      }
+
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Tier filter
+    document.getElementById('tier-filter').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('#tier-filter .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const tier = btn.dataset.tier;
+      const filtered = tier === 'all' ? allHouses : allHouses.filter(h => h.tier === tier);
+      activeHouse = null;
+      document.getElementById('house-releases-section').style.display = 'none';
+      renderHouses(filtered);
+    });
+  </script>
+</body>
+</html>

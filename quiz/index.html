@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Scent — VibeFrag</title>
+  <meta name="description" content="5 questions. Three picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:           #FAFAF8;
+      --surface:      #FFFFFF;
+      --border:       #E8E6E0;
+      --text:         #1C1C1C;
+      --text-muted:   #6B6B6B;
+      --text-light:   #9A9A9A;
+      --gold:         #C5A47E;
+      --gold-dk:      #A8885E;
+      --gold-bg:      rgba(197,164,126,0.08);
+      --chip-bg:      #F0EEE8;
+      --chip-text:    #5A5248;
+      --splurge:      #A8885E;
+      --designer:     #3B5B8C;
+      --dupe:         #2E6B35;
+      --font:         'Inter', system-ui, -apple-system, sans-serif;
+      --radius:       12px;
+      --radius-pill:  100px;
+      --ease:         cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --shadow-card:  0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 100; height: 64px;
+      background: rgba(250,250,248,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      height: 100%; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav__logo { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.03em; color: var(--text); text-decoration: none; }
+    .nav__logo span { color: var(--gold); }
+    .nav__links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav__links a { font-size: 0.9rem; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+    .nav__links a:hover { color: var(--text); }
+    .nav__links a.active {
+      background: var(--text); color: #fff;
+      padding: 8px 18px; border-radius: var(--radius-pill); font-size: 0.875rem; font-weight: 600;
+    }
+
+    /* Quiz wrap */
+    #quiz-wrap { display: flex; justify-content: center; padding: 52px 24px 72px; }
+    #app { width: 100%; max-width: 580px; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.4s var(--ease) forwards; }
+
+    /* Progress */
+    .progress { display: flex; gap: 6px; justify-content: center; margin-bottom: 44px; }
+    .progress-dot { height: 3px; width: 40px; border-radius: 2px; background: var(--border); transition: background 0.35s var(--ease); }
+    .progress-dot.active { background: var(--gold); }
+    .progress-dot.done   { background: rgba(197,164,126,0.4); }
+
+    /* Intro */
+    .intro { text-align: center; padding: 32px 0 0; }
+    .intro-eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-dk); margin-bottom: 18px; }
+    .intro-title { font-size: clamp(2rem, 6vw, 2.75rem); font-weight: 700; letter-spacing: -0.03em; color: var(--text); line-height: 1.15; margin-bottom: 14px; }
+    .intro-sub { font-size: 1rem; color: var(--text-muted); max-width: 360px; margin: 0 auto 36px; line-height: 1.6; }
+
+    /* Question */
+    .q-header { text-align: center; margin-bottom: 32px; }
+    .q-step { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 12px; }
+    .q-text { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text); line-height: 1.2; }
+
+    /* Options */
+    .options { display: grid; gap: 10px; }
+    .options.grid-2 { grid-template-columns: 1fr 1fr; }
+    .options.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    .option {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px; cursor: pointer; text-align: left;
+      transition: border-color 0.18s, box-shadow 0.18s, transform 0.12s; user-select: none;
+    }
+    .option:hover { border-color: var(--gold); box-shadow: 0 2px 12px rgba(197,164,126,0.15); }
+    .option.selected { border-color: var(--gold); background: var(--gold-bg); box-shadow: 0 2px 12px rgba(197,164,126,0.20); }
+    .option:active { transform: scale(0.98); }
+    .opt-label { font-weight: 600; font-size: 0.9375rem; color: var(--text); }
+    .opt-sub { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--text); color: #fff; border: none;
+      padding: 14px 32px; border-radius: var(--radius-pill);
+      font-family: var(--font); font-size: 0.9375rem; font-weight: 600;
+      cursor: pointer; transition: background 0.15s, transform 0.12s, box-shadow 0.15s; line-height: 1;
+    }
+    .btn-primary:hover { background: var(--gold-dk); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .btn-ghost {
+      background: transparent; border: 1.5px solid var(--border); color: var(--text-muted);
+      padding: 10px 24px; border-radius: var(--radius-pill);
+      font-family: var(--font); font-size: 0.84rem; font-weight: 500;
+      cursor: pointer; transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
+
+    /* Results */
+    .results-header { text-align: center; margin-bottom: 28px; }
+    .results-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-dk); margin-bottom: 8px; }
+    .results-title { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; letter-spacing: -0.03em; color: var(--text); margin-bottom: 10px; }
+    .results-accord-tag {
+      display: inline-block; background: var(--chip-bg); color: var(--chip-text);
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 16px; border-radius: var(--radius-pill);
+    }
+
+    /* Result cards */
+    .cards { display: flex; flex-direction: column; gap: 14px; }
+    .card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 24px; position: relative;
+      box-shadow: var(--shadow-card); transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .card.highlighted { border-color: var(--gold); box-shadow: var(--shadow-hover); }
+    .card.splurge  { --tier-color: var(--splurge); }
+    .card.designer { --tier-color: var(--designer); }
+    .card.dupe     { --tier-color: var(--dupe); }
+
+    .rec-badge {
+      position: absolute; top: -11px; right: 20px;
+      background: var(--text); color: #fff;
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 4px 14px; border-radius: var(--radius-pill);
+    }
+    .card-tier { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tier-color); margin-bottom: 12px; }
+    .card-brand { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+    .card-name { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 14px; line-height: 1.2; }
+    .card-notes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .note-pill { background: var(--chip-bg); color: var(--chip-text); font-size: 0.72rem; font-weight: 500; padding: 4px 11px; border-radius: var(--radius-pill); }
+    .card-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; }
+    .card-shop {
+      display: inline-flex; align-items: center; gap: 6px;
+      border: 1.5px solid var(--tier-color); color: var(--tier-color);
+      padding: 8px 20px; border-radius: var(--radius-pill);
+      font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em;
+      transition: background 0.15s, color 0.15s;
+    }
+    .card-shop:hover { background: var(--tier-color); color: #fff; }
+
+    .restart-wrap { text-align: center; margin-top: 28px; }
+
+    @media (max-width: 540px) {
+      #quiz-wrap { padding: 36px 16px 56px; }
+      .nav__links { display: none; }
+      .options.grid-2, .options.grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">Vibe<span>Frag</span></a>
+      <ul class="nav__links">
+        <li><a href="../new-releases.html">New Releases</a></li>
+        <li><a href="../houses.html">By House</a></li>
+        <li><a href="../blog/index.html">Editorial</a></li>
+        <li><a href="index.html" class="active">Find My Scent</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="quiz-wrap"><div id="app"></div></div>
+
+<script>
+  const LIBRARY = {
+    fresh_aquatic: {
+      splurge: {
+        M: { brand:"Creed",           name:"Silver Mountain Water",    notes:["Black Currant","Green Tea","Mandarin"] },
+        F: { brand:"Diptyque",        name:"Eau de Lierre",            notes:["Ivy","Aldehydes","Lily of the Valley"] },
+        U: { brand:"Acqua di Parma",  name:"Colonia",                  notes:["Calabrian Citrus","Lavender","Rosemary"] }
+      },
+      designer: {
+        M: { brand:"Giorgio Armani",  name:"Acqua di Giò EDP",         notes:["Bergamot","Rosemary","Patchouli"] },
+        F: { brand:"Chanel",          name:"Chance Eau Fraîche",       notes:["Citron","Water Hyacinth","Jasmine"] },
+        U: { brand:"Hermès",          name:"Un Jardin Sur le Nil",     notes:["Green Mango","Lotus","Sycamore"] }
+      },
+      dupe: {
+        M: { brand:"Rasasi",          name:"Hawas for Him",            notes:["Bergamot","Cardamom","Apple"] },
+        F: { brand:"Al Haramain",     name:"L'Aventure Femme",         notes:["Pineapple","Black Currant","Bergamot"] },
+        U: { brand:"Afnan",           name:"Supremacy Silver",         notes:["Bergamot","Pineapple","Lemon"] }
+      }
+    },
+    citrus: {
+      splurge: {
+        M: { brand:"Acqua di Parma",  name:"Colonia Intensa",          notes:["Bergamot","Lemon","Petitgrain"] },
+        F: { brand:"Le Labo",         name:"Bergamote 22",             notes:["Bergamot","Grapefruit","Amber"] },
+        U: { brand:"Maison Margiela", name:"Replica Flower Market",    notes:["Peony","Rose","Violet"] }
+      },
+      designer: {
+        M: { brand:"Versace",         name:"Pour Homme EDP",           notes:["Bergamot","Neroli","Geranium"] },
+        F: { brand:"Jo Malone",       name:"Lime Basil & Mandarin",    notes:["Lime","Basil","Mandarin"] },
+        U: { brand:"Calvin Klein",    name:"CK One",                   notes:["Bergamot","Lemon","Pineapple"] }
+      },
+      dupe: {
+        M: { brand:"Armaf",           name:"Club de Nuit Intense Man", notes:["Pineapple","Bergamot","Blackcurrant"] },
+        F: { brand:"Elizabeth Arden", name:"Green Tea",                notes:["Green Tea","Mint","Rhubarb"] },
+        U: { brand:"Dossier",         name:"Musky Aldehydes",          notes:["Aldehydes","Rose","Sandalwood"] }
+      }
+    },
+    floral: {
+      splurge: {
+        M: { brand:"Amouage",                  name:"Reflection Man",      notes:["Neroli","Jasmine","Ylang-Ylang"] },
+        F: { brand:"Frederic Malle",            name:"En Passant",          notes:["Lilac","Cucumber","White Musk"] },
+        U: { brand:"Maison Francis Kurkdjian",  name:"Baccarat Rouge 540",  notes:["Jasmine","Saffron","Cedar"] }
+      },
+      designer: {
+        M: { brand:"Valentino",       name:"Uomo EDP",                 notes:["Iris","Tonka Bean","Musk"] },
+        F: { brand:"Chanel",          name:"Chance EDP",               notes:["Pink Pepper","Jasmine","Patchouli"] },
+        U: { brand:"Gucci",           name:"Bloom EDP",                notes:["Tuberose","Jasmine","Rangoon Creeper"] }
+      },
+      dupe: {
+        M: { brand:"Rasasi",          name:"Egra Men",                 notes:["Violet Leaf","Juniper Berries","Grapefruit"] },
+        F: { brand:"Dossier",         name:"Floral Peony",             notes:["Peony","Rose","Musk"] },
+        U: { brand:"Lattafa",         name:"Velvet Rose",              notes:["Rose","Oud","Musk"] }
+      }
+    },
+    woody_earthy: {
+      splurge: {
+        M: { brand:"Amouage",         name:"Fate Man",                 notes:["Cardamom","Incense","Rose"] },
+        F: { brand:"Serge Lutens",    name:"Féminité du Bois",         notes:["Cedar","Cinnamon","Peach"] },
+        U: { brand:"Le Labo",         name:"Santal 33",                notes:["Cardamom","Iris","Violet"] }
+      },
+      designer: {
+        M: { brand:"Dior",            name:"Sauvage EDP",              notes:["Bergamot","Pepper","Lavender"] },
+        F: { brand:"YSL",             name:"Libre EDP",                notes:["Lavender","Bergamot","Blackcurrant"] },
+        U: { brand:"Burberry",        name:"Mr. Burberry EDP",         notes:["Grapefruit","Cardamom","Juniper"] }
+      },
+      dupe: {
+        M: { brand:"Armaf",           name:"Ventana",                  notes:["Grapefruit","Lemon","Mandarin"] },
+        F: { brand:"Dossier",         name:"Woody Sandalwood",         notes:["Sandalwood","Vanilla","Musk"] },
+        U: { brand:"Swiss Arabian",   name:"Dehn El Oud Malaki",       notes:["Oud","Leather","Musk"] }
+      }
+    },
+    oriental_spicy: {
+      splurge: {
+        M: { brand:"Amouage",         name:"Gold Man",                 notes:["Frankincense","Myrrh","Jasmine"] },
+        F: { brand:"Kilian",          name:"Love",                     notes:["Turkish Rose","Jasmine","Patchouli"] },
+        U: { brand:"Byredo",          name:"Accord Oud",               notes:["Oud","Amber","Rose"] }
+      },
+      designer: {
+        M: { brand:"YSL",             name:"La Nuit de l'Homme EDP",   notes:["Cardamom","Lavender","Vetiver"] },
+        F: { brand:"YSL",             name:"Black Opium EDP",          notes:["Coffee","Vanilla","White Flowers"] },
+        U: { brand:"Gucci",           name:"Guilty EDP",               notes:["Pink Pepper","Mandarin","Geranium"] }
+      },
+      dupe: {
+        M: { brand:"Afnan",           name:"Supremacy Noir",           notes:["Bergamot","Oregano","Pepper"] },
+        F: { brand:"Rasasi",          name:"La Yuqawam Femme",         notes:["Saffron","Raspberry","Thyme"] },
+        U: { brand:"Lattafa",         name:"Khamrah",                  notes:["Grape","Blackberry","Oud"] }
+      }
+    },
+    gourmand: {
+      splurge: {
+        M: { brand:"Tom Ford",        name:"Tobacco Vanille",          notes:["Tobacco Leaf","Vanilla","Spices"] },
+        F: { brand:"Kilian",          name:"Angels' Share",            notes:["Cognac","Cinnamon","Praline"] },
+        U: { brand:"Serge Lutens",    name:"Chergui",                  notes:["Honey","Iris","Musk"] }
+      },
+      designer: {
+        M: { brand:"Dolce & Gabbana", name:"The One EDP",              notes:["Mandarin","Tobacco","Ginger"] },
+        F: { brand:"Lancôme",         name:"La Vie est Belle EDP",     notes:["Iris","Patchouli","Praline"] },
+        U: { brand:"Viktor & Rolf",   name:"Flowerbomb EDP",           notes:["Bergamot","Green Tea","Jasmine"] }
+      },
+      dupe: {
+        M: { brand:"Maison Alhambra", name:"Versencia Noir",           notes:["Black Pepper","Rose","Amber"] },
+        F: { brand:"Kayali",          name:"Vanilla 28",               notes:["Jasmine","Vanilla Orchid","Musk"] },
+        U: { brand:"Maison Alhambra", name:"Delilah",                  notes:["Blackcurrant","Mandarin","Jasmine"] }
+      }
+    },
+    chypre: {
+      splurge: {
+        M: { brand:"Creed",           name:"Aventus",                  notes:["Bergamot","Blackcurrant","Apple"] },
+        F: { brand:"Parfums de Marly",name:"Delina",                   notes:["Lychee","Rhubarb","Turkish Rose"] },
+        U: { brand:"Nishane",         name:"Hacivat",                  notes:["Pineapple","Bergamot","Vetiver"] }
+      },
+      designer: {
+        M: { brand:"Carolina Herrera",name:"Bad Boy EDP",              notes:["Bergamot","Tobacco","Sandalwood"] },
+        F: { brand:"Carolina Herrera",name:"Good Girl EDP",            notes:["Almond","Coffee","Jasmine"] },
+        U: { brand:"Burberry",        name:"Her EDP",                  notes:["Blackcurrant","Blackberry","Musk"] }
+      },
+      dupe: {
+        M: { brand:"Afnan",           name:"Supremacy in Oud",         notes:["Oud","Amber","Saffron"] },
+        F: { brand:"Dossier",         name:"Ambery Cherry",            notes:["Cherry","Almond","Cinnamon"] },
+        U: { brand:"Dossier",         name:"Ambery Saffron",           notes:["Bergamot","Pink Pepper","Saffron"] }
+      }
+    },
+    fougere: {
+      splurge: {
+        M: { brand:"Parfums de Marly",name:"Layton",                   notes:["Apple","Cardamom","Lavender"] },
+        F: { brand:"Byredo",          name:"Mojave Ghost",             notes:["Ambrette","Sapodilla","Magnolia"] },
+        U: { brand:"Maison Margiela", name:"Replica Jazz Club",        notes:["Rum","Pink Pepper","Woody Notes"] }
+      },
+      designer: {
+        M: { brand:"Chanel",          name:"Bleu de Chanel EDP",       notes:["Grapefruit","Lemon","Mint"] },
+        F: { brand:"Prada",           name:"Infusion d'Iris EDP",      notes:["Iris","Orange Blossom","Cedar"] },
+        U: { brand:"Burberry",        name:"Brit EDP",                 notes:["Bergamot","Pear","Honey"] }
+      },
+      dupe: {
+        M: { brand:"Swiss Arabian",   name:"Shaghaf Men",              notes:["Bergamot","Lavender","Woody Notes"] },
+        F: { brand:"Dossier",         name:"Ambery Jasmine",           notes:["Black Currant","Red Pepper","Bergamot"] },
+        U: { brand:"Kayali",          name:"Musk 12",                  notes:["Lotus Flower","Freesia","Jasmine"] }
+      }
+    },
+    green: {
+      splurge: {
+        M: { brand:"Diptyque",        name:"Philosykos",               notes:["Fig Leaf","Fig Tree","Cedar"] },
+        F: { brand:"Hermès",          name:"Un Jardin sur le Toit",    notes:["Pear","Rose","White Peach"] },
+        U: { brand:"Byredo",          name:"Gypsy Water",              notes:["Pine Needles","Bergamot","Lemon"] }
+      },
+      designer: {
+        M: { brand:"Givenchy",        name:"Gentleman Cologne",        notes:["Bergamot","Pepper","Iris"] },
+        F: { brand:"Jo Malone",       name:"Wood Sage & Sea Salt",     notes:["Sea Salt","Sage","Ambrette"] },
+        U: { brand:"Calvin Klein",    name:"Eternity EDP",             notes:["Freesia","Lily","Sandalwood"] }
+      },
+      dupe: {
+        M: { brand:"Lattafa",         name:"Asad",                     notes:["Bergamot","Pepper","Lavender"] },
+        F: { brand:"Dossier",         name:"Floral Musk",              notes:["Jasmine","Peony","Musk"] },
+        U: { brand:"Rasasi",          name:"Egra Women",               notes:["Pepper","Freesia","Water Lily"] }
+      }
+    }
+  };
+
+  const ACCORD_LABELS = {
+    fresh_aquatic:"Fresh & Aquatic", citrus:"Citrus", floral:"Floral",
+    woody_earthy:"Woody & Earthy", oriental_spicy:"Oriental & Spicy",
+    gourmand:"Gourmand", chypre:"Chypre", fougere:"Fougère", green:"Green"
+  };
+
+  const ACCORD_DESCRIPTIONS = {
+    fresh_aquatic:  "Clean and waterfront-fresh — announces itself without demanding the room.",
+    citrus:         "Bright and effortless — the scent equivalent of stepping outside on a clear morning.",
+    floral:         "A bouquet that wears like confidence — soft power you can smell from across the room.",
+    woody_earthy:   "Grounded and warm. It builds presence without raising its voice.",
+    oriental_spicy: "Rich, addictive, and built for the room you're about to walk into.",
+    gourmand:       "Warm and inviting — the kind of scent people lean in for.",
+    chypre:         "Sophisticated and layered. This one rewards a second impression.",
+    fougere:        "Clean, dependable, professional. Smells like someone who has everything together.",
+    green:          "Earthy and alive — like the air right after rain."
+  };
+
+  const QUESTIONS = [
+    { id:'occasion', text:"What's the occasion?", grid:'grid-2', options:[
+      { value:'work',     label:'Work',          sub:'Office, meetings, professional' },
+      { value:'date',     label:'Date',           sub:'Romantic, intimate, impressive' },
+      { value:'social',   label:'Social / Party', sub:'Dinner, events, going out' },
+      { value:'outdoors', label:'Outdoors',       sub:'Active, casual, fresh air' },
+      { value:'special',  label:'Special Event',  sub:'Wedding, formal, milestone' },
+      { value:'everyday', label:'Everyday',       sub:'Low-key, reliable, daily wear' }
+    ]},
+    { id:'time', text:"What time of day?", grid:'grid-3', options:[
+      { value:'day',     label:'Morning / Day', sub:'Before 5pm' },
+      { value:'evening', label:'Evening',       sub:'Dinner, after work' },
+      { value:'night',   label:'Night Out',     sub:'Late night, bar, club' }
+    ]},
+    { id:'season', text:"What season?", grid:'grid-2', options:[
+      { value:'spring', label:'Spring', sub:'Fresh, blooming, mild' },
+      { value:'summer', label:'Summer', sub:'Hot, bright, vacation' },
+      { value:'fall',   label:'Fall',   sub:'Crisp, cozy, transitional' },
+      { value:'winter', label:'Winter', sub:'Cold, warm indoors, rich' }
+    ]},
+    { id:'gender', text:"Who's wearing it?", grid:'', options:[
+      { value:'masc',   label:'Me — masculine', sub:"Traditional men's fragrance profiles" },
+      { value:'fem',    label:'Me — feminine',  sub:"Traditional women's fragrance profiles" },
+      { value:'unisex', label:'Me — unisex',    sub:'Wearable by anyone, no rules' },
+      { value:'gift',   label:"It's a gift",    sub:'Universal picks that work across the board' }
+    ]},
+    { id:'budget', text:"What's your budget?", grid:'grid-2', options:[
+      { value:'25_50',   label:'$25 – $50',  sub:'The Dupe is your move' },
+      { value:'50_100',  label:'$50 – $100', sub:'Designer territory' },
+      { value:'100_200', label:'$100 – $200',sub:'Premium designer range' },
+      { value:'200plus', label:'$200+',       sub:'The Splurge is calling' }
+    ]}
+  ];
+
+  function getAccord(occasion, time, season) {
+    const scores = { fresh_aquatic:0, citrus:0, floral:0, woody_earthy:0, oriental_spicy:0, gourmand:0, chypre:0, fougere:0, green:0 };
+    const maps = [
+      { work:{fresh_aquatic:3,fougere:3,citrus:2}, date:{floral:3,oriental_spicy:2,chypre:2},
+        social:{gourmand:3,oriental_spicy:2,floral:1}, outdoors:{green:3,citrus:2,fresh_aquatic:1},
+        special:{chypre:3,floral:2,oriental_spicy:1}, everyday:{citrus:3,fresh_aquatic:2,fougere:1} }[occasion],
+      { day:{fresh_aquatic:2,citrus:2,green:1,fougere:1}, evening:{floral:1,oriental_spicy:2,chypre:1,gourmand:1},
+        night:{oriental_spicy:3,gourmand:2,chypre:1} }[time],
+      { spring:{floral:2,green:2,citrus:1,fresh_aquatic:1}, summer:{fresh_aquatic:2,citrus:2,green:1},
+        fall:{woody_earthy:2,chypre:1,oriental_spicy:1,fougere:1}, winter:{oriental_spicy:2,woody_earthy:2,gourmand:2} }[season]
+    ];
+    maps.forEach(m => m && Object.entries(m).forEach(([k,v]) => { scores[k] += v; }));
+    return Object.entries(scores).sort((a,b) => b[1]-a[1])[0][0];
+  }
+
+  function getRecommendedTier(b) { return {25_50:'dupe',50_100:'designer',100_200:'designer',200plus:'splurge'}[b]||'designer'; }
+  function getGenderKey(g) { return {masc:'M',fem:'F',unisex:'U',gift:'U'}[g]||'U'; }
+
+  let state = { step:0, answers:{} };
+  let transitioning = false;
+
+  function renderIntro() {
+    return `<div class="intro fade-up">
+      <div class="intro-eyebrow">The Occasion Tool</div>
+      <h1 class="intro-title">Find your scent<br>for every occasion.</h1>
+      <p class="intro-sub">5 questions. Three picks — a splurge, a designer, and a dupe that smells just as good.</p>
+      <button class="btn-primary" onclick="start()">Find My Scent →</button>
+    </div>`;
+  }
+
+  function renderQuestion(step) {
+    const q = QUESTIONS[step-1];
+    const dots = Array.from({length:5},(_,i) => {
+      const cls = i<step-1?'done':i===step-1?'active':'';
+      return `<div class="progress-dot ${cls}"></div>`;
+    }).join('');
+    const opts = q.options.map(o => `
+      <div class="option" onclick="selectAnswer('${q.id}','${o.value}',${step},this)">
+        <div class="opt-label">${o.label}</div>
+        ${o.sub?`<div class="opt-sub">${o.sub}</div>`:''}
+      </div>`).join('');
+    return `<div class="fade-up">
+      <div class="progress">${dots}</div>
+      <div class="q-header"><div class="q-step">Question ${step} of 5</div><div class="q-text">${q.text}</div></div>
+      <div class="options ${q.grid}">${opts}</div>
+    </div>`;
+  }
+
+  function renderResults() {
+    const {occasion,time,season,gender,budget} = state.answers;
+    const accordId = getAccord(occasion,time,season);
+    const gKey = getGenderKey(gender);
+    const recTier = getRecommendedTier(budget);
+    const accordData = LIBRARY[accordId];
+    const accordDesc = ACCORD_DESCRIPTIONS[accordId];
+
+    const TIERS = [
+      {id:'splurge',label:'The Splurge',cls:'splurge'},
+      {id:'designer',label:'The Designer',cls:'designer'},
+      {id:'dupe',label:'The Dupe',cls:'dupe'}
+    ];
+
+    const cards = TIERS.map(({id,label,cls}) => {
+      const frag = accordData[id][gKey]||accordData[id]['U'];
+      const isRec = id===recTier;
+      const url = `https://www.fragrancenet.com/search?q=${encodeURIComponent(frag.brand+' '+frag.name)}`;
+      const pills = frag.notes.map(n=>`<span class="note-pill">${n}</span>`).join('');
+      return `<div class="card ${cls}${isRec?' highlighted':''}">
+        ${isRec?'<div class="rec-badge">Best Match</div>':''}
+        <div class="card-tier">${label}</div>
+        <div class="card-brand">${frag.brand}</div>
+        <div class="card-name">${frag.name}</div>
+        <div class="card-notes">${pills}</div>
+        <div class="card-desc">${accordDesc}</div>
+        <a class="card-shop" href="${url}" target="_blank" rel="noopener">Shop it →</a>
+      </div>`;
+    }).join('');
+
+    return `<div class="fade-up">
+      <div class="results-header">
+        <div class="results-label">Your Result</div>
+        <div class="results-title">Your Scent</div>
+        <span class="results-accord-tag">${ACCORD_LABELS[accordId]}</span>
+      </div>
+      <div class="cards">${cards}</div>
+      <div class="restart-wrap"><button class="btn-ghost" onclick="restart()">Start over</button></div>
+    </div>`;
+  }
+
+  function render() {
+    const app = document.getElementById('app');
+    if (state.step===0) app.innerHTML = renderIntro();
+    else if (state.step<=5) app.innerHTML = renderQuestion(state.step);
+    else app.innerHTML = renderResults();
+  }
+
+  function start() { state.step=1; render(); }
+  function selectAnswer(qId,value,step,el) {
+    if(transitioning) return; transitioning=true;
+    document.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));
+    el.classList.add('selected');
+    state.answers[qId]=value;
+    setTimeout(()=>{ state.step=step+1; render(); transitioning=false; },360);
+  }
+  function restart() { state={step:0,answers:{}}; transitioning=false; render(); }
+
+  render();
+</script>
+</body>
+</html>
