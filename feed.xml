@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>The Dry Down — VibeFrag</title>
+    <link>https://vibefrag.com/blog/</link>
+    <description>Fragrance guides, occasion picks, seasonal roundups, and trend pieces from VibeFrag.</description>
+    <language>en-us</language>
+    <atom:link href="https://vibefrag.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <copyright>VibeFrag</copyright>
+    <managingEditor>simfloydjr@gmail.com</managingEditor>
+    <webMaster>simfloydjr@gmail.com</webMaster>
+    <image>
+      <url>https://vibefrag.com/img/logo.png</url>
+      <title>VibeFrag</title>
+      <link>https://vibefrag.com/</link>
+    </image>
+
+    <!--
+    ═══════════════════════════════════════════════════
+    HOW TO ADD A NEW POST
+    ═══════════════════════════════════════════════════
+    Copy the <item> block below, paste it here ABOVE
+    any existing items (newest first), and fill in:
+
+    <item>
+      <title>Your Post Title</title>
+      <link>https://vibefrag.com/blog/your-post-slug.html</link>
+      <guid isPermaLink="true">https://vibefrag.com/blog/your-post-slug.html</guid>
+      <pubDate>Wed, 18 Jun 2026 09:00:00 -0500</pubDate>
+      <description><![CDATA[
+        One or two sentence summary of the post.
+      ]]></description>
+    </item>
+
+    Zapier monitors this feed. Adding a new <item> and
+    pushing to GitHub Pages will trigger the social post.
+    ═══════════════════════════════════════════════════
+    -->
+
+  </channel>
+
+</rss>
