@@ -578,7 +578,7 @@
     const cards = TIERS.map(({id,label,cls}) => {
       const frag = accordData[id][gKey]||accordData[id]['U'];
       const isRec = id===recTier;
-      const url = `https://www.fragrancenet.com/search?q=${encodeURIComponent(frag.brand+' '+frag.name)}`;
+      const url = `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(frag.brand+' '+frag.name+' fragrance')}`;
       const pills = frag.notes.map(n=>`<span class="note-pill">${n}</span>`).join('');
       return `<div class="card ${cls}${isRec?' highlighted':''}">
         ${isRec?'<div class="rec-badge">Best Match</div>':''}
