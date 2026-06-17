@@ -7,44 +7,455 @@
   <meta name="description" content="Not sure what fragrance to wear? Answer 5 questions and get 3 picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --void: #09090b;
+      --silver: #c8c8d0;
+      --silver-mid: #878790;
+      --amber: #b08558;
+      --amber-warm: #d4a878;
+      --amber-ghost: rgba(176, 133, 88, 0.10);
+      --glass-border: rgba(255, 255, 255, 0.11);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--void);
+      color: var(--silver);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* ── ATMOSPHERE ── */
+    .aperture {
+      position: fixed;
+      top: -80px; left: 50%; transform: translateX(-50%);
+      width: 720px; height: 380px;
+      background: radial-gradient(
+        ellipse 55% 70% at 50% 15%,
+        rgba(215,210,200,0.20) 0%,
+        rgba(190,180,165,0.10) 35%,
+        rgba(150,140,128,0.05) 58%,
+        transparent 80%
+      );
+      filter: blur(14px);
+      pointer-events: none; z-index: 1;
+    }
+    .aperture::after {
+      content: '';
+      position: absolute; top: 75%; left: 50%; transform: translateX(-50%);
+      width: 180px; height: 400px;
+      background: linear-gradient(to bottom, rgba(210,200,180,0.12) 0%, transparent 100%);
+      filter: blur(20px);
+    }
+    .caustics {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 1; overflow: hidden;
+    }
+    .caustic {
+      position: absolute; border-radius: 50%;
+      filter: blur(55px); mix-blend-mode: screen;
+    }
+    .c1 { width:420px; height:260px; top:4%; left:18%; background:radial-gradient(ellipse,rgba(205,188,160,0.17) 0%,transparent 70%); animation:float1 20s ease-in-out infinite; }
+    .c2 { width:320px; height:210px; top:8%; right:12%; background:radial-gradient(ellipse,rgba(185,165,135,0.13) 0%,transparent 70%); animation:float2 25s ease-in-out infinite; }
+    .c3 { width:500px; height:190px; top:22%; left:30%; background:radial-gradient(ellipse,rgba(215,205,185,0.09) 0%,transparent 70%); animation:float3 30s ease-in-out infinite; }
+    .c4 { width:260px; height:310px; top:12%; left:48%; background:radial-gradient(ellipse,rgba(165,135,105,0.11) 0%,transparent 70%); animation:float4 22s ease-in-out infinite; }
+
+    @keyframes float1 { 0%,100%{transform:translate(0,0) scale(1);opacity:.80} 33%{transform:translate(45px,-30px) scale(1.15);opacity:.50} 66%{transform:translate(-28px,18px) scale(.90);opacity:.95} }
+    @keyframes float2 { 0%,100%{transform:translate(0,0) scale(1);opacity:.60} 40%{transform:translate(-50px,28px) scale(1.12);opacity:.90} 72%{transform:translate(22px,-18px) scale(.85);opacity:.40} }
+    @keyframes float3 { 0%,100%{transform:translate(0,0) scale(1);opacity:.50} 50%{transform:translate(32px,42px) scale(1.20);opacity:.80} }
+    @keyframes float4 { 0%,100%{transform:translate(0,0) scale(1);opacity:.70} 35%{transform:translate(-22px,-42px) scale(.80);opacity:.40} 75%{transform:translate(48px,12px) scale(1.10);opacity:.90} }
+
+    .glass-wall { position:fixed; top:0; bottom:0; width:200px; pointer-events:none; z-index:4; }
+    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall::before {
+      content:''; position:absolute; top:8%; bottom:8%; width:1px;
+      background:linear-gradient(to bottom, transparent 0%, rgba(225,225,235,.14) 18%, rgba(225,225,235,.38) 50%, rgba(225,225,235,.14) 82%, transparent 100%);
+    }
+    .glass-wall.left::before  { right:0; }
+    .glass-wall.right::before { left:0; }
+    .vignette-btm {
+      position:fixed; bottom:0; left:0; right:0; height:160px;
+      background:linear-gradient(to top, var(--void) 0%, transparent 100%);
+      pointer-events:none; z-index:4;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top:0; left:0; right:0;
+      z-index: 10; padding: 0 3rem;
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.065);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-size: 1.25rem;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--silver); text-decoration: none;
+    }
+    .nav-logo .frag { color: var(--amber-warm); }
+    /* Keep nav__links class so main.js setActiveNav() still works */
+    .nav-links {
+      display: flex; gap: 2.4rem; list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none; font-size: 0.65rem;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--silver-mid); transition: color 0.3s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--silver); }
+    .nav-links a.nav-cta {
+      color: var(--amber-warm);
+      border: 1px solid rgba(200,180,140,0.30);
+      padding: 0.4rem 1rem;
+      transition: all 0.3s;
+    }
+    .nav-links a.nav-cta:hover {
+      background: rgba(176,133,88,0.12);
+      border-color: rgba(200,180,140,0.55);
+      color: var(--silver);
+    }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    .page-content { position: relative; z-index: 5; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 9rem 2rem 6rem;
+    }
+    .hero-content { max-width: 700px; }
+    .hero-eyebrow {
+      display: block;
+      font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 2.8rem; opacity: 0.9;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; line-height: 1.04;
+      color: var(--silver); margin-bottom: 2rem; letter-spacing: 0.02em;
+    }
+    .hero h1 .setup {
+      display: block;
+      font-size: clamp(2.8rem, 6.2vw, 5.2rem);
+      font-weight: 300; letter-spacing: 0.12em;
+      color: var(--silver-mid); text-transform: uppercase; margin-bottom: 0.1em;
+    }
+    .hero h1 em {
+      display: block; font-style: italic; color: var(--amber-warm);
+      font-size: clamp(5rem, 12vw, 10rem); letter-spacing: -0.01em; line-height: 0.95;
+    }
+    .hero-sub {
+      font-size: 0.95rem; line-height: 1.9;
+      color: var(--silver-mid); margin-bottom: 3.2rem;
+      font-weight: 200; letter-spacing: 0.05em;
+    }
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block; padding: 0.9rem 2.5rem;
+      background: transparent; border: 1px solid rgba(200,180,140,0.32);
+      color: var(--amber-warm); font-family: 'Inter', sans-serif;
+      font-weight: 300; font-size: 0.65rem; letter-spacing: 0.26em;
+      text-transform: uppercase; cursor: pointer; transition: all 0.4s;
+      backdrop-filter: blur(8px); text-decoration: none;
+    }
+    .btn-primary:hover { background: rgba(176,133,88,0.13); border-color: rgba(200,180,140,0.60); color: var(--silver); }
+
+    .btn-ghost {
+      display: inline-block; padding: 0.9rem 2rem;
+      background: transparent; border: 1px solid rgba(255,255,255,0.10);
+      color: var(--silver-mid); font-family: 'Inter', sans-serif;
+      font-weight: 300; font-size: 0.65rem; letter-spacing: 0.22em;
+      text-transform: uppercase; transition: all 0.4s; text-decoration: none;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.22); color: var(--silver); }
+
+    .scroll-hint {
+      position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+    }
+    .scroll-hint span { font-size:0.55rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--amber); opacity:.65; }
+    .scroll-line { width:1px; height:46px; background:linear-gradient(to bottom,rgba(176,133,88,.9),transparent); animation:pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:.35;} 50%{opacity:1;} }
+
+    /* ── SECTION DIVIDERS ── */
+    .section-divider {
+      position: relative; text-align: center; padding: 0.5rem 0 3rem;
+    }
+    .section-divider::before {
+      content: ''; display: block; width: 1px; height: 60px;
+      background: linear-gradient(to bottom, transparent, rgba(200,180,140,.28), transparent);
+      margin: 0 auto 2rem;
+    }
+    .section-label {
+      font-size: 0.6rem; letter-spacing: 0.32em;
+      text-transform: uppercase; color: var(--silver-mid);
+    }
+
+    /* ── SECTIONS ── */
+    .section { padding: 0 0 5rem; }
+    .section-header {
+      display: flex; align-items: baseline;
+      justify-content: space-between; margin-bottom: 2.5rem;
+    }
+    .section-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-size: 1.8rem;
+      color: var(--silver); letter-spacing: 0.04em;
+    }
+    .see-all {
+      font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--amber); text-decoration: none; transition: color 0.3s;
+    }
+    .see-all:hover { color: var(--amber-warm); }
+
+    /* ── FRAGRANCE CARDS ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+    .frag-card {
+      background: var(--amber-ghost);
+      backdrop-filter: blur(24px) saturate(130%);
+      -webkit-backdrop-filter: blur(24px) saturate(130%);
+      border: 1px solid var(--glass-border);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.13), 0 8px 40px rgba(0,0,0,.50);
+      padding: 1.6rem;
+      position: relative; overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+    .frag-card::before {
+      content: ''; position: absolute; top:0; left:0; right:0; height:35%;
+      background: linear-gradient(to bottom, rgba(255,255,255,.05) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    .frag-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,.19);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.20), 0 16px 55px rgba(0,0,0,.60);
+    }
+    .frag-card__header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 0.8rem;
+    }
+    .frag-card__house {
+      font-size: 0.6rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--amber);
+    }
+    .frag-card__category {
+      font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 0.22rem 0.6rem;
+      border: 1px solid rgba(255,255,255,0.10);
+      color: var(--silver-mid); background: rgba(255,255,255,0.04);
+    }
+    .frag-card__name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 300;
+      color: var(--silver); margin-bottom: 0.25rem;
+      line-height: 1.2; letter-spacing: 0.02em;
+    }
+    .frag-card__family {
+      font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--silver-mid); margin-bottom: 1rem; opacity: 0.7;
+    }
+    .frag-card__notes { margin-bottom: 1.2rem; }
+    .frag-card__note-row {
+      display: flex; gap: 0.6rem; align-items: baseline; margin-bottom: 0.3rem;
+    }
+    .frag-card__note-label {
+      font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--amber); min-width: 2.2rem; flex-shrink: 0;
+    }
+    .frag-card__note-text {
+      font-size: 0.72rem; color: var(--silver-mid);
+      line-height: 1.5; letter-spacing: 0.02em;
+    }
+    .frag-card__footer {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: 1.2rem; padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .frag-card__date {
+      font-size: 0.6rem; letter-spacing: 0.12em; color: var(--silver-mid); opacity: 0.65;
+    }
+    .frag-card__link {
+      font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--amber-warm); text-decoration: none; transition: color 0.3s;
+    }
+    .frag-card__link:hover { color: var(--silver); }
+
+    /* ── HOUSE CARDS ── */
+    .houses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 0.8rem;
+    }
+    .house-card {
+      background: var(--amber-ghost);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--glass-border);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+      padding: 1rem 1.1rem;
+      text-decoration: none; display: block;
+      transition: all 0.3s ease;
+    }
+    .house-card:hover {
+      border-color: rgba(255,255,255,0.20);
+      background: rgba(176,133,88,0.16);
+      transform: translateY(-2px);
+    }
+    .house-card__tier {
+      font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 0.35rem;
+    }
+    .house-card__name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 300;
+      color: var(--silver); letter-spacing: 0.02em; line-height: 1.2;
+    }
+
+    /* ── QUIZ CTA BANNER ── */
+    .quiz-banner { padding: 0 0 6rem; }
+    .quiz-banner-inner {
+      background: rgba(176,133,88,0.08);
+      backdrop-filter: blur(20px) saturate(120%);
+      -webkit-backdrop-filter: blur(20px) saturate(120%);
+      border: 1px solid rgba(176,133,88,0.20);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 8px 40px rgba(0,0,0,0.4);
+      padding: 4.5rem 2rem;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .quiz-banner-inner::before {
+      content: ''; position: absolute; top:0; left:0; right:0; height:30%;
+      background: linear-gradient(to bottom, rgba(255,255,255,.04), transparent);
+      pointer-events: none;
+    }
+    .quiz-banner-inner .eyebrow {
+      display: block;
+      font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 1.2rem;
+    }
+    .quiz-banner-inner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300;
+      color: var(--silver); margin-bottom: 1rem; letter-spacing: 0.02em;
+    }
+    .quiz-banner-inner p {
+      max-width: 440px; margin: 0 auto 2.4rem;
+      font-size: 0.9rem; line-height: 1.8;
+      color: var(--silver-mid); font-weight: 200; letter-spacing: 0.03em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative; z-index: 5;
+      padding: 2.5rem 3rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .footer-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-size: 0.9rem;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--silver-mid); text-decoration: none;
+    }
+    .footer-logo .frag { color: var(--amber-warm); }
+    .footer-tagline {
+      font-size: 0.58rem; letter-spacing: 0.14em;
+      color: rgba(135,135,144,0.50); margin-top: 0.3rem;
+    }
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a {
+      font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--silver-mid); text-decoration: none; transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--silver); }
+
+    /* ── LOADING / EMPTY ── */
+    .loading, .empty-state {
+      color: var(--silver-mid); font-size: 0.8rem;
+      letter-spacing: 0.1em; padding: 2rem; text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container nav__inner">
-      <a href="/" class="nav__logo">Vibe<span>Frag</span></a>
-      <ul class="nav__links">
-        <li><a href="new-releases.html">New Releases</a></li>
-        <li><a href="houses.html">By House</a></li>
-        <li><a href="blog/index.html">Editorial</a></li>
-        <li><a href="quiz/index.html" class="nav__cta">Find My Scent →</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- ATMOSPHERE -->
+<div class="aperture"></div>
+<div class="caustics">
+  <div class="caustic c1"></div>
+  <div class="caustic c2"></div>
+  <div class="caustic c3"></div>
+  <div class="caustic c4"></div>
+</div>
+<div class="glass-wall left"></div>
+<div class="glass-wall right"></div>
+<div class="vignette-btm"></div>
 
-  <!-- Hero -->
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Vibe<span class="frag">Frag</span></a>
+    <!-- nav__links kept for main.js setActiveNav() compatibility -->
+    <ul class="nav-links nav__links">
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="houses.html">By House</a></li>
+      <li><a href="blog/index.html">Editorial</a></li>
+      <li><a href="quiz/index.html" class="nav-cta">Find My Scent →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+
+  <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <span class="hero__eyebrow">Fragrance Discovery</span>
-      <h1 class="hero__title">Find your scent<br>for every occasion.</h1>
-      <p class="hero__subtitle">Answer five questions. Get three picks — a splurge, a designer, and a dupe — matched to your moment.</p>
-      <div class="hero__actions">
-        <a href="quiz/index.html" class="btn btn--primary">Take the Quiz →</a>
-        <a href="new-releases.html" class="btn btn--ghost">Browse New Releases</a>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Fragrance · Identity · Vibe</span>
+      <h1><span class="setup">Catch A</span><em>Vibe</em></h1>
+      <p class="hero-sub">Your aura arrives before you do.<br>Make it count.</p>
+      <div class="hero-actions">
+        <a href="quiz/index.html" class="btn-primary">Take the Quiz →</a>
+        <a href="new-releases.html" class="btn-ghost">Browse New Releases</a>
       </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- New Releases Strip -->
+  <!-- NEW RELEASES -->
+  <div class="section-divider"><span class="section-label">New Releases</span></div>
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>New Releases</h2>
+        <h2>Latest Drops</h2>
         <a href="new-releases.html" class="see-all">See all →</a>
       </div>
       <div class="card-grid" id="home-releases">
@@ -53,9 +464,8 @@
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- Browse by House -->
+  <!-- BROWSE BY HOUSE -->
+  <div class="section-divider"><span class="section-label">By House</span></div>
   <section class="section">
     <div class="container">
       <div class="section-header">
@@ -68,63 +478,66 @@
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- Quiz CTA Banner -->
-  <section class="section--sm">
-    <div class="container" style="text-align:center; padding: 48px 24px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg);">
-      <p class="hero__eyebrow" style="margin-bottom:16px;">The Occasion Tool</p>
-      <h2 style="margin-bottom:12px;">Not sure where to start?</h2>
-      <p style="max-width:440px; margin: 0 auto 28px;">Tell us the occasion, the season, and your budget. We'll match you to a Splurge, a Designer, and a Dupe.</p>
-      <a href="quiz/index.html" class="btn btn--primary">Find My Scent →</a>
+  <!-- QUIZ CTA BANNER -->
+  <div class="section-divider"><span class="section-label">The Occasion Tool</span></div>
+  <section class="quiz-banner">
+    <div class="container">
+      <div class="quiz-banner-inner">
+        <span class="eyebrow">Five Questions. Three Picks.</span>
+        <h2>Not sure where to start?</h2>
+        <p>Tell us the occasion, the season, and your budget. We'll match you to a Splurge, a Designer, and a Dupe.</p>
+        <a href="quiz/index.html" class="btn-primary">Find My Scent →</a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div>
-        <div class="footer__logo">Vibe<span>Frag</span></div>
-        <div class="footer__tagline">Find your scent for every occasion.</div>
-      </div>
-      <ul class="footer__links">
-        <li><a href="new-releases.html">New Releases</a></li>
-        <li><a href="houses.html">By House</a></li>
-        <li><a href="blog/index.html">Editorial</a></li>
-        <li><a href="quiz/index.html">Quiz</a></li>
-      </ul>
+</div><!-- /page-content -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="/" class="footer-logo">Vibe<span class="frag">Frag</span></a>
+      <div class="footer-tagline">Find your scent for every occasion.</div>
     </div>
-  </footer>
+    <ul class="footer-links">
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="houses.html">By House</a></li>
+      <li><a href="blog/index.html">Editorial</a></li>
+      <li><a href="quiz/index.html">Quiz</a></li>
+    </ul>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    (async () => {
-      // Load new releases — show 6 most recent on home
-      const releasesEl = document.getElementById('home-releases');
-      const data = await VibeFrag.fetchData('data/releases.json');
+<script src="js/main.js"></script>
+<script>
+  (async () => {
+    // New releases — show 6 most recent
+    const releasesEl = document.getElementById('home-releases');
+    const data = await VibeFrag.fetchData('data/releases.json');
 
-      if (!data || !data.releases || data.releases.length === 0) {
-        releasesEl.innerHTML = '<div class="empty-state"><h3>Coming Soon</h3><p>New releases drop weekly.</p></div>';
-      } else {
-        const top6 = data.releases.slice(0, 6);
-        releasesEl.innerHTML = top6.map(f => VibeFrag.renderCard(f)).join('');
-      }
+    if (!data || !data.releases || data.releases.length === 0) {
+      releasesEl.innerHTML = '<div class="empty-state"><p>New releases drop weekly.</p></div>';
+    } else {
+      const top6 = data.releases.slice(0, 6);
+      releasesEl.innerHTML = top6.map(f => VibeFrag.renderCard(f)).join('');
+    }
 
-      // Load houses — show top 12
-      const housesEl = document.getElementById('home-houses');
-      const hData = await VibeFrag.fetchData('data/houses.json');
+    // Houses — show top 12
+    const housesEl = document.getElementById('home-houses');
+    const hData = await VibeFrag.fetchData('data/houses.json');
 
-      if (!hData || !hData.houses) {
-        housesEl.innerHTML = '<div class="empty-state"><p>Loading houses…</p></div>';
-      } else {
-        const preview = hData.houses.slice(0, 12);
-        housesEl.innerHTML = preview.map(h => `
-          <a href="houses.html?house=${encodeURIComponent(h.name)}" class="house-card">
-            <div class="house-card__tier">${h.tier}</div>
-            <div class="house-card__name">${h.name}</div>
-          </a>`).join('');
-      }
-    })();
-  </script>
+    if (!hData || !hData.houses) {
+      housesEl.innerHTML = '<div class="empty-state"><p>Loading houses…</p></div>';
+    } else {
+      const preview = hData.houses.slice(0, 12);
+      housesEl.innerHTML = preview.map(h => `
+        <a href="houses.html?house=${encodeURIComponent(h.name)}" class="house-card">
+          <div class="house-card__tier">${h.tier}</div>
+          <div class="house-card__name">${h.name}</div>
+        </a>`).join('');
+    }
+  })();
+</script>
 </body>
 </html>
