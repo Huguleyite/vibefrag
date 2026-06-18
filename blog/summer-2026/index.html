@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer 2026: Fresh, Aquatic, and Worth Every Spray — VibeFrag</title>
+  <meta name="description" content="Heat changes everything. Here's what to wear when the air is heavy and you still want to smell like somewhere worth going.">
+  <link rel="canonical" href="https://vibefrag.com/blog/summer-2026/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vibefrag.com/blog/summer-2026/">
+  <meta property="og:title" content="Summer 2026: Fresh, Aquatic, and Worth Every Spray — VibeFrag">
+  <meta property="og:description" content="Heat changes everything. Here's what to wear when the air is heavy and you still want to smell like somewhere worth going.">
+  <meta property="og:image" content="https://vibefrag.com/blog/images/summer-2026-fragrances.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Summer 2026: Fresh, Aquatic, and Worth Every Spray — VibeFrag">
+  <meta name="twitter:description" content="Heat changes everything. Here's what to wear when the air is heavy and you still want to smell like somewhere worth going.">
+  <meta name="twitter:image" content="https://vibefrag.com/blog/images/summer-2026-fragrances.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --void: #09090b;
+      --silver: #c8c8d0;
+      --silver-mid: #878790;
+      --amber: #b08558;
+      --amber-warm: #d4a878;
+      --amber-ghost: rgba(176, 133, 88, 0.10);
+      --glass-border: rgba(255, 255, 255, 0.11);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--void); color: var(--silver); font-family: 'Inter', sans-serif; font-weight: 300; overflow-x: hidden; min-height: 100vh; }
+
+    /* ── ATMOSPHERE ── */
+    .aperture { position: fixed; top: -80px; left: 50%; transform: translateX(-50%) translateZ(0); width: 720px; height: 380px; background: radial-gradient(ellipse 55% 70% at 50% 15%, rgba(180,210,225,0.18) 0%, rgba(150,190,210,0.09) 35%, rgba(100,160,185,0.04) 58%, transparent 80%); filter: blur(14px); pointer-events: none; z-index: 1; }
+    .caustics { position: fixed; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; contain: layout style; }
+    .caustic { position: absolute; border-radius: 50%; filter: blur(55px); mix-blend-mode: screen; will-change: transform, opacity; transform: translateZ(0); }
+    .c1 { width:420px; height:260px; top:4%; left:18%; background:radial-gradient(ellipse,rgba(160,200,220,0.15) 0%,transparent 70%); animation:float1 20s ease-in-out infinite; }
+    .c2 { width:320px; height:210px; top:8%; right:12%; background:radial-gradient(ellipse,rgba(185,215,230,0.11) 0%,transparent 70%); animation:float2 25s ease-in-out infinite; }
+    .c3 { width:500px; height:190px; top:22%; left:30%; background:radial-gradient(ellipse,rgba(200,225,235,0.07) 0%,transparent 70%); animation:float3 30s ease-in-out infinite; }
+    .c4 { width:260px; height:310px; top:12%; left:48%; background:radial-gradient(ellipse,rgba(140,185,205,0.10) 0%,transparent 70%); animation:float4 22s ease-in-out infinite; }
+    @keyframes float1 { 0%,100%{transform:translate(0,0) scale(1);opacity:.80} 33%{transform:translate(45px,-30px) scale(1.15);opacity:.50} 66%{transform:translate(-28px,18px) scale(.90);opacity:.95} }
+    @keyframes float2 { 0%,100%{transform:translate(0,0) scale(1);opacity:.60} 40%{transform:translate(-50px,28px) scale(1.12);opacity:.90} 72%{transform:translate(22px,-18px) scale(.85);opacity:.40} }
+    @keyframes float3 { 0%,100%{transform:translate(0,0) scale(1);opacity:.50} 50%{transform:translate(32px,42px) scale(1.20);opacity:.80} }
+    @keyframes float4 { 0%,100%{transform:translate(0,0) scale(1);opacity:.70} 35%{transform:translate(-22px,-42px) scale(.80);opacity:.40} 75%{transform:translate(48px,12px) scale(1.10);opacity:.90} }
+
+    .glass-wall { position:fixed; top:0; bottom:0; width:200px; pointer-events:none; z-index:4; transform:translateZ(0); }
+    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall::before { content:''; position:absolute; top:8%; bottom:8%; width:1px; background:linear-gradient(to bottom, transparent 0%, rgba(225,225,235,.14) 18%, rgba(225,225,235,.38) 50%, rgba(225,225,235,.14) 82%, transparent 100%); }
+    .glass-wall.left::before  { right:0; }
+    .glass-wall.right::before { left:0; }
+    .vignette-btm { position:fixed; bottom:0; left:0; right:0; height:160px; background:linear-gradient(to top, var(--void) 0%, transparent 100%); pointer-events:none; z-index:4; }
+
+    /* ── NAV ── */
+    nav { position: fixed; top:0; left:0; right:0; z-index: 10; padding: 0 3rem; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.065); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.25rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver); text-decoration: none; position: relative; z-index: 11; }
+    .nav-logo .frag { color: var(--amber-warm); }
+    .nav-links { display: flex; gap: 2.4rem; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-mid); transition: color 0.3s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--silver); }
+    .nav-links a.nav-cta { color: var(--amber-warm); border: 1px solid rgba(200,180,140,0.30); padding: 0.4rem 1rem; transition: all 0.3s; }
+    .nav-links a.nav-cta:hover { background: rgba(176,133,88,0.12); border-color: rgba(200,180,140,0.55); color: var(--silver); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.5rem; position: relative; z-index: 11; }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--silver); transition: all 0.3s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* ── LAYOUT ── */
+    .page-content { position: relative; z-index: 5; padding-top: 6rem; }
+    .container { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header { padding: 3rem 0 0; text-align: center; }
+    .article-header__back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-mid); text-decoration: none; transition: color 0.3s; margin-bottom: 2.5rem; }
+    .article-header__back:hover { color: var(--amber-warm); }
+    .article-header__back svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+    .article-header__tag { font-size: 0.58rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.2rem; }
+    .article-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 5vw, 3.4rem); color: var(--silver); letter-spacing: 0.01em; line-height: 1.15; margin-bottom: 1.4rem; }
+    .article-header__meta { font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-mid); opacity: 0.5; margin-bottom: 2.5rem; }
+
+    /* ── HERO IMAGE ── */
+    .article-hero-img { width: 100%; max-width: 760px; margin: 0 auto 3.5rem; display: block; position: relative; }
+    .article-hero-img img { width: 100%; display: block; object-fit: cover; max-height: 420px; border: 1px solid var(--glass-border); box-shadow: 0 20px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.08); }
+    .article-hero-img::after { content:''; position:absolute; bottom:0; left:0; right:0; height:40%; background:linear-gradient(to top, rgba(9,9,11,0.6), transparent); pointer-events:none; }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { padding-bottom: 6rem; }
+
+    .article-intro p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--silver);
+      letter-spacing: 0.02em;
+      margin-bottom: 1.1rem;
+      font-weight: 300;
+    }
+
+    .article-rule-block {
+      border-left: 1px solid var(--amber);
+      padding: 1rem 0 1rem 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .article-rule-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: var(--silver);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.8rem;
+    }
+    .article-rule-block p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--silver-mid);
+      letter-spacing: 0.02em;
+      font-weight: 200;
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin: 3.5rem 0 2rem;
+    }
+    .section-label__text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: var(--silver);
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+    .section-label__line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, rgba(200,200,208,0.20), transparent);
+    }
+
+    /* ── PICK CARDS ── */
+    .pick {
+      background: var(--amber-ghost);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--glass-border);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.35);
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .pick__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.9rem;
+    }
+    .pick__tier {
+      font-size: 0.52rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .pick__price {
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      color: var(--silver-mid);
+      font-weight: 200;
+    }
+    .pick__name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: var(--silver);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+    .pick__notes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .pick__note {
+      font-size: 0.52rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--silver-mid);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 0.25rem 0.65rem;
+      opacity: 0.7;
+    }
+    .pick__desc {
+      font-size: 0.85rem;
+      line-height: 1.75;
+      color: var(--silver-mid);
+      letter-spacing: 0.02em;
+      font-weight: 200;
+      margin-bottom: 1.3rem;
+    }
+    .pick__desc em {
+      font-style: italic;
+      color: var(--silver);
+    }
+    .pick__shop {
+      display: inline-block;
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--amber-warm);
+      text-decoration: none;
+      border: 1px solid rgba(200,180,140,0.30);
+      padding: 0.5rem 1.2rem;
+      transition: all 0.3s;
+    }
+    .pick__shop:hover {
+      background: rgba(176,133,88,0.12);
+      border-color: rgba(200,180,140,0.55);
+      color: var(--silver);
+    }
+
+    /* ── CLOSING RULE ── */
+    .closing-rule {
+      margin: 4rem 0 3rem;
+      padding: 2rem;
+      border: 1px solid var(--glass-border);
+      background: rgba(255,255,255,0.02);
+      text-align: center;
+    }
+    .closing-rule__label {
+      font-size: 0.52rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1rem;
+    }
+    .closing-rule__text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: var(--silver);
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+    }
+    .closing-rule__sub {
+      margin-top: 0.6rem;
+      font-size: 0.78rem;
+      color: var(--silver-mid);
+      font-weight: 200;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── QUIZ CTA ── */
+    .quiz-cta {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 2rem;
+    }
+    .quiz-cta p {
+      font-size: 0.82rem;
+      color: var(--silver-mid);
+      letter-spacing: 0.04em;
+      margin-bottom: 1.4rem;
+      font-weight: 200;
+      line-height: 1.7;
+    }
+    .quiz-cta a {
+      display: inline-block;
+      font-size: 0.62rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--amber-warm);
+      text-decoration: none;
+      border: 1px solid rgba(200,180,140,0.35);
+      padding: 0.75rem 2rem;
+      transition: all 0.3s;
+    }
+    .quiz-cta a:hover {
+      background: rgba(176,133,88,0.12);
+      border-color: rgba(200,180,140,0.60);
+      color: var(--silver);
+    }
+
+    /* ── FOOTER ── */
+    footer { position: relative; z-index: 5; padding: 2.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 0.9rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-mid); text-decoration: none; }
+    .footer-logo .frag { color: var(--amber-warm); }
+    .footer-tagline { font-size: 0.58rem; letter-spacing: 0.14em; color: rgba(135,135,144,0.50); margin-top: 0.3rem; }
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-mid); text-decoration: none; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--silver); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 960px) { .glass-wall { width: 100px; } }
+    @media (max-width: 640px) { .glass-wall { display: none; } }
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-inner { padding: 1.2rem 0; }
+      .nav-hamburger { display: flex; }
+      .nav-links { display: none; position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(9,9,11,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); flex-direction: column; align-items: center; justify-content: center; gap: 2.8rem; z-index: 10; }
+      .nav-links.nav-open { display: flex; }
+      .nav-links a { font-size: 0.85rem; letter-spacing: 0.26em; }
+      .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.7rem 2rem; }
+      .container { padding: 0 1.5rem; }
+      .pick { padding: 1.4rem 1.2rem; }
+      .pick__top { flex-direction: column; gap: 0.3rem; }
+      footer { padding: 2rem 1.5rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+      .footer-links { flex-wrap: wrap; gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="aperture"></div>
+<div class="caustics">
+  <div class="caustic c1"></div>
+  <div class="caustic c2"></div>
+  <div class="caustic c3"></div>
+  <div class="caustic c4"></div>
+</div>
+<div class="glass-wall left"></div>
+<div class="glass-wall right"></div>
+<div class="vignette-btm"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-logo">Vibe<span class="frag">Frag</span></a>
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../new-releases.html">New Releases</a></li>
+      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../index.html" class="active">The Dry Down</a></li>
+      <li><a href="../../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="page-content">
+  <div class="container">
+
+    <!-- ARTICLE HEADER -->
+    <header class="article-header">
+      <a href="../index.html" class="article-header__back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        The Cabinet
+      </a>
+      <div class="article-header__tag">Seasonal Guide</div>
+      <h1>Summer 2026: Fresh, Aquatic, and Worth Every Spray</h1>
+      <div class="article-header__meta">VibeFrag · June 2026 · 4 min read</div>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <div class="article-hero-img">
+      <img src="../images/summer-2026-fragrances.jpg"
+           alt="Minimalist perfume bottles on a sun-drenched surface near still water, light refracting through glass"
+           width="760" height="420">
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <div class="article-body">
+
+      <div class="article-intro">
+        <p>Heat is honest. It strips down everything a fragrance was pretending to be and amplifies what it actually is. That thick amber you love in November? In July it becomes a problem for everyone in a thirty-foot radius.</p>
+        <p>Summer fragrance is a different discipline. The goal is presence without burden — something that reads as clean and intentional even when the temperature stops cooperating.</p>
+      </div>
+
+      <div class="article-rule-block">
+        <h2>What the heat does to your fragrance</h2>
+        <p>Warm skin accelerates projection. That's good news and a warning. Aquatics, citruses, and clean musks are built for this — they brighten and lift. Heavy orientals, dense woods, and sweet gourmands can turn cloying fast. Summer is not the season to test your tolerance for projection.</p>
+        <p style="margin-top:0.8rem;">The picks below were selected for one thing: they hold up. Outdoors, close quarters, the back half of a long day. Each one earns its spray count when the humidity is working against you.</p>
+      </div>
+
+      <!-- FOR HIM -->
+      <div class="section-label">
+        <span class="section-label__text">For Him</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Splurge</div>
+          <div class="pick__price">~$380</div>
+        </div>
+        <div class="pick__name">Creed Millesime Imperial</div>
+        <div class="pick__notes">
+          <span class="pick__note">Sea Salt</span>
+          <span class="pick__note">Mandarin</span>
+          <span class="pick__note">Iris</span>
+          <span class="pick__note">Musk</span>
+        </div>
+        <p class="pick__desc">The benchmark. When fragrance enthusiasts argue about the definitive aquatic, this is the one they keep coming back to. Sea salt that smells like actual ocean air — not the synthetic approximation. Iris and mandarin keep it from reading flat. It doesn't announce. It <em>suggests</em>.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Creed+Millesime+Imperial" target="_blank" rel="noopener">Shop Millesime Imperial →</a>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Designer</div>
+          <div class="pick__price">~$120</div>
+        </div>
+        <div class="pick__name">Acqua di Giò Profumo</div>
+        <div class="pick__notes">
+          <span class="pick__note">Aquatic</span>
+          <span class="pick__note">Mineral</span>
+          <span class="pick__note">Incense</span>
+          <span class="pick__note">Patchouli</span>
+        </div>
+        <p class="pick__desc">The original Acqua di Giò was a generation's introduction to aquatic fragrance. Profumo improved it in every direction — deeper, more textured, with incense and mineral notes that give it actual gravity. It performs in heat without losing its shape. Hard to argue with thirty years of earned reputation.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Acqua+di+Gio+Profumo" target="_blank" rel="noopener">Shop AdG Profumo →</a>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Budget Win</div>
+          <div class="pick__price">~$30</div>
+        </div>
+        <div class="pick__name">Lattafa Asad</div>
+        <div class="pick__notes">
+          <span class="pick__note">Citrus</span>
+          <span class="pick__note">Aquatic</span>
+          <span class="pick__note">Cedar</span>
+          <span class="pick__note">Musk</span>
+        </div>
+        <p class="pick__desc">This one keeps showing up in the same conversation as fragrances that cost five times more. Fresh and aquatic up top, dry and woody on the dry-down — a complete arc for a bottle that costs less than dinner. If you're new to summer fragrance and don't want to make a $380 experiment, start here.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Lattafa+Asad" target="_blank" rel="noopener">Shop Asad →</a>
+      </div>
+
+      <!-- FOR HER -->
+      <div class="section-label">
+        <span class="section-label__text">For Her</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Splurge</div>
+          <div class="pick__price">~$170</div>
+        </div>
+        <div class="pick__name">Jo Malone Wood Sage &amp; Sea Salt</div>
+        <div class="pick__notes">
+          <span class="pick__note">Sea Salt</span>
+          <span class="pick__note">Sage</span>
+          <span class="pick__note">Ambrette</span>
+          <span class="pick__note">Driftwood</span>
+        </div>
+        <p class="pick__desc">Coastal without being literal. Jo Malone built something here that smells like a specific moment — early morning, somewhere near water, the kind of quiet that feels intentional. Sage keeps it from reading too soft. Sea salt keeps it honest. The projection is restrained and exactly right for the season.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Jo+Malone+Wood+Sage+Sea+Salt" target="_blank" rel="noopener">Shop Wood Sage &amp; Sea Salt →</a>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Designer</div>
+          <div class="pick__price">~$105</div>
+        </div>
+        <div class="pick__name">Chanel Chance Eau Fraîche</div>
+        <div class="pick__notes">
+          <span class="pick__note">Citrus</span>
+          <span class="pick__note">Water Hyacinth</span>
+          <span class="pick__note">Jasmine</span>
+          <span class="pick__note">Vetiver</span>
+        </div>
+        <p class="pick__desc">Of the Chance flankers, Fraîche is the one built for heat. Citrus and water hyacinth open bright and immediate; vetiver anchors the dry-down so it doesn't evaporate on you. It's polished without effort — the kind of fragrance that completes an outfit rather than competing with it.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Chanel+Chance+Eau+Fraiche" target="_blank" rel="noopener">Shop Chance Fraîche →</a>
+      </div>
+
+      <div class="pick">
+        <div class="pick__top">
+          <div class="pick__tier">The Budget Win</div>
+          <div class="pick__price">~$25</div>
+        </div>
+        <div class="pick__name">Davidoff Cool Water Woman</div>
+        <div class="pick__notes">
+          <span class="pick__note">Melon</span>
+          <span class="pick__note">Lotus</span>
+          <span class="pick__note">Water Lily</span>
+          <span class="pick__note">Musk</span>
+        </div>
+        <p class="pick__desc">The classic answer, and it still earns it. Melon and lotus open clean and cool; water lily keeps it from going soft. Three decades on shelves is not a coincidence. At this price, it's the easiest yes in summer fragrance.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Davidoff+Cool+Water+Woman" target="_blank" rel="noopener">Shop Cool Water Woman →</a>
+      </div>
+
+      <!-- CLOSING RULE -->
+      <div class="closing-rule">
+        <div class="closing-rule__label">Summer Rule</div>
+        <div class="closing-rule__text">One spray less than you think you need.</div>
+        <div class="closing-rule__sub">Heat does the rest. Let it.</div>
+      </div>
+
+      <!-- QUIZ CTA -->
+      <div class="quiz-cta">
+        <p>Summer is a season. Your signature scent is something else entirely.<br>Find it.</p>
+        <a href="../../quiz/index.html">Find Your Scent →</a>
+      </div>
+
+    </div><!-- /article-body -->
+  </div><!-- /container -->
+</div><!-- /page-content -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="../../index.html" class="footer-logo">Vibe<span class="frag">Frag</span></a>
+      <div class="footer-tagline">Find your scent for every occasion.</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../new-releases.html">New Releases</a></li>
+      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../quiz/index.html">Quiz</a></li>
+      <li><a href="../index.html">The Dry Down</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('visibilitychange', () => {
+    const s = document.hidden ? 'paused' : 'running';
+    document.querySelectorAll('.caustic').forEach(el => { el.style.animationPlayState = s; });
+  });
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks  = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('nav-open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+</script>
+</body>
+</html>
