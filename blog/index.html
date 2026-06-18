@@ -210,7 +210,7 @@
     <div class="blog-grid" id="blog-grid">
 
       <a href="first-date/" style="text-decoration:none;color:inherit;display:block;">
-      <article class="blog-card">
+      <article class="blog-card" data-category="occasion-guides">
         <div class="blog-card__img" style="height:160px;padding:0;overflow:hidden;">
           <img src="images/first-date-fragrances.jpg" alt="Two luxury perfume bottles on a dark reflective surface with warm candlelight" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
@@ -224,7 +224,7 @@
       </a>
 
       <a href="summer-2026/" style="text-decoration:none;color:inherit;display:block;">
-      <article class="blog-card">
+      <article class="blog-card" data-category="seasonal-picks">
         <div class="blog-card__img" style="height:160px;padding:0;overflow:hidden;">
           <img src="images/summer-2026-fragrances.jpg" alt="Fresh summer fragrances arranged on a bright, airy surface" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
@@ -238,7 +238,7 @@
       </a>
 
       <a href="office-fragrance/" style="text-decoration:none;color:inherit;display:block;">
-      <article class="blog-card">
+      <article class="blog-card" data-category="occasion-guides">
         <div class="blog-card__img" style="height:160px;padding:0;overflow:hidden;">
           <img src="images/office-fragrance.jpg" alt="Three luxury perfume bottles on a dark marble surface with dramatic side lighting" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
@@ -251,7 +251,7 @@
       </article>
       </a>
 
-      <article class="blog-card">
+      <article class="blog-card" data-category="dupes">
         <div class="blog-card__img">💸</div>
         <div class="blog-card__body">
           <div class="blog-card__tag">Dupes</div>
@@ -261,7 +261,7 @@
         </div>
       </article>
 
-      <article class="blog-card">
+      <article class="blog-card" data-category="seasonal-picks">
         <div class="blog-card__img">🍂</div>
         <div class="blog-card__body">
           <div class="blog-card__tag">Seasonal Picks</div>
@@ -271,7 +271,7 @@
         </div>
       </article>
 
-      <article class="blog-card">
+      <article class="blog-card" data-category="deep-dives">
         <div class="blog-card__img">🎁</div>
         <div class="blog-card__body">
           <div class="blog-card__tag">Gifting</div>
@@ -312,6 +312,7 @@
     const s = document.hidden ? 'paused' : 'running';
     document.querySelectorAll('.caustic').forEach(el => { el.style.animationPlayState = s; });
   });
+
   const navToggle = document.getElementById('nav-toggle');
   const navLinks  = document.getElementById('nav-links');
   if (navToggle && navLinks) {
@@ -324,6 +325,29 @@
       a.addEventListener('click', () => { navLinks.classList.remove('nav-open'); navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); });
     });
   }
+
+  // ── FILTER ──
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const grid = document.getElementById('blog-grid');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+
+      // Each card may be wrapped in an <a>; get the wrapping element to hide/show
+      grid.querySelectorAll('.blog-card').forEach(card => {
+        const wrapper = card.parentElement.tagName === 'A' ? card.parentElement : card;
+        if (filter === 'all') {
+          wrapper.style.display = '';
+        } else {
+          wrapper.style.display = card.dataset.category === filter ? '' : 'none';
+        }
+      });
+    });
+  });
 </script>
 </body>
 </html>
