@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Cabinet — VibeFrag</title>
-  <meta name="description" content="5 questions. Three picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+  <meta name="description" content="6 questions. Three picks — a splurge, a designer, and a dupe — matched to your notes, occasion, season, and budget.">
   <link rel="canonical" href="https://vibefrag.com/quiz/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vibefrag.com/quiz/">
   <meta property="og:title" content="The Cabinet — VibeFrag">
-  <meta property="og:description" content="5 questions. Three picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
+  <meta property="og:description" content="6 questions. Three picks — a splurge, a designer, and a dupe — matched to your notes, occasion, season, and budget.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
@@ -26,7 +26,6 @@
       --amber-warm: #d4a878;
       --amber-ghost: rgba(176, 133, 88, 0.10);
       --glass-border: rgba(255, 255, 255, 0.11);
-      /* Result tier colors — adapted for dark bg */
       --splurge:  #d4a878;
       --designer: #7b9fc7;
       --dupe:     #6aad6a;
@@ -92,7 +91,7 @@
 
     /* ── PROGRESS ── */
     .progress { display: flex; gap: 6px; justify-content: center; margin-bottom: 3rem; }
-    .progress-dot { height: 2px; width: 40px; border-radius: 2px; background: rgba(255,255,255,0.10); transition: background 0.35s var(--ease); }
+    .progress-dot { height: 2px; width: 36px; border-radius: 2px; background: rgba(255,255,255,0.10); transition: background 0.35s var(--ease); }
     .progress-dot.active { background: var(--amber); }
     .progress-dot.done   { background: rgba(176,133,88,0.35); }
 
@@ -106,6 +105,7 @@
     .q-header { text-align: center; margin-bottom: 2rem; }
     .q-step { font-size: 0.6rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-mid); margin-bottom: 0.8rem; opacity: 0.7; }
     .q-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 300; letter-spacing: 0.02em; color: var(--silver); line-height: 1.2; }
+    .q-note { font-size: 0.68rem; font-weight: 200; letter-spacing: 0.14em; color: var(--silver-mid); margin-top: 0.55rem; }
 
     /* ── OPTIONS ── */
     .options { display: grid; gap: 0.7rem; }
@@ -117,14 +117,22 @@
       backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
       border: 1px solid var(--glass-border);
       padding: 1.1rem 1.2rem; cursor: pointer; text-align: left;
-      transition: border-color 0.2s, background 0.2s, transform 0.12s;
+      transition: border-color 0.2s, background 0.2s, transform 0.12s, opacity 0.2s;
       user-select: none;
     }
     .option:hover { border-color: rgba(200,180,140,0.35); background: rgba(176,133,88,0.15); }
     .option.selected { border-color: var(--amber); background: rgba(176,133,88,0.20); box-shadow: inset 0 1px 0 rgba(255,255,255,0.12); }
     .option:active { transform: scale(0.98); }
+    .option.dimmed { opacity: 0.28; cursor: not-allowed; pointer-events: none; }
     .opt-label { font-size: 0.85rem; font-weight: 300; color: var(--silver); letter-spacing: 0.03em; }
     .opt-sub { font-size: 0.72rem; color: var(--silver-mid); margin-top: 0.3rem; line-height: 1.4; font-weight: 200; }
+
+    /* ── MULTI-SELECT CONTINUE ── */
+    .multi-continue {
+      text-align: center;
+      margin-top: 1.6rem;
+      transition: opacity 0.25s var(--ease);
+    }
 
     /* ── BUTTONS ── */
     .btn-primary {
@@ -305,159 +313,240 @@
     });
   }
 
-  /* ── QUIZ LOGIC (unchanged) ── */
+  /* ── LIBRARY — 162 entries (9 accords × 3 tiers × 3 genders × 2 seasons) ── */
   const LIBRARY = {
     fresh_aquatic: {
       splurge: {
-        M: { brand:"Creed",           name:"Silver Mountain Water",    notes:["Black Currant","Green Tea","Mandarin"] },
-        F: { brand:"Diptyque",        name:"Eau de Lierre",            notes:["Ivy","Aldehydes","Lily of the Valley"] },
-        U: { brand:"Acqua di Parma",  name:"Colonia",                  notes:["Calabrian Citrus","Lavender","Rosemary"] }
+        M: { warm:{brand:"Creed",              name:"Silver Mountain Water",           notes:["Black Currant","Green Tea","Mandarin"]},
+             cool:{brand:"Roja Parfums",        name:"Elysium Pour Homme",              notes:["Bergamot","Juniper Berry","Grapefruit"]} },
+        F: { warm:{brand:"Diptyque",            name:"Eau de Lierre",                  notes:["Ivy","Aldehydes","Lily of the Valley"]},
+             cool:{brand:"Juliette Has a Gun",  name:"Not a Perfume",                  notes:["Ambrette Seed","Soft Musk","Cedarwood"]} },
+        U: { warm:{brand:"Acqua di Parma",      name:"Colonia",                        notes:["Calabrian Citrus","Lavender","Rosemary"]},
+             cool:{brand:"Initio Parfums",      name:"Rehab",                          notes:["Bergamot","Cardamom","Vetiver"]} }
       },
       designer: {
-        M: { brand:"Giorgio Armani",  name:"Acqua di Giò EDP",         notes:["Bergamot","Rosemary","Patchouli"] },
-        F: { brand:"Chanel",          name:"Chance Eau Fraîche",       notes:["Citron","Water Hyacinth","Jasmine"] },
-        U: { brand:"Hermès",          name:"Un Jardin Sur le Nil",     notes:["Green Mango","Lotus","Sycamore"] }
+        M: { warm:{brand:"Giorgio Armani",      name:"Acqua di Giò EDP",               notes:["Bergamot","Rosemary","Patchouli"]},
+             cool:{brand:"Issey Miyake",        name:"L'Eau d'Issey Pour Homme",       notes:["Mandarin","Nutmeg","Calone"]} },
+        F: { warm:{brand:"Chanel",              name:"Chance Eau Fraîche",             notes:["Citron","Water Hyacinth","Jasmine"]},
+             cool:{brand:"Davidoff",            name:"Cool Water Woman",               notes:["Pineapple","Blackcurrant","Sandalwood"]} },
+        U: { warm:{brand:"Hermès",              name:"Un Jardin Sur le Nil",           notes:["Green Mango","Lotus","Sycamore"]},
+             cool:{brand:"Bvlgari",             name:"Aqva Pour Homme Marine",         notes:["Posidonia","Amber","Wood"]} }
       },
       dupe: {
-        M: { brand:"Rasasi",          name:"Hawas for Him",            notes:["Bergamot","Cardamom","Apple"] },
-        F: { brand:"Al Haramain",     name:"L'Aventure Femme",         notes:["Pineapple","Black Currant","Bergamot"] },
-        U: { brand:"Afnan",           name:"Supremacy Silver",         notes:["Bergamot","Pineapple","Lemon"] }
+        M: { warm:{brand:"Rasasi",              name:"Hawas for Him",                  notes:["Bergamot","Cardamom","Apple"]},
+             cool:{brand:"Al Wataniah",         name:"Decades",                        notes:["Bergamot","Lavender","Musk"]} },
+        F: { warm:{brand:"Al Haramain",         name:"L'Aventure Femme",              notes:["Pineapple","Black Currant","Bergamot"]},
+             cool:{brand:"Armaf",               name:"Radical Blue",                   notes:["Bergamot","Cinnamon","Vetiver"]} },
+        U: { warm:{brand:"Afnan",               name:"Supremacy Silver",               notes:["Bergamot","Pineapple","Lemon"]},
+             cool:{brand:"Swiss Arabian",       name:"Reehat Al Arais",                notes:["Bergamot","Floral Heart","Musk"]} }
       }
     },
     citrus: {
       splurge: {
-        M: { brand:"Acqua di Parma",  name:"Colonia Intensa",          notes:["Bergamot","Lemon","Petitgrain"] },
-        F: { brand:"Le Labo",         name:"Bergamote 22",             notes:["Bergamot","Grapefruit","Amber"] },
-        U: { brand:"Maison Margiela", name:"Replica Flower Market",    notes:["Peony","Rose","Violet"] }
+        M: { warm:{brand:"Acqua di Parma",      name:"Colonia Intensa",                notes:["Bergamot","Lemon","Petitgrain"]},
+             cool:{brand:"Xerjoff",             name:"Erba Pura",                      notes:["Sicilian Orange","Musk","Sandalwood"]} },
+        F: { warm:{brand:"Le Labo",             name:"Bergamote 22",                   notes:["Bergamot","Grapefruit","Amber"]},
+             cool:{brand:"Maison Margiela",     name:"Replica Under the Lemon Trees",  notes:["Lemon","Verbena","Sandalwood"]} },
+        U: { warm:{brand:"Mancera",             name:"Lemon Line",                     notes:["Lemon","Bergamot","White Musk"]},
+             cool:{brand:"Bond No. 9",          name:"Bleecker Street",                notes:["Bergamot","Mandarin","Sandalwood"]} }
       },
       designer: {
-        M: { brand:"Versace",         name:"Pour Homme EDP",           notes:["Bergamot","Neroli","Geranium"] },
-        F: { brand:"Jo Malone",       name:"Lime Basil & Mandarin",    notes:["Lime","Basil","Mandarin"] },
-        U: { brand:"Calvin Klein",    name:"CK One",                   notes:["Bergamot","Lemon","Pineapple"] }
+        M: { warm:{brand:"Versace",             name:"Pour Homme EDT",                 notes:["Bergamot","Neroli","Geranium"]},
+             cool:{brand:"Azzaro",              name:"Chrome EDT",                     notes:["Bergamot","Rosemary","Sandalwood"]} },
+        F: { warm:{brand:"Jo Malone",           name:"Lime Basil & Mandarin",          notes:["Lime","Basil","Mandarin"]},
+             cool:{brand:"Dolce & Gabbana",     name:"Light Blue EDT",                 notes:["Lemon","Apple","Cedar"]} },
+        U: { warm:{brand:"Calvin Klein",        name:"CK One",                         notes:["Bergamot","Lemon","Pineapple"]},
+             cool:{brand:"Mugler",              name:"Cologne",                        notes:["Grapefruit","Bergamot","White Musk"]} }
       },
       dupe: {
-        M: { brand:"Armaf",           name:"Club de Nuit Intense Man", notes:["Pineapple","Bergamot","Blackcurrant"] },
-        F: { brand:"Elizabeth Arden", name:"Green Tea",                notes:["Green Tea","Mint","Rhubarb"] },
-        U: { brand:"Dossier",         name:"Musky Aldehydes",          notes:["Aldehydes","Rose","Sandalwood"] }
+        M: { warm:{brand:"Armaf",               name:"Club de Nuit Intense Man",       notes:["Pineapple","Bergamot","Blackcurrant"]},
+             cool:{brand:"Paris Corner",        name:"Gentleman",                      notes:["Bergamot","Cardamom","Sandalwood"]} },
+        F: { warm:{brand:"Elizabeth Arden",     name:"Green Tea",                      notes:["Green Tea","Mint","Rhubarb"]},
+             cool:{brand:"Rue Broca",           name:"Intimate White",                 notes:["Bergamot","Jasmine","White Musk"]} },
+        U: { warm:{brand:"Dossier",             name:"Citrus Bergamot",                notes:["Bergamot","White Musk","Cedar"]},
+             cool:{brand:"Kayali",              name:"Citrus 08",                      notes:["Bergamot","Mandarin","Musk"]} }
       }
     },
     floral: {
       splurge: {
-        M: { brand:"Amouage",                  name:"Reflection Man",      notes:["Neroli","Jasmine","Ylang-Ylang"] },
-        F: { brand:"Frederic Malle",            name:"En Passant",          notes:["Lilac","Cucumber","White Musk"] },
-        U: { brand:"Maison Francis Kurkdjian",  name:"Baccarat Rouge 540",  notes:["Jasmine","Saffron","Cedar"] }
+        M: { warm:{brand:"Amouage",             name:"Reflection Man",                 notes:["Neroli","Jasmine","Ylang-Ylang"]},
+             cool:{brand:"BDK Parfums",         name:"Tabac Rose",                     notes:["Rose","Tobacco","Amber"]} },
+        F: { warm:{brand:"Frederic Malle",      name:"En Passant",                     notes:["Lilac","Cucumber","White Musk"]},
+             cool:{brand:"Montale",             name:"Roses Musk",                     notes:["Rose","Musk","Peach"]} },
+        U: { warm:{brand:"Maison Francis Kurkdjian", name:"Baccarat Rouge 540",        notes:["Jasmine","Saffron","Cedar"]},
+             cool:{brand:"Ex Nihilo",           name:"Fleur Narcotique",               notes:["Litchi","Peony","Musk"]} }
       },
       designer: {
-        M: { brand:"Valentino",       name:"Uomo EDP",                 notes:["Iris","Tonka Bean","Musk"] },
-        F: { brand:"Chanel",          name:"Chance EDP",               notes:["Pink Pepper","Jasmine","Patchouli"] },
-        U: { brand:"Gucci",           name:"Bloom EDP",                notes:["Tuberose","Jasmine","Rangoon Creeper"] }
+        M: { warm:{brand:"Valentino",           name:"Uomo EDP",                       notes:["Iris","Tonka Bean","Musk"]},
+             cool:{brand:"Guerlain",            name:"Homme Intense EDP",              notes:["Iris","Lemon","Cedar"]} },
+        F: { warm:{brand:"Chanel",              name:"Chance EDP",                     notes:["Pink Pepper","Jasmine","Patchouli"]},
+             cool:{brand:"Guerlain",            name:"Mon Guerlain EDP",               notes:["Lavender","Jasmine","Sandalwood"]} },
+        U: { warm:{brand:"Gucci",               name:"Bloom EDP",                      notes:["Tuberose","Jasmine","Rangoon Creeper"]},
+             cool:{brand:"Ralph Lauren",        name:"Romance EDP",                    notes:["Rose","Iris","Sandalwood"]} }
       },
       dupe: {
-        M: { brand:"Rasasi",          name:"Egra Men",                 notes:["Violet Leaf","Juniper Berries","Grapefruit"] },
-        F: { brand:"Dossier",         name:"Floral Peony",             notes:["Peony","Rose","Musk"] },
-        U: { brand:"Lattafa",         name:"Velvet Rose",              notes:["Rose","Oud","Musk"] }
+        M: { warm:{brand:"Rasasi",              name:"Egra Men",                       notes:["Violet Leaf","Juniper Berries","Grapefruit"]},
+             cool:{brand:"Maison Alhambra",     name:"Marque Rouge EDP",               notes:["Bergamot","Rose","Sandalwood"]} },
+        F: { warm:{brand:"Dossier",             name:"Floral Peony",                   notes:["Peony","Rose","Musk"]},
+             cool:{brand:"Lattafa",             name:"Velvet Rose",                    notes:["Rose","Oud","Musk"]} },
+        U: { warm:{brand:"Kayali",              name:"Eden Juicy Apple 01",            notes:["Apple","Plum","Jasmine"]},
+             cool:{brand:"Lattafa",             name:"Yara",                           notes:["Blackcurrant","Jasmine","Musk"]} }
       }
     },
     woody_earthy: {
       splurge: {
-        M: { brand:"Amouage",         name:"Fate Man",                 notes:["Cardamom","Incense","Rose"] },
-        F: { brand:"Serge Lutens",    name:"Féminité du Bois",         notes:["Cedar","Cinnamon","Peach"] },
-        U: { brand:"Le Labo",         name:"Santal 33",                notes:["Cardamom","Iris","Violet"] }
+        M: { warm:{brand:"Le Labo",             name:"Santal 33",                      notes:["Cardamom","Iris","Violet"]},
+             cool:{brand:"Amouage",             name:"Fate Man",                       notes:["Cardamom","Incense","Rose"]} },
+        F: { warm:{brand:"Initio Parfums",      name:"Atomic Rose",                    notes:["Rose","Woody Notes","Musk"]},
+             cool:{brand:"Serge Lutens",        name:"Féminité du Bois",               notes:["Cedar","Cinnamon","Peach"]} },
+        U: { warm:{brand:"Mancera",             name:"Red Tobacco",                    notes:["Mandarin","Rose","Tobacco"]},
+             cool:{brand:"Byredo",              name:"Bal d'Afrique",                  notes:["Bergamot","Marigold","Vetiver"]} }
       },
       designer: {
-        M: { brand:"Dior",            name:"Sauvage EDP",              notes:["Bergamot","Pepper","Lavender"] },
-        F: { brand:"YSL",             name:"Libre EDP",                notes:["Lavender","Bergamot","Blackcurrant"] },
-        U: { brand:"Burberry",        name:"Mr. Burberry EDP",         notes:["Grapefruit","Cardamom","Juniper"] }
+        M: { warm:{brand:"Dior",                name:"Sauvage EDP",                    notes:["Bergamot","Pepper","Lavender"]},
+             cool:{brand:"Bvlgari",             name:"Man in Black EDP",               notes:["Tobacco","Guaiac Wood","Amber"]} },
+        F: { warm:{brand:"YSL",                 name:"Libre EDP",                      notes:["Lavender","Bergamot","Blackcurrant"]},
+             cool:{brand:"Chloé",               name:"Nomade EDP",                     notes:["Mirabelle","Oakmoss","Cedarwood"]} },
+        U: { warm:{brand:"Burberry",            name:"Mr. Burberry EDP",               notes:["Grapefruit","Cardamom","Juniper"]},
+             cool:{brand:"Hugo Boss",           name:"Boss Bottled EDP",               notes:["Apple","Cinnamon","Sandalwood"]} }
       },
       dupe: {
-        M: { brand:"Armaf",           name:"Ventana",                  notes:["Grapefruit","Lemon","Mandarin"] },
-        F: { brand:"Dossier",         name:"Woody Sandalwood",         notes:["Sandalwood","Vanilla","Musk"] },
-        U: { brand:"Swiss Arabian",   name:"Dehn El Oud Malaki",       notes:["Oud","Leather","Musk"] }
+        M: { warm:{brand:"Armaf",               name:"Ventana",                        notes:["Grapefruit","Lemon","Mandarin"]},
+             cool:{brand:"Lattafa",             name:"Najdia",                         notes:["Sandalwood","Oud","Musk"]} },
+        F: { warm:{brand:"Dossier",             name:"Woody Sandalwood",               notes:["Sandalwood","Vanilla","Musk"]},
+             cool:{brand:"Rue Broca",           name:"Oud 24 Hrs Women",               notes:["Rose","Oud","Sandalwood"]} },
+        U: { warm:{brand:"Swiss Arabian",       name:"Dehn El Oud Malaki",             notes:["Oud","Leather","Musk"]},
+             cool:{brand:"Al Wataniah",         name:"Oud Rose",                       notes:["Rose","Oud","Sandalwood"]} }
       }
     },
     oriental_spicy: {
       splurge: {
-        M: { brand:"Amouage",         name:"Gold Man",                 notes:["Frankincense","Myrrh","Jasmine"] },
-        F: { brand:"Kilian",          name:"Love",                     notes:["Turkish Rose","Jasmine","Patchouli"] },
-        U: { brand:"Byredo",          name:"Accord Oud",               notes:["Oud","Amber","Rose"] }
+        M: { warm:{brand:"Montale",             name:"Black Aoud",                     notes:["Oud","Rose","Musk"]},
+             cool:{brand:"Amouage",             name:"Gold Man",                       notes:["Frankincense","Myrrh","Jasmine"]} },
+        F: { warm:{brand:"Kilian",              name:"Love",                           notes:["Turkish Rose","Jasmine","Patchouli"]},
+             cool:{brand:"Roja Parfums",        name:"Enigma Pour Femme",              notes:["Rose","Saffron","Amber"]} },
+        U: { warm:{brand:"Byredo",              name:"Accord Oud",                     notes:["Oud","Amber","Rose"]},
+             cool:{brand:"Initio Parfums",      name:"Psychedelic Love",               notes:["Rose","Patchouli","Musk"]} }
       },
       designer: {
-        M: { brand:"YSL",             name:"La Nuit de l'Homme EDP",   notes:["Cardamom","Lavender","Vetiver"] },
-        F: { brand:"YSL",             name:"Black Opium EDP",          notes:["Coffee","Vanilla","White Flowers"] },
-        U: { brand:"Gucci",           name:"Guilty EDP",               notes:["Pink Pepper","Mandarin","Geranium"] }
+        M: { warm:{brand:"YSL",                 name:"La Nuit de l'Homme EDP",         notes:["Cardamom","Lavender","Vetiver"]},
+             cool:{brand:"Paco Rabanne",        name:"1 Million EDP",                  notes:["Cinnamon","Grapefruit","Patchouli"]} },
+        F: { warm:{brand:"Gucci",               name:"Guilty EDP",                     notes:["Pink Pepper","Mandarin","Geranium"]},
+             cool:{brand:"YSL",                 name:"Black Opium EDP",                notes:["Coffee","Vanilla","White Flowers"]} },
+        U: { warm:{brand:"Calvin Klein",        name:"Obsession EDP",                  notes:["Mandarin","Orange Blossom","Vanilla"]},
+             cool:{brand:"Mugler",              name:"Alien EDP",                      notes:["White Amber","Jasmine","Cashmeran"]} }
       },
       dupe: {
-        M: { brand:"Afnan",           name:"Supremacy Noir",           notes:["Bergamot","Oregano","Pepper"] },
-        F: { brand:"Rasasi",          name:"La Yuqawam Femme",         notes:["Saffron","Raspberry","Thyme"] },
-        U: { brand:"Lattafa",         name:"Khamrah",                  notes:["Grape","Blackberry","Oud"] }
+        M: { warm:{brand:"Afnan",               name:"Supremacy Noir",                 notes:["Bergamot","Oregano","Pepper"]},
+             cool:{brand:"Lattafa",             name:"Khamrah",                        notes:["Grape","Blackberry","Oud"]} },
+        F: { warm:{brand:"Rasasi",              name:"La Yuqawam Femme",               notes:["Saffron","Raspberry","Thyme"]},
+             cool:{brand:"Al Haramain",         name:"Amber Oud Tobacco Edition",      notes:["Tobacco","Amber","Oud"]} },
+        U: { warm:{brand:"Armaf",               name:"Club de Nuit Milestone",         notes:["Saffron","Rose","Oud"]},
+             cool:{brand:"Swiss Arabian",       name:"Shaghaf Oud",                    notes:["Oud","Saffron","Rose"]} }
       }
     },
     gourmand: {
       splurge: {
-        M: { brand:"Tom Ford",        name:"Tobacco Vanille",          notes:["Tobacco Leaf","Vanilla","Spices"] },
-        F: { brand:"Kilian",          name:"Angels' Share",            notes:["Cognac","Cinnamon","Praline"] },
-        U: { brand:"Serge Lutens",    name:"Chergui",                  notes:["Honey","Iris","Musk"] }
+        M: { warm:{brand:"Montale",             name:"Intense Café",                   notes:["Coffee","Rose","Musk"]},
+             cool:{brand:"Tom Ford",            name:"Tobacco Vanille",                notes:["Tobacco Leaf","Vanilla","Spices"]} },
+        F: { warm:{brand:"Juliette Has a Gun",  name:"Romantina",                      notes:["Rose","Raspberry","White Musk"]},
+             cool:{brand:"Kilian",              name:"Angels' Share",                  notes:["Cognac","Cinnamon","Praline"]} },
+        U: { warm:{brand:"Serge Lutens",        name:"Chergui",                        notes:["Honey","Iris","Musk"]},
+             cool:{brand:"Xerjoff",             name:"XJ 1861 Naxos",                  notes:["Honey","Lavender","Tobacco"]} }
       },
       designer: {
-        M: { brand:"Dolce & Gabbana", name:"The One EDP",              notes:["Mandarin","Tobacco","Ginger"] },
-        F: { brand:"Lancôme",         name:"La Vie est Belle EDP",     notes:["Iris","Patchouli","Praline"] },
-        U: { brand:"Viktor & Rolf",   name:"Flowerbomb EDP",           notes:["Bergamot","Green Tea","Jasmine"] }
+        M: { warm:{brand:"Dolce & Gabbana",     name:"The One EDP",                    notes:["Mandarin","Tobacco","Ginger"]},
+             cool:{brand:"Mugler",              name:"A*Men EDP",                      notes:["Coffee","Patchouli","Vanilla"]} },
+        F: { warm:{brand:"Paco Rabanne",        name:"Olympéa EDP",                    notes:["Vanilla","Jasmine","Salty Musk"]},
+             cool:{brand:"Mugler",              name:"Angel EDP",                      notes:["Patchouli","Vanilla","Caramel"]} },
+        U: { warm:{brand:"Guerlain",            name:"La Petite Robe Noire EDP",       notes:["Blackcurrant","Rose","Patchouli"]},
+             cool:{brand:"Viktor & Rolf",       name:"Flowerbomb EDP",                 notes:["Bergamot","Jasmine","Patchouli"]} }
       },
       dupe: {
-        M: { brand:"Maison Alhambra", name:"Versencia Noir",           notes:["Black Pepper","Rose","Amber"] },
-        F: { brand:"Kayali",          name:"Vanilla 28",               notes:["Jasmine","Vanilla Orchid","Musk"] },
-        U: { brand:"Maison Alhambra", name:"Delilah",                  notes:["Blackcurrant","Mandarin","Jasmine"] }
+        M: { warm:{brand:"Maison Alhambra",     name:"Versencia Noir",                 notes:["Black Pepper","Rose","Amber"]},
+             cool:{brand:"Armaf",               name:"Club de Nuit Limited",           notes:["Leather","Vanilla","Amber"]} },
+        F: { warm:{brand:"Kayali",              name:"Vanilla 28",                     notes:["Jasmine","Vanilla Orchid","Musk"]},
+             cool:{brand:"Maison Alhambra",     name:"Delilah",                        notes:["Blackcurrant","Mandarin","Jasmine"]} },
+        U: { warm:{brand:"Paris Corner",        name:"Hayaati Rose",                   notes:["Rose","Vanilla","Musk"]},
+             cool:{brand:"Al Wataniah",         name:"Awaan",                          notes:["Caramel","Vanilla","Musk"]} }
       }
     },
     chypre: {
       splurge: {
-        M: { brand:"Creed",           name:"Aventus",                  notes:["Bergamot","Blackcurrant","Apple"] },
-        F: { brand:"Parfums de Marly",name:"Delina",                   notes:["Lychee","Rhubarb","Turkish Rose"] },
-        U: { brand:"Nishane",         name:"Hacivat",                  notes:["Pineapple","Bergamot","Vetiver"] }
+        M: { warm:{brand:"Creed",               name:"Aventus EDP",                    notes:["Bergamot","Blackcurrant","Apple"]},
+             cool:{brand:"Mancera",             name:"Cedrat Boise",                   notes:["Lemon","Patchouli","Vanilla"]} },
+        F: { warm:{brand:"Parfums de Marly",    name:"Delina EDP",                     notes:["Lychee","Rhubarb","Turkish Rose"]},
+             cool:{brand:"BDK Parfums",         name:"Gris Charnel EDP",               notes:["White Peach","Sandalwood","Musk"]} },
+        U: { warm:{brand:"Nishane",             name:"Hacivat",                        notes:["Pineapple","Bergamot","Vetiver"]},
+             cool:{brand:"BDK Parfums",         name:"Crème de Cuir",                  notes:["Bergamot","Leather","Musk"]} }
       },
       designer: {
-        M: { brand:"Carolina Herrera",name:"Bad Boy EDP",              notes:["Bergamot","Tobacco","Sandalwood"] },
-        F: { brand:"Carolina Herrera",name:"Good Girl EDP",            notes:["Almond","Coffee","Jasmine"] },
-        U: { brand:"Burberry",        name:"Her EDP",                  notes:["Blackcurrant","Blackberry","Musk"] }
+        M: { warm:{brand:"Carolina Herrera",    name:"Bad Boy EDP",                    notes:["Bergamot","Tobacco","Sandalwood"]},
+             cool:{brand:"Guerlain",            name:"Vetiver EDP",                    notes:["Pepper","Vetiver","Sandalwood"]} },
+        F: { warm:{brand:"Carolina Herrera",    name:"Good Girl EDP",                  notes:["Almond","Coffee","Jasmine"]},
+             cool:{brand:"Guerlain",            name:"Mitsouko EDP",                   notes:["Peach","Bergamot","Oakmoss"]} },
+        U: { warm:{brand:"Burberry",            name:"Her EDP",                        notes:["Blackcurrant","Blackberry","Musk"]},
+             cool:{brand:"Burberry",            name:"London EDP",                     notes:["Lavender","Thyme","Sandalwood"]} }
       },
       dupe: {
-        M: { brand:"Afnan",           name:"Supremacy in Oud",         notes:["Oud","Amber","Saffron"] },
-        F: { brand:"Dossier",         name:"Ambery Cherry",            notes:["Cherry","Almond","Cinnamon"] },
-        U: { brand:"Dossier",         name:"Ambery Saffron",           notes:["Bergamot","Pink Pepper","Saffron"] }
+        M: { warm:{brand:"Afnan",               name:"Supremacy in Oud",               notes:["Oud","Amber","Saffron"]},
+             cool:{brand:"Armaf",               name:"Shades Wood",                    notes:["Bergamot","Geranium","Cedar"]} },
+        F: { warm:{brand:"Dossier",             name:"Ambery Cherry",                  notes:["Cherry","Almond","Cinnamon"]},
+             cool:{brand:"Dossier",             name:"Ambery Saffron",                 notes:["Bergamot","Pink Pepper","Saffron"]} },
+        U: { warm:{brand:"Kayali",              name:"Déjà Vu White Flower",           notes:["Ylang-Ylang","Tuberose","Sandalwood"]},
+             cool:{brand:"Al Wataniah",         name:"Wajaha",                         notes:["Bergamot","Cedar","Musk"]} }
       }
     },
     fougere: {
       splurge: {
-        M: { brand:"Parfums de Marly",name:"Layton",                   notes:["Apple","Cardamom","Lavender"] },
-        F: { brand:"Byredo",          name:"Mojave Ghost",             notes:["Ambrette","Sapodilla","Magnolia"] },
-        U: { brand:"Maison Margiela", name:"Replica Jazz Club",        notes:["Rum","Pink Pepper","Woody Notes"] }
+        M: { warm:{brand:"Parfums de Marly",    name:"Layton EDP",                     notes:["Apple","Cardamom","Lavender"]},
+             cool:{brand:"Roja Parfums",        name:"Danger Pour Homme",              notes:["Bergamot","Geranium","Oakmoss"]} },
+        F: { warm:{brand:"Byredo",              name:"Mojave Ghost",                   notes:["Ambrette","Sapodilla","Magnolia"]},
+             cool:{brand:"Bond No. 9",          name:"The Scent of Peace",             notes:["Bergamot","Lavender","Patchouli"]} },
+        U: { warm:{brand:"Maison Margiela",     name:"Replica Jazz Club",              notes:["Rum","Pink Pepper","Woody Notes"]},
+             cool:{brand:"Bond No. 9",          name:"New York Sandstone",             notes:["Sandalwood","White Musk","Amber"]} }
       },
       designer: {
-        M: { brand:"Chanel",          name:"Bleu de Chanel EDP",       notes:["Grapefruit","Lemon","Mint"] },
-        F: { brand:"Prada",           name:"Infusion d'Iris EDP",      notes:["Iris","Orange Blossom","Cedar"] },
-        U: { brand:"Burberry",        name:"Brit EDP",                 notes:["Bergamot","Pear","Honey"] }
+        M: { warm:{brand:"Chanel",              name:"Bleu de Chanel EDP",             notes:["Grapefruit","Lemon","Mint"]},
+             cool:{brand:"Jean Paul Gaultier",  name:"Le Male EDP",                    notes:["Mint","Bergamot","Lavender"]} },
+        F: { warm:{brand:"Prada",               name:"Infusion d'Iris EDP",            notes:["Iris","Orange Blossom","Cedar"]},
+             cool:{brand:"Givenchy",            name:"L'Interdit EDP",                 notes:["Jasmine","Orange Blossom","Vetiver"]} },
+        U: { warm:{brand:"Burberry",            name:"Brit EDP",                       notes:["Bergamot","Pear","Honey"]},
+             cool:{brand:"Bvlgari",             name:"Man Wood Neroli",                notes:["Bergamot","Lavender","Cedarwood"]} }
       },
       dupe: {
-        M: { brand:"Swiss Arabian",   name:"Shaghaf Men",              notes:["Bergamot","Lavender","Woody Notes"] },
-        F: { brand:"Dossier",         name:"Ambery Jasmine",           notes:["Black Currant","Red Pepper","Bergamot"] },
-        U: { brand:"Kayali",          name:"Musk 12",                  notes:["Lotus Flower","Freesia","Jasmine"] }
+        M: { warm:{brand:"Swiss Arabian",       name:"Shaghaf Men",                    notes:["Bergamot","Lavender","Woody Notes"]},
+             cool:{brand:"Al Wataniah",         name:"Wardi",                          notes:["Lavender","Cedar","Musk"]} },
+        F: { warm:{brand:"Dossier",             name:"Ambery Jasmine",                 notes:["Black Currant","Red Pepper","Bergamot"]},
+             cool:{brand:"Armaf",               name:"Tres Nuit EDP",                  notes:["Bergamot","Apple","Sandalwood"]} },
+        U: { warm:{brand:"Kayali",              name:"Musk 12",                        notes:["Lotus Flower","Freesia","Jasmine"]},
+             cool:{brand:"Rasasi",              name:"La Yuqawam Pour Homme",          notes:["Bergamot","Lavender","Oakmoss"]} }
       }
     },
     green: {
       splurge: {
-        M: { brand:"Diptyque",        name:"Philosykos",               notes:["Fig Leaf","Fig Tree","Cedar"] },
-        F: { brand:"Hermès",          name:"Un Jardin sur le Toit",    notes:["Pear","Rose","White Peach"] },
-        U: { brand:"Byredo",          name:"Gypsy Water",              notes:["Pine Needles","Bergamot","Lemon"] }
+        M: { warm:{brand:"Diptyque",            name:"Philosykos",                     notes:["Fig Leaf","Fig Tree","Cedar"]},
+             cool:{brand:"Diptyque",            name:"Tam Dao",                        notes:["Sandalwood","Cedar","Myrrh"]} },
+        F: { warm:{brand:"Hermès",              name:"Un Jardin sur le Toit",          notes:["Pear","Rose","White Peach"]},
+             cool:{brand:"Juliette Has a Gun",  name:"Calamity J",                     notes:["Peach","Violet","Woody Notes"]} },
+        U: { warm:{brand:"Byredo",              name:"Gypsy Water",                    notes:["Pine Needles","Bergamot","Lemon"]},
+             cool:{brand:"Maison Margiela",     name:"Replica Autumn Vibes",           notes:["Patchouli","Incense","Cardamom"]} }
       },
       designer: {
-        M: { brand:"Givenchy",        name:"Gentleman Cologne",        notes:["Bergamot","Pepper","Iris"] },
-        F: { brand:"Jo Malone",       name:"Wood Sage & Sea Salt",     notes:["Sea Salt","Sage","Ambrette"] },
-        U: { brand:"Calvin Klein",    name:"Eternity EDP",             notes:["Freesia","Lily","Sandalwood"] }
+        M: { warm:{brand:"Givenchy",            name:"Gentleman Cologne",              notes:["Bergamot","Pepper","Iris"]},
+             cool:{brand:"Issey Miyake",        name:"L'Eau Majeure d'Issey",          notes:["Bergamot","Bamboo","Cedar"]} },
+        F: { warm:{brand:"Jo Malone",           name:"Wood Sage & Sea Salt",           notes:["Sea Salt","Sage","Ambrette"]},
+             cool:{brand:"Chanel",              name:"No. 19 EDP",                     notes:["Iris","Oakmoss","Vetiver"]} },
+        U: { warm:{brand:"Calvin Klein",        name:"Eternity EDP",                   notes:["Freesia","Lily","Sandalwood"]},
+             cool:{brand:"Mugler",              name:"Aura EDP",                       notes:["Green Leaves","Magnolia","Musk"]} }
       },
       dupe: {
-        M: { brand:"Lattafa",         name:"Asad",                     notes:["Bergamot","Pepper","Lavender"] },
-        F: { brand:"Dossier",         name:"Floral Musk",              notes:["Jasmine","Peony","Musk"] },
-        U: { brand:"Rasasi",          name:"Egra Women",               notes:["Pepper","Freesia","Water Lily"] }
+        M: { warm:{brand:"Lattafa",             name:"Asad",                           notes:["Bergamot","Pepper","Lavender"]},
+             cool:{brand:"Swiss Arabian",       name:"Wazeer",                         notes:["Bergamot","Cardamom","Sandalwood"]} },
+        F: { warm:{brand:"Dossier",             name:"Floral Musk",                    notes:["Jasmine","Peony","Musk"]},
+             cool:{brand:"Lattafa",             name:"Yara Moi",                       notes:["Bergamot","Jasmine","Musk"]} },
+        U: { warm:{brand:"Rasasi",              name:"Egra Women",                     notes:["Pepper","Freesia","Water Lily"]},
+             cool:{brand:"Al Haramain",         name:"Gold EDP",                       notes:["Jasmine","Rose","Sandalwood"]} }
       }
     }
   };
@@ -480,25 +569,48 @@
     green:          "Earthy and alive — like the air right after rain."
   };
 
+  /* Notes → accord weights. Primary signal — dominates accord selection. */
+  const NOTE_WEIGHTS = {
+    fresh_clean: { fresh_aquatic:6, fougere:3 },
+    citrusy:     { citrus:6, fresh_aquatic:2 },
+    floral:      { floral:6 },
+    woody:       { woody_earthy:6 },
+    spicy:       { oriental_spicy:6 },
+    sweet:       { gourmand:6 },
+    green:       { green:6 },
+    musky:       { chypre:6, fougere:3 }
+  };
+
+  /* 6 questions — notes added as step 4 (between season and gender) */
   const QUESTIONS = [
     { id:'occasion', text:"What's the occasion?", grid:'grid-2', options:[
-      { value:'work',     label:'Work',          sub:'Office, meetings, professional' },
-      { value:'date',     label:'Date',           sub:'Romantic, intimate, impressive' },
-      { value:'social',   label:'Social / Party', sub:'Dinner, events, going out' },
-      { value:'outdoors', label:'Outdoors',       sub:'Active, casual, fresh air' },
-      { value:'special',  label:'Special Event',  sub:'Wedding, formal, milestone' },
-      { value:'everyday', label:'Everyday',       sub:'Low-key, reliable, daily wear' }
+      { value:'work',     label:'Work',           sub:'Office, meetings, professional' },
+      { value:'date',     label:'Date',            sub:'Romantic, intimate, impressive' },
+      { value:'social',   label:'Social / Party',  sub:'Dinner, events, going out' },
+      { value:'outdoors', label:'Outdoors',        sub:'Active, casual, fresh air' },
+      { value:'special',  label:'Special Event',   sub:'Wedding, formal, milestone' },
+      { value:'everyday', label:'Everyday',        sub:'Low-key, reliable, daily wear' }
     ]},
     { id:'time', text:"What time of day?", grid:'grid-3', options:[
-      { value:'day',     label:'Morning / Day', sub:'Before 5pm' },
-      { value:'evening', label:'Evening',       sub:'Dinner, after work' },
-      { value:'night',   label:'Night Out',     sub:'Late night, bar, club' }
+      { value:'day',     label:'Morning / Day',  sub:'Before 5pm' },
+      { value:'evening', label:'Evening',        sub:'Dinner, after work' },
+      { value:'night',   label:'Night Out',      sub:'Late night, bar, club' }
     ]},
     { id:'season', text:"What season?", grid:'grid-2', options:[
       { value:'spring', label:'Spring', sub:'Fresh, blooming, mild' },
       { value:'summer', label:'Summer', sub:'Hot, bright, vacation' },
       { value:'fall',   label:'Fall',   sub:'Crisp, cozy, transitional' },
       { value:'winter', label:'Winter', sub:'Cold, warm indoors, rich' }
+    ]},
+    { id:'notes', text:"What notes call to you?", note:'Pick up to three.', multi:true, max:3, grid:'grid-2', options:[
+      { value:'fresh_clean', label:'Fresh & Clean',         sub:'Cool water, light air, aquatic' },
+      { value:'citrusy',     label:'Citrusy & Bright',      sub:'Lemon, bergamot, mandarin' },
+      { value:'floral',      label:'Floral',                sub:'Rose, jasmine, peony' },
+      { value:'woody',       label:'Woody & Earthy',        sub:'Sandalwood, cedar, vetiver' },
+      { value:'spicy',       label:'Spicy & Rich',          sub:'Pepper, cardamom, oud' },
+      { value:'sweet',       label:'Sweet & Warm',          sub:'Vanilla, praline, amber' },
+      { value:'green',       label:'Green & Natural',       sub:'Herbs, fig, fresh grass' },
+      { value:'musky',       label:'Musky & Sophisticated', sub:'Musk, moss, leather' }
     ]},
     { id:'gender', text:"Who's wearing it?", grid:'', options:[
       { value:'masc',   label:'Me — masculine', sub:"Traditional men's fragrance profiles" },
@@ -507,16 +619,19 @@
       { value:'gift',   label:"It's a gift",    sub:'Universal picks that work across the board' }
     ]},
     { id:'budget', text:"What's your budget?", grid:'grid-2', options:[
-      { value:'25_50',   label:'$25 – $50',  sub:'The Dupe is your move' },
-      { value:'50_100',  label:'$50 – $100', sub:'Designer territory' },
-      { value:'100_200', label:'$100 – $200',sub:'Premium designer range' },
-      { value:'200plus', label:'$200+',       sub:'The Splurge is calling' }
+      { value:'25_50',   label:'$25 – $50',   sub:'The Dupe is your move' },
+      { value:'50_100',  label:'$50 – $100',  sub:'Designer territory' },
+      { value:'100_200', label:'$100 – $200', sub:'Premium designer range' },
+      { value:'200plus', label:'$200+',        sub:'The Splurge is calling' }
     ]}
   ];
 
-  function getAccord(occasion, time, season) {
+  /* Accord selection: notes are the primary signal; occasion/time/season break ties and route fougere */
+  function getAccord(occasion, time, season, notes) {
     const scores = { fresh_aquatic:0, citrus:0, floral:0, woody_earthy:0, oriental_spicy:0, gourmand:0, chypre:0, fougere:0, green:0 };
-    const maps = [
+
+    /* Context (secondary signal — max ~8 combined) */
+    const contextMaps = [
       { work:{fresh_aquatic:3,fougere:3,citrus:2}, date:{floral:3,oriental_spicy:2,chypre:2},
         social:{gourmand:3,oriental_spicy:2,floral:1}, outdoors:{green:3,citrus:2,fresh_aquatic:1},
         special:{chypre:3,floral:2,oriental_spicy:1}, everyday:{citrus:3,fresh_aquatic:2,fougere:1} }[occasion],
@@ -525,12 +640,28 @@
       { spring:{floral:2,green:2,citrus:1,fresh_aquatic:1}, summer:{fresh_aquatic:2,citrus:2,green:1},
         fall:{woody_earthy:2,chypre:1,oriental_spicy:1,fougere:1}, winter:{oriental_spicy:2,woody_earthy:2,gourmand:2} }[season]
     ];
-    maps.forEach(m => m && Object.entries(m).forEach(([k,v]) => { scores[k] += v; }));
+    contextMaps.forEach(m => m && Object.entries(m).forEach(([k,v]) => { scores[k] += v; }));
+
+    /* Notes (primary signal — +6 per dominant mapping; overrides context) */
+    if (notes && notes.length) {
+      notes.forEach(n => {
+        const w = NOTE_WEIGHTS[n];
+        if (w) Object.entries(w).forEach(([k,v]) => { scores[k] += v; });
+      });
+    }
+
     return Object.entries(scores).sort((a,b) => b[1]-a[1])[0][0];
   }
 
-  function getRecommendedTier(b) { return {'25_50':'dupe','50_100':'designer','100_200':'designer','200plus':'splurge'}[b]||'designer'; }
-  function getGenderKey(g) { return {masc:'M',fem:'F',unisex:'U',gift:'U'}[g]||'U'; }
+  function getRecommendedTier(b) {
+    return {'25_50':'dupe','50_100':'designer','100_200':'designer','200plus':'splurge'}[b] || 'designer';
+  }
+  function getGenderKey(g) {
+    return {masc:'M',fem:'F',unisex:'U',gift:'U'}[g] || 'U';
+  }
+  function getSeasonKey(season) {
+    return (season === 'spring' || season === 'summer') ? 'warm' : 'cool';
+  }
 
   let state = { step:0, answers:{} };
   let transitioning = false;
@@ -539,53 +670,91 @@
     return `<div class="intro fade-up">
       <div class="intro-eyebrow">The Cabinet</div>
       <h1 class="intro-title">Find your scent<br>for every occasion.</h1>
-      <p class="intro-sub">5 questions. Three picks — a splurge, a designer, and a dupe that smells just as good.</p>
+      <p class="intro-sub">6 questions. Three picks — a splurge, a designer, and a dupe that smells just as good.</p>
       <button class="btn-primary" onclick="start()">Open The Cabinet →</button>
     </div>`;
   }
 
   function renderQuestion(step) {
-    const q = QUESTIONS[step-1];
-    const dots = Array.from({length:5},(_,i) => {
-      const cls = i<step-1?'done':i===step-1?'active':'';
+    const q = QUESTIONS[step - 1];
+    const dots = Array.from({length:6}, (_, i) => {
+      const cls = i < step-1 ? 'done' : i === step-1 ? 'active' : '';
       return `<div class="progress-dot ${cls}"></div>`;
     }).join('');
-    const prev = state.answers[q.id] || null;
-    const opts = q.options.map(o => `
-      <div class="option${prev===o.value?' selected':''}" onclick="selectAnswer('${q.id}','${o.value}',${step},this)">
-        <div class="opt-label">${o.label}</div>
-        ${o.sub?`<div class="opt-sub">${o.sub}</div>`:''}
-      </div>`).join('');
-    const backBtn = step > 1 ? `<div class="q-nav"><button class="btn-ghost" onclick="goBack()">← Back</button></div>` : '<div class="q-nav"></div>';
+    const backBtn = step > 1
+      ? `<div class="q-nav"><button class="btn-ghost" onclick="goBack()">← Back</button></div>`
+      : '<div class="q-nav"></div>';
+    const subNote = q.note ? `<div class="q-note">${q.note}</div>` : '';
+
+    let optsHtml = '';
+    let continueBtn = '';
+
+    if (q.multi) {
+      /* Multi-select question (notes) */
+      const selected = state.answers[q.id] ? [...state.answers[q.id]] : [];
+      const atMax = selected.length >= (q.max || 99);
+      optsHtml = q.options.map(o => {
+        const isSel = selected.includes(o.value);
+        const isDim = atMax && !isSel;
+        return `<div class="option multi-opt${isSel ? ' selected' : ''}${isDim ? ' dimmed' : ''}"
+          data-value="${o.value}" onclick="toggleNote('${o.value}', ${step})">
+          <div class="opt-label">${o.label}</div>
+          ${o.sub ? `<div class="opt-sub">${o.sub}</div>` : ''}
+        </div>`;
+      }).join('');
+      const hasSelection = selected.length > 0;
+      continueBtn = `<div class="multi-continue" id="multi-continue"
+        style="opacity:${hasSelection ? 1 : 0};pointer-events:${hasSelection ? 'auto' : 'none'}">
+        <button class="btn-primary" onclick="advanceFromMulti(${step})">Continue →</button>
+      </div>`;
+    } else {
+      /* Single-select question */
+      const prev = state.answers[q.id] || null;
+      optsHtml = q.options.map(o => `
+        <div class="option${prev === o.value ? ' selected' : ''}"
+          onclick="selectAnswer('${q.id}','${o.value}',${step},this)">
+          <div class="opt-label">${o.label}</div>
+          ${o.sub ? `<div class="opt-sub">${o.sub}</div>` : ''}
+        </div>`).join('');
+    }
+
     return `<div class="fade-up">
       <div class="progress">${dots}</div>
       ${backBtn}
-      <div class="q-header"><div class="q-step">Question ${step} of 5</div><div class="q-text">${q.text}</div></div>
-      <div class="options ${q.grid}">${opts}</div>
+      <div class="q-header">
+        <div class="q-step">Question ${step} of 6</div>
+        <div class="q-text">${q.text}</div>
+        ${subNote}
+      </div>
+      <div class="options ${q.grid}">${optsHtml}</div>
+      ${continueBtn}
     </div>`;
   }
 
   function renderResults() {
-    const {occasion,time,season,gender,budget} = state.answers;
-    const accordId = getAccord(occasion,time,season);
-    const gKey = getGenderKey(gender);
-    const recTier = getRecommendedTier(budget);
+    const {occasion, time, season, notes, gender, budget} = state.answers;
+    const accordId  = getAccord(occasion, time, season, notes || []);
+    const gKey      = getGenderKey(gender);
+    const recTier   = getRecommendedTier(budget);
+    const seasonKey = getSeasonKey(season);
     const accordData = LIBRARY[accordId];
     const accordDesc = ACCORD_DESCRIPTIONS[accordId];
 
     const TIERS = [
-      {id:'splurge',label:'The Splurge',cls:'splurge'},
-      {id:'designer',label:'The Designer',cls:'designer'},
-      {id:'dupe',label:'The Dupe',cls:'dupe'}
+      {id:'splurge',  label:'The Splurge',  cls:'splurge'},
+      {id:'designer', label:'The Designer', cls:'designer'},
+      {id:'dupe',     label:'The Dupe',     cls:'dupe'}
     ];
 
-    const cards = TIERS.map(({id,label,cls}) => {
-      const frag = accordData[id][gKey]||accordData[id]['U'];
-      const isRec = id===recTier;
-      const url = `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(frag.brand+' '+frag.name+' fragrance')}`;
-      const pills = frag.notes.map(n=>`<span class="note-pill">${n}</span>`).join('');
-      return `<div class="card ${cls}${isRec?' highlighted':''}">
-        ${isRec?'<div class="rec-badge">Best Match</div>':''}
+    const cards = TIERS.map(({id, label, cls}) => {
+      const tierData   = accordData[id];
+      const genderData = tierData[gKey] || tierData['U'];
+      const frag       = genderData[seasonKey] || genderData['warm'];
+      const isRec      = id === recTier;
+      const url        = `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(frag.brand + ' ' + frag.name + ' fragrance')}`;
+      const pills      = frag.notes.map(n => `<span class="note-pill">${n}</span>`).join('');
+      return `<div class="card ${cls}${isRec ? ' highlighted' : ''}">
+        ${isRec ? '<div class="rec-badge">Best Match</div>' : ''}
         <div class="card-tier">${label}</div>
         <div class="card-brand">${frag.brand}</div>
         <div class="card-name">${frag.name}</div>
@@ -608,21 +777,62 @@
 
   function render() {
     const app = document.getElementById('app');
-    if (state.step===0) app.innerHTML = renderIntro();
-    else if (state.step<=5) app.innerHTML = renderQuestion(state.step);
-    else app.innerHTML = renderResults();
+    if (state.step === 0)      app.innerHTML = renderIntro();
+    else if (state.step <= 6)  app.innerHTML = renderQuestion(state.step);
+    else                        app.innerHTML = renderResults();
   }
 
-  function goBack() { if(state.step>1){ state.step--; transitioning=false; render(); } }
-  function start() { state.step=1; render(); }
-  function selectAnswer(qId,value,step,el) {
-    if(transitioning) return; transitioning=true;
-    document.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));
-    el.classList.add('selected');
-    state.answers[qId]=value;
-    setTimeout(()=>{ state.step=step+1; render(); transitioning=false; },360);
+  function goBack() {
+    if (state.step > 1) { state.step--; transitioning = false; render(); }
   }
-  function restart() { state={step:0,answers:{}}; transitioning=false; render(); }
+
+  function start() { state.step = 1; render(); }
+
+  function selectAnswer(qId, value, step, el) {
+    if (transitioning) return;
+    transitioning = true;
+    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    state.answers[qId] = value;
+    setTimeout(() => { state.step = step + 1; render(); transitioning = false; }, 360);
+  }
+
+  function toggleNote(value, step) {
+    if (transitioning) return;
+    let arr = state.answers.notes ? [...state.answers.notes] : [];
+    const idx = arr.indexOf(value);
+    const max = QUESTIONS[step - 1].max || 99;
+    if (idx >= 0) {
+      arr.splice(idx, 1);
+    } else if (arr.length < max) {
+      arr.push(value);
+    }
+    state.answers.notes = arr;
+    const atMax = arr.length >= max;
+
+    /* Update DOM directly to avoid animation flash */
+    document.querySelectorAll('.multi-opt').forEach(el => {
+      const v   = el.dataset.value;
+      const sel = arr.includes(v);
+      const dim = atMax && !sel;
+      el.classList.toggle('selected', sel);
+      el.classList.toggle('dimmed', dim);
+    });
+    const cont = document.getElementById('multi-continue');
+    if (cont) {
+      const show = arr.length > 0;
+      cont.style.opacity      = show ? '1' : '0';
+      cont.style.pointerEvents = show ? 'auto' : 'none';
+    }
+  }
+
+  function advanceFromMulti(step) {
+    if (transitioning) return;
+    transitioning = true;
+    setTimeout(() => { state.step = step + 1; render(); transitioning = false; }, 360);
+  }
+
+  function restart() { state = {step:0, answers:{}}; transitioning = false; render(); }
 
   render();
 </script>
