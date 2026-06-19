@@ -13,11 +13,25 @@
       "category": "F",
       "family": "Floral Fruity",
       "notes": {
-        "top":    ["Bergamot", "Pear", "Pink Pepper"],
-        "middle": ["Rouge", "Jasmine", "Orange Blossom"],
-        "base":   ["Vanilla", "Patchouli", "Musk", "Amber"]
+        "top": [
+          "Bergamot",
+          "Pear",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Rouge",
+          "Jasmine",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Vanilla",
+          "Patchouli",
+          "Musk",
+          "Amber"
+        ]
       },
-      "source_url": "https://ifragranceofficial.com/perfumes/si-passione-edition-exclusive/"
+      "source_url": "https://ifragranceofficial.com/perfumes/si-passione-edition-exclusive/",
+      "blog_url": "/blog/hawas-rouge/"
     },
     {
       "id": "rasasi-hawas-reina-2026",
@@ -27,11 +41,28 @@
       "category": "F",
       "family": "Floral Fruity Amber",
       "notes": {
-        "top":    ["Apricot", "Banana", "Cinnamon"],
-        "middle": ["Jasmine", "Frangipani", "Orange Blossom", "Coconut", "Coffee"],
-        "base":   ["Vanilla", "Sandalwood", "Cooked Sugar", "Dry Amber", "White Musk"]
+        "top": [
+          "Apricot",
+          "Banana",
+          "Cinnamon"
+        ],
+        "middle": [
+          "Jasmine",
+          "Frangipani",
+          "Orange Blossom",
+          "Coconut",
+          "Coffee"
+        ],
+        "base": [
+          "Vanilla",
+          "Sandalwood",
+          "Cooked Sugar",
+          "Dry Amber",
+          "White Musk"
+        ]
       },
-      "source_url": "https://ifragranceofficial.com/perfumes/olympea-absolu-paco-rabanne/"
+      "source_url": "https://ifragranceofficial.com/perfumes/olympea-absolu-paco-rabanne/",
+      "blog_url": "/blog/hawas-reina/"
     },
     {
       "id": "lv-ambre-levant-2026",
@@ -41,9 +72,21 @@
       "category": "U",
       "family": "Oriental Spicy",
       "notes": {
-        "top":    ["Mandarin", "Cardamom", "Saffron"],
-        "middle": ["Cinnamon", "White Pepper", "Rose"],
-        "base":   ["Labdanum", "Incense", "Ambergris"]
+        "top": [
+          "Mandarin",
+          "Cardamom",
+          "Saffron"
+        ],
+        "middle": [
+          "Cinnamon",
+          "White Pepper",
+          "Rose"
+        ],
+        "base": [
+          "Labdanum",
+          "Incense",
+          "Ambergris"
+        ]
       },
       "source_url": "https://us.louisvuitton.com/eng-us/products/ambre-levant-nvprod7160001v/LP0367"
     },
@@ -55,9 +98,19 @@
       "category": "U",
       "family": "Floral Woody",
       "notes": {
-        "top":    ["Bergamot", "Pink Pepper"],
-        "middle": ["Violet", "Iris"],
-        "base":   ["Cedarwood", "Cashmere", "White Musk"]
+        "top": [
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Violet",
+          "Iris"
+        ],
+        "base": [
+          "Cedarwood",
+          "Cashmere",
+          "White Musk"
+        ]
       },
       "source_url": "https://www.lelabofragrances.com/classic-collection/violette-30/eau-de-parfum"
     },
@@ -69,9 +122,21 @@
       "category": "M",
       "family": "Fresh Woody Aromatic",
       "notes": {
-        "top":    ["Grapefruit", "Bergamot", "Lemon"],
-        "middle": ["Neroli", "Lavender", "Geranium"],
-        "base":   ["Cedar", "Vetiver", "White Musk"]
+        "top": [
+          "Grapefruit",
+          "Bergamot",
+          "Lemon"
+        ],
+        "middle": [
+          "Neroli",
+          "Lavender",
+          "Geranium"
+        ],
+        "base": [
+          "Cedar",
+          "Vetiver",
+          "White Musk"
+        ]
       },
       "source_url": "https://www.chanel.com/us/fragrance/p/123410/allure-homme-sport-superleggera-eau-de-parfum-spray/"
     },
@@ -83,9 +148,21 @@
       "category": "F",
       "family": "Floral Fruity",
       "notes": {
-        "top":    ["Raspberry", "Pink Pepper", "Citrus"],
-        "middle": ["Orange Blossom", "Rose", "Violet"],
-        "base":   ["Coconut", "Vanilla", "White Musk"]
+        "top": [
+          "Raspberry",
+          "Pink Pepper",
+          "Citrus"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Rose",
+          "Violet"
+        ],
+        "base": [
+          "Coconut",
+          "Vanilla",
+          "White Musk"
+        ]
       },
       "source_url": "https://www.yslbeautyus.com/fragrance/womens-fragrances/libre/libre-berry-crush/WW-51508YSL.html"
     },
@@ -97,9 +174,20 @@
       "category": "U",
       "family": "Citrus Aromatic",
       "notes": {
-        "top":    ["Blood Orange", "Bergamot", "Neroli"],
-        "middle": ["Orange Blossom", "Jasmine"],
-        "base":   ["Sandalwood", "White Musk", "Amber"]
+        "top": [
+          "Blood Orange",
+          "Bergamot",
+          "Neroli"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Jasmine"
+        ],
+        "base": [
+          "Sandalwood",
+          "White Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.tomfordbeauty.com/products/taormina-orange-eau-de-parfum"
     },
@@ -111,9 +199,20 @@
       "category": "U",
       "family": "Floral Musky",
       "notes": {
-        "top":    ["Bergamot", "Aldehydes"],
-        "middle": ["Iris Pallida", "Violet", "Rose"],
-        "base":   ["Cashmere Wood", "Sandalwood", "White Musk"]
+        "top": [
+          "Bergamot",
+          "Aldehydes"
+        ],
+        "middle": [
+          "Iris Pallida",
+          "Violet",
+          "Rose"
+        ],
+        "base": [
+          "Cashmere Wood",
+          "Sandalwood",
+          "White Musk"
+        ]
       },
       "source_url": "https://www.hermes.com/us/en/product/musc-pallida-eau-de-parfum-V117337V0/"
     },
@@ -125,9 +224,20 @@
       "category": "U",
       "family": "Leathery Floral",
       "notes": {
-        "top":    ["Pink Pepper", "Bergamot"],
-        "middle": ["Rose", "Iris", "Peony"],
-        "base":   ["Leather", "Amber", "Musk"]
+        "top": [
+          "Pink Pepper",
+          "Bergamot"
+        ],
+        "middle": [
+          "Rose",
+          "Iris",
+          "Peony"
+        ],
+        "base": [
+          "Leather",
+          "Amber",
+          "Musk"
+        ]
       },
       "source_url": "https://www.dior.com/en_us/beauty/products/cuir-saddle-Y0000167.html"
     },
@@ -139,9 +249,19 @@
       "category": "M",
       "family": "Woody Aromatic",
       "notes": {
-        "top":    ["Sichuan Pepper", "Bergamot"],
-        "middle": ["Cypress", "Juniper Berry"],
-        "base":   ["Cashmere Wood", "Patchouli", "Vetiver"]
+        "top": [
+          "Sichuan Pepper",
+          "Bergamot"
+        ],
+        "middle": [
+          "Cypress",
+          "Juniper Berry"
+        ],
+        "base": [
+          "Cashmere Wood",
+          "Patchouli",
+          "Vetiver"
+        ]
       },
       "source_url": "https://www.bulgari.com/en-us/product/42373"
     },
@@ -153,9 +273,20 @@
       "category": "F",
       "family": "Floral Woody",
       "notes": {
-        "top":    ["Pink Pepper", "Juniper"],
-        "middle": ["Geranium", "Gardenia", "Wildflowers"],
-        "base":   ["Sandalwood", "Amber", "Musk"]
+        "top": [
+          "Pink Pepper",
+          "Juniper"
+        ],
+        "middle": [
+          "Geranium",
+          "Gardenia",
+          "Wildflowers"
+        ],
+        "base": [
+          "Sandalwood",
+          "Amber",
+          "Musk"
+        ]
       },
       "source_url": "https://www.byredo.com/us_en/p/sister-dreamer-eau-de-parfum-100ml"
     },
@@ -167,9 +298,19 @@
       "category": "U",
       "family": "Woody Spicy",
       "notes": {
-        "top":    ["Juniper", "Cardamom"],
-        "middle": ["Sandalwood", "Cypress"],
-        "base":   ["Sequoia Wood", "Oakmoss", "Musk"]
+        "top": [
+          "Juniper",
+          "Cardamom"
+        ],
+        "middle": [
+          "Sandalwood",
+          "Cypress"
+        ],
+        "base": [
+          "Sequoia Wood",
+          "Oakmoss",
+          "Musk"
+        ]
       },
       "source_url": "https://www.nordstrom.com/s/the-alchemists-garden-lignum-idealis-eau-de-parfum/8868311"
     },
@@ -181,9 +322,21 @@
       "category": "M",
       "family": "Fruity Chypre",
       "notes": {
-        "top":    ["Blackcurrant", "Apple", "Bergamot"],
-        "middle": ["Birch", "Patchouli", "Jasmine"],
-        "base":   ["Musk", "Oakmoss", "Ambergris"]
+        "top": [
+          "Blackcurrant",
+          "Apple",
+          "Bergamot"
+        ],
+        "middle": [
+          "Birch",
+          "Patchouli",
+          "Jasmine"
+        ],
+        "base": [
+          "Musk",
+          "Oakmoss",
+          "Ambergris"
+        ]
       },
       "source_url": "https://www.creedperfume.com/products/aventus-eau-de-parfum"
     },
@@ -195,9 +348,18 @@
       "category": "U",
       "family": "Floral Woody Musky",
       "notes": {
-        "top":    ["Jasmine", "Saffron"],
-        "middle": ["Amberwood", "Ambergris"],
-        "base":   ["Fir Resin", "Cedar"]
+        "top": [
+          "Jasmine",
+          "Saffron"
+        ],
+        "middle": [
+          "Amberwood",
+          "Ambergris"
+        ],
+        "base": [
+          "Fir Resin",
+          "Cedar"
+        ]
       },
       "source_url": "https://www.mkperfumes.com/en_us/fragrances/baccarat-rouge-540-eau-de-parfum/"
     },
@@ -209,9 +371,19 @@
       "category": "F",
       "family": "Floral",
       "notes": {
-        "top":    ["White Pepper", "Bergamot"],
-        "middle": ["Tuberose", "Orange Blossom", "Jasmine"],
-        "base":   ["White Musk", "Sandalwood"]
+        "top": [
+          "White Pepper",
+          "Bergamot"
+        ],
+        "middle": [
+          "Tuberose",
+          "Orange Blossom",
+          "Jasmine"
+        ],
+        "base": [
+          "White Musk",
+          "Sandalwood"
+        ]
       },
       "source_url": "https://www.diptyqueparis.com/en_us/p/do-son-eau-de-parfum.html"
     },
@@ -223,9 +395,19 @@
       "category": "U",
       "family": "Floral Musky",
       "notes": {
-        "top":    ["Aldehydes", "Rose Water"],
-        "middle": ["Lily of the Valley", "Iris"],
-        "base":   ["Sandalwood", "White Musk", "Ambrette"]
+        "top": [
+          "Aldehydes",
+          "Rose Water"
+        ],
+        "middle": [
+          "Lily of the Valley",
+          "Iris"
+        ],
+        "base": [
+          "Sandalwood",
+          "White Musk",
+          "Ambrette"
+        ]
       },
       "source_url": "https://www.maisonmargiela.com/us/maison-margiela-fragrances/replica/bubble-bath"
     },
@@ -237,9 +419,21 @@
       "category": "M",
       "family": "Woody Aromatic",
       "notes": {
-        "top":    ["Apple", "Cardamom", "Lavender"],
-        "middle": ["Geranium", "Jasmine", "Oakmoss"],
-        "base":   ["Sandalwood", "Vanilla", "Guaiac Wood"]
+        "top": [
+          "Apple",
+          "Cardamom",
+          "Lavender"
+        ],
+        "middle": [
+          "Geranium",
+          "Jasmine",
+          "Oakmoss"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vanilla",
+          "Guaiac Wood"
+        ]
       },
       "source_url": "https://www.parfumsdemarly.com/en_us/layton-exclusif"
     },
@@ -251,9 +445,20 @@
       "category": "U",
       "family": "Fresh Citrus",
       "notes": {
-        "top":    ["Lemon", "Bergamot", "Grapefruit"],
-        "middle": ["Jasmine", "Neroli"],
-        "base":   ["Vetiver", "Sandalwood", "Musk"]
+        "top": [
+          "Lemon",
+          "Bergamot",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Jasmine",
+          "Neroli"
+        ],
+        "base": [
+          "Vetiver",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.acquadiparma.com/en-us/colonia-futura"
     },
@@ -265,9 +470,21 @@
       "category": "U",
       "family": "Floral Aromatic",
       "notes": {
-        "top":    ["Bergamot", "Pink Pepper", "Neroli"],
-        "middle": ["Jasmine", "Ylang-Ylang", "Iris"],
-        "base":   ["Sandalwood", "White Musk", "Amber"]
+        "top": [
+          "Bergamot",
+          "Pink Pepper",
+          "Neroli"
+        ],
+        "middle": [
+          "Jasmine",
+          "Ylang-Ylang",
+          "Iris"
+        ],
+        "base": [
+          "Sandalwood",
+          "White Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.amouage.com/en-us/reflection-45.html"
     },
@@ -279,9 +496,19 @@
       "category": "U",
       "family": "Warm Spicy Gourmand",
       "notes": {
-        "top":    ["Cognac", "Cinnamon"],
-        "middle": ["Oak", "Tonka Bean"],
-        "base":   ["Praline", "Sandalwood", "Vanilla"]
+        "top": [
+          "Cognac",
+          "Cinnamon"
+        ],
+        "middle": [
+          "Oak",
+          "Tonka Bean"
+        ],
+        "base": [
+          "Praline",
+          "Sandalwood",
+          "Vanilla"
+        ]
       },
       "source_url": "https://www.kilianparis.com/en-us/products/angels-share"
     },
@@ -293,9 +520,19 @@
       "category": "U",
       "family": "Aromatic Lavender",
       "notes": {
-        "top":    ["Lavender", "Tarragon"],
-        "middle": ["Iris", "Incense"],
-        "base":   ["Amber", "Musk", "Benzoin"]
+        "top": [
+          "Lavender",
+          "Tarragon"
+        ],
+        "middle": [
+          "Iris",
+          "Incense"
+        ],
+        "base": [
+          "Amber",
+          "Musk",
+          "Benzoin"
+        ]
       },
       "source_url": "https://www.sergelutens.com/en/fragrances/gris-clair.html"
     },
@@ -307,9 +544,19 @@
       "category": "F",
       "family": "Floral Chypre",
       "notes": {
-        "top":    ["Turkish Rose", "Raspberry"],
-        "middle": ["Patchouli", "Sandalwood", "Incense"],
-        "base":   ["Musk", "Benzoin"]
+        "top": [
+          "Turkish Rose",
+          "Raspberry"
+        ],
+        "middle": [
+          "Patchouli",
+          "Sandalwood",
+          "Incense"
+        ],
+        "base": [
+          "Musk",
+          "Benzoin"
+        ]
       },
       "source_url": "https://www.fredericmalle.com/en-us/product/portrait-of-a-lady-perfume"
     },
@@ -321,9 +568,21 @@
       "category": "U",
       "family": "Woody Chypre",
       "notes": {
-        "top":    ["Pineapple", "Bergamot", "Grapefruit"],
-        "middle": ["Oakmoss", "Jasmine", "Hedione"],
-        "base":   ["Vetiver", "Guaiac Wood", "Cedar"]
+        "top": [
+          "Pineapple",
+          "Bergamot",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Oakmoss",
+          "Jasmine",
+          "Hedione"
+        ],
+        "base": [
+          "Vetiver",
+          "Guaiac Wood",
+          "Cedar"
+        ]
       },
       "source_url": "https://www.nishane.com.tr/en/hacivat"
     },
@@ -335,9 +594,20 @@
       "category": "M",
       "family": "Aromatic Aquatic",
       "notes": {
-        "top":    ["Bergamot", "Aquatic Notes", "Green Mandarin"],
-        "middle": ["Rosemary", "Marine Notes"],
-        "base":   ["Mineral Notes", "Patchouli", "Musk"]
+        "top": [
+          "Bergamot",
+          "Aquatic Notes",
+          "Green Mandarin"
+        ],
+        "middle": [
+          "Rosemary",
+          "Marine Notes"
+        ],
+        "base": [
+          "Mineral Notes",
+          "Patchouli",
+          "Musk"
+        ]
       },
       "source_url": "https://www.giorgioarmanibeauty-usa.com/fragrance/mens-fragrance/acqua-di-gio-profondo"
     },
@@ -349,9 +619,19 @@
       "category": "F",
       "family": "Floral Amber",
       "notes": {
-        "top":    ["Bergamot", "Neroli"],
-        "middle": ["Jasmine", "Amber"],
-        "base":   ["Sandalwood", "Vetiver", "Musk"]
+        "top": [
+          "Bergamot",
+          "Neroli"
+        ],
+        "middle": [
+          "Jasmine",
+          "Amber"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vetiver",
+          "Musk"
+        ]
       },
       "source_url": "https://www.prada.com/us/en/prada-beauty/fragrances/woman/women-eau-de-parfum/paradoxe-intense.html"
     },
@@ -363,9 +643,20 @@
       "category": "F",
       "family": "Fresh Floral",
       "notes": {
-        "top":    ["Watermelon", "Yuzu", "Pomegranate"],
-        "middle": ["Cactus Flower", "Frangipani", "Hibiscus"],
-        "base":   ["Musk", "Blonde Wood"]
+        "top": [
+          "Watermelon",
+          "Yuzu",
+          "Pomegranate"
+        ],
+        "middle": [
+          "Cactus Flower",
+          "Frangipani",
+          "Hibiscus"
+        ],
+        "base": [
+          "Musk",
+          "Blonde Wood"
+        ]
       },
       "source_url": "https://www.versace.com/us/en/versace-fragrance/women/dylan-turquoise-pour-femme/"
     },
@@ -377,9 +668,21 @@
       "category": "M",
       "family": "Aromatic Fresh",
       "notes": {
-        "top":    ["Grapefruit", "Bergamot", "Juniper"],
-        "middle": ["Pepper", "Rosemary", "Rosewood"],
-        "base":   ["Musk", "Oakmoss", "Incense"]
+        "top": [
+          "Grapefruit",
+          "Bergamot",
+          "Juniper"
+        ],
+        "middle": [
+          "Pepper",
+          "Rosemary",
+          "Rosewood"
+        ],
+        "base": [
+          "Musk",
+          "Oakmoss",
+          "Incense"
+        ]
       },
       "source_url": "https://www.dolcegabbana.com/fragrance/light-blue-pour-homme-intense"
     },
@@ -391,9 +694,18 @@
       "category": "U",
       "family": "Floral Fruity",
       "notes": {
-        "top":    ["Honeysuckle", "Pear"],
-        "middle": ["Davana", "Jasmine"],
-        "base":   ["Sandalwood", "Musk"]
+        "top": [
+          "Honeysuckle",
+          "Pear"
+        ],
+        "middle": [
+          "Davana",
+          "Jasmine"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.jomalone.com/products/honeysuckle-davana-cologne"
     },
@@ -405,9 +717,20 @@
       "category": "F",
       "family": "Floral Woody",
       "notes": {
-        "top":    ["Mandarin", "Bergamot"],
-        "middle": ["Orange Blossom", "Jasmine", "Ylang-Ylang"],
-        "base":   ["Vetiver", "Sandalwood", "Oud"]
+        "top": [
+          "Mandarin",
+          "Bergamot"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Jasmine",
+          "Ylang-Ylang"
+        ],
+        "base": [
+          "Vetiver",
+          "Sandalwood",
+          "Oud"
+        ]
       },
       "source_url": "https://www.givenchy.com/us/en/p/linterdit-rouge-ultime.html"
     },
@@ -419,9 +742,20 @@
       "category": "F",
       "family": "Floral Gourmand",
       "notes": {
-        "top":    ["Orange", "Bergamot"],
-        "middle": ["Iris", "Jasmine", "Orange Blossom"],
-        "base":   ["Praline", "Sandalwood", "Vetiver"]
+        "top": [
+          "Orange",
+          "Bergamot"
+        ],
+        "middle": [
+          "Iris",
+          "Jasmine",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Praline",
+          "Sandalwood",
+          "Vetiver"
+        ]
       },
       "source_url": "https://www.lancome-usa.com/fragrance/womens-fragrance/la-vie-est-belle/"
     },
@@ -433,9 +767,20 @@
       "category": "F",
       "family": "Floral Oriental",
       "notes": {
-        "top":    ["Bergamot", "Green Tea"],
-        "middle": ["Jasmine", "Freesia", "Rose"],
-        "base":   ["Patchouli", "Sandalwood", "Musk"]
+        "top": [
+          "Bergamot",
+          "Green Tea"
+        ],
+        "middle": [
+          "Jasmine",
+          "Freesia",
+          "Rose"
+        ],
+        "base": [
+          "Patchouli",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.viktor-rolf.com/us/p/perfumes/flowerbomb-nectar"
     },
@@ -447,9 +792,19 @@
       "category": "F",
       "family": "Floral Oriental",
       "notes": {
-        "top":    ["Coffee", "Praline"],
-        "middle": ["Tuberose", "Jasmine"],
-        "base":   ["Cocoa", "Sandalwood", "Musk"]
+        "top": [
+          "Coffee",
+          "Praline"
+        ],
+        "middle": [
+          "Tuberose",
+          "Jasmine"
+        ],
+        "base": [
+          "Cocoa",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.carolinaherrera.com/us/en/fragrances/good-girl-rose-gold/"
     },
@@ -461,9 +816,19 @@
       "category": "F",
       "family": "Floral Amber",
       "notes": {
-        "top":    ["Bergamot", "Apple"],
-        "middle": ["Lavender", "Chamomile"],
-        "base":   ["Vanilla", "Tonka Bean", "Labdanum"]
+        "top": [
+          "Bergamot",
+          "Apple"
+        ],
+        "middle": [
+          "Lavender",
+          "Chamomile"
+        ],
+        "base": [
+          "Vanilla",
+          "Tonka Bean",
+          "Labdanum"
+        ]
       },
       "source_url": "https://us.burberry.com/goddess-elixir-de-parfum/"
     },
@@ -475,9 +840,19 @@
       "category": "U",
       "family": "Fresh Citrus",
       "notes": {
-        "top":    ["Orange", "Lemon", "Clementine"],
-        "middle": ["Green Tea", "Lavender"],
-        "base":   ["White Musk", "Cedar"]
+        "top": [
+          "Orange",
+          "Lemon",
+          "Clementine"
+        ],
+        "middle": [
+          "Green Tea",
+          "Lavender"
+        ],
+        "base": [
+          "White Musk",
+          "Cedar"
+        ]
       },
       "source_url": "https://www.calvinklein.us/fragrances/everyone-fragrances/"
     },
@@ -489,9 +864,20 @@
       "category": "F",
       "family": "Fresh Floral",
       "notes": {
-        "top":    ["Water Hyacinth", "Apple Blossom"],
-        "middle": ["Daisy", "Magnolia", "Orris"],
-        "base":   ["Sandalwood", "Musk", "Amber"]
+        "top": [
+          "Water Hyacinth",
+          "Apple Blossom"
+        ],
+        "middle": [
+          "Daisy",
+          "Magnolia",
+          "Orris"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.marcjacobsfragrances.com/daisy-wild"
     },
@@ -503,9 +889,20 @@
       "category": "M",
       "family": "Fresh Aromatic",
       "notes": {
-        "top":    ["Bergamot", "Grapefruit", "Juniper Berry"],
-        "middle": ["Geranium", "Violet Leaf"],
-        "base":   ["Vetiver", "Sandalwood", "Musk"]
+        "top": [
+          "Bergamot",
+          "Grapefruit",
+          "Juniper Berry"
+        ],
+        "middle": [
+          "Geranium",
+          "Violet Leaf"
+        ],
+        "base": [
+          "Vetiver",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.coach.com/fragrances"
     },
@@ -517,9 +914,21 @@
       "category": "F",
       "family": "Floral Chypre",
       "notes": {
-        "top":    ["Bergamot", "Lemon", "Grapefruit"],
-        "middle": ["Rose", "Peony", "Lily"],
-        "base":   ["Sandalwood", "Ambergris", "Musk"]
+        "top": [
+          "Bergamot",
+          "Lemon",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Rose",
+          "Peony",
+          "Lily"
+        ],
+        "base": [
+          "Sandalwood",
+          "Ambergris",
+          "Musk"
+        ]
       },
       "source_url": "https://www.michaelkors.com/fragrance/gorgeous/"
     },
@@ -531,9 +940,20 @@
       "category": "F",
       "family": "Floral Musky",
       "notes": {
-        "top":    ["Pink Pepper", "Pear"],
-        "middle": ["Gardenia", "Jasmine", "Magnolia"],
-        "base":   ["Sandalwood", "Musk", "Amber"]
+        "top": [
+          "Pink Pepper",
+          "Pear"
+        ],
+        "middle": [
+          "Gardenia",
+          "Jasmine",
+          "Magnolia"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.jimmychoo.com/en/women/fragrances/i-want-choo-le-parfum"
     },
@@ -545,9 +965,20 @@
       "category": "F",
       "family": "Floral Oriental",
       "notes": {
-        "top":    ["Bergamot", "Pink Pepper"],
-        "middle": ["Jasmine", "Rose", "Iris"],
-        "base":   ["Vanilla", "Tonka Bean", "Sandalwood"]
+        "top": [
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Jasmine",
+          "Rose",
+          "Iris"
+        ],
+        "base": [
+          "Vanilla",
+          "Tonka Bean",
+          "Sandalwood"
+        ]
       },
       "source_url": "https://www.valentino.com/en-us/beauty/fragrance/women"
     },
@@ -559,9 +990,20 @@
       "category": "F",
       "family": "Floral Musky",
       "notes": {
-        "top":    ["Pink Pepper", "Bergamot"],
-        "middle": ["Rose", "Iris", "Peony"],
-        "base":   ["Musk", "Sandalwood", "Amber"]
+        "top": [
+          "Pink Pepper",
+          "Bergamot"
+        ],
+        "middle": [
+          "Rose",
+          "Iris",
+          "Peony"
+        ],
+        "base": [
+          "Musk",
+          "Sandalwood",
+          "Amber"
+        ]
       },
       "source_url": "https://www.narcisorodriguez.com/fragrance/for-her-musc-noir-rose"
     },
@@ -573,9 +1015,19 @@
       "category": "U",
       "family": "Oriental Spicy",
       "notes": {
-        "top":    ["Bergamot", "Pink Pepper"],
-        "middle": ["Saffron", "Jasmine"],
-        "base":   ["Amber", "Sandalwood", "Musk"]
+        "top": [
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Saffron",
+          "Jasmine"
+        ],
+        "base": [
+          "Amber",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://dossier.co/products/ambery-saffron"
     },
@@ -587,9 +1039,21 @@
       "category": "M",
       "family": "Fruity Chypre",
       "notes": {
-        "top":    ["Pineapple", "Bergamot", "Blackcurrant"],
-        "middle": ["Birch", "Jasmine", "Rose"],
-        "base":   ["Musk", "Ambergris", "Patchouli"]
+        "top": [
+          "Pineapple",
+          "Bergamot",
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Birch",
+          "Jasmine",
+          "Rose"
+        ],
+        "base": [
+          "Musk",
+          "Ambergris",
+          "Patchouli"
+        ]
       },
       "source_url": "https://armafperfumes.com/products/club-de-nuit-intense-man-edp"
     },
@@ -601,9 +1065,21 @@
       "category": "U",
       "family": "Oriental Gourmand",
       "notes": {
-        "top":    ["Grape", "Blackberry", "Bergamot"],
-        "middle": ["Oud", "Rose", "Jasmine"],
-        "base":   ["Vanilla", "Musk", "Amber"]
+        "top": [
+          "Grape",
+          "Blackberry",
+          "Bergamot"
+        ],
+        "middle": [
+          "Oud",
+          "Rose",
+          "Jasmine"
+        ],
+        "base": [
+          "Vanilla",
+          "Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://lattafaperfumes.com/products/khamrah"
     },
@@ -615,9 +1091,21 @@
       "category": "M",
       "family": "Fresh Woody Aromatic",
       "notes": {
-        "top":    ["Bergamot", "Pineapple", "Lemon"],
-        "middle": ["Jasmine", "Geranium", "Cinnamon"],
-        "base":   ["Ambergris", "Vetiver", "Musk"]
+        "top": [
+          "Bergamot",
+          "Pineapple",
+          "Lemon"
+        ],
+        "middle": [
+          "Jasmine",
+          "Geranium",
+          "Cinnamon"
+        ],
+        "base": [
+          "Ambergris",
+          "Vetiver",
+          "Musk"
+        ]
       },
       "source_url": "https://afnanperfumes.com/products/supremacy-silver"
     },
@@ -629,9 +1117,20 @@
       "category": "U",
       "family": "Oriental Woody",
       "notes": {
-        "top":    ["Saffron", "Bergamot"],
-        "middle": ["Oud", "Rose", "Jasmine"],
-        "base":   ["Amber", "Sandalwood", "Musk"]
+        "top": [
+          "Saffron",
+          "Bergamot"
+        ],
+        "middle": [
+          "Oud",
+          "Rose",
+          "Jasmine"
+        ],
+        "base": [
+          "Amber",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.alharamain.com/amber-oud-gold-edition"
     },
@@ -643,9 +1142,19 @@
       "category": "M",
       "family": "Aromatic Woody",
       "notes": {
-        "top":    ["Bergamot", "Cardamom"],
-        "middle": ["Lavender", "Geranium"],
-        "base":   ["Sandalwood", "Vetiver", "Amber"]
+        "top": [
+          "Bergamot",
+          "Cardamom"
+        ],
+        "middle": [
+          "Lavender",
+          "Geranium"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vetiver",
+          "Amber"
+        ]
       },
       "source_url": "https://maisonalhambra.com/products/decent-pour-homme"
     },
@@ -657,9 +1166,21 @@
       "category": "M",
       "family": "Aromatic Aquatic",
       "notes": {
-        "top":    ["Bergamot", "Cardamom", "Apple"],
-        "middle": ["Jasmine", "Violet", "Aquatic Notes"],
-        "base":   ["Driftwood", "Musk", "Amber"]
+        "top": [
+          "Bergamot",
+          "Cardamom",
+          "Apple"
+        ],
+        "middle": [
+          "Jasmine",
+          "Violet",
+          "Aquatic Notes"
+        ],
+        "base": [
+          "Driftwood",
+          "Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.rasasi.com/hawas-for-him.html"
     },
@@ -671,9 +1192,19 @@
       "category": "U",
       "family": "Oriental Woody",
       "notes": {
-        "top":    ["Saffron", "Rose"],
-        "middle": ["Oud", "Patchouli"],
-        "base":   ["Musk", "Amber", "Vanilla"]
+        "top": [
+          "Saffron",
+          "Rose"
+        ],
+        "middle": [
+          "Oud",
+          "Patchouli"
+        ],
+        "base": [
+          "Musk",
+          "Amber",
+          "Vanilla"
+        ]
       },
       "source_url": "https://www.swissarabian.com/shaghaf-oud-aswad.html"
     },
@@ -685,9 +1216,19 @@
       "category": "F",
       "family": "Gourmand Floral",
       "notes": {
-        "top":    ["Coconut", "Bergamot"],
-        "middle": ["Jasmine", "Violet"],
-        "base":   ["Vanilla", "Sandalwood", "Musk"]
+        "top": [
+          "Coconut",
+          "Bergamot"
+        ],
+        "middle": [
+          "Jasmine",
+          "Violet"
+        ],
+        "base": [
+          "Vanilla",
+          "Sandalwood",
+          "Musk"
+        ]
       },
       "source_url": "https://kayali.com/products/utopia-vanilla-coco-21"
     },
@@ -699,9 +1240,19 @@
       "category": "F",
       "family": "Floral Amber",
       "notes": {
-        "top":    ["Star Anise", "Bergamot"],
-        "middle": ["Midnight Jasmine", "Cyclamen"],
-        "base":   ["Sandalwood", "Musk", "Amber"]
+        "top": [
+          "Star Anise",
+          "Bergamot"
+        ],
+        "middle": [
+          "Midnight Jasmine",
+          "Cyclamen"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Amber"
+        ]
       },
       "source_url": "https://www.bathandbodyworks.com/p/into-the-night-eau-de-parfum"
     }

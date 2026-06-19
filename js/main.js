@@ -20,9 +20,11 @@ const VibeFrag = {
       </div>`;
 
     const released = frag.released ? `<span class="frag-card__date">${this.formatDate(frag.released)}</span>` : '';
-    const link = frag.source_url
-      ? `<a href="${frag.source_url}" target="_blank" rel="noopener" class="frag-card__link">View ›</a>`
-      : '';
+    const link = frag.blog_url
+      ? `<a href="${frag.blog_url}" class="frag-card__link">View ›</a>`
+      : frag.source_url
+        ? `<a href="${frag.source_url}" target="_blank" rel="noopener" class="frag-card__link">View ›</a>`
+        : '';
 
     return `
       <article class="frag-card" data-house="${(frag.house || '').toLowerCase()}" data-category="${frag.category || 'U'}" data-family="${(frag.family || '').toLowerCase()}">
