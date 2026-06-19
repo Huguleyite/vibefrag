@@ -1,10 +1,38 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-17",
+    "lastUpdated": "2026-06-19",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "rasasi-hawas-rouge-2026",
+      "name": "Hawas Rouge",
+      "house": "Rasasi",
+      "released": "2026-01",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top":    ["Bergamot", "Pear", "Pink Pepper"],
+        "middle": ["Rouge", "Jasmine", "Orange Blossom"],
+        "base":   ["Vanilla", "Patchouli", "Musk", "Amber"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/si-passione-edition-exclusive/"
+    },
+    {
+      "id": "rasasi-hawas-reina-2026",
+      "name": "Hawas Reina",
+      "house": "Rasasi",
+      "released": "2026-01",
+      "category": "F",
+      "family": "Floral Fruity Amber",
+      "notes": {
+        "top":    ["Apricot", "Banana", "Cinnamon"],
+        "middle": ["Jasmine", "Frangipani", "Orange Blossom", "Coconut", "Coffee"],
+        "base":   ["Vanilla", "Sandalwood", "Cooked Sugar", "Dry Amber", "White Musk"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/olympea-absolu-paco-rabanne/"
+    },
     {
       "id": "lv-ambre-levant-2026",
       "name": "Ambre Levant",
