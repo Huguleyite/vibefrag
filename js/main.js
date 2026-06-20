@@ -46,9 +46,6 @@ const VibeFrag = {
     if (!str) return '';
     const [year, month] = str.split('-');
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    if (month && months[parseInt(month, 10) - 1]) {
-      return `${months[parseInt(month, 10) - 1]} ${year}`;
-    }
     return year;
   },
 
