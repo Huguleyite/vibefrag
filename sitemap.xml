@@ -44,6 +44,30 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/rayhaan-azul/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/libre-santal-couture/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/nitro-white-intensely/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/brutalist-amber-rabanne/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/new-releases.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
