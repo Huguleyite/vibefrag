@@ -160,7 +160,7 @@
       padding: 0.95rem 1.2rem;
       border-bottom: 1px solid rgba(255,255,255,0.04);
       transition: background 0.15s;
-      cursor: default;
+      cursor: pointer;
     }
     .vf-result:last-child { border-bottom: none; }
     .vf-result:hover, .vf-result.vf-focused {
@@ -239,6 +239,74 @@
     .vf-code.vf-copied {
       color: #7a9e7e;
       border-color: rgba(122,158,126,0.35);
+    }
+
+    /* ── Expanded detail card ── */
+    .vf-result.vf-expanded {
+      flex-direction: column;
+      align-items: stretch;
+      background: rgba(176,133,88,0.06);
+    }
+    .vf-result.vf-expanded .vf-result-meta {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .vf-detail {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 0.8rem;
+      margin-top: 0.5rem;
+    }
+    .vf-detail-notes {
+      list-style: none;
+      margin: 0 0 0.75rem 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.8rem;
+    }
+    .vf-detail-notes li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: #878790;
+    }
+    .vf-detail-notes li::before {
+      content: '·';
+      color: #d4a878;
+      margin-right: 0.35rem;
+    }
+    .vf-detail-footer {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .vf-gender-full {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4a4a55;
+    }
+    .vf-shop-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #d4a878;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212,168,120,0.30);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .vf-shop-link:hover {
+      color: #e8c09a;
+      border-color: rgba(212,168,120,0.70);
     }
 
     /* ── Empty / loading states ── */
@@ -348,6 +416,59 @@
       activeIndex = -1;
       render(input.value.trim());
     });
+
+    // Click-to-expand detail cards
+    results.addEventListener('click', function (e) {
+      // Let the copy chip handle its own click
+      if (e.target.closest('.vf-code')) return;
+
+      var card = e.target.closest('.vf-result');
+      if (!card) return;
+
+      // Collapse any other open card
+      results.querySelectorAll('.vf-result.vf-expanded').forEach(function (el) {
+        if (el !== card) {
+          el.classList.remove('vf-expanded');
+          var old = el.querySelector('.vf-detail');
+          if (old) el.removeChild(old);
+        }
+      });
+
+      if (card.classList.contains('vf-expanded')) {
+        // Toggle closed
+        card.classList.remove('vf-expanded');
+        var detail = card.querySelector('.vf-detail');
+        if (detail) card.removeChild(detail);
+      } else {
+        // Open
+        card.classList.add('vf-expanded');
+        var brand  = card.dataset.brand;
+        var name   = card.dataset.name;
+        var notes  = JSON.parse(card.dataset.notes);
+        var gender = card.dataset.gender;
+        var code   = card.dataset.code;
+
+        var genderLabel = gender === 'M' ? 'Masculine' : gender === 'F' ? 'Feminine' : 'Unisex';
+        var shopURL  = 'https://beautyhouse.com/search?q=' + encodeURIComponent(brand + ' ' + name);
+        var shopHTML = code
+          ? '<a href="' + shopURL + '" class="vf-shop-link" target="_blank" rel="noopener noreferrer">Shop at BeautyHouse →</a>'
+          : '';
+
+        var notesHTML = notes.map(function (n) {
+          return '<li>' + escHtml(n) + '</li>';
+        }).join('');
+
+        var detailEl = document.createElement('div');
+        detailEl.className = 'vf-detail';
+        detailEl.innerHTML = '<ul class="vf-detail-notes">' + notesHTML + '</ul>'
+          + '<div class="vf-detail-footer">'
+          + '<span class="vf-gender-full">' + escHtml(genderLabel) + '</span>'
+          + shopHTML
+          + '</div>';
+        card.appendChild(detailEl);
+        card.scrollIntoView({ block: 'nearest' });
+      }
+    });
   }
 
   function isOpen() { return overlay.classList.contains('vf-open'); }
@@ -440,7 +561,12 @@
         ? `<span class="vf-code" data-code="${escHtml(e.discount_code)}" title="Click to copy">${escHtml(e.discount_code)}</span>`
         : '';
 
-      return `<div class="vf-result" role="option">
+      return `<div class="vf-result" role="option"
+        data-brand="${escHtml(e.brand)}"
+        data-name="${escHtml(e.name)}"
+        data-notes="${escHtml(JSON.stringify(e.notes))}"
+        data-gender="${escHtml(e.gender)}"
+        data-code="${escHtml(e.discount_code)}">
         <div class="vf-result-body">
           <div class="vf-result-brand">${highlight(e.brand, q)}</div>
           <div class="vf-result-name">${highlight(e.name, q)}</div>
