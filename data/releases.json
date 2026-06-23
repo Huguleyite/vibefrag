@@ -6,6 +6,21 @@
   },
   "releases": [
     {
+      "id": "rayhaan-pacific-aloha-2026",
+      "name": "Pacific Aloha",
+      "house": "Rayhaan",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Tropical Aquatic",
+      "notes": {
+        "top": ["Blood Orange", "Melon", "Lemon"],
+        "middle": ["Candied Watermelon", "Coconut"],
+        "base": ["Marine Notes", "Amberwood", "Cacao"]
+      },
+      "source_url": "https://beautyhouse.com/products/rayhaan-pacific-aloha-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m",
+      "blog_url": "/blog/rayhaan-pacific-aloha/"
+    },
+    {
       "id": "rasasi-hawas-gold-digger-2026",
       "name": "Hawas Gold Digger",
       "house": "Rasasi",
