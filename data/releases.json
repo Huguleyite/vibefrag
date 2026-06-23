@@ -6,6 +6,36 @@
   },
   "releases": [
     {
+      "id": "rasasi-hawas-gold-digger-2026",
+      "name": "Hawas Gold Digger",
+      "house": "Rasasi",
+      "released": "2026-06",
+      "category": "M",
+      "family": "Aromatic Woody",
+      "notes": {
+        "top": ["Bergamot", "Lavender", "Pear", "Mint"],
+        "middle": ["Cinnamon", "Sage"],
+        "base": ["Patchouli", "Cedar", "Vanilla", "Amber"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-gold-digger-rasasi/",
+      "blog_url": "/blog/hawas-gold-digger/"
+    },
+    {
+      "id": "rasasi-hawas-la-mer-2026",
+      "name": "Hawas La Mer",
+      "house": "Rasasi",
+      "released": "2026-06",
+      "category": "M",
+      "family": "Floral Fruity Amber",
+      "notes": {
+        "top": ["Peppermint", "Bergamot", "Mandarin"],
+        "middle": ["Blackcurrant", "Fig", "Jasmine", "Carrot"],
+        "base": ["Amber", "Woody Notes"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-la-mer-rasasi/",
+      "blog_url": "/blog/hawas-la-mer/"
+    },
+    {
       "id": "rasasi-hawas-rouge-2026",
       "name": "Hawas Rouge",
       "house": "Rasasi",
