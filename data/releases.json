@@ -1,10 +1,94 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-19",
+    "lastUpdated": "2026-06-23",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "bottega-veneta-always-now-2026",
+      "name": "Always Now",
+      "house": "Bottega Veneta",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Fresh Aromatic",
+      "notes": {
+        "top": ["Basil", "Lemon", "Bergamot", "Ginger"],
+        "middle": ["Fig Milk", "Petitgrain", "Neroli"],
+        "base": ["Vetiver", "Cedarwood", "Musk"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Bottega-Veneta/Always-Now-135219.html"
+    },
+    {
+      "id": "bottega-veneta-ricordami-2026",
+      "name": "Ricordami",
+      "house": "Bottega Veneta",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": ["Rum", "Paradisone"],
+        "middle": ["Patchouli", "Ambrox"],
+        "base": ["Vanilla", "Oak", "Frankincense"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Bottega-Veneta/Ricordami-135212.html"
+    },
+    {
+      "id": "bdk-silver-ceremony-2026",
+      "name": "Silver Ceremony",
+      "house": "BDK Parfums",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Woody Spicy",
+      "notes": {
+        "top": ["Italian Lemon", "Bergamot", "Green Mandarin"],
+        "middle": ["Ginger", "Pink Pepper"],
+        "base": ["Oud", "Atlas Cedar", "Cypriol", "Labdanum", "Patchouli"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/BDK-Parfums/Silver-Ceremony-132890.html"
+    },
+    {
+      "id": "guerlain-eau-de-coton-2026",
+      "name": "Eau de Coton",
+      "house": "Guerlain",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Floral Musky",
+      "notes": {
+        "top": ["Lemon", "Bergamot", "Green Notes"],
+        "middle": ["Orange Blossom", "Almond"],
+        "base": ["White Musk", "Woody Notes", "Vanilla"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Guerlain/Eau-de-Coton-128416.html"
+    },
+    {
+      "id": "ds-durga-rose-pacific-2026",
+      "name": "Rose Pacific",
+      "house": "D.S. & Durga",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Floral Aquatic",
+      "notes": {
+        "top": ["Apricot", "Lime", "Aquatic Notes"],
+        "middle": ["Wild Rose", "Poppy", "Avocado"],
+        "base": ["Peach", "Musk", "Vanilla", "Sand"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/DS-Durga/Rose-Pacific-132793.html"
+    },
+    {
+      "id": "borntostandout-cola-addict-2026",
+      "name": "Cola Addict",
+      "house": "BORNTOSTANDOUT",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Citrus Gourmand",
+      "notes": {
+        "top": ["Cola", "Lemon", "Lime Peel", "Neroli", "Cinnamon", "Ginger"],
+        "middle": ["Rum", "Coffee", "Nutmeg"],
+        "base": ["Vanilla", "Caramel", "Sandalwood", "Moss"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Cola-Addict-135643.html"
+    },
     {
       "id": "rayhaan-pacific-aloha-2026",
       "name": "Pacific Aloha",
