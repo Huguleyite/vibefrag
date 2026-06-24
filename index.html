@@ -22,6 +22,34 @@
   <meta name="twitter:title" content="VibeFrag — Find Your Scent for Every Occasion">
   <meta name="twitter:description" content="Answer 5 questions. Get 3 fragrance picks — a splurge, a designer, and a dupe — matched to your occasion, season, and budget.">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://vibefrag.com/#website",
+        "url": "https://vibefrag.com/",
+        "name": "VibeFrag",
+        "description": "Find your scent for every occasion. Fragrance recommendations matched to your moment.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://vibefrag.com/blog/?search={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://vibefrag.com/#organization",
+        "name": "VibeFrag",
+        "url": "https://vibefrag.com/",
+        "logo": { "@type": "ImageObject", "url": "https://vibefrag.com/favicon.svg" },
+        "founder": { "@type": "Person", "name": "Sim Floyd, Jr.", "url": "https://vibefrag.com/about/" }
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts — display=swap prevents FOIT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -537,8 +565,8 @@
     </button>
     <!-- nav__links kept for main.js setActiveNav() compatibility -->
     <ul class="nav-links nav__links" id="nav-links">
-      <li><a href="new-releases.html">New Releases</a></li>
-      <li><a href="houses.html">By House</a></li>
+      <li><a href="new-releases/">New Releases</a></li>
+      <li><a href="houses/">By House</a></li>
       <li><a href="blog/index.html">The Dry Down</a></li>
       <li><a href="quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
@@ -556,7 +584,7 @@
       <p class="hero-sub">Your aura arrives before you do.<br>Make it count.</p>
       <div class="hero-actions">
         <a href="quiz/index.html" class="btn-primary">Take the Quiz →</a>
-        <a href="new-releases.html" class="btn-ghost">Browse New Releases</a>
+        <a href="new-releases/" class="btn-ghost">Browse New Releases</a>
       </div>
     </div>
     <div class="scroll-hint">
@@ -571,7 +599,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Latest Drops</h2>
-        <a href="new-releases.html" class="see-all">See all →</a>
+        <a href="new-releases/" class="see-all">See all →</a>
       </div>
       <div class="card-grid" id="home-releases">
         <div class="loading">Loading latest releases…</div>
@@ -585,7 +613,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Browse by House</h2>
-        <a href="houses.html" class="see-all">See all →</a>
+        <a href="houses/" class="see-all">See all →</a>
       </div>
       <div class="houses-grid" id="home-houses">
         <div class="loading">Loading houses…</div>
@@ -616,9 +644,10 @@
       <div class="footer-tagline">Find your scent for every occasion.</div>
     </div>
     <ul class="footer-links">
-      <li><a href="new-releases.html">New Releases</a></li>
-      <li><a href="houses.html">By House</a></li>
+      <li><a href="new-releases/">New Releases</a></li>
+      <li><a href="houses/">By House</a></li>
       <li><a href="blog/index.html">The Dry Down</a></li>
+      <li><a href="about/index.html">About</a></li>
       <li><a href="quiz/index.html">Quiz</a></li>
     </ul>
   <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
@@ -660,29 +689,27 @@
     const releasesEl = document.getElementById('home-releases');
     const data = await VibeFrag.fetchData('data/releases.json');
 
-    if (!data || !data.releases || data.releases.length === 0) {
-      releasesEl.innerHTML = '<div class="empty-state"><p>New releases drop weekly.</p></div>';
-    } else {
-      const top6 = data.releases.slice(0, 6);
-      releasesEl.innerHTML = top6.map(f => VibeFrag.renderCard(f)).join('');
+    if (data && data.releases && releasesEl) {
+      const recent = data.releases.slice(0, 6);
+      releasesEl.innerHTML = recent.map(f => VibeFrag.renderCard(f)).join('');
+    } else if (releasesEl) {
+      releasesEl.innerHTML = '<div class="loading">No releases found.</div>';
     }
 
-    // Houses — show top 12
+    // Houses — show all
     const housesEl = document.getElementById('home-houses');
     const hData = await VibeFrag.fetchData('data/houses.json');
-
-    if (!hData || !hData.houses) {
-      housesEl.innerHTML = '<div class="empty-state"><p>Loading houses…</p></div>';
-    } else {
-      const preview = hData.houses.slice(0, 12);
-      housesEl.innerHTML = preview.map(h => `
-        <a href="houses.html?house=${encodeURIComponent(h.name)}" class="house-card">
+    if (hData && hData.houses && housesEl) {
+      housesEl.innerHTML = hData.houses.map(h => `
+        <a href="houses/?house=${encodeURIComponent(h.name)}" class="house-card">
           <div class="house-card__tier">${h.tier}</div>
           <div class="house-card__name">${h.name}</div>
         </a>`).join('');
+    } else if (housesEl) {
+      housesEl.innerHTML = '<div class="loading">No houses found.</div>';
     }
   })();
 </script>
-  <script src="/js/search.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>

@@ -182,8 +182,8 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links nav__links" id="nav-links">
-      <li><a href="../new-releases.html">New Releases</a></li>
-      <li><a href="../houses.html">By House</a></li>
+      <li><a href="../new-releases/">New Releases</a></li>
+      <li><a href="../houses/">By House</a></li>
       <li><a href="index.html" class="nav-active">The Dry Down</a></li>
       <li><a href="../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
@@ -431,15 +431,15 @@
     </div>
     <ul class="footer-links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../new-releases.html">New Releases</a></li>
-      <li><a href="../houses.html">By House</a></li>
+      <li><a href="../new-releases/">New Releases</a></li>
+      <li><a href="../houses/">By House</a></li>
       <li><a href="../quiz/index.html">Quiz</a></li>
+      <li><a href="../about/index.html">About</a></li>
     </ul>
-  <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
+    <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
   </div>
 </footer>
 
-<script src="../js/main.js"></script>
 <script>
   document.addEventListener('visibilitychange', () => {
     const s = document.hidden ? 'paused' : 'running';
@@ -458,30 +458,7 @@
       a.addEventListener('click', () => { navLinks.classList.remove('nav-open'); navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); });
     });
   }
-
-  // ── FILTER ──
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const grid = document.getElementById('blog-grid');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-
-      // Each card may be wrapped in an <a>; get the wrapping element to hide/show
-      grid.querySelectorAll('.blog-card').forEach(card => {
-        const wrapper = card.parentElement.tagName === 'A' ? card.parentElement : card;
-        if (filter === 'all') {
-          wrapper.style.display = '';
-        } else {
-          wrapper.style.display = card.dataset.category === filter ? '' : 'none';
-        }
-      });
-    });
-  });
 </script>
-  <script src="/js/search.js"></script>
+<script src="/js/search.js"></script>
 </body>
 </html>

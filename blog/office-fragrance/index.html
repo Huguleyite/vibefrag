@@ -317,7 +317,45 @@
       .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
       .footer-links { flex-wrap: wrap; gap: 1.2rem; }
     }
+
+    /* ── RELATED ARTICLES ── */
+    .related-section { margin: 2.5rem 0 0; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .related-label { font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.5rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.8rem; }
+    .related-card { display: block; text-decoration: none; padding: 1.2rem 1.4rem; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); transition: border-color 0.3s, background 0.3s; }
+    .related-card:hover { border-color: rgba(200,180,140,0.28); background: rgba(176,133,88,0.04); }
+    .related-card__tag { font-size: 0.50rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.45rem; opacity: 0.8; }
+    .related-card__title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.05rem; color: var(--silver); margin-bottom: 0.35rem; line-height: 1.3; }
+    .related-card__excerpt { font-size: 0.76rem; color: var(--silver-mid); line-height: 1.6; font-weight: 200; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Office Fragrance: Professional Without Being Forgettable",
+        "description": "Inoffensive doesn't have to mean invisible. A guide to scents that say capable without announcing themselves.",
+        "image": "https://vibefrag.com/blog/images/office-fragrance.jpg",
+        "author": { "@type": "Person", "name": "Sim Floyd, Jr.", "url": "https://vibefrag.com/about/" },
+        "publisher": { "@type": "Organization", "name": "VibeFrag", "url": "https://vibefrag.com/" },
+        "datePublished": "2026-06-18",
+        "dateModified": "2026-06-18",
+        "mainEntityOfPage": "https://vibefrag.com/blog/office-fragrance/",
+        "url": "https://vibefrag.com/blog/office-fragrance/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vibefrag.com/" },
+          { "@type": "ListItem", "position": 2, "name": "The Dry Down", "item": "https://vibefrag.com/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "Office Fragrance: Professional Without Being Forgettable", "item": "https://vibefrag.com/blog/office-fragrance/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -341,8 +379,8 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
       <li><a href="../index.html" class="active">The Dry Down</a></li>
       <li><a href="../../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
@@ -485,45 +523,41 @@
           <span class="pick__note">White Musk</span>
           <span class="pick__note">Amber</span>
         </div>
-        <p class="pick__desc">Fresh and floating. The kind of fragrance that makes a room feel cleaner for it. No one will ask you to move seats. Someone will ask what you're wearing after the meeting.</p>
-        <a class="pick__shop" href="https://beautyhouse.com/products/chanel-chance-eau-tendre-eau-de-toilette-for-women?_pos=1&_psq=Chanel%20Chance%20Eau%20Tendre&_ss=e&_v=1.0&sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored">Shop Chance Tendre at BeautyHouse →</a>
-        <span style="display:block;font-size:0.58rem;letter-spacing:0.16em;color:var(--amber);opacity:0.75;margin-top:0.6rem;">Use code <strong>VIBEFRAG</strong> at checkout</span>
-      </div>
-
-      <div class="pick">
-        <div class="pick__top">
-          <div class="pick__tier">The Dupe</div>
-          <div class="pick__price">~$29</div>
-        </div>
-        <div class="pick__name">Dossier White Floral Musk</div>
-        <div class="pick__notes">
-          <span class="pick__note">White Florals</span>
-          <span class="pick__note">Musk</span>
-          <span class="pick__note">Ambrette</span>
-          <span class="pick__note">Sandalwood</span>
-        </div>
-        <p class="pick__desc">Clean, soft, close to the skin. Not invisible, just considerate. The professional baseline done right. For people who want to smell good without making it anyone else's problem.</p>
-        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Dossier+White+Floral+Musk" target="_blank" rel="noopener">Shop White Floral Musk →</a>
-      </div>
-
-      <!-- CLOSING RULE -->
-      <div class="closing-rule">
-        <div class="closing-rule__label">One Rule</div>
-        <div class="closing-rule__text">Two sprays. Not four.</div>
-        <div class="closing-rule__sub">Shared air is borrowed, not owned.</div>
-      </div>
-
-      <!-- QUIZ CTA -->
-      <div class="quiz-cta">
-        <p>Not sure what occasion you're actually dressing for?<br>The quiz narrows it down.</p>
-        <a href="../../quiz/index.html">Find Your Scent →</a>
+        <p class="pick__desc">Fresh and floating. The kind of fragrance that makes a room feel cleaner for it. No one will ask you to move seats. Someone will ask what you're wearing.</p>
+        <a class="pick__shop" href="https://www.google.com/search?tbm=shop&q=Chanel+Chance+Eau+Tendre" target="_blank" rel="noopener">Shop Chance Eau Tendre →</a>
       </div>
 
     </div><!-- /article-body -->
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <div class="related-label">More from The Dry Down</div>
+      <div class="related-grid">
+        <a href="../first-date/" class="related-card">
+          <div class="related-card__tag">Occasion Guide</div>
+          <div class="related-card__title">What to Wear on a First Date</div>
+          <div class="related-card__excerpt">Three fragrances calibrated for the stakes of a first impression.</div>
+        </a>
+        <a href="../summer-2026/" class="related-card">
+          <div class="related-card__tag">Occasion Guide</div>
+          <div class="related-card__title">Summer 2026 Picks</div>
+          <div class="related-card__excerpt">The season's best — fresh, aquatic, and a few that run warm enough to work year-round.</div>
+        </a>
+        <a href="../stronger-with-you-intensely/" class="related-card">
+          <div class="related-card__tag">Review</div>
+          <div class="related-card__title">Stronger With You Intensely</div>
+          <div class="related-card__excerpt">Cardamom, vanilla, tonka bean. The Armani EDP that earns every room it walks into.</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="quiz-cta">
+      <p>Not sure which fragrance fits your moment? Take the quiz — six questions, three picks.</p>
+      <a href="../../quiz/index.html">Find My Scent →</a>
+    </div>
   </div><!-- /container -->
 </div><!-- /page-content -->
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
@@ -532,11 +566,13 @@
     </div>
     <ul class="footer-links">
       <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
+      <li><a href="../../blog/index.html">The Dry Down</a></li>
+      <li><a href="../../about/index.html">About</a></li>
       <li><a href="../../quiz/index.html">Quiz</a></li>
     </ul>
-  <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
+    <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
   </div>
 </footer>
 
@@ -559,6 +595,6 @@
     });
   }
 </script>
-  <script src="/js/search.js"></script>
+<script src="/js/search.js"></script>
 </body>
 </html>

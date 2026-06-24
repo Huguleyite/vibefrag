@@ -92,13 +92,19 @@
   </url>
 
   <url>
-    <loc>https://vibefrag.com/new-releases.html</loc>
+    <loc>https://vibefrag.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/new-releases/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://vibefrag.com/houses.html</loc>
+    <loc>https://vibefrag.com/houses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

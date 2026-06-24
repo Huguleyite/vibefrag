@@ -145,7 +145,44 @@
       .notes-row { flex-direction: column; gap: 1rem; }
       .article-cta { flex-direction: column; }
     }
+
+    /* ── RELATED ARTICLES ── */
+    .related-section { margin: 2.5rem 0 0; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .related-label { font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.5rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.8rem; }
+    .related-card { display: block; text-decoration: none; padding: 1.2rem 1.4rem; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); transition: border-color 0.3s, background 0.3s; }
+    .related-card:hover { border-color: rgba(200,180,140,0.28); background: rgba(176,133,88,0.04); }
+    .related-card__tag { font-size: 0.50rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.45rem; opacity: 0.8; }
+    .related-card__title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.05rem; color: var(--silver); margin-bottom: 0.35rem; line-height: 1.3; }
+    .related-card__excerpt { font-size: 0.76rem; color: var(--silver-mid); line-height: 1.6; font-weight: 200; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Hawas Gold Digger by Rasasi",
+        "description": "Hawas Gold Digger by Rasasi: bergamot, pear, lavender, mint, cinnamon, sage, vanilla, amber. A near-identical map to Jean Paul Gaultier Ultra Male — at a fraction of the price.",
+        "author": { "@type": "Person", "name": "Sim Floyd, Jr.", "url": "https://vibefrag.com/about/" },
+        "publisher": { "@type": "Organization", "name": "VibeFrag", "url": "https://vibefrag.com/" },
+        "datePublished": "2026-06-22",
+        "dateModified": "2026-06-22",
+        "mainEntityOfPage": "https://vibefrag.com/blog/hawas-gold-digger/",
+        "url": "https://vibefrag.com/blog/hawas-gold-digger/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vibefrag.com/" },
+          { "@type": "ListItem", "position": 2, "name": "The Dry Down", "item": "https://vibefrag.com/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "Hawas Gold Digger by Rasasi", "item": "https://vibefrag.com/blog/hawas-gold-digger/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -169,8 +206,8 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
       <li><a href="../index.html" class="active">The Dry Down</a></li>
       <li><a href="../../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
@@ -220,19 +257,39 @@
       <div class="clone-section__label">The Original</div>
       <h2>Jean Paul Gaultier Ultra Male</h2>
       <p>Ultra Male is a 2015 flanker of Le Male, composed by Francis Kurkdjian. Where Le Male runs clean and maritime, Ultra Male pushes into something heavier and more seductive: pear, lavender, mint, and bergamot on top; cinnamon, clary sage, and caraway in the heart; black vanilla, amber, patchouli, and cedar at the base. It's one of the most-duplicated masculines in the enthusiast community — the structure is familiar and distinctive, sweet but not cloying, warm but not heavy.</p>
-      <p>Hawas Gold Digger maps almost exactly to that framework. Bergamot, pear, lavender, and mint on top. Cinnamon and sage in the heart. Patchouli, cedar, vanilla, and amber at the base. The note lists are nearly identical — Gold Digger omits the caraway and doesn't push into the black vanilla register — but the skeleton is the same. If you've worn Ultra Male and want a travel backup, or you've been curious about the fuss without committing to the JPG price, this is the most direct comparison available.</p>
+      <p>Hawas Gold Digger maps almost exactly to that framework. Bergamot, pear, lavender, and mint on top. Cinnamon and sage in the heart. Patchouli, cedar, vanilla, and amber at the base. The note lists are nearly identical — Gold Digger omits the caraway and doesn't push into the black vanilla register — but the skeleton is the same. If you've worn Ultra Male and want a travel backup, or you've been curious about Ultra Male but haven't committed to the price, Gold Digger makes that case.
+    </p>
     </div>
 
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <div class="related-label">More from The Dry Down</div>
+      <div class="related-grid">
+        <a href="../hawas-la-mer/" class="related-card">
+          <div class="related-card__tag">Dupe</div>
+          <div class="related-card__title">Hawas La Mer by Rasasi</div>
+          <div class="related-card__excerpt">Peppermint, blackcurrant, carrot, amber. Pacific Chill's blueprint at a different price.</div>
+        </a>
+        <a href="../hawas-rouge/" class="related-card">
+          <div class="related-card__tag">Dupe</div>
+          <div class="related-card__title">Hawas Rouge by Rasasi</div>
+          <div class="related-card__excerpt">Bergamot, pear, and pink pepper on top. Vanilla and amber underneath. $44.50.</div>
+        </a>
+        <a href="../nitro-white-intensely/" class="related-card">
+          <div class="related-card__tag">Dupe</div>
+          <div class="related-card__title">Nitro White Intensely by Dumont</div>
+          <div class="related-card__excerpt">Rum, dark spice, caramel, sandalwood. Black Phantom territory at a fraction of the price.</div>
+        </a>
+      </div>
+    </div>
     <div class="article-cta">
-      <a href="https://www.google.com/search?q=Hawas+Gold+Digger+Rasasi" target="_blank" rel="noopener" class="btn btn-primary">Shop Hawas Gold Digger →</a>
+      <a href="https://beautyhouse.com/search?q=rasasi+hawas&sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="btn btn-primary">Shop Rasasi Hawas at BeautyHouse →</a>
       <a href="../index.html" class="btn btn-secondary">← Back to The Dry Down</a>
     </div>
-
-    <div class="back-link">
+    <p style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);opacity:0.75;margin-top:-1rem;margin-bottom:2rem;">Use code <strong>VIBEFRAG</strong> at checkout for a discount.</p>
     <p style="font-size:0.6rem;color:rgba(135,135,144,0.50);letter-spacing:0.04em;margin:0 0 2.5rem;line-height:1.6;">VibeFrag may earn a commission on purchases made through links on this page, at no cost to you.</p>
-      <a href="../../new-releases.html">View all new releases →</a>
-    </div>
-
+    <div class="back-link"><a href="../../new-releases/">View all new releases →</a></div>
   </div>
 </div>
 
@@ -245,11 +302,13 @@
     </div>
     <ul class="footer-links">
       <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
+      <li><a href="../../blog/index.html">The Dry Down</a></li>
+      <li><a href="../../about/index.html">About</a></li>
       <li><a href="../../quiz/index.html">Quiz</a></li>
     </ul>
-  <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
+    <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
   </div>
 </footer>
 
@@ -272,6 +331,6 @@
     });
   }
 </script>
-  <script src="/js/search.js"></script>
+<script src="/js/search.js"></script>
 </body>
 </html>

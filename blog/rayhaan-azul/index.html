@@ -138,7 +138,44 @@
       .notes-row { flex-direction: column; gap: 1rem; }
       .article-cta { flex-direction: column; }
     }
+
+    /* ── RELATED ARTICLES ── */
+    .related-section { margin: 2.5rem 0 0; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .related-label { font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.5rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.8rem; }
+    .related-card { display: block; text-decoration: none; padding: 1.2rem 1.4rem; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); transition: border-color 0.3s, background 0.3s; }
+    .related-card:hover { border-color: rgba(200,180,140,0.28); background: rgba(176,133,88,0.04); }
+    .related-card__tag { font-size: 0.50rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.45rem; opacity: 0.8; }
+    .related-card__title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.05rem; color: var(--silver); margin-bottom: 0.35rem; line-height: 1.3; }
+    .related-card__excerpt { font-size: 0.76rem; color: var(--silver-mid); line-height: 1.6; font-weight: 200; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Azul by Rayhaan",
+        "description": "Rayhaan Azul: bergamot, lemon, grapefruit blossom, calone, and sandalwood. A summer citrus aquatic launched in the Maldives. Reviewed by VibeFrag.",
+        "author": { "@type": "Person", "name": "Sim Floyd, Jr.", "url": "https://vibefrag.com/about/" },
+        "publisher": { "@type": "Organization", "name": "VibeFrag", "url": "https://vibefrag.com/" },
+        "datePublished": "2026-06-20",
+        "dateModified": "2026-06-20",
+        "mainEntityOfPage": "https://vibefrag.com/blog/rayhaan-azul/",
+        "url": "https://vibefrag.com/blog/rayhaan-azul/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vibefrag.com/" },
+          { "@type": "ListItem", "position": 2, "name": "The Dry Down", "item": "https://vibefrag.com/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "Azul by Rayhaan", "item": "https://vibefrag.com/blog/rayhaan-azul/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -162,8 +199,8 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
       <li><a href="../index.html" class="active">The Dry Down</a></li>
       <li><a href="../../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
@@ -206,20 +243,39 @@
     <div class="article-body">
       <p>Bergamot and lemon open it: citrus, clean, unambiguous. No softening moves in the first few minutes — just the notes doing what they're named. Grapefruit blossom carries the heart, adding a mild bitter edge that keeps things from settling into standard cologne territory.</p>
       <p>Calone does the structural work in the base. It's the molecule that gives marine fragrances their oceanic quality — clean, open-water character that reads as natural and synthetic at the same time. Sandalwood wraps it. The combination lands as beach without sunscreen, which is the assignment for a summer release launched in the Indian Ocean.</p>
-      <p>At $44.50 for 100ml, the case makes itself.</p>
+      <p>At $44.50 for 100ml, Azul is priced alongside the rest of the Rayhaan line. A summer fragrance that knows exactly what it is.
+    </p>
     </div>
 
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <div class="related-label">More from The Dry Down</div>
+      <div class="related-grid">
+        <a href="../rayhaan-pacific-aloha/" class="related-card">
+          <div class="related-card__tag">Dupe</div>
+          <div class="related-card__title">Pacific Aloha by Rayhaan</div>
+          <div class="related-card__excerpt">Blood orange, candied watermelon, coconut. Room 1015 Wavechild for $44.50.</div>
+        </a>
+        <a href="../hawas-la-mer/" class="related-card">
+          <div class="related-card__tag">Dupe</div>
+          <div class="related-card__title">Hawas La Mer by Rasasi</div>
+          <div class="related-card__excerpt">Peppermint, blackcurrant, carrot, amber. Pacific Chill's blueprint at a different price.</div>
+        </a>
+        <a href="../summer-2026/" class="related-card">
+          <div class="related-card__tag">Occasion Guide</div>
+          <div class="related-card__title">Summer 2026 Picks</div>
+          <div class="related-card__excerpt">The season's best — fresh, aquatic, and a few that run warm enough to work year-round.</div>
+        </a>
+      </div>
+    </div>
     <div class="article-cta">
-      <a href="https://beautyhouse.com/products/rayhaan-azul-eau-de-parfum-for-everyone?_pos=2&_sid=ba06be6a3&_ss=r" target="_blank" rel="noopener sponsored" class="btn btn-primary">Shop Azul at BeautyHouse →</a>
+      <a href="https://beautyhouse.com/products/rayhaan-azul-eau-de-parfum-for-everyone?_pos=1&_psq=rayhaan+azul&_ss=e&_v=1.0&sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="btn btn-primary">Shop Azul at BeautyHouse →</a>
       <a href="../index.html" class="btn btn-secondary">← Back to The Dry Down</a>
     </div>
     <p style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);opacity:0.75;margin-top:-1rem;margin-bottom:2rem;">Use code <strong>VIBEFRAG</strong> at checkout for a discount.</p>
     <p style="font-size:0.6rem;color:rgba(135,135,144,0.50);letter-spacing:0.04em;margin:0 0 2.5rem;line-height:1.6;">VibeFrag may earn a commission on purchases made through links on this page, at no cost to you.</p>
-
-    <div class="back-link">
-      <a href="../../new-releases.html">View all new releases →</a>
-    </div>
-
+    <div class="back-link"><a href="../../new-releases/">View all new releases →</a></div>
   </div>
 </div>
 
@@ -232,11 +288,13 @@
     </div>
     <ul class="footer-links">
       <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../new-releases.html">New Releases</a></li>
-      <li><a href="../../houses.html">By House</a></li>
+      <li><a href="../../new-releases/">New Releases</a></li>
+      <li><a href="../../houses/">By House</a></li>
+      <li><a href="../../blog/index.html">The Dry Down</a></li>
+      <li><a href="../../about/index.html">About</a></li>
       <li><a href="../../quiz/index.html">Quiz</a></li>
     </ul>
-  <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
+    <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
   </div>
 </footer>
 
@@ -259,7 +317,6 @@
     });
   }
 </script>
-  <script src="/js/search.js"></script>
+<script src="/js/search.js"></script>
 </body>
 </html>
-    navLinks.querySelectorAll('a').forEa
