@@ -200,13 +200,13 @@
       <p>Occasion picks, seasonal roundups, and fragrance deep-dives — for the curious and the committed alike.</p>
     </div>
 
-    <div class="filter-bar">
-      <button class="filter-btn active">All</button>
-      <button class="filter-btn">Sale</button>
-      <button class="filter-btn">Occasion Guides</button>
-      <button class="filter-btn">Seasonal Picks</button>
-      <button class="filter-btn">Deep Dives</button>
-      <button class="filter-btn">Dupes</button>
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="sale">Sale</button>
+      <button class="filter-btn" data-filter="occasion-guides">Occasion Guides</button>
+      <button class="filter-btn" data-filter="seasonal-picks">Seasonal Picks</button>
+      <button class="filter-btn" data-filter="deep-dives">Deep Dives</button>
+      <button class="filter-btn" data-filter="dupes">Dupes</button>
     </div>
 
     <div class="blog-grid" id="blog-grid">
@@ -458,6 +458,20 @@
   document.addEventListener('visibilitychange', () => {
     const s = document.hidden ? 'paused' : 'running';
     document.querySelectorAll('.caustic').forEach(el => { el.style.animationPlayState = s; });
+  });
+
+  /* Filter */
+  document.getElementById('filter-bar').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('#blog-grid > *').forEach(el => {
+      const article = el.tagName === 'ARTICLE' ? el : el.querySelector('article');
+      if (!article) return;
+      el.style.display = (filter === 'all' || article.dataset.category === filter) ? '' : 'none';
+    });
   });
 
   const navToggle = document.getElementById('nav-toggle');
