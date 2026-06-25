@@ -6,6 +6,21 @@
   },
   "releases": [
     {
+      "id": "rasasi-hawas-sapphire-2026",
+      "name": "Hawas Sapphire",
+      "house": "Rasasi",
+      "released": "2026-06",
+      "category": "M",
+      "family": "Citrus Fruity Woody",
+      "notes": {
+        "top": ["Bergamot", "Blackcurrant", "Guava"],
+        "middle": ["Orange Blossom", "Sandalwood"],
+        "base": ["Musk", "Tonka Bean", "Ambergris"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-sapphire-rasasi/",
+      "blog_url": "/blog/hawas-sapphire/"
+    },
+    {
       "id": "bottega-veneta-always-now-2026",
       "name": "Always Now",
       "house": "Bottega Veneta",

@@ -86,6 +86,12 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/hawas-sapphire/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/blog/stronger-with-you-intensely/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

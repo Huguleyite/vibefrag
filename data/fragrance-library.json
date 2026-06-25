@@ -1,5 +1,12 @@
 [
   {
+    "brand": "Rasasi",
+    "name": "Hawas Sapphire",
+    "notes": ["Bergamot", "Blackcurrant", "Guava", "Orange Blossom", "Sandalwood", "Musk", "Tonka Bean", "Ambergris"],
+    "gender": "M",
+    "discount_code": "VIBEFRAG"
+  },
+  {
     "brand": "Creed",
     "name": "Silver Mountain Water",
     "notes": [
