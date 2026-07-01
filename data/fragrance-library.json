@@ -1,5 +1,12 @@
 [
   {
+    "brand": "Giorgio Armani",
+    "name": "Acqua di Giò Profondo",
+    "notes": ["Bergamot", "Green Mandarin", "Sea Notes", "Rosemary", "Lavender", "Cypress", "Lentisque", "Patchouli", "Musk", "Mineral Amber"],
+    "gender": "M",
+    "discount_code": "VIBEFRAG"
+  },
+  {
     "brand": "Rasasi",
     "name": "Hawas Sapphire",
     "notes": ["Bergamot", "Blackcurrant", "Guava", "Orange Blossom", "Sandalwood", "Musk", "Tonka Bean", "Ambergris"],
