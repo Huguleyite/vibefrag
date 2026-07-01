@@ -1,10 +1,80 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-23",
+    "lastUpdated": "2026-06-30",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "jpg-le-beau-narcisse-2026",
+      "name": "Le Beau Narcisse",
+      "house": "Jean Paul Gaultier",
+      "released": "2026-06",
+      "category": "M",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top": ["Bergamot", "Coconut"],
+        "middle": ["Orange Blossom", "Musk"],
+        "base": ["Tonka Bean", "Vanilla", "Vetiver"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Beau-Narcisse-122215.html"
+    },
+    {
+      "id": "jo-malone-scarlet-beetroot-2026",
+      "name": "Scarlet Beetroot",
+      "house": "Jo Malone London",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Fruity Woody",
+      "notes": {
+        "top": ["Blackcurrant"],
+        "middle": ["Beetroot"],
+        "base": ["Patchouli"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Scarlet-Beetroot-132238.html"
+    },
+    {
+      "id": "jo-malone-carrot-blossom-2026",
+      "name": "Carrot Blossom",
+      "house": "Jo Malone London",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Fresh Floral",
+      "notes": {
+        "top": ["Carrot"],
+        "middle": ["Orange Blossom"],
+        "base": ["White Musk"]
+      },
+      "source_url": "https://www.jomalone.com/products/carrot-blossom-cologne"
+    },
+    {
+      "id": "jo-malone-velvety-butternut-2026",
+      "name": "Velvety Butternut",
+      "house": "Jo Malone London",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": ["Butternut Squash"],
+        "middle": ["Tonka Bean"],
+        "base": ["Patchouli"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Velvety-Butternut-132237.html"
+    },
+    {
+      "id": "loewe-wild-coffee-2026",
+      "name": "Wild Coffee",
+      "house": "Loewe",
+      "released": "2026-05",
+      "category": "U",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top": ["Bergamot", "Bitter Orange", "Cinnamon", "Cardamom", "Guava", "Mango", "Saffron"],
+        "middle": ["Akigalawood", "Amber", "Benzoin", "Caramel", "Patchouli", "Passionfruit"],
+        "base": ["Agarwood", "Coffee", "Tonka Bean", "Vanilla"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Loewe/Wild-Coffee-132239.html"
+    },
     {
       "id": "rasasi-hawas-sapphire-2026",
       "name": "Hawas Sapphire",
