@@ -104,6 +104,24 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/armaf-club-de-nuit-overdose/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/khadlaj-shiyaaka-sky/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/french-avenue-eau-de-brun/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
