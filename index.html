@@ -206,6 +206,36 @@
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
     .page-content { position: relative; z-index: 5; }
 
+    /* ── SITE NOTICE ── */
+    .site-notice { position: relative; z-index: 6; margin-top: 5.5rem; }
+    .site-notice.is-hidden { display: none; }
+    .site-notice__inner {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.9rem; flex-wrap: wrap; text-align: center;
+      padding: 0.7rem 1.6rem;
+      background: rgba(176,133,88,0.10);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .site-notice__tag {
+      font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--void); background: var(--amber-warm);
+      padding: 0.22rem 0.55rem; flex-shrink: 0;
+    }
+    .site-notice__text { font-size: 0.72rem; color: var(--silver); letter-spacing: 0.02em; }
+    .site-notice__link {
+      font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--amber-warm); text-decoration: none; flex-shrink: 0; transition: color 0.3s;
+    }
+    .site-notice__link:hover { color: var(--silver); }
+    .site-notice__close {
+      font-size: 0.75rem; color: var(--silver-mid); margin-left: 0.4rem;
+      cursor: pointer; background: none; border: none; line-height: 1;
+      padding: 0; transition: color 0.3s;
+    }
+    .site-notice__close:hover { color: var(--silver); }
+
     /* ── HERO ── */
     .hero {
       position: relative;
@@ -525,6 +555,9 @@
       /* Layout */
       .container { padding: 0 1.5rem; }
       .hero { padding: 7rem 1.5rem 5rem; }
+      .site-notice { margin-top: 4.6rem; }
+      .site-notice__inner { padding: 0.65rem 1.2rem; }
+      .site-notice__text { font-size: 0.68rem; }
 
       /* Footer stack */
       footer { padding: 2rem 1.5rem; }
@@ -547,6 +580,34 @@
 <!-- PATRIOTIC STRIPE BARS -->
 <div style="position:fixed;top:0;left:0;right:0;height:3px;display:flex;z-index:50;pointer-events:none;"><div style="flex:1;background:#B22234;"></div><div style="flex:1;background:#F0F0F0;"></div><div style="flex:1;background:#3C3B6E;"></div></div>
 <div style="position:fixed;bottom:0;left:0;right:0;height:3px;display:flex;z-index:50;pointer-events:none;"><div style="flex:1;background:#3C3B6E;"></div><div style="flex:1;background:#F0F0F0;"></div><div style="flex:1;background:#B22234;"></div></div>
+
+<!-- SITE NOTICE — swap the data-notice-id, tag, text, and link each time there's news. A new ID makes it reappear even for visitors who dismissed a previous notice. -->
+<div class="site-notice" id="site-notice" data-notice-id="2026-07-hawas-reina-direct-link">
+  <div class="site-notice__inner">
+    <span class="site-notice__tag">Updated</span>
+    <span class="site-notice__text">Hawas Reina now links straight to the bottle at BeautyHouse.</span>
+    <a href="https://beautyhouse.com/products/rasasi-hawas-reina-eau-de-parfum-for-women?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="site-notice__link">Shop it →</a>
+    <button type="button" class="site-notice__close" aria-label="Dismiss notice">✕</button>
+  </div>
+</div>
+<script>
+  (function () {
+    var notice = document.getElementById('site-notice');
+    if (!notice) return;
+    var noticeId = notice.getAttribute('data-notice-id');
+    var storageKey = 'vf_notice_dismissed';
+    if (localStorage.getItem(storageKey) === noticeId) {
+      notice.classList.add('is-hidden');
+    }
+    var closeBtn = notice.querySelector('.site-notice__close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        localStorage.setItem(storageKey, noticeId);
+        notice.classList.add('is-hidden');
+      });
+    }
+  })();
+</script>
 
 <!-- ATMOSPHERE -->
 <div class="aperture"></div>
