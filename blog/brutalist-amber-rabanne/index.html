@@ -18,7 +18,7 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --void: #0B1124;
+      --void: #09090b;
       --silver: #c8c8d0;
       --silver-mid: #878790;
       --amber: #b08558;
@@ -43,8 +43,8 @@
     @keyframes float4 { 0%,100%{transform:translate(0,0) scale(1);opacity:.70} 35%{transform:translate(-22px,-42px) scale(.80);opacity:.40} 75%{transform:translate(48px,12px) scale(1.10);opacity:.90} }
 
     .glass-wall { position:fixed; top:0; bottom:0; width:200px; pointer-events:none; z-index:4; transform:translateZ(0); }
-    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(178,34,52,.88) 0%, rgba(120,20,35,.50) 30%, rgba(80,10,20,.12) 65%, transparent 100%); }
-    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(60,59,110,.88) 0%, rgba(40,40,90,.50) 30%, rgba(20,20,60,.12) 65%, transparent 100%); }
+    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
     .glass-wall::before { content:''; position:absolute; top:8%; bottom:8%; width:1px; background:linear-gradient(to bottom, transparent 0%, rgba(225,225,235,.14) 18%, rgba(225,225,235,.38) 50%, rgba(225,225,235,.14) 82%, transparent 100%); }
     .glass-wall.left::before  { right:0; }
     .glass-wall.right::before { left:0; }

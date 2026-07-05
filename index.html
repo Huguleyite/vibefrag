@@ -59,7 +59,7 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --void: #0B1124;
+      --void: #09090b;
       --silver: #c8c8d0;
       --silver-mid: #878790;
       --amber: #b08558;
@@ -130,8 +130,8 @@
       pointer-events:none; z-index:4;
       transform: translateZ(0); /* own compositor layer */
     }
-    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(178,34,52,.88) 0%, rgba(120,20,35,.50) 30%, rgba(80,10,20,.12) 65%, transparent 100%); }
-    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(60,59,110,.88) 0%, rgba(40,40,90,.50) 30%, rgba(20,20,60,.12) 65%, transparent 100%); }
+    .glass-wall.left  { left:0;  background:linear-gradient(to right, rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
+    .glass-wall.right { right:0; background:linear-gradient(to left,  rgba(7,7,9,.95) 0%, rgba(13,13,16,.68) 30%, rgba(18,16,14,.22) 65%, transparent 100%); }
     .glass-wall::before {
       content:''; position:absolute; top:8%; bottom:8%; width:1px;
       background:linear-gradient(to bottom, transparent 0%, rgba(225,225,235,.14) 18%, rgba(225,225,235,.38) 50%, rgba(225,225,235,.14) 82%, transparent 100%);
@@ -577,10 +577,6 @@
 </head>
 <body>
 
-<!-- PATRIOTIC STRIPE BARS -->
-<div style="position:fixed;top:0;left:0;right:0;height:3px;display:flex;z-index:50;pointer-events:none;"><div style="flex:1;background:#B22234;"></div><div style="flex:1;background:#F0F0F0;"></div><div style="flex:1;background:#3C3B6E;"></div></div>
-<div style="position:fixed;bottom:0;left:0;right:0;height:3px;display:flex;z-index:50;pointer-events:none;"><div style="flex:1;background:#3C3B6E;"></div><div style="flex:1;background:#F0F0F0;"></div><div style="flex:1;background:#B22234;"></div></div>
-
 <!-- SITE NOTICE — swap the data-notice-id, tag, text, and link each time there's news. A new ID makes it reappear even for visitors who dismissed a previous notice. -->
 <div class="site-notice" id="site-notice" data-notice-id="2026-07-hawas-reina-direct-link">
   <div class="site-notice__inner">
@@ -644,7 +640,6 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <div style="margin-bottom:1.6rem;"><span style="display:inline-block;font-size:0.52rem;letter-spacing:0.24em;text-transform:uppercase;padding:0.35rem 1.1rem;border:1px solid rgba(178,34,52,0.45);color:#E87070;background:rgba(178,34,52,0.12);">★ Happy 4th of July ★</span></div>
       <span class="hero-eyebrow">Fragrance · Identity · Vibe</span>
       <h1><span class="setup">Catch A</span><em>Vibe</em></h1>
       <p class="hero-sub">Your aura arrives before you do.<br>Make it count.</p>
