@@ -1,10 +1,136 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-30",
+    "lastUpdated": "2026-07-07",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "rabanne-1-million-black-2026",
+      "name": "1 Million Black",
+      "house": "Rabanne",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": ["Tropical Notes"],
+        "middle": ["Vanilla", "Madagascar Vanilla", "Bourbon Vanilla"],
+        "base": ["Ebony Wood"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/1-million-black-rabanne/"
+    },
+    {
+      "id": "byredo-late-lunch-2026",
+      "name": "Late Lunch",
+      "house": "Byredo",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Citrus Aromatic",
+      "notes": {
+        "top": ["Orange Blossom", "Lemon", "Mandarin"],
+        "middle": ["Rosemary Salt", "Pink Pepper", "Galbanum"],
+        "base": ["Ambroxan", "Cedarwood"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/late-lunch-byredo/"
+    },
+    {
+      "id": "ariana-grande-cloud-aurora-2026",
+      "name": "Cloud Aurora",
+      "house": "Ariana Grande",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": ["Spun Sugar", "Blackcurrant", "Fluffy Musk"],
+        "middle": ["Vanilla-dipped Petals", "Cozy Woods"],
+        "base": ["Vanilla Smoke", "Golden Amber"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/cloud-aurora-ariana-grande/"
+    },
+    {
+      "id": "matiere-premiere-black-currant-extrait-2026",
+      "name": "Black Currant Extrait de Parfum",
+      "house": "Matiere Premiere",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Fruity Woody",
+      "notes": {
+        "top": [],
+        "middle": ["Black Currant Absolute"],
+        "base": ["Oud Assam"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/black-currant-extrait-matiere-premiere/"
+    },
+    {
+      "id": "issey-miyake-le-sel-dissey-parfum-2026",
+      "name": "Le Sel d'Issey Parfum",
+      "house": "Issey Miyake",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Woody Aquatic",
+      "notes": {
+        "top": ["Salt Accord", "Saffron Accord"],
+        "middle": ["Marine Seaweed", "Black Woody Notes"],
+        "base": ["Amber Accord", "Oakmoss"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/le-sel-dissey-parfum-issey-miyake/"
+    },
+    {
+      "id": "jeroboam-oud-morning-extrait-2026",
+      "name": "Oud Morning Extrait de Parfum",
+      "house": "Jeroboam",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": ["Blueberry", "Gurjun Balsam", "Saffron"],
+        "middle": ["Indian Oudh", "Leather", "Dry Wood", "Violet"],
+        "base": ["Sugar", "Sandalwood", "Cedarwood", "White Musks"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/oud-morning-jeroboam/"
+    },
+    {
+      "id": "gucci-flora-gorgeous-orchid-intense-2026",
+      "name": "Flora Gorgeous Orchid Intense",
+      "house": "Gucci",
+      "released": "2026-06",
+      "category": "F",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top": ["Vanilla Orchid"],
+        "middle": ["Salty Ozonic Accord"],
+        "base": ["Dark Cocoa Accord"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/flora-gorgeous-orchid-intense-gucci/"
+    },
+    {
+      "id": "amouage-elsewhere-2026",
+      "name": "Elsewhere",
+      "house": "Amouage",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top": ["Honey", "Tangerine", "Grapefruit", "Mango", "Pomegranate", "Apricot", "Ginger", "Cardamom", "Pink Pepper"],
+        "middle": ["Black Tea", "Cappuccino", "Davana"],
+        "base": ["Tonka Bean", "Vanilla", "Cedarwood", "Labdanum", "Cypriol", "Vetiver", "Patchouli"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/elsewhere-amouage/"
+    },
+    {
+      "id": "ysl-libre-santal-couture-2026",
+      "name": "Libre Santal Couture",
+      "house": "Yves Saint Laurent",
+      "released": "2026-06",
+      "category": "F",
+      "family": "Floral Woody",
+      "notes": {
+        "top": ["French Lavender"],
+        "middle": ["Moroccan Orange Blossom"],
+        "base": ["Caledonian Sandalwood"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/libre-santal-couture-ysl/"
+    },
     {
       "id": "jpg-le-beau-narcisse-2026",
       "name": "Le Beau Narcisse",
