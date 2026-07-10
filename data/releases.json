@@ -1,10 +1,52 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-07",
+    "lastUpdated": "2026-07-10",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "ellis-brooklyn-vanilla-rice-2026",
+      "name": "Vanilla Rice",
+      "house": "Ellis Brooklyn",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Gourmand Floral",
+      "notes": {
+        "top": ["Mandarin", "Freesia Dew", "Toasted Rice"],
+        "middle": ["Sakura Blossom", "Coconut Milk", "Jasmine Nectar"],
+        "base": ["Skin Musks", "Tonka Bean", "Vanilla"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/vanilla-rice-ellis-brooklyn/"
+    },
+    {
+      "id": "riiffs-taif-2026",
+      "name": "Taif",
+      "house": "Riiffs Parfums",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Citrus Floral Fruity",
+      "notes": {
+        "top": ["Iced Ginger", "Lemon C2 Extract", "Calabrian Bergamot", "Orange Blossom"],
+        "middle": ["Musk", "Rose", "Tuberose"],
+        "base": ["Vanilla Bean", "Clearwood", "Amberwood"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/taif-riiffs/"
+    },
+    {
+      "id": "armaf-club-de-nuit-intense-overdose-2026",
+      "name": "Club de Nuit Intense Overdose",
+      "house": "Armaf",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Fruity Woody Chypre",
+      "notes": {
+        "top": ["Bergamot", "Tangerine", "Pineapple", "Blue Crystals"],
+        "middle": ["Vanilla Flower", "Oakmoss", "Plum"],
+        "base": ["Patchouli", "Tonka Bean", "White Powder"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/club-de-nuit-intense-overdose/"
+    },
     {
       "id": "rabanne-1-million-black-2026",
       "name": "1 Million Black",
