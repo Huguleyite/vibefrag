@@ -1,10 +1,99 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-10",
+    "lastUpdated": "2026-07-13",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "chanel-coco-mademoiselle-crush-absolu-2026",
+      "name": "Coco Mademoiselle Crush Absolu",
+      "house": "Chanel",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Floral Woody",
+      "notes": {
+        "top": ["Grapefruit", "Lychee"],
+        "middle": ["Rose", "Jasmine"],
+        "base": ["Vetiver", "Vanilla", "Patchouli"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/coco-mademoiselle-crush-absolu-chanel/"
+    },
+    {
+      "id": "valentino-vendetta-donna-2026",
+      "name": "Vendetta Donna",
+      "house": "Valentino",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floral Woody",
+      "notes": {
+        "top": ["Tuberose"],
+        "middle": ["Red Orange Nectar"],
+        "base": ["Sandalwood"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/vendetta-donna-valentino/",
+      "view_url": "https://fragrancebuy.ca/search?q=valentino"
+    },
+    {
+      "id": "valentino-vendetta-uomo-2026",
+      "name": "Vendetta Uomo",
+      "house": "Valentino",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Amber Spicy",
+      "notes": {
+        "top": ["Ginger"],
+        "middle": ["Cinnamon Liquor Accord"],
+        "base": ["Patchouli Essence"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/vendetta-uomo-valentino/",
+      "view_url": "https://fragrancebuy.ca/search?q=valentino"
+    },
+    {
+      "id": "rasasi-hawas-addiction-2026",
+      "name": "Hawas Addiction",
+      "house": "Rasasi",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Gourmand",
+      "notes": {
+        "top": ["Cotton Candy", "Marshmallow", "Ice Cream", "Vanilla", "Caramel"],
+        "middle": ["Coconut Milk", "Vanilla", "Milk"],
+        "base": ["Cedarwood", "Amber", "Moss"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-addiction-rasasi/",
+      "view_url": "https://fragrancebuy.ca/search?q=rasasi+hawas"
+    },
+    {
+      "id": "lattafa-fahad-2026",
+      "name": "Fahad",
+      "house": "Lattafa",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Fruity Spicy Amber",
+      "notes": {
+        "top": ["Pineapple", "Mandarin", "Black Pepper"],
+        "middle": ["Orange Blossom", "Artemisia", "Lavender"],
+        "base": ["Patchouli", "Cedarwood", "Incense", "Ambroxan"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/fahad-lattafa/",
+      "view_url": "https://fragrancebuy.ca/search?q=lattafa"
+    },
+    {
+      "id": "juliette-has-a-gun-purple-trouble-2026",
+      "name": "Purple Trouble",
+      "house": "Juliette Has A Gun",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Fruity Spicy Amber",
+      "notes": {
+        "top": ["Wild Blackberry"],
+        "middle": ["Red Chili Pepper"],
+        "base": ["Musks", "Ambroxan"]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/purple-trouble-juliette-has-a-gun/",
+      "view_url": "https://fragrancebuy.ca/search?q=juliette+has+a+gun"
+    },
     {
       "id": "ellis-brooklyn-vanilla-rice-2026",
       "name": "Vanilla Rice",

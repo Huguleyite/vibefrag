@@ -1979,5 +1979,47 @@
     ],
     "gender": "U",
     "discount_code": ""
+  },
+  {
+    "brand": "Chanel",
+    "name": "Coco Mademoiselle Crush Absolu",
+    "notes": ["Grapefruit", "Lychee", "Rose", "Jasmine", "Vetiver", "Vanilla", "Patchouli"],
+    "gender": "F",
+    "discount_code": ""
+  },
+  {
+    "brand": "Valentino",
+    "name": "Vendetta Donna",
+    "notes": ["Tuberose", "Red Orange Nectar", "Sandalwood"],
+    "gender": "F",
+    "discount_code": ""
+  },
+  {
+    "brand": "Valentino",
+    "name": "Vendetta Uomo",
+    "notes": ["Ginger", "Cinnamon Liquor Accord", "Patchouli Essence"],
+    "gender": "M",
+    "discount_code": ""
+  },
+  {
+    "brand": "Rasasi",
+    "name": "Hawas Addiction",
+    "notes": ["Cotton Candy", "Marshmallow", "Ice Cream", "Vanilla", "Caramel", "Coconut Milk", "Milk", "Cedarwood", "Amber", "Moss"],
+    "gender": "U",
+    "discount_code": "VIBEFRAG"
+  },
+  {
+    "brand": "Lattafa",
+    "name": "Fahad",
+    "notes": ["Pineapple", "Mandarin", "Black Pepper", "Orange Blossom", "Artemisia", "Lavender", "Patchouli", "Cedarwood", "Incense", "Ambroxan"],
+    "gender": "M",
+    "discount_code": ""
+  },
+  {
+    "brand": "Juliette Has a Gun",
+    "name": "Purple Trouble",
+    "notes": ["Wild Blackberry", "Red Chili Pepper", "Musks", "Ambroxan"],
+    "gender": "F",
+    "discount_code": ""
   }
 ]
