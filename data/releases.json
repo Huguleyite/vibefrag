@@ -6,6 +6,20 @@
   },
   "releases": [
     {
+      "id": "rasasi-hawas-nautilus-2026",
+      "name": "Hawas Nautilus",
+      "house": "Rasasi",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Aquatic Woody",
+      "notes": {
+        "top": ["Ambergris", "Sea Water"],
+        "middle": ["Cedar", "Cypress"],
+        "base": ["Driftwood", "Sand"]
+      },
+      "source_url": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men"
+    },
+    {
       "id": "rasasi-hawas-highness-2026",
       "name": "Hawas Highness",
       "house": "Rasasi",
