@@ -1,10 +1,66 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-17",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "1.2"
   },
   "releases": [
+    {
+      "id": "lore-lil-softie-2026",
+      "name": "Lil Softie",
+      "house": "LORE",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top": ["Cereal", "Bergamot", "Milk", "Pink Pepper"],
+        "middle": ["Musk Mallow", "Galbanum", "Jasmine"],
+        "base": ["Musk", "Milk", "Rice", "Ambroxan"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lore/Lil-Softie-136235.html"
+    },
+    {
+      "id": "tom-ford-tobacco-chocolat-2026",
+      "name": "Tobacco Chocolat",
+      "house": "Tom Ford",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Gourmand Spicy",
+      "notes": {
+        "top": ["Orange", "Akigalawood"],
+        "middle": ["Cacao", "Dark Chocolate"],
+        "base": ["Tobacco", "Peru Balsam", "Ambrofix", "Patchouli"]
+      },
+      "source_url": "https://ifragranceofficial.com/tom-ford-tobacco-chocolat-news/"
+    },
+    {
+      "id": "future-society-wandering-rain-2026",
+      "name": "Wandering Rain",
+      "house": "Future Society",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Aromatic Aquatic",
+      "notes": {
+        "top": ["Mimosa", "Pear", "Lemon", "Incense"],
+        "middle": ["Black Tea", "Blue Lotus Extract", "Orris", "Clary Sage"],
+        "base": ["Musk", "Ambrette Seeds", "Eucalyptus Absolute", "Violet Leaves"]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Future-Society/Wandering-Rain-136440.html"
+    },
+    {
+      "id": "sand-fog-peach-shortcake-2026",
+      "name": "Peach Shortcake",
+      "house": "Sand + Fog",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": ["Peach", "Bamboo", "Lactonic Accord", "Blackcurrant", "Orange"],
+        "middle": ["Rose", "Lotus", "Peach Blossom"],
+        "base": ["Sugar", "Vanilla", "Almond", "Musk"]
+      },
+      "source_url": "https://sandandfoghome.com/products/peach-shortcake-50ml-perfume-oil-dropper"
+    },
     {
       "id": "rasasi-hawas-nautilus-2026",
       "name": "Hawas Nautilus",
