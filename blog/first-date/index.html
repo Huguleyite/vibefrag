@@ -58,7 +58,8 @@
 
     /* ── NAV ── */
     nav { position: fixed; top:0; left:0; right:0; z-index: 10; padding: 0 3rem; }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.065); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+    .nav-inner { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.065); }
+    .nav-inner::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
     .nav-logo { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.25rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver); text-decoration: none; position: relative; z-index: 11; }
     .nav-logo .frag { color: var(--amber-warm); }
     .nav-links { display: flex; gap: 2.4rem; list-style: none; }
