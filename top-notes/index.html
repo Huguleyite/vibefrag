@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>New Releases — VibeFrag</title>
-  <meta name="description" content="The latest fragrance releases — updated weekly. Filter by category, scent family, or house.">
-  <link rel="canonical" href="https://vibefrag.com/new-releases/">
+  <title>Top Notes — Brand Deep Dives — VibeFrag</title>
+  <meta name="description" content="Where to start with a fragrance house. The scents doing the best, straight from the brand — Velixir and more, ranked and reviewed.">
+  <link rel="canonical" href="https://vibefrag.com/top-notes/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vibefrag.com/new-releases/">
-  <meta property="og:title" content="New Releases — VibeFrag">
-  <meta property="og:description" content="The latest fragrance releases — updated weekly. Filter by category, scent family, or house.">
+  <meta property="og:url" content="https://vibefrag.com/top-notes/">
+  <meta property="og:title" content="Top Notes — Brand Deep Dives — VibeFrag">
+  <meta property="og:description" content="Where to start with a fragrance house. The scents doing the best, straight from the brand.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
@@ -28,35 +28,11 @@
     }
 
     html { scroll-behavior: smooth; }
+    body { background: var(--void); color: var(--silver); font-family: 'Inter', sans-serif; font-weight: 300; overflow-x: hidden; min-height: 100vh; }
 
-    body {
-      background: var(--void);
-      color: var(--silver);
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
-      overflow-x: hidden;
-      min-height: 100vh;
-    }
-
-    /* ── ATMOSPHERE ── */
-    .aperture {
-      position: fixed;
-      top: -80px; left: 50%; transform: translateX(-50%) translateZ(0);
-      width: 720px; height: 380px;
-      background: radial-gradient(ellipse 55% 70% at 50% 15%, rgba(215,210,200,0.20) 0%, rgba(190,180,165,0.10) 35%, rgba(150,140,128,0.05) 58%, transparent 80%);
-      filter: blur(14px);
-      pointer-events: none; z-index: 1;
-    }
-    .caustics {
-      position: fixed; inset: 0;
-      pointer-events: none; z-index: 1; overflow: hidden;
-      contain: layout style;
-    }
-    .caustic {
-      position: absolute; border-radius: 50%;
-      filter: blur(55px); mix-blend-mode: screen;
-      will-change: transform, opacity; transform: translateZ(0);
-    }
+    .aperture { position: fixed; top: -80px; left: 50%; transform: translateX(-50%) translateZ(0); width: 720px; height: 380px; background: radial-gradient(ellipse 55% 70% at 50% 15%, rgba(215,210,200,0.20) 0%, rgba(190,180,165,0.10) 35%, rgba(150,140,128,0.05) 58%, transparent 80%); filter: blur(14px); pointer-events: none; z-index: 1; }
+    .caustics { position: fixed; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; contain: layout style; }
+    .caustic { position: absolute; border-radius: 50%; filter: blur(55px); mix-blend-mode: screen; will-change: transform, opacity; transform: translateZ(0); }
     .c1 { width:420px; height:260px; top:4%; left:18%; background:radial-gradient(ellipse,rgba(205,188,160,0.17) 0%,transparent 70%); animation:float1 20s ease-in-out infinite; }
     .c2 { width:320px; height:210px; top:8%; right:12%; background:radial-gradient(ellipse,rgba(185,165,135,0.13) 0%,transparent 70%); animation:float2 25s ease-in-out infinite; }
     .c3 { width:500px; height:190px; top:22%; left:30%; background:radial-gradient(ellipse,rgba(215,205,185,0.09) 0%,transparent 70%); animation:float3 30s ease-in-out infinite; }
@@ -74,7 +50,6 @@
     .glass-wall.right::before { left:0; }
     .vignette-btm { position:fixed; bottom:0; left:0; right:0; height:160px; background:linear-gradient(to top, var(--void) 0%, transparent 100%); pointer-events:none; z-index:4; }
 
-    /* ── NAV ── */
     nav { position: fixed; top:0; left:0; right:0; z-index: 10; padding: 0 3rem; }
     .nav-inner { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.065); }
     .nav-inner::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
@@ -91,62 +66,26 @@
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
-    /* ── LAYOUT ── */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
     .page-content { position: relative; z-index: 5; }
 
-    /* ── PAGE HERO ── */
     .page-hero { padding: 8rem 0 3.5rem; }
     .page-hero__label { font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.2rem; opacity: 0.9; }
     .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--silver); letter-spacing: 0.02em; margin-bottom: 0.8rem; line-height: 1.1; }
-    .page-hero p { font-size: 0.9rem; color: var(--silver-mid); font-weight: 200; letter-spacing: 0.04em; line-height: 1.8; max-width: 520px; }
+    .page-hero p { font-size: 0.9rem; color: var(--silver-mid); font-weight: 200; letter-spacing: 0.04em; line-height: 1.8; max-width: 560px; }
 
-    /* ── FILTER BAR ── */
-    .filter-bar { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 2rem 0 1rem; }
-    .filter-btn {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.10);
-      color: var(--silver-mid);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;
-      padding: 0.5rem 1.2rem; cursor: pointer;
-      transition: all 0.3s;
-    }
-    .filter-btn:hover { border-color: rgba(200,180,140,0.40); color: var(--silver); }
-    .filter-btn.active { border-color: var(--amber); color: var(--amber-warm); background: var(--amber-ghost); }
+    .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.4rem; padding-bottom: 5rem; }
+    .brand-card { background: var(--amber-ghost); backdrop-filter: blur(14px) saturate(130%); -webkit-backdrop-filter: blur(14px) saturate(130%); border: 1px solid var(--glass-border); box-shadow: inset 0 1px 0 rgba(255,255,255,0.13), 0 8px 40px rgba(0,0,0,.50); padding: 1.8rem; position: relative; overflow: hidden; transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; text-decoration: none; display: block; }
+    .brand-card::before { content: ''; position: absolute; top:0; left:0; right:0; height:35%; background: linear-gradient(to bottom, rgba(255,255,255,.05) 0%, transparent 100%); pointer-events: none; }
+    .brand-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.19); box-shadow: inset 0 1px 0 rgba(255,255,255,.20), 0 16px 55px rgba(0,0,0,.60); }
+    .brand-card__eyebrow { font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.6rem; opacity: 0.85; }
+    .brand-card__name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.9rem; color: var(--silver); margin-bottom: 0.6rem; }
+    .brand-card__hook { font-size: 0.8rem; color: var(--silver-mid); line-height: 1.7; margin-bottom: 1.2rem; }
+    .brand-card__link { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber-warm); }
+    .brand-card.ghost { opacity: 0.45; cursor: default; }
+    .brand-card.ghost:hover { transform: none; }
+    .brand-card.ghost .brand-card__name { color: var(--silver-mid); }
 
-    /* Count line */
-    #count-line { font-size: 0.7rem; letter-spacing: 0.12em; color: var(--silver-mid); margin-bottom: 2rem; opacity: 0.7; }
-
-    /* ── CARD GRID ── */
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem; padding-bottom: 5rem; }
-
-    /* ── FRAGRANCE CARDS ── */
-    .frag-card {
-      background: var(--amber-ghost);
-      backdrop-filter: blur(14px) saturate(130%); -webkit-backdrop-filter: blur(14px) saturate(130%);
-      border: 1px solid var(--glass-border);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.13), 0 8px 40px rgba(0,0,0,.50);
-      padding: 1.6rem; position: relative; overflow: hidden;
-      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-    }
-    .frag-card::before { content: ''; position: absolute; top:0; left:0; right:0; height:35%; background: linear-gradient(to bottom, rgba(255,255,255,.05) 0%, transparent 100%); pointer-events: none; }
-    .frag-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.19); box-shadow: inset 0 1px 0 rgba(255,255,255,.20), 0 16px 55px rgba(0,0,0,.60); }
-    .frag-card__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
-    .frag-card__house { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); }
-    .frag-card__category { font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.22rem 0.6rem; border: 1px solid rgba(255,255,255,0.10); color: var(--silver-mid); background: rgba(255,255,255,0.04); }
-    .frag-card__name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; color: var(--silver); margin-bottom: 0.25rem; line-height: 1.2; letter-spacing: 0.02em; }
-    .frag-card__family { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver-mid); margin-bottom: 1rem; opacity: 0.7; }
-    .frag-card__notes { margin-bottom: 1.2rem; }
-    .frag-card__note-row { display: flex; gap: 0.6rem; align-items: baseline; margin-bottom: 0.3rem; }
-    .frag-card__note-label { font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); min-width: 2.2rem; flex-shrink: 0; }
-    .frag-card__note-text { font-size: 0.72rem; color: var(--silver-mid); line-height: 1.5; letter-spacing: 0.02em; }
-    .frag-card__footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.07); }
-    .frag-card__date { font-size: 0.6rem; letter-spacing: 0.12em; color: var(--silver-mid); opacity: 0.65; }
-    .frag-card__link { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber-warm); text-decoration: none; transition: color 0.3s; }
-    .frag-card__link:hover { color: var(--silver); }
-
-    /* ── FOOTER ── */
     footer { position: relative; z-index: 5; padding: 2.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-logo { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 0.9rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-mid); text-decoration: none; }
@@ -156,11 +95,6 @@
     .footer-links a { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-mid); text-decoration: none; transition: color 0.3s; }
     .footer-links a:hover { color: var(--silver); }
 
-    /* ── LOADING / EMPTY ── */
-    .loading, .empty-state { color: var(--silver-mid); font-size: 0.8rem; letter-spacing: 0.1em; padding: 3rem; text-align: center; }
-    .empty-state h3 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.4rem; color: var(--silver); margin-bottom: 0.5rem; }
-
-    /* ── MOBILE ── */
     @media (max-width: 960px) { .glass-wall { width: 100px; } }
     @media (max-width: 640px) { .glass-wall { display: none; } }
     @media (max-width: 768px) {
@@ -177,15 +111,30 @@
       .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
       .footer-links { flex-wrap: wrap; gap: 1.2rem; }
     }
-    @media (max-width: 480px) {
-      .card-grid { grid-template-columns: 1fr; }
-      .filter-bar { gap: 0.4rem; }
-    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Top Notes",
+        "description": "Where to start with a fragrance house. The scents doing the best, straight from the brand.",
+        "url": "https://vibefrag.com/top-notes/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vibefrag.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Top Notes", "item": "https://vibefrag.com/top-notes/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- ATMOSPHERE -->
 <div class="aperture"></div>
 <div class="caustics">
   <div class="caustic c1"></div>
@@ -197,77 +146,77 @@
 <div class="glass-wall right"></div>
 <div class="vignette-btm"></div>
 
-<!-- NAV -->
 <nav class="vf-search-offset">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">Vibe<span class="frag">Frag</span></a>
+    <a href="../index.html" class="nav-logo">Vibe<span class="frag">Frag</span></a>
     <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links nav__links" id="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="../new-releases/">New Releases</a></li>
       <li><a href="../houses/">By House</a></li>
-      <li><a href="../top-notes/">Top Notes</a></li>
+      <li><a href="index.html" class="active">Top Notes</a></li>
       <li><a href="../blog/index.html">The Dry Down</a></li>
       <li><a href="../quiz/index.html" class="nav-cta">Find My Scent →</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- PAGE CONTENT -->
 <div class="page-content">
   <div class="container">
 
     <div class="page-hero">
-      <div class="page-hero__label">Updated Weekly</div>
-      <h1>New Releases</h1>
-      <p>The latest from designer houses, niche labs, and indie creators — as they drop.</p>
+      <div class="page-hero__label">Brand Deep Dives</div>
+      <h1>Top Notes</h1>
+      <p>Where to start with a brand: the scents doing the best, straight from the house.</p>
     </div>
 
-    <div class="filter-bar" id="filter-bar">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="cat-M">Masculine</button>
-      <button class="filter-btn" data-filter="cat-F">Feminine</button>
-      <button class="filter-btn" data-filter="cat-U">Unisex</button>
-    </div>
-
-    <p id="count-line"></p>
-
-    <div class="card-grid" id="releases-grid">
-      <div class="loading">Loading new releases…</div>
+    <div class="brand-grid">
+      <a href="velixir/" class="brand-card">
+        <div class="brand-card__eyebrow">3 Essentials Covered</div>
+        <div class="brand-card__name">Velixir</div>
+        <div class="brand-card__hook">A fast-rising Indonesian house built on mythological names. Start with Icarus, Asteria, or Poseidon.</div>
+        <span class="brand-card__link">Enter the Maison →</span>
+      </a>
+      <div class="brand-card ghost">
+        <div class="brand-card__eyebrow">Coming Soon</div>
+        <div class="brand-card__name">Mykonos</div>
+        <div class="brand-card__hook">Deep dive in production.</div>
+      </div>
+      <div class="brand-card ghost">
+        <div class="brand-card__eyebrow">Coming Soon</div>
+        <div class="brand-card__name">Rayhaan</div>
+        <div class="brand-card__hook">Deep dive in production.</div>
+      </div>
     </div>
 
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
-      <a href="/" class="footer-logo">Vibe<span class="frag">Frag</span></a>
+      <a href="../index.html" class="footer-logo">Vibe<span class="frag">Frag</span></a>
       <div class="footer-tagline">Find your scent for every occasion.</div>
     </div>
     <ul class="footer-links">
       <li><a href="../index.html">Home</a></li>
+      <li><a href="../new-releases/">New Releases</a></li>
       <li><a href="../houses/">By House</a></li>
-      <li><a href="../top-notes/">Top Notes</a></li>
       <li><a href="../blog/index.html">The Dry Down</a></li>
       <li><a href="../about/index.html">About</a></li>
       <li><a href="../quiz/index.html">Quiz</a></li>
     </ul>
-  <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
+    <div style="text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:1rem;font-size:0.55rem;letter-spacing:0.08em;color:rgba(135,135,144,0.36);">VibeFrag may earn a commission on purchases made through links on this site.</div>
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
 <script>
-  /* Pause caustics when hidden */
   document.addEventListener('visibilitychange', () => {
-    const state = document.hidden ? 'paused' : 'running';
-    document.querySelectorAll('.caustic').forEach(el => { el.style.animationPlayState = state; });
+    const s = document.hidden ? 'paused' : 'running';
+    document.querySelectorAll('.caustic').forEach(el => { el.style.animationPlayState = s; });
   });
 
-  /* Hamburger */
   const navToggle = document.getElementById('nav-toggle');
   const navLinks  = document.getElementById('nav-links');
   if (navToggle && navLinks) {
@@ -280,56 +229,7 @@
       a.addEventListener('click', () => { navLinks.classList.remove('nav-open'); navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); });
     });
   }
-
-  /* Data */
-  let allReleases = [];
-
-  (async () => {
-    const grid = document.getElementById('releases-grid');
-    const countLine = document.getElementById('count-line');
-    const data = await VibeFrag.fetchData('../data/releases.json');
-
-    if (!data || !data.releases || data.releases.length === 0) {
-      grid.innerHTML = '<div class="empty-state"><h3>Check Back Soon</h3><p>New releases are added every week.</p></div>';
-      return;
-    }
-
-    allReleases = data.releases;
-    renderCards(allReleases);
-    if (data.meta && data.meta.lastUpdated) {
-      countLine.textContent = `${allReleases.length} fragrances · Last updated ${VibeFrag.formatDate(data.meta.lastUpdated)}`;
-    } else {
-      updateCount(allReleases.length, allReleases.length);
-    }
-  })();
-
-  function renderCards(list) {
-    const grid = document.getElementById('releases-grid');
-    grid.innerHTML = list.length === 0
-      ? '<div class="empty-state"><h3>No results</h3><p>Try a different filter.</p></div>'
-      : list.map(f => VibeFrag.renderCard(f)).join('');
-  }
-
-  function updateCount(shown, total) {
-    document.getElementById('count-line').textContent = shown === total
-      ? `${total} fragrance${total !== 1 ? 's' : ''}`
-      : `${shown} of ${total} fragrances`;
-  }
-
-  document.getElementById('filter-bar').addEventListener('click', e => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    const filtered = filter === 'all' ? allReleases : allReleases.filter(f => {
-      if (filter.startsWith('cat-')) return f.category === filter.replace('cat-', '');
-      return true;
-    });
-    renderCards(filtered);
-    updateCount(filtered.length, allReleases.length);
-  });
 </script>
-  <script src="/js/search.js"></script>
+<script src="/js/search.js"></script>
 </body>
 </html>

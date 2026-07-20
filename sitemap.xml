@@ -20,6 +20,12 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/la-mer-vs-pacific-aura/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/blog/hawas-nautilus/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -197,6 +203,36 @@
     <loc>https://vibefrag.com/houses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/top-notes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/top-notes/velixir/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/icarus/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/asteria/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/poseidon/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
