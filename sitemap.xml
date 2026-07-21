@@ -38,6 +38,24 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/harmonia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/selene/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/nyx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/blog/coco-mademoiselle-crush-absolu/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
