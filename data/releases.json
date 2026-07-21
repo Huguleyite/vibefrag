@@ -1,10 +1,276 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-21",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.2"
+    "version": "1.3"
   },
   "releases": [
+    {
+      "id": "rasasi-hawas-chrome-2026",
+      "name": "Hawas Chrome",
+      "house": "Rasasi",
+      "released": "2026-03",
+      "category": "U",
+      "family": "Fruity Amber",
+      "notes": {
+        "top": [
+          "Yellow Fruits",
+          "Peach",
+          "Orange"
+        ],
+        "middle": [
+          "Water Fruits",
+          "Mango",
+          "Passion Fruit"
+        ],
+        "base": [
+          "Amber",
+          "Vanilla",
+          "Musk"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-chrome-rasasi-2026/"
+    },
+    {
+      "id": "rasasi-hawas-thunder-2026",
+      "name": "Hawas Thunder",
+      "house": "Rasasi",
+      "released": "2026-04",
+      "category": "M",
+      "family": "Woody Amber",
+      "notes": {
+        "top": [
+          "Apple",
+          "Bergamot",
+          "Ginger",
+          "Cedarwood",
+          "Mandarin"
+        ],
+        "middle": [
+          "Mate",
+          "Peony",
+          "Orange Blossom",
+          "Patchouli"
+        ],
+        "base": [
+          "Ambergris",
+          "Tonka",
+          "Cedarwood",
+          "Vanilla",
+          "Musk"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-thunder-rasasi/"
+    },
+    {
+      "id": "rasasi-hawas-lava-gold-2026",
+      "name": "Hawas Lava Gold",
+      "house": "Rasasi",
+      "released": "2026-04",
+      "category": "M",
+      "family": "Amber Woody",
+      "notes": {
+        "top": [
+          "Pineapple",
+          "Grapefruit",
+          "Apple",
+          "Lemon"
+        ],
+        "middle": [
+          "Leather",
+          "Saffron",
+          "Oud",
+          "Raspberry"
+        ],
+        "base": [
+          "Patchouli",
+          "Amber",
+          "Moss",
+          "Caramel"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Lava-Gold-130939.html"
+    },
+    {
+      "id": "rasasi-hawas-overdose-2026",
+      "name": "Hawas Overdose",
+      "house": "Rasasi",
+      "released": "2026-05",
+      "category": "M",
+      "family": "Spicy Amber",
+      "notes": {
+        "top": [
+          "Aromatic Notes",
+          "Oriental Notes",
+          "Spicy Notes"
+        ],
+        "middle": [
+          "Dry Amber",
+          "Guaiac Wood",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Ambergris",
+          "Praline",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-overdose-rasasi/"
+    },
+    {
+      "id": "armaf-odyssey-soda-pop-2026",
+      "name": "Odyssey Soda Pop",
+      "house": "Armaf",
+      "released": "2026-05",
+      "category": "U",
+      "family": "Citrus Gourmand",
+      "notes": {
+        "top": [
+          "Cola",
+          "Citrus",
+          "Ginger",
+          "Mint",
+          "Lavender",
+          "Ice"
+        ],
+        "middle": [
+          "Black Tea",
+          "Cinnamon",
+          "Nutmeg",
+          "Neroli"
+        ],
+        "base": [
+          "White Musk",
+          "Tonka Bean",
+          "Amberwood",
+          "Sandalwood",
+          "Olibanum",
+          "Bourbon Vanilla",
+          "Patchouli",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Soda-Pop-134198.html"
+    },
+    {
+      "id": "lattafa-khamrah-waha-2026",
+      "name": "Khamrah Waha",
+      "house": "Lattafa",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Aromatic Aquatic",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Yuzu",
+          "Juniper",
+          "Ginger"
+        ],
+        "middle": [
+          "Cucumber",
+          "Sea Salt",
+          "Iris",
+          "Sage"
+        ],
+        "base": [
+          "Vanilla",
+          "Tonka Bean",
+          "Musk",
+          "Akigalawood",
+          "Ambrofix"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Khamrah-Waha-132409.html",
+      "view_url": "https://amzn.to/4vNwHmd"
+    },
+    {
+      "id": "lattafa-raed-absolu-2026",
+      "name": "Ra'ed Absolu",
+      "house": "Lattafa",
+      "released": "2026",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": [
+          "Apple",
+          "Mandarin"
+        ],
+        "middle": [
+          "Orange",
+          "Jasmine",
+          "Ylang-Ylang"
+        ],
+        "base": [
+          "Vanilla",
+          "Musk",
+          "Oakmoss"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Ra-ed-Absolu-131196.html",
+      "view_url": "https://amzn.to/3RumbSP"
+    },
+    {
+      "id": "armaf-black-knight-2026",
+      "name": "Black Knight",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "M",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Orange",
+          "Bergamot",
+          "Pink Pepper",
+          "Cardamom",
+          "Olibanum",
+          "Incense"
+        ],
+        "middle": [
+          "Rose",
+          "Eucalyptus",
+          "Lavender"
+        ],
+        "base": [
+          "Ambrox",
+          "Vanilla",
+          "Guaiac Wood",
+          "Patchouli",
+          "Cypriol"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Black-Knight-123192.html",
+      "view_url": "https://amzn.to/44IqWLt"
+    },
+    {
+      "id": "armaf-old-money-2026",
+      "name": "Old Money",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "M",
+      "family": "Woody Oriental",
+      "notes": {
+        "top": [
+          "Black Pepper",
+          "Silky Lavender Absolute"
+        ],
+        "middle": [
+          "Tuscan Iris Concrete",
+          "Pear Nectar",
+          "Ambrette Seed",
+          "Coffee Praline",
+          "Black Licorice Root"
+        ],
+        "base": [
+          "Dry Virginia Cedarwood",
+          "Vetiver Roots",
+          "Clean Musk",
+          "Cocoa Powder",
+          "Mineral Skin",
+          "Lava Smoke"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Old-Money-126368.html"
+    },
     {
       "id": "lore-lil-softie-2026",
       "name": "Lil Softie",
@@ -13,9 +279,23 @@
       "category": "U",
       "family": "Oriental Spicy",
       "notes": {
-        "top": ["Cereal", "Bergamot", "Milk", "Pink Pepper"],
-        "middle": ["Musk Mallow", "Galbanum", "Jasmine"],
-        "base": ["Musk", "Milk", "Rice", "Ambroxan"]
+        "top": [
+          "Cereal",
+          "Bergamot",
+          "Milk",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Musk Mallow",
+          "Galbanum",
+          "Jasmine"
+        ],
+        "base": [
+          "Musk",
+          "Milk",
+          "Rice",
+          "Ambroxan"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Lore/Lil-Softie-136235.html"
     },
@@ -27,9 +307,20 @@
       "category": "U",
       "family": "Gourmand Spicy",
       "notes": {
-        "top": ["Orange", "Akigalawood"],
-        "middle": ["Cacao", "Dark Chocolate"],
-        "base": ["Tobacco", "Peru Balsam", "Ambrofix", "Patchouli"]
+        "top": [
+          "Orange",
+          "Akigalawood"
+        ],
+        "middle": [
+          "Cacao",
+          "Dark Chocolate"
+        ],
+        "base": [
+          "Tobacco",
+          "Peru Balsam",
+          "Ambrofix",
+          "Patchouli"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/tom-ford-tobacco-chocolat-news/"
     },
@@ -41,9 +332,24 @@
       "category": "U",
       "family": "Aromatic Aquatic",
       "notes": {
-        "top": ["Mimosa", "Pear", "Lemon", "Incense"],
-        "middle": ["Black Tea", "Blue Lotus Extract", "Orris", "Clary Sage"],
-        "base": ["Musk", "Ambrette Seeds", "Eucalyptus Absolute", "Violet Leaves"]
+        "top": [
+          "Mimosa",
+          "Pear",
+          "Lemon",
+          "Incense"
+        ],
+        "middle": [
+          "Black Tea",
+          "Blue Lotus Extract",
+          "Orris",
+          "Clary Sage"
+        ],
+        "base": [
+          "Musk",
+          "Ambrette Seeds",
+          "Eucalyptus Absolute",
+          "Violet Leaves"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Future-Society/Wandering-Rain-136440.html"
     },
@@ -55,9 +361,24 @@
       "category": "U",
       "family": "Fruity Gourmand",
       "notes": {
-        "top": ["Peach", "Bamboo", "Lactonic Accord", "Blackcurrant", "Orange"],
-        "middle": ["Rose", "Lotus", "Peach Blossom"],
-        "base": ["Sugar", "Vanilla", "Almond", "Musk"]
+        "top": [
+          "Peach",
+          "Bamboo",
+          "Lactonic Accord",
+          "Blackcurrant",
+          "Orange"
+        ],
+        "middle": [
+          "Rose",
+          "Lotus",
+          "Peach Blossom"
+        ],
+        "base": [
+          "Sugar",
+          "Vanilla",
+          "Almond",
+          "Musk"
+        ]
       },
       "source_url": "https://sandandfoghome.com/products/peach-shortcake-50ml-perfume-oil-dropper"
     },
@@ -69,9 +390,18 @@
       "category": "M",
       "family": "Aquatic Woody",
       "notes": {
-        "top": ["Ambergris", "Sea Water"],
-        "middle": ["Cedar", "Cypress"],
-        "base": ["Driftwood", "Sand"]
+        "top": [
+          "Ambergris",
+          "Sea Water"
+        ],
+        "middle": [
+          "Cedar",
+          "Cypress"
+        ],
+        "base": [
+          "Driftwood",
+          "Sand"
+        ]
       },
       "source_url": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men"
     },
@@ -83,9 +413,21 @@
       "category": "M",
       "family": "Amber Citrus Woody",
       "notes": {
-        "top": ["Amber", "Citrus", "Spicy Notes"],
-        "middle": ["Jasmine", "Rose", "Violet"],
-        "base": ["Cedarwood", "Patchouli", "Vetiver"]
+        "top": [
+          "Amber",
+          "Citrus",
+          "Spicy Notes"
+        ],
+        "middle": [
+          "Jasmine",
+          "Rose",
+          "Violet"
+        ],
+        "base": [
+          "Cedarwood",
+          "Patchouli",
+          "Vetiver"
+        ]
       },
       "source_url": "https://www.jomashop.com/rasasi-unisex-hawas-highness-edp-spray-3-4-oz-fragrances-614514575284.html"
     },
@@ -97,9 +439,29 @@
       "category": "M",
       "family": "Woody Amber Aromatic",
       "notes": {
-        "top": ["Mugwort", "Carrot", "Bergamot", "Coconut", "Cardamom", "Lavender"],
-        "middle": ["Cinnamon", "Lily of the Valley", "Freesia", "Orris", "Jasmine"],
-        "base": ["Ambergris", "Labdanum", "Benzoin", "Musk", "Cypriol", "Patchouli"]
+        "top": [
+          "Mugwort",
+          "Carrot",
+          "Bergamot",
+          "Coconut",
+          "Cardamom",
+          "Lavender"
+        ],
+        "middle": [
+          "Cinnamon",
+          "Lily of the Valley",
+          "Freesia",
+          "Orris",
+          "Jasmine"
+        ],
+        "base": [
+          "Ambergris",
+          "Labdanum",
+          "Benzoin",
+          "Musk",
+          "Cypriol",
+          "Patchouli"
+        ]
       },
       "source_url": "https://www.jomashop.com/rasasi-mens-hawas-exotic-edp-spray-3-4-oz-fragrances-614514575321.html"
     },
@@ -111,9 +473,24 @@
       "category": "U",
       "family": "Citrus Amber Aromatic",
       "notes": {
-        "top": ["Bergamot", "Bitter Orange", "Lemon", "Ginger", "Rosemary"],
-        "middle": ["Orange Blossom", "Peru Balsam", "Petalia", "Petitgrain"],
-        "base": ["Akigalawood", "Ambreine", "Sandalwood"]
+        "top": [
+          "Bergamot",
+          "Bitter Orange",
+          "Lemon",
+          "Ginger",
+          "Rosemary"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Peru Balsam",
+          "Petalia",
+          "Petitgrain"
+        ],
+        "base": [
+          "Akigalawood",
+          "Ambreine",
+          "Sandalwood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/meltemia-nishane/"
     },
@@ -134,9 +511,21 @@
       "category": "U",
       "family": "Woody Leather",
       "notes": {
-        "top": ["Black Pepper", "Cypress", "Juniper"],
-        "middle": ["Pepperwood", "Vetiver", "Floral Notes", "Green Accord"],
-        "base": ["Black Leather", "Benzoin"]
+        "top": [
+          "Black Pepper",
+          "Cypress",
+          "Juniper"
+        ],
+        "middle": [
+          "Pepperwood",
+          "Vetiver",
+          "Floral Notes",
+          "Green Accord"
+        ],
+        "base": [
+          "Black Leather",
+          "Benzoin"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/ombre-leather-reserve-tom-ford/"
     },
@@ -148,9 +537,19 @@
       "category": "F",
       "family": "Floral Woody",
       "notes": {
-        "top": ["Grapefruit", "Lychee"],
-        "middle": ["Rose", "Jasmine"],
-        "base": ["Vetiver", "Vanilla", "Patchouli"]
+        "top": [
+          "Grapefruit",
+          "Lychee"
+        ],
+        "middle": [
+          "Rose",
+          "Jasmine"
+        ],
+        "base": [
+          "Vetiver",
+          "Vanilla",
+          "Patchouli"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/coco-mademoiselle-crush-absolu-chanel/"
     },
@@ -162,9 +561,15 @@
       "category": "F",
       "family": "Floral Woody",
       "notes": {
-        "top": ["Tuberose"],
-        "middle": ["Red Orange Nectar"],
-        "base": ["Sandalwood"]
+        "top": [
+          "Tuberose"
+        ],
+        "middle": [
+          "Red Orange Nectar"
+        ],
+        "base": [
+          "Sandalwood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/vendetta-donna-valentino/",
       "view_url": "https://fragrancebuy.ca/search?q=valentino"
@@ -177,9 +582,15 @@
       "category": "M",
       "family": "Amber Spicy",
       "notes": {
-        "top": ["Ginger"],
-        "middle": ["Cinnamon Liquor Accord"],
-        "base": ["Patchouli Essence"]
+        "top": [
+          "Ginger"
+        ],
+        "middle": [
+          "Cinnamon Liquor Accord"
+        ],
+        "base": [
+          "Patchouli Essence"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/vendetta-uomo-valentino/",
       "view_url": "https://fragrancebuy.ca/search?q=valentino"
@@ -192,9 +603,23 @@
       "category": "U",
       "family": "Gourmand",
       "notes": {
-        "top": ["Cotton Candy", "Marshmallow", "Ice Cream", "Vanilla", "Caramel"],
-        "middle": ["Coconut Milk", "Vanilla", "Milk"],
-        "base": ["Cedarwood", "Amber", "Moss"]
+        "top": [
+          "Cotton Candy",
+          "Marshmallow",
+          "Ice Cream",
+          "Vanilla",
+          "Caramel"
+        ],
+        "middle": [
+          "Coconut Milk",
+          "Vanilla",
+          "Milk"
+        ],
+        "base": [
+          "Cedarwood",
+          "Amber",
+          "Moss"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-addiction-rasasi/",
       "view_url": "https://fragrancebuy.ca/search?q=rasasi+hawas"
@@ -207,9 +632,22 @@
       "category": "M",
       "family": "Fruity Spicy Amber",
       "notes": {
-        "top": ["Pineapple", "Mandarin", "Black Pepper"],
-        "middle": ["Orange Blossom", "Artemisia", "Lavender"],
-        "base": ["Patchouli", "Cedarwood", "Incense", "Ambroxan"]
+        "top": [
+          "Pineapple",
+          "Mandarin",
+          "Black Pepper"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Artemisia",
+          "Lavender"
+        ],
+        "base": [
+          "Patchouli",
+          "Cedarwood",
+          "Incense",
+          "Ambroxan"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/fahad-lattafa/",
       "view_url": "https://fragrancebuy.ca/search?q=lattafa"
@@ -222,9 +660,16 @@
       "category": "F",
       "family": "Fruity Spicy Amber",
       "notes": {
-        "top": ["Wild Blackberry"],
-        "middle": ["Red Chili Pepper"],
-        "base": ["Musks", "Ambroxan"]
+        "top": [
+          "Wild Blackberry"
+        ],
+        "middle": [
+          "Red Chili Pepper"
+        ],
+        "base": [
+          "Musks",
+          "Ambroxan"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/purple-trouble-juliette-has-a-gun/",
       "view_url": "https://fragrancebuy.ca/search?q=juliette+has+a+gun"
@@ -237,9 +682,21 @@
       "category": "F",
       "family": "Gourmand Floral",
       "notes": {
-        "top": ["Mandarin", "Freesia Dew", "Toasted Rice"],
-        "middle": ["Sakura Blossom", "Coconut Milk", "Jasmine Nectar"],
-        "base": ["Skin Musks", "Tonka Bean", "Vanilla"]
+        "top": [
+          "Mandarin",
+          "Freesia Dew",
+          "Toasted Rice"
+        ],
+        "middle": [
+          "Sakura Blossom",
+          "Coconut Milk",
+          "Jasmine Nectar"
+        ],
+        "base": [
+          "Skin Musks",
+          "Tonka Bean",
+          "Vanilla"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/vanilla-rice-ellis-brooklyn/"
     },
@@ -251,9 +708,22 @@
       "category": "U",
       "family": "Citrus Floral Fruity",
       "notes": {
-        "top": ["Iced Ginger", "Lemon C2 Extract", "Calabrian Bergamot", "Orange Blossom"],
-        "middle": ["Musk", "Rose", "Tuberose"],
-        "base": ["Vanilla Bean", "Clearwood", "Amberwood"]
+        "top": [
+          "Iced Ginger",
+          "Lemon C2 Extract",
+          "Calabrian Bergamot",
+          "Orange Blossom"
+        ],
+        "middle": [
+          "Musk",
+          "Rose",
+          "Tuberose"
+        ],
+        "base": [
+          "Vanilla Bean",
+          "Clearwood",
+          "Amberwood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/taif-riiffs/"
     },
@@ -265,9 +735,22 @@
       "category": "M",
       "family": "Fruity Woody Chypre",
       "notes": {
-        "top": ["Bergamot", "Tangerine", "Pineapple", "Blue Crystals"],
-        "middle": ["Vanilla Flower", "Oakmoss", "Plum"],
-        "base": ["Patchouli", "Tonka Bean", "White Powder"]
+        "top": [
+          "Bergamot",
+          "Tangerine",
+          "Pineapple",
+          "Blue Crystals"
+        ],
+        "middle": [
+          "Vanilla Flower",
+          "Oakmoss",
+          "Plum"
+        ],
+        "base": [
+          "Patchouli",
+          "Tonka Bean",
+          "White Powder"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/club-de-nuit-intense-overdose/"
     },
@@ -279,9 +762,17 @@
       "category": "M",
       "family": "Gourmand Woody",
       "notes": {
-        "top": ["Tropical Notes"],
-        "middle": ["Vanilla", "Madagascar Vanilla", "Bourbon Vanilla"],
-        "base": ["Ebony Wood"]
+        "top": [
+          "Tropical Notes"
+        ],
+        "middle": [
+          "Vanilla",
+          "Madagascar Vanilla",
+          "Bourbon Vanilla"
+        ],
+        "base": [
+          "Ebony Wood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/1-million-black-rabanne/",
       "view_url": "https://fragrancebuy.ca/collections/paco-rabanne"
@@ -294,9 +785,20 @@
       "category": "U",
       "family": "Citrus Aromatic",
       "notes": {
-        "top": ["Orange Blossom", "Lemon", "Mandarin"],
-        "middle": ["Rosemary Salt", "Pink Pepper", "Galbanum"],
-        "base": ["Ambroxan", "Cedarwood"]
+        "top": [
+          "Orange Blossom",
+          "Lemon",
+          "Mandarin"
+        ],
+        "middle": [
+          "Rosemary Salt",
+          "Pink Pepper",
+          "Galbanum"
+        ],
+        "base": [
+          "Ambroxan",
+          "Cedarwood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/late-lunch-byredo/",
       "view_url": "https://www.jomashop.com/byredo-fragrances.html"
@@ -309,9 +811,19 @@
       "category": "F",
       "family": "Fruity Gourmand",
       "notes": {
-        "top": ["Spun Sugar", "Blackcurrant", "Fluffy Musk"],
-        "middle": ["Vanilla-dipped Petals", "Cozy Woods"],
-        "base": ["Vanilla Smoke", "Golden Amber"]
+        "top": [
+          "Spun Sugar",
+          "Blackcurrant",
+          "Fluffy Musk"
+        ],
+        "middle": [
+          "Vanilla-dipped Petals",
+          "Cozy Woods"
+        ],
+        "base": [
+          "Vanilla Smoke",
+          "Golden Amber"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/cloud-aurora-ariana-grande/",
       "view_url": "https://www.ulta.com/brand/ariana-grande"
@@ -325,8 +837,12 @@
       "family": "Fruity Woody",
       "notes": {
         "top": [],
-        "middle": ["Black Currant Absolute"],
-        "base": ["Oud Assam"]
+        "middle": [
+          "Black Currant Absolute"
+        ],
+        "base": [
+          "Oud Assam"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/black-currant-extrait-matiere-premiere/"
     },
@@ -338,9 +854,18 @@
       "category": "U",
       "family": "Woody Aquatic",
       "notes": {
-        "top": ["Salt Accord", "Saffron Accord"],
-        "middle": ["Marine Seaweed", "Black Woody Notes"],
-        "base": ["Amber Accord", "Oakmoss"]
+        "top": [
+          "Salt Accord",
+          "Saffron Accord"
+        ],
+        "middle": [
+          "Marine Seaweed",
+          "Black Woody Notes"
+        ],
+        "base": [
+          "Amber Accord",
+          "Oakmoss"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/le-sel-dissey-parfum-issey-miyake/",
       "view_url": "https://www.fragrancenet.com/fragrances/issey-miyake"
@@ -353,9 +878,23 @@
       "category": "U",
       "family": "Oriental Woody",
       "notes": {
-        "top": ["Blueberry", "Gurjun Balsam", "Saffron"],
-        "middle": ["Indian Oudh", "Leather", "Dry Wood", "Violet"],
-        "base": ["Sugar", "Sandalwood", "Cedarwood", "White Musks"]
+        "top": [
+          "Blueberry",
+          "Gurjun Balsam",
+          "Saffron"
+        ],
+        "middle": [
+          "Indian Oudh",
+          "Leather",
+          "Dry Wood",
+          "Violet"
+        ],
+        "base": [
+          "Sugar",
+          "Sandalwood",
+          "Cedarwood",
+          "White Musks"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/oud-morning-jeroboam/"
     },
@@ -367,9 +906,15 @@
       "category": "F",
       "family": "Floral Gourmand",
       "notes": {
-        "top": ["Vanilla Orchid"],
-        "middle": ["Salty Ozonic Accord"],
-        "base": ["Dark Cocoa Accord"]
+        "top": [
+          "Vanilla Orchid"
+        ],
+        "middle": [
+          "Salty Ozonic Accord"
+        ],
+        "base": [
+          "Dark Cocoa Accord"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/flora-gorgeous-orchid-intense-gucci/"
     },
@@ -381,9 +926,31 @@
       "category": "U",
       "family": "Oriental Gourmand",
       "notes": {
-        "top": ["Honey", "Tangerine", "Grapefruit", "Mango", "Pomegranate", "Apricot", "Ginger", "Cardamom", "Pink Pepper"],
-        "middle": ["Black Tea", "Cappuccino", "Davana"],
-        "base": ["Tonka Bean", "Vanilla", "Cedarwood", "Labdanum", "Cypriol", "Vetiver", "Patchouli"]
+        "top": [
+          "Honey",
+          "Tangerine",
+          "Grapefruit",
+          "Mango",
+          "Pomegranate",
+          "Apricot",
+          "Ginger",
+          "Cardamom",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Black Tea",
+          "Cappuccino",
+          "Davana"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Vanilla",
+          "Cedarwood",
+          "Labdanum",
+          "Cypriol",
+          "Vetiver",
+          "Patchouli"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/elsewhere-amouage/"
     },
@@ -395,9 +962,15 @@
       "category": "F",
       "family": "Floral Woody",
       "notes": {
-        "top": ["French Lavender"],
-        "middle": ["Moroccan Orange Blossom"],
-        "base": ["Caledonian Sandalwood"]
+        "top": [
+          "French Lavender"
+        ],
+        "middle": [
+          "Moroccan Orange Blossom"
+        ],
+        "base": [
+          "Caledonian Sandalwood"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/libre-santal-couture-ysl/",
       "view_url": "https://www.jomashop.com/collections/fragrances/Yves-Saint-Laurent-Fragrances~bWFudWZhY3R1cmVyfll2ZXMlMjBTYWludCUyMExhdXJlbnQ"
@@ -410,9 +983,19 @@
       "category": "M",
       "family": "Floral Woody Musk",
       "notes": {
-        "top": ["Bergamot", "Coconut"],
-        "middle": ["Orange Blossom", "Musk"],
-        "base": ["Tonka Bean", "Vanilla", "Vetiver"]
+        "top": [
+          "Bergamot",
+          "Coconut"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Musk"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Vanilla",
+          "Vetiver"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Beau-Narcisse-122215.html"
     },
@@ -424,9 +1007,15 @@
       "category": "U",
       "family": "Fruity Woody",
       "notes": {
-        "top": ["Blackcurrant"],
-        "middle": ["Beetroot"],
-        "base": ["Patchouli"]
+        "top": [
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Beetroot"
+        ],
+        "base": [
+          "Patchouli"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Scarlet-Beetroot-132238.html"
     },
@@ -438,9 +1027,15 @@
       "category": "U",
       "family": "Fresh Floral",
       "notes": {
-        "top": ["Carrot"],
-        "middle": ["Orange Blossom"],
-        "base": ["White Musk"]
+        "top": [
+          "Carrot"
+        ],
+        "middle": [
+          "Orange Blossom"
+        ],
+        "base": [
+          "White Musk"
+        ]
       },
       "source_url": "https://www.jomalone.com/products/carrot-blossom-cologne"
     },
@@ -452,9 +1047,15 @@
       "category": "U",
       "family": "Gourmand Woody",
       "notes": {
-        "top": ["Butternut Squash"],
-        "middle": ["Tonka Bean"],
-        "base": ["Patchouli"]
+        "top": [
+          "Butternut Squash"
+        ],
+        "middle": [
+          "Tonka Bean"
+        ],
+        "base": [
+          "Patchouli"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Velvety-Butternut-132237.html"
     },
@@ -466,9 +1067,29 @@
       "category": "U",
       "family": "Oriental Gourmand",
       "notes": {
-        "top": ["Bergamot", "Bitter Orange", "Cinnamon", "Cardamom", "Guava", "Mango", "Saffron"],
-        "middle": ["Akigalawood", "Amber", "Benzoin", "Caramel", "Patchouli", "Passionfruit"],
-        "base": ["Agarwood", "Coffee", "Tonka Bean", "Vanilla"]
+        "top": [
+          "Bergamot",
+          "Bitter Orange",
+          "Cinnamon",
+          "Cardamom",
+          "Guava",
+          "Mango",
+          "Saffron"
+        ],
+        "middle": [
+          "Akigalawood",
+          "Amber",
+          "Benzoin",
+          "Caramel",
+          "Patchouli",
+          "Passionfruit"
+        ],
+        "base": [
+          "Agarwood",
+          "Coffee",
+          "Tonka Bean",
+          "Vanilla"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Loewe/Wild-Coffee-132239.html"
     },
@@ -480,9 +1101,20 @@
       "category": "M",
       "family": "Citrus Fruity Woody",
       "notes": {
-        "top": ["Bergamot", "Blackcurrant", "Guava"],
-        "middle": ["Orange Blossom", "Sandalwood"],
-        "base": ["Musk", "Tonka Bean", "Ambergris"]
+        "top": [
+          "Bergamot",
+          "Blackcurrant",
+          "Guava"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Sandalwood"
+        ],
+        "base": [
+          "Musk",
+          "Tonka Bean",
+          "Ambergris"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-sapphire-rasasi/",
       "blog_url": "/blog/hawas-sapphire/"
@@ -495,9 +1127,22 @@
       "category": "U",
       "family": "Fresh Aromatic",
       "notes": {
-        "top": ["Basil", "Lemon", "Bergamot", "Ginger"],
-        "middle": ["Fig Milk", "Petitgrain", "Neroli"],
-        "base": ["Vetiver", "Cedarwood", "Musk"]
+        "top": [
+          "Basil",
+          "Lemon",
+          "Bergamot",
+          "Ginger"
+        ],
+        "middle": [
+          "Fig Milk",
+          "Petitgrain",
+          "Neroli"
+        ],
+        "base": [
+          "Vetiver",
+          "Cedarwood",
+          "Musk"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Bottega-Veneta/Always-Now-135219.html"
     },
@@ -509,9 +1154,19 @@
       "category": "U",
       "family": "Gourmand Woody",
       "notes": {
-        "top": ["Rum", "Paradisone"],
-        "middle": ["Patchouli", "Ambrox"],
-        "base": ["Vanilla", "Oak", "Frankincense"]
+        "top": [
+          "Rum",
+          "Paradisone"
+        ],
+        "middle": [
+          "Patchouli",
+          "Ambrox"
+        ],
+        "base": [
+          "Vanilla",
+          "Oak",
+          "Frankincense"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Bottega-Veneta/Ricordami-135212.html"
     },
@@ -523,9 +1178,22 @@
       "category": "U",
       "family": "Woody Spicy",
       "notes": {
-        "top": ["Italian Lemon", "Bergamot", "Green Mandarin"],
-        "middle": ["Ginger", "Pink Pepper"],
-        "base": ["Oud", "Atlas Cedar", "Cypriol", "Labdanum", "Patchouli"]
+        "top": [
+          "Italian Lemon",
+          "Bergamot",
+          "Green Mandarin"
+        ],
+        "middle": [
+          "Ginger",
+          "Pink Pepper"
+        ],
+        "base": [
+          "Oud",
+          "Atlas Cedar",
+          "Cypriol",
+          "Labdanum",
+          "Patchouli"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/BDK-Parfums/Silver-Ceremony-132890.html"
     },
@@ -537,9 +1205,20 @@
       "category": "U",
       "family": "Floral Musky",
       "notes": {
-        "top": ["Lemon", "Bergamot", "Green Notes"],
-        "middle": ["Orange Blossom", "Almond"],
-        "base": ["White Musk", "Woody Notes", "Vanilla"]
+        "top": [
+          "Lemon",
+          "Bergamot",
+          "Green Notes"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Almond"
+        ],
+        "base": [
+          "White Musk",
+          "Woody Notes",
+          "Vanilla"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Guerlain/Eau-de-Coton-128416.html"
     },
@@ -551,9 +1230,22 @@
       "category": "U",
       "family": "Floral Aquatic",
       "notes": {
-        "top": ["Apricot", "Lime", "Aquatic Notes"],
-        "middle": ["Wild Rose", "Poppy", "Avocado"],
-        "base": ["Peach", "Musk", "Vanilla", "Sand"]
+        "top": [
+          "Apricot",
+          "Lime",
+          "Aquatic Notes"
+        ],
+        "middle": [
+          "Wild Rose",
+          "Poppy",
+          "Avocado"
+        ],
+        "base": [
+          "Peach",
+          "Musk",
+          "Vanilla",
+          "Sand"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/DS-Durga/Rose-Pacific-132793.html"
     },
@@ -565,9 +1257,25 @@
       "category": "U",
       "family": "Citrus Gourmand",
       "notes": {
-        "top": ["Cola", "Lemon", "Lime Peel", "Neroli", "Cinnamon", "Ginger"],
-        "middle": ["Rum", "Coffee", "Nutmeg"],
-        "base": ["Vanilla", "Caramel", "Sandalwood", "Moss"]
+        "top": [
+          "Cola",
+          "Lemon",
+          "Lime Peel",
+          "Neroli",
+          "Cinnamon",
+          "Ginger"
+        ],
+        "middle": [
+          "Rum",
+          "Coffee",
+          "Nutmeg"
+        ],
+        "base": [
+          "Vanilla",
+          "Caramel",
+          "Sandalwood",
+          "Moss"
+        ]
       },
       "source_url": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Cola-Addict-135643.html"
     },
@@ -579,9 +1287,20 @@
       "category": "U",
       "family": "Tropical Aquatic",
       "notes": {
-        "top": ["Blood Orange", "Melon", "Lemon"],
-        "middle": ["Candied Watermelon", "Coconut"],
-        "base": ["Marine Notes", "Amberwood", "Cacao"]
+        "top": [
+          "Blood Orange",
+          "Melon",
+          "Lemon"
+        ],
+        "middle": [
+          "Candied Watermelon",
+          "Coconut"
+        ],
+        "base": [
+          "Marine Notes",
+          "Amberwood",
+          "Cacao"
+        ]
       },
       "source_url": "https://beautyhouse.com/products/rayhaan-pacific-aloha-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m",
       "blog_url": "/blog/rayhaan-pacific-aloha/"
@@ -594,9 +1313,22 @@
       "category": "M",
       "family": "Aromatic Woody",
       "notes": {
-        "top": ["Bergamot", "Lavender", "Pear", "Mint"],
-        "middle": ["Cinnamon", "Sage"],
-        "base": ["Patchouli", "Cedar", "Vanilla", "Amber"]
+        "top": [
+          "Bergamot",
+          "Lavender",
+          "Pear",
+          "Mint"
+        ],
+        "middle": [
+          "Cinnamon",
+          "Sage"
+        ],
+        "base": [
+          "Patchouli",
+          "Cedar",
+          "Vanilla",
+          "Amber"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-gold-digger-rasasi/",
       "blog_url": "/blog/hawas-gold-digger/"
@@ -609,9 +1341,21 @@
       "category": "M",
       "family": "Floral Fruity Amber",
       "notes": {
-        "top": ["Peppermint", "Bergamot", "Mandarin"],
-        "middle": ["Blackcurrant", "Fig", "Jasmine", "Carrot"],
-        "base": ["Amber", "Woody Notes"]
+        "top": [
+          "Peppermint",
+          "Bergamot",
+          "Mandarin"
+        ],
+        "middle": [
+          "Blackcurrant",
+          "Fig",
+          "Jasmine",
+          "Carrot"
+        ],
+        "base": [
+          "Amber",
+          "Woody Notes"
+        ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-la-mer-rasasi/",
       "blog_url": "/blog/hawas-la-mer/"
