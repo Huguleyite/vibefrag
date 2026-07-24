@@ -612,34 +612,6 @@
 </head>
 <body>
 
-<!-- SITE NOTICE — swap the data-notice-id, tag, text, and link each time there's news. A new ID makes it reappear even for visitors who dismissed a previous notice. -->
-<div class="site-notice" id="site-notice" data-notice-id="2026-07-jomashop-black-friday-in-july">
-  <div class="site-notice__inner">
-    <span class="site-notice__tag">Sale</span>
-    <span class="site-notice__text">Jomashop's Black Friday, in July, is live — Splurge, Designer, and Dupe tiers all in play.</span>
-    <a href="https://www.jomashop.com/fragrances.html" target="_blank" rel="noopener" class="site-notice__link">Shop the Sale →</a>
-    <button type="button" class="site-notice__close" aria-label="Dismiss notice">✕</button>
-  </div>
-</div>
-<script>
-  (function () {
-    var notice = document.getElementById('site-notice');
-    if (!notice) return;
-    var noticeId = notice.getAttribute('data-notice-id');
-    var storageKey = 'vf_notice_dismissed';
-    if (localStorage.getItem(storageKey) === noticeId) {
-      notice.classList.add('is-hidden');
-    }
-    var closeBtn = notice.querySelector('.site-notice__close');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', function () {
-        localStorage.setItem(storageKey, noticeId);
-        notice.classList.add('is-hidden');
-      });
-    }
-  })();
-</script>
-
 <!-- ATMOSPHERE -->
 <div class="aperture"></div>
 <div class="caustics">
