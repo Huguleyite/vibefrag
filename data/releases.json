@@ -1,10 +1,232 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-21",
+    "lastUpdated": "2026-07-24",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.3"
+    "version": "1.4"
   },
   "releases": [
+    {
+      "id": "lattafa-petra-viola-2026",
+      "name": "Petra Viola",
+      "house": "Lattafa",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floriental Fruity",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Raspberry",
+          "Violet"
+        ],
+        "middle": [
+          "Lily of the Valley",
+          "Cotton Candy",
+          "Jasmine"
+        ],
+        "base": [
+          "Sandalwood",
+          "Cedarwood",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Petra-Viola-136793.html"
+    },
+    {
+      "id": "maison-alhambra-delilah-viola-2026",
+      "name": "Delilah Viola",
+      "house": "Maison Alhambra",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Mandarin Orange",
+          "Bergamot",
+          "Peach",
+          "Pear"
+        ],
+        "middle": [
+          "Lily of the Valley",
+          "Lavender",
+          "Violet",
+          "Lilac"
+        ],
+        "base": [
+          "Sandalwood",
+          "Patchouli",
+          "Cream",
+          "White Musk",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Delilah-Viola-136600.html"
+    },
+    {
+      "id": "armaf-ombre-fresh-2026",
+      "name": "Ombre Fresh",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Green Mandarin"
+        ],
+        "middle": [
+          "Lavender",
+          "Cardamom"
+        ],
+        "base": [
+          "Vanilla",
+          "Woody Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Ombre-Fresh-130943.html"
+    },
+    {
+      "id": "lattafa-creative-art-2026",
+      "name": "Creative Art",
+      "house": "Lattafa Pride",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Elemi",
+          "Black Pepper",
+          "Bergamot",
+          "Lemon"
+        ],
+        "middle": [
+          "Patchouli",
+          "Cumin",
+          "Saffron",
+          "Geranium",
+          "Jasmine"
+        ],
+        "base": [
+          "Frankincense",
+          "Vanilla",
+          "Benzoin",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Creative-Art-135426.html"
+    },
+    {
+      "id": "lattafa-raed-intensely-2026",
+      "name": "Ra'ed Intensely",
+      "house": "Lattafa",
+      "released": "2026",
+      "category": "U",
+      "family": "Citrus Woody Musk",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Yuzu",
+          "Bergamot"
+        ],
+        "middle": [
+          "Black Pepper",
+          "Ambergris"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Ambroxan"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Ra-ed-Intensely-131200.html"
+    },
+    {
+      "id": "armaf-spartacus-2026",
+      "name": "Spartacus",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "M",
+      "family": "Oriental Vanilla",
+      "notes": {
+        "top": [
+          "Orange Blossom",
+          "Cinnamon",
+          "Cardamom",
+          "Plum",
+          "Bergamot"
+        ],
+        "middle": [
+          "Bourbon Vanilla",
+          "Candied Almond",
+          "Lavender",
+          "Davana",
+          "Elemi"
+        ],
+        "base": [
+          "Praline",
+          "Tonka Bean",
+          "Amber",
+          "Musk",
+          "Labdanum",
+          "Benzoin",
+          "Guaiac Wood",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Spartacus-129502.html"
+    },
+    {
+      "id": "lattafa-mishlah-2026",
+      "name": "Mishlah",
+      "house": "Lattafa",
+      "released": "2026",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Black Pepper",
+          "Lavender",
+          "Bergamot"
+        ],
+        "middle": [
+          "Iris",
+          "Petitgrain"
+        ],
+        "base": [
+          "Amber",
+          "Musk",
+          "Olibanum",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Mishlah-128548.html"
+    },
+    {
+      "id": "lattafa-new-york-city-of-dreams-2026",
+      "name": "New York the City of Dreams",
+      "house": "Lattafa Pride",
+      "released": "2026",
+      "category": "U",
+      "family": "Chypre Floral",
+      "notes": {
+        "top": [
+          "Cherry",
+          "Nutmeg",
+          "Black Pepper"
+        ],
+        "middle": [
+          "Cognac",
+          "Mimosa",
+          "Rose"
+        ],
+        "base": [
+          "Labdanum",
+          "Cedarwood",
+          "Oakmoss",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/New-York-the-City-of-Dreams-127458.html"
+    },
     {
       "id": "rasasi-hawas-chrome-2026",
       "name": "Hawas Chrome",
