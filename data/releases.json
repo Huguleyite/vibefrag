@@ -1,10 +1,165 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-24",
+    "lastUpdated": "2026-07-28",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.4"
+    "version": "1.5"
   },
   "releases": [
+    {
+      "id": "billie-eilish-eilish-intense-2026",
+      "name": "Eilish Intense",
+      "house": "Billie Eilish",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Sugared Petals",
+          "Mandarin",
+          "Warm Berries"
+        ],
+        "middle": [
+          "Creamy Vanilla",
+          "Soft Spices",
+          "Cocoa"
+        ],
+        "base": [
+          "Sleek Woods",
+          "Warm Musks",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/billie-eilish-eilish-intense-news/",
+      "blog_url": "/blog/eilish-intense/"
+    },
+    {
+      "id": "byredo-oboro-2026",
+      "name": "Oboro",
+      "house": "Byredo",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Floral Amber Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Black Pepper",
+          "Ginger"
+        ],
+        "middle": [
+          "Peony",
+          "Violet",
+          "Mineral Accord"
+        ],
+        "base": [
+          "Salted Amber",
+          "Incense",
+          "Vetiver"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/16/byredo-oboro-new-fragrance/"
+    },
+    {
+      "id": "dries-van-noten-velvet-violet-2026",
+      "name": "Velvet Violet",
+      "house": "Dries Van Noten",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Woody Floral Gourmand",
+      "notes": {
+        "top": [
+          "Violet",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Sesame",
+          "Barley",
+          "Clary Sage"
+        ],
+        "base": [
+          "Vetiver",
+          "Tonka Bean",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/16/dries-van-noten-velvet-violet-new-fragrance/"
+    },
+    {
+      "id": "neela-vermeire-neith-2026",
+      "name": "Neith",
+      "house": "Neela Vermeire Créations",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Black Pepper"
+        ],
+        "middle": [
+          "Rose",
+          "Carnation",
+          "Frankincense",
+          "Myrrh",
+          "Oud",
+          "Cypriol"
+        ],
+        "base": [
+          "Ambergris",
+          "Vanilla",
+          "Sandalwood",
+          "Labdanum",
+          "Castoreum",
+          "Vetiver",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/18/neela-vermeire-creations-neith-new-perfume/"
+    },
+    {
+      "id": "narciso-rodriguez-all-of-me-essentiel-2026",
+      "name": "All Of Me Essentiel",
+      "house": "Narciso Rodriguez",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Chypre Amber Floral",
+      "notes": {
+        "top": [
+          "Black Pepper",
+          "Incense"
+        ],
+        "middle": [
+          "Geranium Bourbon",
+          "White Peony",
+          "Creamy Musks",
+          "Benzoin"
+        ],
+        "base": [
+          "Patchouli",
+          "Sandalwood",
+          "Amber"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/15/narciso-rodriguez-all-of-me-essentiel-new-fragrance/"
+    },
+    {
+      "id": "penhaligons-manoeuvres-of-the-baroness-2026",
+      "name": "The Manoeuvres Of The Baroness",
+      "house": "Penhaligon's",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top": [
+          "Orange Blossom"
+        ],
+        "middle": [
+          "Chantilly Cream"
+        ],
+        "base": [
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/15/penhaligons-the-manoeuvres-of-the-baroness-new-fragrance/"
+    },
     {
       "id": "lattafa-petra-viola-2026",
       "name": "Petra Viola",
