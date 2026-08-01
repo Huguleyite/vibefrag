@@ -327,6 +327,7 @@
           "Patchouli"
         ]
       },
+      "blog_url": "/blog/armaf-spartacus/",
       "source_url": "https://www.fragrantica.com/perfume/Armaf/Spartacus-129502.html"
     },
     {
@@ -407,7 +408,8 @@
         ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-chrome-rasasi-2026/",
-      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-chrome-edp-3-4-oz-fragrances-614514331095.html"
+      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-chrome-edp-3-4-oz-fragrances-614514331095.html",
+      "blog_url": "/blog/hawas-chrome/"
     },
     {
       "id": "rasasi-hawas-thunder-2026",
@@ -439,7 +441,8 @@
         ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/hawas-thunder-rasasi/",
-      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-thunder-edp-spray-3-4-oz-fragrances-614514575338.html"
+      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-thunder-edp-spray-3-4-oz-fragrances-614514575338.html",
+      "blog_url": "/blog/hawas-thunder/"
     },
     {
       "id": "rasasi-hawas-lava-gold-2026",
@@ -469,7 +472,8 @@
         ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Lava-Gold-130939.html",
-      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-lava-gold-edp-spray-3-4-oz-fragrances-614514575352.html"
+      "view_url": "https://www.jomashop.com/rasasi-mens-hawas-lava-gold-edp-spray-3-4-oz-fragrances-614514575352.html",
+      "blog_url": "/blog/hawas-lava-gold/"
     },
     {
       "id": "rasasi-hawas-overdose-2026",
@@ -703,7 +707,8 @@
           "Patchouli"
         ]
       },
-      "source_url": "https://ifragranceofficial.com/tom-ford-tobacco-chocolat-news/"
+      "source_url": "https://ifragranceofficial.com/tom-ford-tobacco-chocolat-news/",
+      "blog_url": "/blog/tobacco-chocolat/"
     },
     {
       "id": "future-society-wandering-rain-2026",
@@ -1207,7 +1212,8 @@
         ]
       },
       "source_url": "https://ifragranceofficial.com/perfumes/cloud-aurora-ariana-grande/",
-      "view_url": "https://www.ulta.com/brand/ariana-grande"
+      "view_url": "https://www.ulta.com/brand/ariana-grande",
+      "blog_url": "/blog/cloud-aurora/"
     },
     {
       "id": "matiere-premiere-black-currant-extrait-2026",
