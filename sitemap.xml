@@ -242,6 +242,12 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/top-notes/mykonos/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/blog/icarus/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -285,6 +291,24 @@
 
   <url>
     <loc>https://vibefrag.com/blog/cloud-aurora/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/dreamscape/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/reflection/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/inception/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
