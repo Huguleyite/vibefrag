@@ -1,10 +1,384 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-28",
+    "lastUpdated": "2026-08-04",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.5"
+    "version": "1.8"
   },
   "releases": [
+    {
+      "id": "trussardi-primo-notte-blu-2026",
+      "name": "Primo Notte Blu",
+      "house": "Trussardi",
+      "released": "2026",
+      "category": "M",
+      "family": "Woody Aquatic",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Grapefruit",
+          "Ginger"
+        ],
+        "middle": [
+          "Sand Lily",
+          "Seaweed",
+          "Lavender"
+        ],
+        "base": [
+          "Amber",
+          "Cedar",
+          "Hazelnut"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Trussardi/Primo-Notte-Blu-125725.html",
+      "view_url": "https://trussardi.com/products/primo-notte-blu-eau-de-parfum-100-ml-blue-o020e000234n0p1"
+    },
+    {
+      "id": "ysl-black-opium-pink-glaze-2026",
+      "name": "Black Opium Pink Glaze",
+      "house": "Yves Saint Laurent",
+      "released": "2026",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Strawberry",
+          "Green Mandarin",
+          "Bergamot"
+        ],
+        "middle": [
+          "Jasmine",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Vanilla Absolute",
+          "Coffee",
+          "Benzoin",
+          "Amber",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Black-Opium-Pink-Glaze-136129.html"
+    },
+    {
+      "id": "diesel-only-desire-2026",
+      "name": "Only Desire",
+      "house": "Diesel",
+      "released": "2026-05",
+      "category": "F",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top": [
+          "Aldehydes",
+          "Banana",
+          "Pear",
+          "Bergamot"
+        ],
+        "middle": [
+          "Vanilla Orchid",
+          "Cumin",
+          "Rum",
+          "Jasmine"
+        ],
+        "base": [
+          "Bourbon Vanilla",
+          "Amber Xtreme",
+          "Praline"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/05/08/diesel-only-desire-new-fragrance/",
+      "view_url": "https://diesel.com/en-us/fragrances/only-desire/"
+    },
+    {
+      "id": "nina-ricci-nina-edp-2026",
+      "name": "Nina Eau de Parfum",
+      "house": "Nina Ricci",
+      "released": "2026",
+      "category": "F",
+      "family": "Floral Gourmand Woody",
+      "notes": {
+        "top": [
+          "Pear",
+          "Bergamot"
+        ],
+        "middle": [
+          "Pistachio",
+          "Gardenia"
+        ],
+        "base": [
+          "Vanilla",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Nina-Ricci/Nina-Eau-de-Parfum-123422.html",
+      "view_url": "https://www.ninaricci.com/en-us/fragrance/product/nina-eau-de-parfum"
+    },
+    {
+      "id": "moschino-toy-2-gummy-2026",
+      "name": "Toy 2 Gummy",
+      "house": "Moschino",
+      "released": "2026-02",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Hazelnut",
+          "Blood Orange",
+          "Bergamot",
+          "Red Wine"
+        ],
+        "middle": [
+          "Praline",
+          "Milk",
+          "Akigalawood"
+        ],
+        "base": [
+          "Vanilla",
+          "Myrrh",
+          "Musk",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/02/25/moschino-toy-2-gummy-toy-2-yummy-new-fragrances/",
+      "view_url": "https://us.moschino.com/products/toy-2-gummy-100-ml-eau-de-parfum-multicoloured-eur6003321000"
+    },
+    {
+      "id": "giorgio-armani-i-will-2026",
+      "name": "I Will",
+      "house": "Giorgio Armani",
+      "released": "2026-08",
+      "category": "M",
+      "family": "Woody Amber",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Lavender Accord",
+          "Violet Leaf",
+          "Cardamom"
+        ],
+        "middle": [
+          "Bourbon Vanilla"
+        ],
+        "base": [
+          "Woody Leather Accord"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/22/giorgio-armani-i-will-new-fragrance/"
+    },
+    {
+      "id": "rare-beauty-rare-beginnings-2026",
+      "name": "Rare Beginnings",
+      "house": "Rare Beauty",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Pear",
+          "Pistachio"
+        ],
+        "middle": [
+          "Gardenia",
+          "Jasmine",
+          "Lotus"
+        ],
+        "base": [
+          "Vanilla Bean",
+          "Sugar",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Rare-Beauty/Rare-Beginnings-138582.html"
+    },
+    {
+      "id": "michael-kors-pour-femme-pink-horizon-2026",
+      "name": "Pour Femme Pink Horizon",
+      "house": "Michael Kors",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Jasmine",
+          "Magnolia"
+        ],
+        "base": [
+          "Vanilla",
+          "Ambronova",
+          "Ecomusk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/29/michael-kors-transparent-collection-new-fragrances/"
+    },
+    {
+      "id": "michael-kors-pour-femme-violet-sunset-2026",
+      "name": "Pour Femme Violet Sunset",
+      "house": "Michael Kors",
+      "released": "2026-07",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Raspberry Leaf",
+          "Lemon",
+          "Lavender"
+        ],
+        "middle": [
+          "Blueberry Muffin Accord",
+          "Akigalawood",
+          "Lilac"
+        ],
+        "base": [
+          "Sylkolide",
+          "Cedarwood",
+          "Ambrofix",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Michael-Kors/Pour-Femme-Violet-Sunset-138645.html"
+    },
+    {
+      "id": "michael-kors-pour-homme-blue-dusk-2026",
+      "name": "Pour Homme Blue Dusk",
+      "house": "Michael Kors",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top": [
+          "Plum",
+          "Cinnamon"
+        ],
+        "middle": [
+          "Cistus",
+          "Lavandin",
+          "Dubai Chocolate Accord"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Cypriol"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/29/michael-kors-transparent-collection-new-fragrances/"
+    },
+    {
+      "id": "michael-kors-pour-homme-green-infinity-2026",
+      "name": "Pour Homme Green Infinity",
+      "house": "Michael Kors",
+      "released": "2026-07",
+      "category": "M",
+      "family": "Green Aromatic",
+      "notes": {
+        "top": [
+          "Lime",
+          "Green Melon"
+        ],
+        "middle": [
+          "Cardamom",
+          "Geranium"
+        ],
+        "base": [
+          "Vetiver",
+          "Oakmoss"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/29/michael-kors-transparent-collection-new-fragrances/"
+    },
+    {
+      "id": "aerin-amber-musk-pistache-2026",
+      "name": "Amber Musk Pistache",
+      "house": "Aerin",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Gourmand Oriental",
+      "notes": {
+        "top": [
+          "Pistachio Cream",
+          "Almond Blossom"
+        ],
+        "middle": [
+          "Vanilla",
+          "Amber",
+          "Rose Centifolia"
+        ],
+        "base": [
+          "Sandalwood",
+          "Coconut",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/01/aerin-amber-musk-pistache-new-fragrance/"
+    },
+    {
+      "id": "ellis-brooklyn-plum-tonic-2026",
+      "name": "Plum Tonic",
+      "house": "Ellis Brooklyn",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Plum Nectar",
+          "Acai"
+        ],
+        "middle": [
+          "Peony",
+          "Iris Flower",
+          "Violet Leaf"
+        ],
+        "base": [
+          "Amber",
+          "Cashmere Woods",
+          "Sugared Musks"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/01/ellis-brooklyn-plum-tonic-new-perfume/"
+    },
+    {
+      "id": "nest-cardamom-latte-2026",
+      "name": "Cardamom Latte",
+      "house": "Nest",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Spicy Gourmand",
+      "notes": {
+        "top": [
+          "Cardamom"
+        ],
+        "middle": [
+          "Jasmine"
+        ],
+        "base": [
+          "Coconut Milk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/07/23/nest-cardamom-latte-new-fragrance/"
+    },
+    {
+      "id": "lush-moominvalley-2026",
+      "name": "Moominvalley",
+      "house": "Lush",
+      "released": "2026-07",
+      "category": "U",
+      "family": "Fresh Floral Woody",
+      "notes": {
+        "top": [
+          "Bergamot"
+        ],
+        "middle": [
+          "Lavender"
+        ],
+        "base": [
+          "Vanilla Absolute",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lush/Moominvalley-138589.html"
+    },
     {
       "id": "billie-eilish-eilish-intense-2026",
       "name": "Eilish Intense",
