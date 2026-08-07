@@ -1,10 +1,149 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-04",
+    "lastUpdated": "2026-08-07",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.8"
+    "version": "1.9"
   },
   "releases": [
+    {
+      "id": "estee-lauder-glimmer-2026",
+      "name": "Glimmer",
+      "house": "Estée Lauder",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Oriental Floral",
+      "notes": {
+        "top": [
+          "Raspberry",
+          "Milk Mousse",
+          "Mandarin",
+          "Orange Blossom"
+        ],
+        "middle": [
+          "Macarons",
+          "Vanilla",
+          "Rose",
+          "Cashmeran"
+        ],
+        "base": [
+          "Amber",
+          "Sandalwood",
+          "Patchouli",
+          "Tonka Bean",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Estee-Lauder/Glimmer-137915.html",
+      "blog_url": "/blog/glimmer/"
+    },
+    {
+      "id": "marc-jacobs-just-perfect-2026",
+      "name": "Just Perfect",
+      "house": "Marc Jacobs",
+      "released": "2026",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Strawberry"
+        ],
+        "middle": [
+          "Jasmine"
+        ],
+        "base": [
+          "Vanilla",
+          "Caramel"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Marc-Jacobs/Just-Perfect-136704.html"
+    },
+    {
+      "id": "armaf-odyssey-nexus-2026",
+      "name": "Odyssey Nexus",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "U",
+      "family": "Aromatic Aquatic",
+      "notes": {
+        "top": [
+          "Sea Notes",
+          "Bergamot",
+          "Mandarin"
+        ],
+        "middle": [
+          "Geranium",
+          "Ginger",
+          "Rosemary",
+          "Sage"
+        ],
+        "base": [
+          "Patchouli",
+          "Frankincense",
+          "Balsamic Notes",
+          "Woodsy Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Nexus-138751.html"
+    },
+    {
+      "id": "armaf-club-de-nuit-iconic-extrait-2026",
+      "name": "Club de Nuit Iconic Extrait de Parfum",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "M",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Pink Pepper",
+          "Lemon",
+          "Mint",
+          "Coriander"
+        ],
+        "middle": [
+          "Ginger",
+          "Melon",
+          "Jasmine",
+          "Nutmeg"
+        ],
+        "base": [
+          "Incense",
+          "Woody Notes",
+          "Sandalwood",
+          "Amber",
+          "Cedar",
+          "Patchouli",
+          "Labdanum"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Iconic-Extrait-de-Parfum-126952.html",
+      "blog_url": "/blog/armaf-club-de-nuit-iconic-extrait/"
+    },
+    {
+      "id": "rasasi-faraya-2026",
+      "name": "Faraya",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "U",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top": [
+          "Tangerine",
+          "Freesia"
+        ],
+        "middle": [
+          "Jasmine Sambac",
+          "Rose",
+          "Lily"
+        ],
+        "base": [
+          "Sandalwood",
+          "Amber",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Rasasi/Faraya-136863.html"
+    },
     {
       "id": "trussardi-primo-notte-blu-2026",
       "name": "Primo Notte Blu",
@@ -1261,7 +1400,28 @@
       "released": "2026-07",
       "category": "U",
       "family": "Citrus Green Woody",
-      "source_url": "https://www.jomashop.com/rasasi-unisex-hawas-majestic-edp-spray-3-4-oz-fragrances-614514331118.html"
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-majestic-rasasi/",
+      "notes": {
+        "top": [
+          "Lemon",
+          "Cardamom",
+          "Rhubarb",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Ginger",
+          "Rum Accord",
+          "Cashmeran",
+          "Sage"
+        ],
+        "base": [
+          "Moss",
+          "Cedar",
+          "Amber"
+        ]
+      },
+      "view_url": "https://www.jomashop.com/rasasi-unisex-hawas-majestic-edp-spray-3-4-oz-fragrances-614514331118.html",
+      "blog_url": "/blog/hawas-majestic/"
     },
     {
       "id": "tom-ford-ombre-leather-reserve-2026",
@@ -2146,8 +2306,9 @@
           "Amber"
         ]
       },
-      "source_url": "https://ifragranceofficial.com/perfumes/si-passione-edition-exclusive/",
-      "blog_url": "/blog/hawas-rouge/"
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-rouge-rasasi/",
+      "blog_url": "/blog/hawas-rouge/",
+      "view_url": "https://www.jomashop.com/rasasi-ladies-hawas-rouge-edp-spray-3-4-oz-fragrances-614514339213.html"
     },
     {
       "id": "rasasi-hawas-reina-2026",
