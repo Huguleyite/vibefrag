@@ -545,23 +545,13 @@
     @media (max-width: 960px) {
       .glass-wall { width: 100px; }
       :root { --wall-w: 100px; }
-    }
 
-    /* Hide glass walls on phones — too narrow */
-    @media (max-width: 640px) {
-      .glass-wall { display: none; }
-      :root { --wall-w: 0px; }
-    }
-
-    /* Mobile nav */
-    @media (max-width: 768px) {
+      /* Collapse to hamburger before the links run out of room and wrap mid-word */
       nav { padding: 0 1.5rem; }
       .nav-inner { padding: 1.2rem 0; }
 
-      /* Show hamburger */
       .nav-hamburger { display: flex; }
 
-      /* Full-screen nav overlay (hidden by default) */
       .nav-links {
         display: none;
         position: fixed;
@@ -585,7 +575,16 @@
         font-size: 0.85rem;
         padding: 0.7rem 2rem;
       }
+    }
 
+    /* Hide glass walls on phones — too narrow */
+    @media (max-width: 640px) {
+      .glass-wall { display: none; }
+      :root { --wall-w: 0px; }
+    }
+
+    /* Mobile layout (nav collapse now handled at 960px, above) */
+    @media (max-width: 768px) {
       /* Layout */
       .container { padding: 0 1.5rem; }
       .promo-band { margin-top: 5rem; padding: 2.2rem 1.5rem; }
