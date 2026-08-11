@@ -1,10 +1,153 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-07",
+    "lastUpdated": "2026-08-11",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "1.9"
+    "version": "2.0"
   },
   "releases": [
+    {
+      "id": "bottega-veneta-balliamo-2026",
+      "name": "Balliamo",
+      "house": "Bottega Veneta",
+      "released": "2026-06",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Pomelo",
+          "Pepper",
+          "Citron"
+        ],
+        "middle": [
+          "Fig",
+          "Myrtle",
+          "Lavender"
+        ],
+        "base": [
+          "Ambronova",
+          "Cedarwood",
+          "Vetiver"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Bottega-Veneta/Balliamo-135218.html"
+    },
+    {
+      "id": "armaf-bon-bon-2026",
+      "name": "Bon Bon",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "U",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Bergamot",
+          "Granny Smith Apple",
+          "Papaya"
+        ],
+        "middle": [
+          "Peony",
+          "Lily",
+          "Green Tea Flower",
+          "Marine Notes",
+          "Apricot"
+        ],
+        "base": [
+          "Musk",
+          "Gourmand Accord",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Bon-Bon-123334.html",
+      "view_url": "https://amzn.to/4wULCw8"
+    },
+    {
+      "id": "armaf-odyssey-french-kiss-2026",
+      "name": "Odyssey French Kiss",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Coconut",
+          "Strawberry",
+          "Bergamot",
+          "Lemon",
+          "Apple",
+          "Pear"
+        ],
+        "middle": [
+          "Rose",
+          "Sugar",
+          "Orange Blossom",
+          "Jasmine",
+          "Lily of the Valley"
+        ],
+        "base": [
+          "Praline",
+          "Benzoin",
+          "Amber",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-French-Kiss-138752.html"
+    },
+    {
+      "id": "rasasi-hawas-london-2026",
+      "name": "Hawas London",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Saffron",
+          "Pink Pepper",
+          "Pear"
+        ],
+        "middle": [
+          "Rose",
+          "Frankincense",
+          "White Flowers"
+        ],
+        "base": [
+          "Blonde Woods",
+          "Amber",
+          "Musk",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-London-123217.html",
+      "view_url": "https://www.jomashop.com/rasasi-unisex-hawas-london-edp-spray-3-4-oz-fragrances-614514465059.html?srsltid=AfmBOopQ3Eb2oj7HIL8mo90xbIGQgB9UJT3Ppm7qMnP5bgJ7x8GMGESO"
+    },
+    {
+      "id": "ex-nihilo-vendomania-extrait-2026",
+      "name": "Vendomania Extrait de Parfum",
+      "house": "Ex Nihilo",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Iris",
+          "Saffron",
+          "Coconut"
+        ],
+        "middle": [
+          "Jasmine",
+          "Oud"
+        ],
+        "base": [
+          "Patchouli",
+          "Sandalwood",
+          "Vanilla",
+          "Leather",
+          "Praline"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Ex-Nihilo/Vendomania-Extrait-de-Parfum-138916.html"
+    },
     {
       "id": "estee-lauder-glimmer-2026",
       "name": "Glimmer",
