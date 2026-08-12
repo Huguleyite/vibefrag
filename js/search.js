@@ -9,9 +9,12 @@
   'use strict';
 
   /* ─── CONSTANTS ─── */
-  const DATA_URL    = '/data/fragrance-library.json';
-  const BAR_HEIGHT  = 38; // px — height of the top trigger bar
-  const MAX_RESULTS = 12;
+  const DATA_URL     = '/data/fragrance-library.json';
+  const ARTICLES_URL = '/data/search-index.json';
+  const BAR_HEIGHT   = 38; // px — height of the top trigger bar
+  const MAX_PER_TYPE = 6;
+  const TYPE_LABELS  = { fragrance: 'Fragrances', article: 'Articles', guide: 'Guides' };
+  const TYPE_ORDER   = ['fragrance', 'article', 'guide'];
 
   /* ─── STYLES ─── */
   const CSS = `
@@ -153,6 +156,19 @@
     #vf-results::-webkit-scrollbar-track { background: transparent; }
     #vf-results::-webkit-scrollbar-thumb { background: rgba(176,133,88,0.25); border-radius: 2px; }
 
+    .vf-group-label {
+      padding: 0.7rem 1.2rem 0.4rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #4a4a55;
+    }
+    .vf-group-label:not(:first-child) {
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
     .vf-result {
       display: flex;
       align-items: center;
@@ -161,8 +177,15 @@
       border-bottom: 1px solid rgba(255,255,255,0.04);
       transition: background 0.15s;
       cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
     .vf-result:last-child { border-bottom: none; }
+    .vf-result-arrow {
+      flex-shrink: 0;
+      color: #4a4a55;
+      font-size: 0.9rem;
+    }
     .vf-result:hover, .vf-result.vf-focused {
       background: rgba(176,133,88,0.07);
     }
@@ -338,6 +361,8 @@
 
   /* ─── STATE ─── */
   let library = [];
+  let content = [];
+  let dataLoaded = false;
   let activeIndex = -1;
   let overlay, input, results;
 
@@ -346,7 +371,7 @@
     injectStyles();
     injectHTML();
     bindEvents();
-    loadLibrary();
+    loadData();
   }
 
   function injectStyles() {
@@ -364,7 +389,7 @@
     bar.innerHTML = `
       <div class="vf-bar-inner">
         <span class="vf-bar-icon">${SEARCH_ICON}</span>
-        <span class="vf-bar-text">Search fragrances, notes, or brands</span>
+        <span class="vf-bar-text">Search fragrances, articles, or notes</span>
         <span class="vf-bar-hint">⌘K</span>
       </div>`;
     document.body.insertBefore(bar, document.body.firstChild);
@@ -424,6 +449,9 @@
 
       var card = e.target.closest('.vf-result');
       if (!card) return;
+
+      // Article/guide rows are plain links — let them navigate normally
+      if (card.dataset.type !== 'fragrance') return;
 
       // Collapse any other open card
       results.querySelectorAll('.vf-result.vf-expanded').forEach(function (el) {
@@ -496,37 +524,78 @@
   }
 
   /* ─── DATA ─── */
-  function loadLibrary() {
-    fetch(DATA_URL)
-      .then(function (r) { return r.json(); })
-      .then(function (data) { library = data; })
-      .catch(function () { library = []; });
+  function loadData() {
+    Promise.all([
+      fetch(DATA_URL).then(function (r) { return r.json(); }).catch(function () { return []; }),
+      fetch(ARTICLES_URL).then(function (r) { return r.json(); }).catch(function () { return []; })
+    ]).then(function (results) {
+      library = results[0] || [];
+      content = results[1] || [];
+      dataLoaded = true;
+    }).catch(function () {
+      library = [];
+      content = [];
+      dataLoaded = true;
+    });
   }
 
   /* ─── SEARCH ─── */
+  function scoreFragrance(entry, q) {
+    const brand = entry.brand.toLowerCase();
+    const name  = entry.name.toLowerCase();
+    const notes = entry.notes.map(function (n) { return n.toLowerCase(); });
+
+    if (brand === q || name === q)                      return 100;
+    if (brand.startsWith(q) || name.startsWith(q))       return 80;
+    if (brand.includes(q) || name.includes(q))           return 60;
+    if (notes.some(function (n) { return n.startsWith(q); })) return 40;
+    if (notes.some(function (n) { return n.includes(q); }))   return 20;
+    return 0;
+  }
+
+  function scoreContent(entry, q) {
+    const title   = entry.title.toLowerCase();
+    const excerpt = entry.excerpt.toLowerCase();
+
+    if (title === q)          return 95;
+    if (title.startsWith(q))  return 75;
+    if (title.includes(q))    return 55;
+    if (excerpt.includes(q))  return 25;
+    return 0;
+  }
+
   function search(query) {
-    if (!query) return library.slice(0, MAX_RESULTS);
+    const grouped = { fragrance: [], article: [], guide: [] };
+    if (!query) {
+      grouped.fragrance = library.slice(0, MAX_PER_TYPE);
+      return grouped;
+    }
+
     const q = query.toLowerCase();
-    const scored = library.map(function (entry) {
-      const brand = entry.brand.toLowerCase();
-      const name  = entry.name.toLowerCase();
-      const notes = entry.notes.map(function (n) { return n.toLowerCase(); });
 
-      let score = 0;
-      if (brand === q || name === q)                    score = 100;
-      else if (brand.startsWith(q) || name.startsWith(q)) score = 80;
-      else if (brand.includes(q) || name.includes(q))     score = 60;
-      else if (notes.some(function (n) { return n.startsWith(q); })) score = 40;
-      else if (notes.some(function (n) { return n.includes(q); }))   score = 20;
-
-      return { entry: entry, score: score };
-    });
-
-    return scored
+    const fragranceHits = library
+      .map(function (entry) { return { entry: entry, score: scoreFragrance(entry, q) }; })
       .filter(function (s) { return s.score > 0; })
       .sort(function (a, b) { return b.score - a.score; })
-      .slice(0, MAX_RESULTS)
+      .slice(0, MAX_PER_TYPE)
       .map(function (s) { return s.entry; });
+
+    const contentHits = content
+      .map(function (entry) { return { entry: entry, score: scoreContent(entry, q) }; })
+      .filter(function (s) { return s.score > 0; })
+      .sort(function (a, b) { return b.score - a.score; });
+
+    grouped.fragrance = fragranceHits;
+    grouped.article = contentHits
+      .filter(function (s) { return s.entry.type === 'article'; })
+      .slice(0, MAX_PER_TYPE)
+      .map(function (s) { return s.entry; });
+    grouped.guide = contentHits
+      .filter(function (s) { return s.entry.type === 'guide'; })
+      .slice(0, MAX_PER_TYPE)
+      .map(function (s) { return s.entry; });
+
+    return grouped;
   }
 
   /* ─── RENDER ─── */
@@ -536,8 +605,44 @@
     return escHtml(text).replace(re, '<em class="vf-match">$1</em>');
   }
 
+  function renderFragranceRow(e, q) {
+    const notesStr = e.notes.join(', ');
+    const codeHTML = e.discount_code
+      ? `<span class="vf-code" data-code="${escHtml(e.discount_code)}" title="Click to copy">${escHtml(e.discount_code)}</span>`
+      : '';
+
+    return `<div class="vf-result" role="option" data-type="fragrance"
+      data-brand="${escHtml(e.brand)}"
+      data-name="${escHtml(e.name)}"
+      data-notes="${escHtml(JSON.stringify(e.notes))}"
+      data-gender="${escHtml(e.gender)}"
+      data-code="${escHtml(e.discount_code)}">
+      <div class="vf-result-body">
+        <div class="vf-result-brand">${highlight(e.brand, q)}</div>
+        <div class="vf-result-name">${highlight(e.name, q)}</div>
+        <div class="vf-result-notes">${highlight(notesStr, q)}</div>
+      </div>
+      <div class="vf-result-meta">
+        <span class="vf-gender">${escHtml(e.gender)}</span>
+        ${codeHTML}
+      </div>
+    </div>`;
+  }
+
+  function renderContentRow(e, q, typeLabel) {
+    return `<a class="vf-result" role="option" data-type="${escHtml(e.type)}"
+      href="${escHtml(e.url)}" target="_blank" rel="noopener">
+      <div class="vf-result-body">
+        <div class="vf-result-brand">${escHtml(typeLabel)}</div>
+        <div class="vf-result-name">${highlight(e.title, q)}</div>
+        <div class="vf-result-notes">${highlight(e.excerpt, q)}</div>
+      </div>
+      <span class="vf-result-arrow">→</span>
+    </a>`;
+  }
+
   function render(query) {
-    if (!library.length) {
+    if (!dataLoaded) {
       results.innerHTML = '<div class="vf-state">Loading…</div>';
       return;
     }
@@ -545,38 +650,32 @@
     const hits = search(query);
 
     if (!query) {
-      results.innerHTML = '<div class="vf-state">Type a brand, fragrance name, or note</div>';
+      results.innerHTML = '<div class="vf-state">Type a brand, fragrance name, note, or article topic</div>';
       return;
     }
 
-    if (!hits.length) {
-      results.innerHTML = '<div class="vf-state">No matches — try a different note or brand</div>';
+    const groups = TYPE_ORDER
+      .map(function (type) { return { type: type, items: hits[type] }; })
+      .filter(function (g) { return g.items.length; });
+
+    if (!groups.length) {
+      results.innerHTML = '<div class="vf-state">No matches — try a different note, brand, or topic</div>';
       return;
     }
 
     const q = query.toLowerCase();
-    results.innerHTML = hits.map(function (e) {
-      const notesStr = e.notes.join(', ');
-      const codeHTML = e.discount_code
-        ? `<span class="vf-code" data-code="${escHtml(e.discount_code)}" title="Click to copy">${escHtml(e.discount_code)}</span>`
-        : '';
+    const showLabels = groups.length > 1;
 
-      return `<div class="vf-result" role="option"
-        data-brand="${escHtml(e.brand)}"
-        data-name="${escHtml(e.name)}"
-        data-notes="${escHtml(JSON.stringify(e.notes))}"
-        data-gender="${escHtml(e.gender)}"
-        data-code="${escHtml(e.discount_code)}">
-        <div class="vf-result-body">
-          <div class="vf-result-brand">${highlight(e.brand, q)}</div>
-          <div class="vf-result-name">${highlight(e.name, q)}</div>
-          <div class="vf-result-notes">${highlight(notesStr, q)}</div>
-        </div>
-        <div class="vf-result-meta">
-          <span class="vf-gender">${escHtml(e.gender)}</span>
-          ${codeHTML}
-        </div>
-      </div>`;
+    results.innerHTML = groups.map(function (g) {
+      const labelHTML = showLabels
+        ? `<div class="vf-group-label">${escHtml(TYPE_LABELS[g.type])}</div>`
+        : '';
+      const rowsHTML = g.items.map(function (e) {
+        return g.type === 'fragrance'
+          ? renderFragranceRow(e, q)
+          : renderContentRow(e, q, TYPE_LABELS[g.type].replace(/s$/, ''));
+      }).join('');
+      return labelHTML + rowsHTML;
     }).join('');
 
     // Copy-to-clipboard for code chips
