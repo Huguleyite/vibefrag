@@ -1,10 +1,225 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-11",
+    "lastUpdated": "2026-08-14",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.0"
+    "version": "2.1"
   },
   "releases": [
+    {
+      "id": "calvin-klein-euphoria-signature-elixir-2026",
+      "name": "Euphoria Signature Elixir",
+      "house": "Calvin Klein",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Oriental Vanilla",
+      "notes": {
+        "top": [
+          "Praline Accord"
+        ],
+        "middle": [
+          "Seductive Orchid Accord"
+        ],
+        "base": [
+          "Vanilla Extract",
+          "Patchouli Extract"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Signature-Elixir-139056.html"
+    },
+    {
+      "id": "zoologist-toucan-2026",
+      "name": "Toucan",
+      "house": "Zoologist",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Papaya",
+          "Orange",
+          "Lime",
+          "Coconut"
+        ],
+        "middle": [
+          "Jasmine",
+          "Orange Flower",
+          "Ylang Ylang",
+          "Geranium"
+        ],
+        "base": [
+          "Benzoin",
+          "Sandalwood",
+          "Tonka",
+          "Clove Bud",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Zoologist-Perfumes/Toucan-137612.html"
+    },
+    {
+      "id": "estee-lauder-aliage-legacy-2026",
+      "name": "Aliage Legacy",
+      "house": "Estée Lauder",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Chypre Floral",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Black Pepper Oil",
+          "Galbanum Resinoid"
+        ],
+        "middle": [
+          "Artemisia",
+          "Rose",
+          "Jasmine",
+          "Nutmeg"
+        ],
+        "base": [
+          "Oakmoss",
+          "Vetiver",
+          "Musks",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.fr/parfum/Estee-Lauder/Aliage-Legacy-138760.html"
+    },
+    {
+      "id": "chloe-cedrus-de-nuit-2026",
+      "name": "Cedrus de Nuit",
+      "house": "Chloé",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Woody Floral Amber",
+      "notes": {
+        "top": [],
+        "middle": [
+          "Queen of the Night",
+          "Benzoin"
+        ],
+        "base": [
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Chloe/Cedrus-de-Nuit-138702.html"
+    },
+    {
+      "id": "guerlain-lheure-bleue-2026",
+      "name": "L'Heure Bleue Eau de Parfum (2026)",
+      "house": "Guerlain",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Powdery Amber",
+      "notes": {
+        "top": [
+          "Ozonic Accord"
+        ],
+        "middle": [
+          "Iris"
+        ],
+        "base": [
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/guerlain-lheure-bleue-eau-de-parfum-news/"
+    },
+    {
+      "id": "montblanc-explorer-infinite-2026",
+      "name": "Explorer Infinite",
+      "house": "Montblanc",
+      "released": "2026-08",
+      "category": "M",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Lemon"
+        ],
+        "middle": [
+          "Nutmeg",
+          "Lavender"
+        ],
+        "base": [
+          "Amber",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Montblanc/Explorer-Infinite-137098.html"
+    },
+    {
+      "id": "riiffs-virtessa-2026",
+      "name": "Virtessa",
+      "house": "Riiffs",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Blackcurrant",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Gardenia",
+          "Ylang Ylang"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Riiffs-Perfumes/Virtessa-138756.html"
+    },
+    {
+      "id": "riiffs-virtus-2026",
+      "name": "Virtus",
+      "house": "Riiffs",
+      "released": "2026-08",
+      "category": "M",
+      "family": "Woody Floral Musk",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Bergamot",
+          "Ginger"
+        ],
+        "middle": [
+          "Lily of the Valley",
+          "Orange Blossom",
+          "Neroli"
+        ],
+        "base": [
+          "Clearwood",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Riiffs-Perfumes/Virtus-138757.html"
+    },
+    {
+      "id": "chloe-le-nectar-parfum-intense-2026",
+      "name": "Le Nectar Parfum Intense",
+      "house": "Chloé",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Amber Woody Floral",
+      "notes": {
+        "top": [
+          "Bergamot"
+        ],
+        "middle": [
+          "Orange Absolute",
+          "Neroli",
+          "Rose Absolute"
+        ],
+        "base": [
+          "Patchouli",
+          "Tonka Absolute"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/chloe-le-nectar-parfum-intense-news/"
+    },
     {
       "id": "bottega-veneta-balliamo-2026",
       "name": "Balliamo",
