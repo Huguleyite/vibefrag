@@ -355,4 +355,28 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://vibefrag.com/blog/max-mara-le-parfum/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/kilian-cocktail-collection/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/oud-ambrosia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vibefrag.com/blog/coffee-fragrance-trend/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

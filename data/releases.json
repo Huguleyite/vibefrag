@@ -1,10 +1,245 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-14",
+    "lastUpdated": "2026-08-18",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "2.1"
   },
   "releases": [
+    {
+      "id": "max-mara-le-parfum-2026",
+      "name": "Le Parfum",
+      "house": "Max Mara",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Woody Floral",
+      "notes": {
+        "top": [
+          "Tuberose (Grasse)",
+          "Tuberose Absolute (Guatemala)"
+        ],
+        "middle": [
+          "Vanilla"
+        ],
+        "base": [
+          "Sandalwood",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/11/max-mara-le-parfum-new-fragrance-2/",
+      "view_url": "https://us.maxmara.com/le-parfume-launch-preview",
+      "blog_url": "/blog/max-mara-le-parfum/"
+    },
+    {
+      "id": "by-kilian-midnight-espresso-2026",
+      "name": "Midnight Espresso",
+      "house": "By Kilian",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Coffee",
+          "Rum"
+        ],
+        "middle": [
+          "Chocolate",
+          "Toasted Hazelnut"
+        ],
+        "base": [
+          "Bourbon Vanilla",
+          "Benzoin Siam"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/08/by-kilian-cocktail-collection-new-fragrances/",
+      "view_url": "https://www.sephora.com/product/midnight-espresso-eau-de-parfum-P525433",
+      "blog_url": "/blog/kilian-cocktail-collection/"
+    },
+    {
+      "id": "by-kilian-pina-paraiso-2026",
+      "name": "Piña Paraíso",
+      "house": "By Kilian",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Pineapple",
+          "Rum"
+        ],
+        "middle": [
+          "Coconut",
+          "Frangipani"
+        ],
+        "base": [
+          "Bourbon Vanilla",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.fr/parfum/By-Kilian/Pina-Paraiso-139704.html",
+      "blog_url": "/blog/kilian-cocktail-collection/"
+    },
+    {
+      "id": "by-kilian-sparkling-royal-2026",
+      "name": "Sparkling Royal",
+      "house": "By Kilian",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Lemon",
+          "Mint"
+        ],
+        "middle": [
+          "Blackcurrant",
+          "Rose"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/By-Kilian/Sparkling-Royal-139703.html",
+      "view_url": "https://www.sephora.com/product/sparkling-royal-eau-de-parfum-P525434",
+      "blog_url": "/blog/kilian-cocktail-collection/"
+    },
+    {
+      "id": "acqua-di-parma-oud-ambrosia-2026",
+      "name": "Oud Ambrosia",
+      "house": "Acqua di Parma",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Blood Orange",
+          "Clementine",
+          "Papaya"
+        ],
+        "middle": [
+          "Violet Leaf",
+          "Saffron",
+          "Oud"
+        ],
+        "base": [
+          "Leather",
+          "Tobacco",
+          "Amber",
+          "Honey",
+          "Resin",
+          "Oud",
+          "Woody Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Oud-Ambrosia-139378.html",
+      "blog_url": "/blog/oud-ambrosia/"
+    },
+    {
+      "id": "frederic-malle-northern-love-2026",
+      "name": "Northern Love",
+      "house": "Frederic Malle",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Amber Woody",
+      "notes": {
+        "top": [
+          "Saffron"
+        ],
+        "middle": [
+          "Jasmine",
+          "Sandalwood"
+        ],
+        "base": [
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/05/frederic-malle-northern-love-new-fragrance/"
+    },
+    {
+      "id": "memo-paris-darling-point-2026",
+      "name": "Darling Point",
+      "house": "Memo Paris",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Woody Floral",
+      "notes": {
+        "top": [],
+        "middle": [
+          "Ylang-Ylang",
+          "Cashmeran"
+        ],
+        "base": [
+          "Sandalwood",
+          "Amyris",
+          "Madagascan Vanilla Absolute"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/13/memo-paris-darling-point-new-fragrance/"
+    },
+    {
+      "id": "fragrance-du-bois-lucius-maximus-2026",
+      "name": "Lucius Maximus",
+      "house": "Fragrance Du Bois",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Bitter Orange",
+          "Bergamot",
+          "Pink Pepper",
+          "Mandarin"
+        ],
+        "middle": [
+          "Coffee",
+          "Orange Blossom",
+          "Georgywood",
+          "Cedarwood",
+          "Mahonial"
+        ],
+        "base": [
+          "Madagascar Vanilla",
+          "Tonka Bean",
+          "Haitian Vetiver",
+          "Akigalawood",
+          "Cypriol"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/Lucius-Maximus-128309.html",
+      "view_url": "https://www.harrods.com/en-us/p/fragrance-du-bois-lucius-maximus-parfum-100ml-000000000007917674",
+      "blog_url": "/blog/coffee-fragrance-trend/"
+    },
+    {
+      "id": "essential-parfums-ambre-latte-2026",
+      "name": "Ambre Latte",
+      "house": "Essential Parfums",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Almond Milk"
+        ],
+        "middle": [
+          "Caramel",
+          "Tonka Bean",
+          "Vanilla"
+        ],
+        "base": [
+          "Akigalawood",
+          "Ambrofix",
+          "Sandalwood",
+          "White Musk",
+          "Amberwood",
+          "Benzoin",
+          "Georgywood",
+          "Guaiac Wood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Essential-Parfums/Ambre-Latte-129800.html",
+      "view_url": "https://www.essentialparfums.com/products/ambre-latte-eau-de-parfum-vaporisateur-rechargeable-100-ml",
+      "blog_url": "/blog/coffee-fragrance-trend/"
+    },
     {
       "id": "calvin-klein-euphoria-signature-elixir-2026",
       "name": "Euphoria Signature Elixir",
