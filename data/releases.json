@@ -1,10 +1,110 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-18",
+    "lastUpdated": "2026-08-21",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "2.1"
   },
   "releases": [
+    {
+      "id": "karl-lagerfeld-fleur-de-vanille-2026",
+      "name": "Fleur de Vanille",
+      "house": "Karl Lagerfeld",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Oriental Vanilla",
+      "notes": {
+        "top": [
+          "Mimosa Absolute",
+          "Bergamot"
+        ],
+        "middle": [
+          "Bourbon Vanilla",
+          "Peach Cream"
+        ],
+        "base": [
+          "Sandalwood",
+          "Tonka Bean",
+          "Vanilla",
+          "Cedar"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Karl-Lagerfeld/Fleur-de-Vanille-136135.html"
+    },
+    {
+      "id": "karl-lagerfeld-bois-de-oud-2026",
+      "name": "Bois de Oud",
+      "house": "Karl Lagerfeld",
+      "released": "2026-08",
+      "category": "M",
+      "family": "Woody Spicy",
+      "notes": {
+        "top": [
+          "Black Pepper",
+          "Vetiver"
+        ],
+        "middle": [
+          "Cashmere Wood",
+          "Patchouli",
+          "Oud"
+        ],
+        "base": [
+          "Leather",
+          "Dates"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Karl-Lagerfeld/Bois-de-Oud-136136.html"
+    },
+    {
+      "id": "britney-spears-goddess-fantasy-2026",
+      "name": "Goddess Fantasy",
+      "house": "Britney Spears",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Golden Mango",
+          "Mandarin",
+          "Bergamot"
+        ],
+        "middle": [
+          "Jasmine Absolute",
+          "Turkish Rose",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Benzoin",
+          "Vanilla Buttercream",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Britney-Spears/Goddess-Fantasy-139639.html"
+    },
+    {
+      "id": "ds-durga-aint-that-sweet-2026",
+      "name": "Ain't That Sweet",
+      "house": "DS & Durga",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Oriental Vanilla",
+      "notes": {
+        "top": [
+          "Myrrh",
+          "Cinnamon"
+        ],
+        "middle": [
+          "Date",
+          "Praline",
+          "Lily"
+        ],
+        "base": [
+          "Condensed Milk",
+          "Bourbon Vanilla",
+          "Nutmeg"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/DS-Durga/Ain-t-That-Sweet-139635.html"
+    },
     {
       "id": "max-mara-le-parfum-2026",
       "name": "Le Parfum",
