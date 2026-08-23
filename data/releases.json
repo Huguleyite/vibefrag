@@ -1,10 +1,58 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-21",
+    "lastUpdated": "2026-08-23",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.1"
+    "version": "2.2"
   },
   "releases": [
+    {
+      "id": "rasasi-hawas-private-luceo-2026",
+      "name": "Hawas Private Luceo",
+      "house": "Rasasi",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Citrus Spicy Woody",
+      "notes": {
+        "top": ["Bergamot", "Lemon", "Ginger"],
+        "middle": ["Magnolia", "Nutmeg", "Cardamom"],
+        "base": ["Cedarwood", "Amber", "Patchouli", "Vetiver"]
+      },
+      "source_url": "https://scentadvice.com/hawas-private-luceo-2026-rasasi/",
+      "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
+      "blog_url": "/blog/hawas-private-collection/"
+    },
+    {
+      "id": "rasasi-hawas-private-dulce-2026",
+      "name": "Hawas Private Dulce",
+      "house": "Rasasi",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": ["Passionfruit", "Pink Pepper", "Hazelnut"],
+        "middle": ["Jasmine", "Cacao", "Coconut"],
+        "base": ["Caramel", "Patchouli", "Tonka Bean", "Vetiver", "Ambrettolide"]
+      },
+      "source_url": "https://scentadvice.com/hawas-private-dulce-2026-rasasi/",
+      "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
+      "blog_url": "/blog/hawas-private-collection/"
+    },
+    {
+      "id": "rasasi-hawas-private-terra-2026",
+      "name": "Hawas Private Terra",
+      "house": "Rasasi",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": ["Cardamom", "Saffron"],
+        "middle": ["Jasmine", "Iris"],
+        "base": ["Cedarwood", "Driftwood", "Oakmoss", "Cypriol", "Orcanox"]
+      },
+      "source_url": "https://scentadvice.com/hawas-private-terra-2026-rasasi/",
+      "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
+      "blog_url": "/blog/hawas-private-collection/"
+    },
     {
       "id": "karl-lagerfeld-fleur-de-vanille-2026",
       "name": "Fleur de Vanille",
