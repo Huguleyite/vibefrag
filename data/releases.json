@@ -1,10 +1,160 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-08-25",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.2"
+    "version": "2.3"
   },
   "releases": [
+    {
+      "id": "dior-miss-dior-edp-2026",
+      "name": "Miss Dior Eau de Parfum (2026)",
+      "house": "Dior",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Chypre Floral",
+      "notes": {
+        "top": [],
+        "middle": [
+          "Centifolia Rose Absolute",
+          "Rosewood",
+          "Patchouli"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vanilla",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Dior/Miss-Dior-Eau-de-Parfum-2026-139149.html",
+      "view_url": "https://www.dior.com/en_us/beauty/products/miss-dior-eau-de-parfum-Y0000393.html"
+    },
+    {
+      "id": "lake-skye-222-2026",
+      "name": "222",
+      "house": "Lake & Skye",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Musk Gourmand",
+      "notes": {
+        "top": [
+          "Bergamot Zest",
+          "Frothed Milk"
+        ],
+        "middle": [
+          "Cashew",
+          "Almond Blossom"
+        ],
+        "base": [
+          "Airy Musk",
+          "Vanilla Cream"
+        ]
+      },
+      "source_url": "https://scentadvice.com/222-2026-lake-skye/",
+      "view_url": "https://www.lakeandskye.com/products/lake-skye-222-eau-de-parfum-1"
+    },
+    {
+      "id": "gap-heaven-2026",
+      "name": "Heaven",
+      "house": "Gap",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Pear",
+          "Juniper"
+        ],
+        "middle": [
+          "Madagascar Vanilla",
+          "Pear",
+          "Honeysuckle"
+        ],
+        "base": [
+          "Amberever",
+          "Musk",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Gap/Heaven-139274.html",
+      "view_url": "https://www.gap.com/browse/product.do?pid=1180239032"
+    },
+    {
+      "id": "phlur-vanilla-canyon-2026",
+      "name": "Vanilla Canyon",
+      "house": "PHLUR",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Plum",
+          "Tonka Bean"
+        ],
+        "middle": [
+          "Jasmine Petals",
+          "Wild Honey"
+        ],
+        "base": [
+          "Madagascar Vanilla",
+          "Oak Wood",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Phlur/Vanilla-Canyon-138703.html",
+      "view_url": "https://phlur.com/products/vanilla-canyon-50ml"
+    },
+    {
+      "id": "miu-miu-miutine-intense-2026",
+      "name": "Miutine Intense",
+      "house": "Miu Miu",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Blackberry",
+          "Liquor"
+        ],
+        "middle": [
+          "Gardenia"
+        ],
+        "base": [
+          "Bourbon Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Miu-Miu/Miutine-Intense-138318.html",
+      "view_url": "https://www.miumiu.com/us/en/p/miu-miu-miutine-intense-eau-de-parfum-50-ml/5A1007_B00J_F0Z99_P_ML050"
+    },
+    {
+      "id": "byredo-future-memories-2026",
+      "name": "Future Memories",
+      "house": "Byredo",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Aldehyde",
+      "notes": {
+        "top": [
+          "Blackcurrant",
+          "Aldehydes",
+          "Galbanum"
+        ],
+        "middle": [
+          "Vanilla",
+          "Iris Butter",
+          "Labdanum",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Bourbon Vanilla",
+          "Cream Liqueur",
+          "Ambrofix",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Byredo/Future-Memories-138414.html",
+      "view_url": "https://www.byredo.com/us_en/p/future-memories-eau-de-parfum?sku=0065240347"
+    },
     {
       "id": "rasasi-hawas-private-luceo-2026",
       "name": "Hawas Private Luceo",
