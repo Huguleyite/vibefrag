@@ -6,6 +6,35 @@
   },
   "releases": [
     {
+      "id": "riiffs-freeze-in-flames-2025",
+      "name": "Freeze in Flames",
+      "house": "Riiffs",
+      "released": "2025",
+      "category": "U",
+      "family": "Aromatic Fruity",
+      "notes": {
+        "top": [
+          "Calabrian Bergamot",
+          "Passionfruit",
+          "Raspberry",
+          "Red Apple",
+          "Spearmint"
+        ],
+        "middle": [
+          "Spearmint",
+          "Lavender",
+          "Sage",
+          "Tea"
+        ],
+        "base": [
+          "Cedarwood",
+          "Musk"
+        ]
+      },
+      "source_url": "https://beautyhouse.com/products/riiffs-freeze-in-flames-extrait-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m",
+      "view_url": "https://beautyhouse.com/products/riiffs-freeze-in-flames-extrait-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m"
+    },
+    {
       "id": "dior-miss-dior-edp-2026",
       "name": "Miss Dior Eau de Parfum (2026)",
       "house": "Dior",
