@@ -1,10 +1,35 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-25",
+    "lastUpdated": "2026-09-01",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "2.3"
   },
   "releases": [
+    {
+      "id": "valentino-reve-a-trois-2026",
+      "name": "Rêve à trois",
+      "house": "Valentino",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Orris",
+          "Calabrian Bergamot"
+        ],
+        "middle": [
+          "Saffron",
+          "Rose"
+        ],
+        "base": [
+          "Guaiac Wood",
+          "Oud",
+          "Bourbon Vanilla",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Valentino/Reve-a-trois-140025.html"
+    },
     {
       "id": "riiffs-freeze-in-flames-2025",
       "name": "Freeze in Flames",
