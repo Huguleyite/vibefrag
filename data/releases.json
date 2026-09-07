@@ -1,10 +1,192 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-01",
+    "lastUpdated": "2026-09-06",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.3"
+    "version": "2.4"
   },
   "releases": [
+    {
+      "id": "creed-iris-debonair-2026",
+      "name": "Iris Debonair",
+      "house": "Creed",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Aromatic Fougere",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Bergamot",
+          "Cardamom",
+          "Wormwood"
+        ],
+        "middle": [
+          "Fig",
+          "Lavender",
+          "Violet Leaf"
+        ],
+        "base": [
+          "Iris Pallida",
+          "Amberwood",
+          "Ambrette"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Creed/Iris-Debonair-140448.html",
+      "view_url": "https://www.creedboutique.com/products/iris-debonair",
+      "blog_url": "/blog/iris-debonair/"
+    },
+    {
+      "id": "mfk-oud-velvet-mood-extrait-2026",
+      "name": "Oud Velvet Mood Extrait de Parfum (2026)",
+      "house": "Maison Francis Kurkdjian",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Peach"
+        ],
+        "middle": [
+          "Osmanthus"
+        ],
+        "base": [
+          "Oud",
+          "Suede"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Oud-Velvet-Mood-Extrait-de-Parfum-125423.html",
+      "view_url": "https://www.franciskurkdjian.com/uk-en/oud-velvet-mood-collection/landing-Oudvelvetmood.html",
+      "blog_url": "/blog/oud-velvet-mood/"
+    },
+    {
+      "id": "acqua-di-parma-cedro-virtuoso-2026",
+      "name": "Cedro Virtuoso",
+      "house": "Acqua di Parma",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Virginian Cedar",
+          "Hazelnut",
+          "Calabrian Bergamot",
+          "Musk"
+        ],
+        "middle": [
+          "Atlas Cedar",
+          "Cedar"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Sandalwood",
+          "Ambroxan"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Cedro-Virtuoso-141394.html",
+      "view_url": "https://www.acquadiparma.com/en/us/cedro-virtuoso/CEDROEDP.html",
+      "blog_url": "/blog/cedro-virtuoso/"
+    },
+    {
+      "id": "jpg-la-favorite-2026",
+      "name": "La Favorite",
+      "house": "Jean Paul Gaultier",
+      "released": "2026-08",
+      "category": "F",
+      "family": "Oriental Floral",
+      "notes": {
+        "top": [
+          "Queen-of-the-Night",
+          "Jasmine Sambac Absolute",
+          "Rose Essence"
+        ],
+        "middle": [
+          "Benzoin",
+          "Ylang-Ylang",
+          "Virginia Cedar"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Vanilla",
+          "White Musks"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/La-Favorite-137522.html",
+      "blog_url": "/blog/la-favorite/"
+    },
+    {
+      "id": "ex-nihilo-demon-dancer-2026",
+      "name": "Demon Dancer",
+      "house": "Ex Nihilo",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Woody Floral Musk",
+      "notes": {
+        "top": [
+          "Rhubarb",
+          "Bergamot",
+          "Peppermint",
+          "Blood Orange"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Blackcurrant"
+        ],
+        "base": [
+          "Georgywood",
+          "Akigalawood",
+          "Ambrofix",
+          "Musk",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Ex-Nihilo/Demon-Dancer-138593.html"
+    },
+    {
+      "id": "initio-oud-for-grace-2026",
+      "name": "Oud for Grace",
+      "house": "Initio Parfums Privés",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Spicy Amber Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Black Pepper"
+        ],
+        "middle": [
+          "Praline",
+          "Vanilla"
+        ],
+        "base": [
+          "Oud",
+          "Smoky Woods",
+          "Sandalwood",
+          "Cedarwood",
+          "Guaiac Wood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Oud-for-Grace-139057.html"
+    },
+    {
+      "id": "maison-crivelli-tobacco-carnaval-2026",
+      "name": "Tobacco Carnaval",
+      "house": "Maison Crivelli",
+      "released": "2026",
+      "category": "U",
+      "family": "Spicy Gourmand",
+      "notes": {
+        "top": [
+          "Tobacco",
+          "Spicy Accord",
+          "Smoky Accord"
+        ],
+        "middle": [
+          "Rum",
+          "Gourmand Accord"
+        ],
+        "base": []
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Maison-Crivelli/Tobacco-Carnaval-131410.html"
+    },
     {
       "id": "valentino-reve-a-trois-2026",
       "name": "Rêve à trois",
@@ -217,9 +399,22 @@
       "category": "U",
       "family": "Citrus Spicy Woody",
       "notes": {
-        "top": ["Bergamot", "Lemon", "Ginger"],
-        "middle": ["Magnolia", "Nutmeg", "Cardamom"],
-        "base": ["Cedarwood", "Amber", "Patchouli", "Vetiver"]
+        "top": [
+          "Bergamot",
+          "Lemon",
+          "Ginger"
+        ],
+        "middle": [
+          "Magnolia",
+          "Nutmeg",
+          "Cardamom"
+        ],
+        "base": [
+          "Cedarwood",
+          "Amber",
+          "Patchouli",
+          "Vetiver"
+        ]
       },
       "source_url": "https://scentadvice.com/hawas-private-luceo-2026-rasasi/",
       "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
@@ -233,9 +428,23 @@
       "category": "U",
       "family": "Fruity Gourmand",
       "notes": {
-        "top": ["Passionfruit", "Pink Pepper", "Hazelnut"],
-        "middle": ["Jasmine", "Cacao", "Coconut"],
-        "base": ["Caramel", "Patchouli", "Tonka Bean", "Vetiver", "Ambrettolide"]
+        "top": [
+          "Passionfruit",
+          "Pink Pepper",
+          "Hazelnut"
+        ],
+        "middle": [
+          "Jasmine",
+          "Cacao",
+          "Coconut"
+        ],
+        "base": [
+          "Caramel",
+          "Patchouli",
+          "Tonka Bean",
+          "Vetiver",
+          "Ambrettolide"
+        ]
       },
       "source_url": "https://scentadvice.com/hawas-private-dulce-2026-rasasi/",
       "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
@@ -249,9 +458,21 @@
       "category": "U",
       "family": "Oriental Woody",
       "notes": {
-        "top": ["Cardamom", "Saffron"],
-        "middle": ["Jasmine", "Iris"],
-        "base": ["Cedarwood", "Driftwood", "Oakmoss", "Cypriol", "Orcanox"]
+        "top": [
+          "Cardamom",
+          "Saffron"
+        ],
+        "middle": [
+          "Jasmine",
+          "Iris"
+        ],
+        "base": [
+          "Cedarwood",
+          "Driftwood",
+          "Oakmoss",
+          "Cypriol",
+          "Orcanox"
+        ]
       },
       "source_url": "https://scentadvice.com/hawas-private-terra-2026-rasasi/",
       "view_url": "https://beautyhouse.com/search?q=rasasi&type=product&sca_ref=11617181.ulVzJ3yK4m",
