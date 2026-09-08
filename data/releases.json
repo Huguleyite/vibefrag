@@ -1,10 +1,150 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-06",
+    "lastUpdated": "2026-09-08",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.4"
+    "version": "2.5"
   },
   "releases": [
+    {
+      "id": "loewe-field-diary-2026",
+      "name": "Field Diary",
+      "house": "Loewe",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Citrus Woody",
+      "notes": {
+        "top": [
+          "Green Mandarin",
+          "Blood Orange"
+        ],
+        "middle": [
+          "Lychee",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Musk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/06/loewe-crafted-x-5/"
+    },
+    {
+      "id": "loewe-rosetopia-2026",
+      "name": "Rosetopia",
+      "house": "Loewe",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Floral Amber",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Peony",
+          "Lily of the Valley",
+          "Damascene Rose"
+        ],
+        "base": [
+          "Amber",
+          "Amber Musk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/08/06/loewe-crafted-x-5/"
+    },
+    {
+      "id": "loewe-smoky-rain-2026",
+      "name": "Smoky Rain",
+      "house": "Loewe",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Amber Incense",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Incense"
+        ],
+        "base": [
+          "Amber",
+          "Patchouli",
+          "White Musk"
+        ]
+      },
+      "source_url": "https://scentadvice.com/smoky-rain-2026-loewe/"
+    },
+    {
+      "id": "loewe-sweet-woodland-2026",
+      "name": "Sweet Woodland",
+      "house": "Loewe",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Spicy Woody",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Ginger"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Rose"
+        ],
+        "base": [
+          "Cognac",
+          "Patchouli",
+          "Amber",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://scentadvice.com/sweet-woodland-2026-loewe/"
+    },
+    {
+      "id": "loewe-verdant-grove-2026",
+      "name": "Verdant Grove",
+      "house": "Loewe",
+      "released": "2026-08",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pistachio"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Iris"
+        ],
+        "base": [
+          "Caramel",
+          "Cedarwood",
+          "Amber",
+          "Vanilla",
+          "Musk"
+        ]
+      },
+      "source_url": "https://scentadvice.com/verdant-grove-2026-loewe/"
+    },
+    {
+      "id": "bvlgari-allegra-baciami-ancora-2026",
+      "name": "Allegra Baciami Ancora",
+      "house": "Bvlgari",
+      "released": "2026-06",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top": [
+          "Gardenia",
+          "White Flowers"
+        ],
+        "middle": [],
+        "base": [
+          "Vanilla",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Bvlgari/Baciami-Ancora-135209.html"
+    },
     {
       "id": "creed-iris-debonair-2026",
       "name": "Iris Debonair",
