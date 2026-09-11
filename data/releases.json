@@ -1,10 +1,160 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-09-11",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.5"
+    "version": "2.6"
   },
   "releases": [
+    {
+      "id": "rayhaan-vantage-2026",
+      "name": "Vantage",
+      "house": "Rayhaan",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Frankincense",
+          "Myrrh",
+          "Juniper Berries"
+        ],
+        "base": [
+          "Cedarwood",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/vantage-rayhaan/",
+      "view_url": "https://emiratesoud.co.uk/products/rayhaan-vantage",
+      "blog_url": "/blog/rayhaan-vantage/"
+    },
+    {
+      "id": "bvlgari-omnia-amethyste-edp-2026",
+      "name": "Omnia Amethyste Eau de Parfum",
+      "house": "Bvlgari",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top": [
+          "Iris",
+          "Musk"
+        ],
+        "middle": [
+          "Iris",
+          "Damask Rose"
+        ],
+        "base": [
+          "Resins",
+          "Woody Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Amethyste-Eau-de-Parfum-140495.html"
+    },
+    {
+      "id": "veronique-gabai-noire-de-mai-extrait-bg-2026",
+      "name": "Noire de Mai Extrait (x Bergdorf Goodman)",
+      "house": "Veronique Gabai",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Floral",
+      "notes": {
+        "top": [],
+        "middle": [
+          "Rose"
+        ],
+        "base": [
+          "Patchouli",
+          "Amber",
+          "Woody Notes"
+        ]
+      },
+      "source_url": "https://scentadvice.com/noire-de-mai-extrait-x-bergdorf-goodman-2026-veronique-gabai/"
+    },
+    {
+      "id": "fenty-lil-miss-wonderful-2026",
+      "name": "Lil Miss Wonderful",
+      "house": "Fenty",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Fruity Floral",
+      "notes": {
+        "top": [
+          "Candied Apple"
+        ],
+        "middle": [
+          "Peony",
+          "Freesia"
+        ],
+        "base": []
+      },
+      "source_url": "https://scentadvice.com/lil-miss-wonderful-2026-fenty/"
+    },
+    {
+      "id": "marc-jacobs-daisy-wild-violet-2026",
+      "name": "Daisy Wild Violet",
+      "house": "Marc Jacobs",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Fruity Floral",
+      "notes": {
+        "top": [
+          "Grape"
+        ],
+        "middle": [
+          "Jasmine"
+        ],
+        "base": [
+          "Macadamia"
+        ]
+      },
+      "source_url": "https://scentadvice.com/daisy-wild-violet-2026-marc-jacobs/"
+    },
+    {
+      "id": "memo-paris-sky-paris-sky-2026",
+      "name": "Sky Paris Sky",
+      "house": "Memo Paris",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Not yet disclosed",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": []
+      },
+      "source_url": "https://scentadvice.com/sky-paris-sky-2026-memo-paris/"
+    },
+    {
+      "id": "welton-chris-collins-talisman-2026",
+      "name": "Talisman",
+      "house": "Welton x Chris Collins",
+      "released": "2026",
+      "category": "U",
+      "family": "Aromatic Spicy Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Ginger",
+          "Orange"
+        ],
+        "middle": [
+          "White Tea",
+          "Pink Pepper",
+          "Black Pepper",
+          "Jasmine"
+        ],
+        "base": [
+          "Incense",
+          "Juniper",
+          "Papyrus"
+        ]
+      },
+      "source_url": "https://scentadvice.com/talisman-2026-welton-x-chris-collins/"
+    },
     {
       "id": "loewe-field-diary-2026",
       "name": "Field Diary",
