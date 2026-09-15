@@ -1,10 +1,176 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-09-15",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.6"
+    "version": "2.7"
   },
   "releases": [
+    {
+      "id": "aesop-unforeseen-aer-2026",
+      "name": "Unforeseen Aer",
+      "house": "Aesop",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Aromatic Fougere",
+      "notes": {
+        "top": [
+          "Petitgrain",
+          "Nutmeg",
+          "Lime"
+        ],
+        "middle": [
+          "Eucalyptus",
+          "Geranium",
+          "Lavender Extract"
+        ],
+        "base": [
+          "Cypress",
+          "Patchouli",
+          "Labdanum"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Aesop/Unforeseen-Aer-139995.html"
+    },
+    {
+      "id": "armaf-club-de-nuit-elite-2026",
+      "name": "Club De Nuit Elite",
+      "house": "Armaf",
+      "released": "2026",
+      "category": "M",
+      "family": "Citrus Aromatic",
+      "notes": {
+        "top": [
+          "Sichuan Pepper",
+          "Bergamot",
+          "Pink Pepper",
+          "Green Tea",
+          "Apple"
+        ],
+        "middle": [
+          "May Rose",
+          "Blackcurrant",
+          "Aromatic Notes",
+          "Geranium"
+        ],
+        "base": [
+          "Vetiver",
+          "Musk",
+          "Cedarwood",
+          "Cashmeran",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Armaf/Club-De-Nuit-Elite-139792.html",
+      "view_url": "https://www.jomashop.com/armaf-mens-club-de-nuit-elite-edp-spray-3-4-oz-fragrances-6295199829110.html"
+    },
+    {
+      "id": "lattafa-atlas-canyon-2026",
+      "name": "Atlas Canyon",
+      "house": "Lattafa",
+      "released": "2026",
+      "category": "U",
+      "family": "Hesperidic Ambery",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Lemon",
+          "Ginger"
+        ],
+        "middle": [
+          "Lily of the Valley",
+          "Sea Notes"
+        ],
+        "base": [
+          "Patchouli",
+          "Oakmoss",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "source_url": "https://scentadvice.com/atlas-canyon-2026-lattafa/"
+    },
+    {
+      "id": "rasasi-hawas-love-2026",
+      "name": "Hawas Love",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "U",
+      "family": "Oriental Floral",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Cardamom",
+          "Mandarin"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Ylang Ylang",
+          "Jasmine"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Vanilla",
+          "Praline"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Love-140080.html"
+    },
+    {
+      "id": "rasasi-hawas-boa-2026",
+      "name": "Hawas Boa",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "M",
+      "family": "Fruity Woody Gourmand",
+      "notes": {
+        "top": [
+          "Madagascar Pomelo",
+          "Prickly Pear",
+          "Green Apple",
+          "Orange Blossom"
+        ],
+        "middle": [
+          "Tonka Bean",
+          "Driftwood",
+          "Flowerpool",
+          "Olibanum"
+        ],
+        "base": [
+          "Vanilla",
+          "Vetiver"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-boa-rasasi/"
+    },
+    {
+      "id": "rasasi-hawas-blanche-2026",
+      "name": "Hawas Blanche",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "U",
+      "family": "Aromatic Spicy Woody",
+      "notes": {
+        "top": [
+          "Black Currant",
+          "Bergamot",
+          "Mandarin",
+          "Apple"
+        ],
+        "middle": [
+          "Wormwood",
+          "Basil",
+          "Geranium",
+          "Patchouli"
+        ],
+        "base": [
+          "Sandalwood",
+          "Moss",
+          "Drywood",
+          "Musk"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-blanche-rasasi/"
+    },
     {
       "id": "rayhaan-vantage-2026",
       "name": "Vantage",
