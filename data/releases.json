@@ -14,29 +14,30 @@
       "family": "Aromatic Fougere",
       "notes": {
         "top": [
+          "Lime Heart",
           "Petitgrain",
-          "Nutmeg",
-          "Lime"
+          "Nutmeg"
         ],
         "middle": [
           "Eucalyptus",
           "Geranium",
-          "Lavender Extract"
+          "Lavandin"
         ],
         "base": [
+          "Patchouli Heart",
           "Cypress",
-          "Patchouli",
-          "Labdanum"
+          "Labdanum Resinoid"
         ]
       },
-      "source_url": "https://www.fragrantica.com/perfume/Aesop/Unforeseen-Aer-139995.html"
+      "source_url": "https://www.aesop.ie/fragrance/unforeseen-aer-eau-de-parfum/FR44.html",
+      "blog_url": "/blog/unforeseen-aer/"
     },
     {
       "id": "armaf-club-de-nuit-elite-2026",
       "name": "Club De Nuit Elite",
       "house": "Armaf",
       "released": "2026",
-      "category": "M",
+      "category": "U",
       "family": "Citrus Aromatic",
       "notes": {
         "top": [
@@ -61,7 +62,8 @@
         ]
       },
       "source_url": "https://www.fragrantica.com/perfume/Armaf/Club-De-Nuit-Elite-139792.html",
-      "view_url": "https://www.jomashop.com/armaf-mens-club-de-nuit-elite-edp-spray-3-4-oz-fragrances-6295199829110.html"
+      "view_url": "https://www.jomashop.com/armaf-mens-club-de-nuit-elite-edp-spray-3-4-oz-fragrances-6295199829110.html",
+      "blog_url": "/blog/club-de-nuit-elite/"
     },
     {
       "id": "lattafa-atlas-canyon-2026",
@@ -140,7 +142,8 @@
           "Vetiver"
         ]
       },
-      "source_url": "https://ifragranceofficial.com/perfumes/hawas-boa-rasasi/"
+      "source_url": "https://ifragranceofficial.com/perfumes/hawas-boa-rasasi/",
+      "blog_url": "/blog/hawas-boa/"
     },
     {
       "id": "rasasi-hawas-blanche-2026",
