@@ -1,10 +1,120 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-18",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.7"
+    "version": "2.8"
   },
   "releases": [
+    {
+      "id": "tommy-hilfiger-freedom-edp-2026",
+      "name": "Freedom Eau de Parfum",
+      "house": "Tommy Hilfiger",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top": [
+          "Lychee"
+        ],
+        "middle": [
+          "Magnolia Blossom"
+        ],
+        "base": [
+          "Vanilla Blue"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/16/tommy-hilfiger-freedom-new-perfume/"
+    },
+    {
+      "id": "cdg-denim-tears-tears-2026",
+      "name": "Tears (x Denim Tears)",
+      "house": "Comme des Garçons",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Musky Floral",
+      "notes": {
+        "top": [
+          "Galbanum",
+          "Ambrettolide",
+          "Sage"
+        ],
+        "middle": [
+          "Daffodil",
+          "Jasmine",
+          "Flouve",
+          "Orris"
+        ],
+        "base": [
+          "Vetiver",
+          "Hay",
+          "Cypriol",
+          "Musk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/16/comme-des-garcons-tears-by-denim-tears-new-fragrance/"
+    },
+    {
+      "id": "loccitane-chene-mineral-2026",
+      "name": "Chêne Minéral",
+      "house": "L'Occitane",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Mineral Woody",
+      "notes": {
+        "top": [
+          "Fig",
+          "Mineral Notes"
+        ],
+        "middle": [
+          "Oak Wood"
+        ],
+        "base": [
+          "Ambrette Musk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/12/loccitane-chene-mineral-noisetier-cremeux-safran-boise-new-perfumes/"
+    },
+    {
+      "id": "loccitane-noisetier-cremeux-2026",
+      "name": "Noisetier Crémeux",
+      "house": "L'Occitane",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": [
+          "Green Notes"
+        ],
+        "middle": [
+          "Hazelnut"
+        ],
+        "base": [
+          "Vanilla Planifolia",
+          "Hazelwood"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/12/loccitane-chene-mineral-noisetier-cremeux-safran-boise-new-perfumes/"
+    },
+    {
+      "id": "loccitane-safran-boise-2026",
+      "name": "Safran Boisé",
+      "house": "L'Occitane",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Amber",
+      "notes": {
+        "top": [
+          "Saffron"
+        ],
+        "middle": [
+          "Fir Balsam Resin"
+        ],
+        "base": [
+          "Amber Notes"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/12/loccitane-chene-mineral-noisetier-cremeux-safran-boise-new-perfumes/"
+    },
     {
       "id": "aesop-unforeseen-aer-2026",
       "name": "Unforeseen Aer",
