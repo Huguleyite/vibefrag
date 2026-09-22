@@ -1,10 +1,63 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-18",
+    "lastUpdated": "2026-09-22",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.8"
+    "version": "2.9"
   },
   "releases": [
+    {
+      "id": "lattafa-beyond-precious-2026",
+      "name": "Beyond Precious",
+      "house": "Lattafa",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Oriental Floral",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pear",
+          "Neroli"
+        ],
+        "middle": [
+          "Jasmine",
+          "Angelica",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Immortelle",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Beyond-Precious-143163.html"
+    },
+    {
+      "id": "7-virtues-amber-orchid-2026",
+      "name": "Amber Orchid",
+      "house": "The 7 Virtues",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Oriental Floral",
+      "notes": {
+        "top": [
+          "Apple"
+        ],
+        "middle": [
+          "Vanilla Orchid",
+          "Magnolia"
+        ],
+        "base": [
+          "Amber",
+          "Suede",
+          "Sandalwood",
+          "Cashmere Musk",
+          "Vanilla",
+          "Iso E Super"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/The-7-Virtues/Amber-Orchid-142622.html",
+      "view_url": "https://www.sephora.com/product/amber-orchid-eau-de-parfum-P526152"
+    },
     {
       "id": "tommy-hilfiger-freedom-edp-2026",
       "name": "Freedom Eau de Parfum",
