@@ -1,10 +1,91 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-22",
+    "lastUpdated": "2026-09-25",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "2.9"
+    "version": "3.0"
   },
   "releases": [
+    {
+      "id": "afnan-stardust-2026",
+      "name": "Stardust",
+      "house": "Afnan",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Mandarin Orange",
+          "Grapefruit",
+          "Orange",
+          "Aldehydes"
+        ],
+        "middle": [
+          "Caramel",
+          "Cinnamon",
+          "Cognac"
+        ],
+        "base": [
+          "Woody Notes",
+          "Amber",
+          "Sandalwood",
+          "Myrrh",
+          "Tonka Bean",
+          "Oak",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Afnan/Stardust-143018.html"
+    },
+    {
+      "id": "nette-mr-cloud-2026",
+      "name": "Mr. Cloud",
+      "house": "Nette",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Floral Woody Musk",
+      "notes": {
+        "top": [
+          "Freesia",
+          "Cut Grass"
+        ],
+        "middle": [
+          "Tuberose",
+          "Cold Milk Accord"
+        ],
+        "base": [
+          "Blonde Woods",
+          "Skin Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Nette/Mr-Cloud-143158.html"
+    },
+    {
+      "id": "noyz-loose-ends-2026",
+      "name": "Loose Ends",
+      "house": "Noyz",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Black Sugar",
+          "Smoked Vanilla"
+        ],
+        "middle": [
+          "Cognac Accord",
+          "Cassia",
+          "Sheer Orchid"
+        ],
+        "base": [
+          "Amber",
+          "Cashmere Woods",
+          "Cocoa",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://noyz.com/products/loose-ends-amber-perfume-fragrance"
+    },
     {
       "id": "lattafa-beyond-precious-2026",
       "name": "Beyond Precious",
