@@ -1,10 +1,284 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-09-30",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.0"
+    "version": "3.1"
   },
   "releases": [
+    {
+      "id": "regime-des-fleurs-dark-subtle-teas-2026",
+      "name": "Dark Subtle Teas",
+      "house": "Régime des Fleurs",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Black Tea",
+          "Rooibos Tea",
+          "Maté",
+          "Bergamot",
+          "Orange"
+        ],
+        "middle": [],
+        "base": [
+          "Benzoin",
+          "Cedar",
+          "Patchouli",
+          "Vetiver"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/27/regime-des-fleurs-dark-subtle-teas-new-fragrance/"
+    },
+    {
+      "id": "gucci-ambrosia-del-deserto-2026",
+      "name": "Ambrosia del Deserto",
+      "house": "Gucci",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Fruity Chypre",
+      "notes": {
+        "top": [
+          "Blood Orange"
+        ],
+        "middle": [
+          "Candied Date",
+          "Rose",
+          "Angelica Seed",
+          "Apricot",
+          "Cinnamon",
+          "Davana",
+          "Immortelle",
+          "Pomarose"
+        ],
+        "base": [
+          "Patchouli",
+          "Vanilla",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/27/gucci-ambrosia-del-deserto-new-fragrance/"
+    },
+    {
+      "id": "what-we-do-is-secret-studio-particulier-2026",
+      "name": "Studio Particulier",
+      "house": "What We Do Is Secret",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Floral Musk",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Violet",
+          "Orris",
+          "Iriseine De Laire"
+        ],
+        "base": [
+          "Suede",
+          "Ambrette Seeds",
+          "Blond Woods",
+          "Musk"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/27/what-we-do-is-secret-studio-particulier-new-fragrance/"
+    },
+    {
+      "id": "vilhelm-parfumerie-oligarch-2026",
+      "name": "Oligarch",
+      "house": "Vilhelm Parfumerie",
+      "released": "2026-09",
+      "category": "M",
+      "family": "Oriental Woody",
+      "notes": {
+        "top": [
+          "Pineapple",
+          "Green Apple",
+          "Black Pepper"
+        ],
+        "middle": [
+          "White Tobacco",
+          "Patchouli",
+          "Tonka Bean"
+        ],
+        "base": [
+          "Musk",
+          "Ambroxan"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/27/vilhelm-parfumerie-oligarch-new-fragrance/"
+    },
+    {
+      "id": "bond-no-9-scent-of-peace-for-all-2026",
+      "name": "Scent of Peace for All",
+      "house": "Bond No. 9",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Fresh Aromatic",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Tangerine",
+          "Pear"
+        ],
+        "middle": [
+          "Lentisque",
+          "Bran",
+          "Geranium",
+          "Tobacco"
+        ],
+        "base": [
+          "Musk",
+          "Amber"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/27/bond-no-9-scent-of-peace-for-all-new-fragrance/"
+    },
+    {
+      "id": "nest-wonder-2026",
+      "name": "Wonder",
+      "house": "Nest Fragrances",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Fruity Aromatic",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Winter Cranberry"
+        ],
+        "middle": [
+          "Fir Balsam"
+        ],
+        "base": []
+      },
+      "source_url": "https://nstperfume.com/2026/09/26/nest-wonder-new-fragrance/"
+    },
+    {
+      "id": "ffern-autumn-26-2026",
+      "name": "Autumn 26",
+      "house": "Ffern",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Aromatic Fougère",
+      "notes": {
+        "top": [
+          "Lavender",
+          "Calabrian Bergamot",
+          "Coriander",
+          "Fennel"
+        ],
+        "middle": [
+          "Immortelle",
+          "Ho Wood",
+          "Broom",
+          "Jasmine",
+          "Cypriol",
+          "May Rose",
+          "Rose Geranium"
+        ],
+        "base": [
+          "Orris Root",
+          "Violet Leaf",
+          "Hay",
+          "Oakmoss",
+          "Siam Benzoin",
+          "Virginia Cedar",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/perfume/Ffern/Autumn-26-143287.html"
+    },
+    {
+      "id": "prada-paradoxe-sweet-chemistry-2026",
+      "name": "Paradoxe Sweet Chemistry Eau de Parfum",
+      "house": "Prada",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Blackcurrant Syrup"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Neroli Milk"
+        ],
+        "base": [
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.newbeauty.com/view/best-new-fragrances-september-2026"
+    },
+    {
+      "id": "victoria-beckham-hotel-portofino-extrait-2026",
+      "name": "Hotel Portofino Extrait de Parfum",
+      "house": "Victoria Beckham Beauty",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Aromatic",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Basil",
+          "Saffron"
+        ],
+        "middle": [
+          "Wild Fig",
+          "Agarwood",
+          "Pinot Noir"
+        ],
+        "base": [
+          "Incense",
+          "Papyrus",
+          "Black Amber"
+        ]
+      },
+      "source_url": "https://www.newbeauty.com/view/best-new-fragrances-september-2026"
+    },
+    {
+      "id": "maison-margiela-replica-lost-eden-edp-2026",
+      "name": "REPLICA Lost Eden Eau de Parfum",
+      "house": "Maison Margiela",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Amber Gourmand",
+      "notes": {
+        "top": [
+          "Candied Apple"
+        ],
+        "middle": [
+          "Vanilla"
+        ],
+        "base": [
+          "Smoky Oud"
+        ]
+      },
+      "source_url": "https://www.newbeauty.com/view/best-new-fragrances-september-2026"
+    },
+    {
+      "id": "le-labo-shiu-25-2026",
+      "name": "SHIU 25 Eau de Parfum",
+      "house": "Le Labo",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Floral",
+      "notes": {
+        "top": [
+          "Camphor Wood",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "White Florals",
+          "Iris"
+        ],
+        "base": [
+          "Frankincense"
+        ]
+      },
+      "source_url": "https://www.newbeauty.com/view/best-new-fragrances-september-2026"
+    },
     {
       "id": "afnan-stardust-2026",
       "name": "Stardust",
