@@ -1,10 +1,86 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-30",
+    "lastUpdated": "2026-10-02",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.1"
+    "version": "3.2"
   },
   "releases": [
+    {
+      "id": "victorias-secret-bombshell-desire-2026",
+      "name": "Bombshell Desire",
+      "house": "Victoria's Secret",
+      "released": "2026-09",
+      "category": "F",
+      "family": "Fruity Woody",
+      "notes": {
+        "top": [
+          "Crushed Blackberry"
+        ],
+        "middle": [
+          "Moonlight Peony"
+        ],
+        "base": [
+          "Silk Amber"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/30/victorias-secret-bombshell-desire-new-fragrance/"
+    },
+    {
+      "id": "byredo-havana-tonka-2026",
+      "name": "Havana Tonka",
+      "house": "Byredo",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Gourmand Warm",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Rum",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Tobacco Leaf",
+          "Violet",
+          "Suede",
+          "Cashmere Wood",
+          "Crème Brûlée"
+        ],
+        "base": [
+          "Roasted Tonka Bean",
+          "Patchouli",
+          "Musk",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/30/byredo-havana-tonka-new-fragrance/"
+    },
+    {
+      "id": "room-1015-kokoa-bang-2026",
+      "name": "Kokoa Bang",
+      "house": "Room 1015",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Gourmand",
+      "notes": {
+        "top": [
+          "Rosé Champagne Accord",
+          "Pear",
+          "Lemon"
+        ],
+        "middle": [
+          "Magnolia",
+          "Cocoa",
+          "Muguet",
+          "Myrrh"
+        ],
+        "base": [
+          "Vanilla",
+          "Tonka Bean",
+          "Benzoin"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/09/30/room-1015-kokoa-bang-new-fragrance/"
+    },
     {
       "id": "regime-des-fleurs-dark-subtle-teas-2026",
       "name": "Dark Subtle Teas",
