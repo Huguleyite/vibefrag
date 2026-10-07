@@ -1,10 +1,85 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-06",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.2"
+    "version": "3.3"
   },
   "releases": [
+    {
+      "id": "jo-loves-nutmeg-and-incense-2026",
+      "name": "Nutmeg & Incense",
+      "house": "Jo Loves",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Spicy Woody",
+      "notes": {
+        "top": [
+          "Black Pepper",
+          "Allspice Leaves",
+          "Coriander"
+        ],
+        "middle": [
+          "Kephalis Incense",
+          "Myrrh",
+          "Akigalawood"
+        ],
+        "base": [
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/10/03/jo-loves-nutmeg-incense-new-fragrance/"
+    },
+    {
+      "id": "mizensir-bright-wood-2026",
+      "name": "Bright Wood",
+      "house": "Mizensir",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Woody Gourmand",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Neroli",
+          "Cardamom"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Praline"
+        ],
+        "base": [
+          "Ambroxan",
+          "Cashmeran",
+          "Sandalwood",
+          "Cedar",
+          "Patchouli",
+          "Tonka Bean",
+          "Vanilla",
+          "Musk"
+        ]
+      },
+      "source_url": "https://scentadvice.com/bright-wood-2026-mizensir/"
+    },
+    {
+      "id": "chanel-paris-st-moritz-2026",
+      "name": "Paris-St. Moritz",
+      "house": "Chanel",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Fruity Amber",
+      "notes": {
+        "top": [
+          "Pear"
+        ],
+        "middle": [
+          "Rose"
+        ],
+        "base": [
+          "Musk",
+          "Amber"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/10/03/chanel-paris-st-moritz-new-fragrance/"
+    },
     {
       "id": "victorias-secret-bombshell-desire-2026",
       "name": "Bombshell Desire",
