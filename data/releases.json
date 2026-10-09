@@ -1,10 +1,232 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-06",
+    "lastUpdated": "2026-10-09",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.3"
+    "version": "3.5"
   },
   "releases": [
+    {
+      "id": "lattafa-khamrah-mira-2026",
+      "name": "Khamrah Mira",
+      "house": "Lattafa",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top": [
+          "Red Currant",
+          "Cinnamon",
+          "Mandarin"
+        ],
+        "middle": [
+          "Jasmine Sambac",
+          "Orange Blossom",
+          "Rosyfolia",
+          "Chestnut"
+        ],
+        "base": [
+          "Benzoin",
+          "Roasted Tonka",
+          "Madagascar Vanilla",
+          "Cocoa",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/LATTAFA-Khamrah-Mira-26261.html"
+    },
+    {
+      "id": "lattafa-fearless-2026",
+      "name": "Fearless",
+      "house": "Lattafa",
+      "released": "2026-10",
+      "category": "M",
+      "family": "Fruity Tobacco",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Juniper Berry",
+          "Passion Fruit"
+        ],
+        "middle": [
+          "Cocoa",
+          "Lavender",
+          "Cinnamon"
+        ],
+        "base": [
+          "Benzoin",
+          "Cedarwood",
+          "Patchouli",
+          "Tobacco"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/LATTAFA-Fearless-26267.html"
+    },
+    {
+      "id": "armaf-club-de-nuit-bling-gold-2026",
+      "name": "Club de Nuit Bling Gold",
+      "house": "Armaf",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Yuzu",
+          "Peach",
+          "Neroli",
+          "Heliotrope",
+          "Coconut",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Jasmine Sambac",
+          "Caramel",
+          "Milk Accord",
+          "Orange Blossom",
+          "Madagascar Vanilla"
+        ],
+        "base": [
+          "White Musk",
+          "Peru Balsam",
+          "Bourbon Vanilla",
+          "Cashmeran",
+          "Palo Santo",
+          "Tonka Bean",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/ARMAF-Introduces-Club-de-Nuit-Bling-Gold-at-Beautyworld-Dubai-2026-26273.html"
+    },
+    {
+      "id": "costume-national-universal-vanilla-2026",
+      "name": "Universal Vanilla",
+      "house": "Costume National",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Dry Vanilla",
+      "notes": {
+        "top": [
+          "Lavender",
+          "Mate",
+          "Rum"
+        ],
+        "middle": [
+          "Cacao",
+          "Sambac Jasmine"
+        ],
+        "base": [
+          "Vanilla Absolute",
+          "Peru Balsam",
+          "Ambrox Super",
+          "Dry Wood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Universal-Vanilla-The-New-Release-from-Costume-National-26274.html"
+    },
+    {
+      "id": "carner-barcelona-crema-vainilla-2026",
+      "name": "Crema Vainilla",
+      "house": "Carner Barcelona",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Gourmand Lactonic",
+      "notes": {
+        "top": [
+          "Sweet Almond",
+          "Crema Catalana"
+        ],
+        "middle": [
+          "Praline",
+          "Iris",
+          "Milk"
+        ],
+        "base": [
+          "Madagascar Vanilla",
+          "Musk",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Crema-Vainilla-New-from-Carner-Barcelona-26279.html"
+    },
+    {
+      "id": "danhera-orkeia-2026",
+      "name": "Orkeia",
+      "house": "Danhera",
+      "released": "2026",
+      "category": "U",
+      "family": "Woody Floral Oud",
+      "notes": {
+        "top": [
+          "Black Orchid",
+          "Cyclamen",
+          "Ambrette"
+        ],
+        "middle": [
+          "Bulgarian Rose",
+          "Night-Blooming Jasmine",
+          "Italian Violet",
+          "Lily of the Valley",
+          "Saffron",
+          "Indian Oud"
+        ],
+        "base": [
+          "Madagascar Vanilla",
+          "Amber",
+          "Indonesian Patchouli",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Danhera-Launches-Orkeia-26294.html"
+    },
+    {
+      "id": "ds-and-durga-resurrected-corpse-flower-2026",
+      "name": "Resurrected Corpse Flower",
+      "house": "D.S. & Durga",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Green Floral",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Green Banana"
+        ],
+        "middle": [
+          "Madonna Lily",
+          "Tuberose",
+          "Freesia",
+          "Olive",
+          "Balm of Gilead"
+        ],
+        "base": [
+          "Bog Cedar",
+          "Papyrus"
+        ]
+      },
+      "source_url": "https://nstperfume.com/2026/10/08/ds-durga-resurrected-corpse-flower-new-fragrance/"
+    },
+    {
+      "id": "une-nuit-nomade-shade-of-blue-2026",
+      "name": "Shade of Blue",
+      "house": "Une Nuit Nomade",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Aromatic Gourmand",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Myrrh"
+        ],
+        "middle": [
+          "Lavender Absolute",
+          "Lavandin"
+        ],
+        "base": [
+          "Tonka Bean Absolute",
+          "Caramel"
+        ]
+      },
+      "source_url": "https://www.parfumo.com/Users/Mikayla/Blog/Article/lavender-meets-caramel-shade-of-blue-by-une-nuit-nomade"
+    },
     {
       "id": "jo-loves-nutmeg-and-incense-2026",
       "name": "Nutmeg & Incense",
