@@ -1,10 +1,173 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-09",
+    "lastUpdated": "2026-10-13",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.5"
+    "version": "3.6"
   },
   "releases": [
+    {
+      "id": "house-of-sillage-supergirl-2026",
+      "name": "Supergirl",
+      "house": "House of Sillage",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Fruity Woody Gourmand",
+      "notes": {
+        "top": [
+          "Blood Orange Zest",
+          "Pink Pepper",
+          "Sparkling Ginger",
+          "Pear"
+        ],
+        "middle": [
+          "Jasmine Sambac",
+          "Midnight Rose",
+          "Smoked Plum",
+          "Solar Amber Accord"
+        ],
+        "base": [
+          "Black Vanilla",
+          "Patchouli",
+          "Cashmere Woods",
+          "Incense Resin"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/House-Of-Sillage-Supergirl-26318.html"
+    },
+    {
+      "id": "montblanc-paper-musk-2026",
+      "name": "Paper Musk",
+      "house": "Montblanc",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Musk Floral",
+      "notes": {
+        "top": [
+          "White Musk",
+          "Bergamot"
+        ],
+        "middle": [
+          "Orange Blossom"
+        ],
+        "base": [
+          "Cashmeran"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Montblanc-Collection-Paper-Musk-26307.html"
+    },
+    {
+      "id": "chopard-blooming-love-2026",
+      "name": "Blooming Love",
+      "house": "Chopard",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Fruity Floral",
+      "notes": {
+        "top": [
+          "Italian Mandarin",
+          "Mangosteen",
+          "Sichuan Pepper"
+        ],
+        "middle": [
+          "Magnolia",
+          "Rose Damascena",
+          "Geranium Bourbon"
+        ],
+        "base": [
+          "Musk",
+          "Chinese Osmanthus Absolute",
+          "Black Tea Accord"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/CHOPARD-Blooming-Love-26304.html"
+    },
+    {
+      "id": "paris-hilton-iconic-queen-2026",
+      "name": "Iconic Queen",
+      "house": "Paris Hilton",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Fruity Floral",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Mandarin",
+          "Cassis"
+        ],
+        "middle": [
+          "Orange Flower",
+          "Jasmine",
+          "Muguet"
+        ],
+        "base": [
+          "Amber",
+          "Musk",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/New-From-Paris-Hilton-ICONIC-QUEEN-26280.html"
+    },
+    {
+      "id": "merit-new-wave-2026",
+      "name": "New Wave",
+      "house": "MERIT",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Amber Balsamic",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Angelica Seed"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Ylang-Ylang",
+          "Honeyed Floral Accord"
+        ],
+        "base": [
+          "Benzoin",
+          "Labdanum",
+          "Olibanum",
+          "Patchouli Heart",
+          "Ambrarome",
+          "Ambroxan",
+          "Musk",
+          "Cypriol",
+          "Vetiver",
+          "Tobacco Accord",
+          "Cedarwood Heart",
+          "Oakwood",
+          "Vanilla Bean",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/New-Wave-The-New-Extrait-by-MERIT-US-Giveaway-26330.html"
+    },
+    {
+      "id": "parfums-quartana-bleeding-heart-2026",
+      "name": "Bleeding Heart",
+      "house": "Parfums Quartana",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Floral Gourmand",
+      "notes": {
+        "top": [
+          "Rose",
+          "Strawberry"
+        ],
+        "middle": [
+          "Peony",
+          "White Chocolate",
+          "Caramel",
+          "Dagger Accord"
+        ],
+        "base": [
+          "Vanilla Absolute",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Parfums-Quartana-s-Bleeding-Heart-A-Delicious-Fatal-Potion-Filled-With-Self-Love-26286.html"
+    },
     {
       "id": "lattafa-khamrah-mira-2026",
       "name": "Khamrah Mira",
