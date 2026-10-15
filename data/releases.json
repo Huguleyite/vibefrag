@@ -1,10 +1,82 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-13",
+    "lastUpdated": "2026-10-15",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.6"
+    "version": "3.7"
   },
   "releases": [
+    {
+      "id": "maison-margiela-replica-letter-never-sent-2026",
+      "name": "Replica Letter Never Sent",
+      "house": "Maison Margiela",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Woody Musk",
+      "notes": {
+        "top": [
+          "Sumi Ink Accord"
+        ],
+        "middle": [
+          "Red Cedarwood"
+        ],
+        "base": [
+          "White Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Maison-Margiela-Replica-Letter-Never-Sent-Tokyo-1995-26166.html"
+    },
+    {
+      "id": "dolce-gabbana-velvet-amber-sage-2026",
+      "name": "Velvet Amber Sage",
+      "house": "Dolce&Gabbana",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Amber Aromatic",
+      "notes": {
+        "top": [
+          "Clary Sage"
+        ],
+        "middle": [
+          "Amber",
+          "Praline Accord",
+          "Cinnamon Bark"
+        ],
+        "base": [
+          "Roasted Tonka Bean",
+          "Creamy Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Dolce-Gabbana-Velvet-Amber-Sage-26149.html"
+    },
+    {
+      "id": "anomalia-paris-matcha-woodoo-2026",
+      "name": "Matcha Woodoo",
+      "house": "Anomalia Paris",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Green Woody",
+      "notes": {
+        "top": [
+          "Tea",
+          "Maté",
+          "Verbena Absolute",
+          "Orange"
+        ],
+        "middle": [
+          "Cashmeran",
+          "Incense",
+          "Orris Butter",
+          "Creamy Fig Milk"
+        ],
+        "base": [
+          "Maté Absolute",
+          "Nepalese Sandalwood",
+          "Cedar",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Anomalia-Paris-Launches-Matcha-Woodoo-A-Story-of-A-Very-Specific-Obsession-26251.html"
+    },
     {
       "id": "house-of-sillage-supergirl-2026",
       "name": "Supergirl",
