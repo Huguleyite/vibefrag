@@ -1,10 +1,102 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-15",
+    "lastUpdated": "2026-10-16",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.7"
+    "version": "3.8"
   },
   "releases": [
+    {
+      "id": "landcaster-techno-oud-2026",
+      "name": "Techno Oud",
+      "house": "Landcaster",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Oud Resinous",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Neroli",
+          "Saffron",
+          "Olibanum"
+        ],
+        "middle": [
+          "Champaca",
+          "Osmanthus",
+          "Violet",
+          "Beeswax",
+          "Tobacco"
+        ],
+        "base": [
+          "Indonesian Oud",
+          "Patchouli",
+          "Labdanum",
+          "Copal",
+          "Myrrh"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/The-Second-Series-by-Landcaster-Oud-based-26361.html"
+    },
+    {
+      "id": "landcaster-metallic-oud-2026",
+      "name": "Metallic Oud",
+      "house": "Landcaster",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Oud Spicy",
+      "notes": {
+        "top": [
+          "Grapefruit",
+          "Cubeb Pepper",
+          "Nutmeg"
+        ],
+        "middle": [
+          "Frangipani",
+          "Fig",
+          "Cocoa",
+          "Rosewood"
+        ],
+        "base": [
+          "Cambodian Oud",
+          "Tonka Bean",
+          "Vetiver",
+          "Immortelle",
+          "Oakmoss",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/The-Second-Series-by-Landcaster-Oud-based-26361.html"
+    },
+    {
+      "id": "landcaster-oud-carbon-2026",
+      "name": "Oud Carbon",
+      "house": "Landcaster",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Oud Smoky Leather",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Pink Pepper",
+          "Juniper Berries",
+          "Nutmeg"
+        ],
+        "middle": [
+          "Lavender",
+          "Orris Root",
+          "Hay",
+          "Dragon's Blood Resin"
+        ],
+        "base": [
+          "Vietnamese Oud",
+          "Tobacco",
+          "Opoponax",
+          "Styrax",
+          "Moss",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/The-Second-Series-by-Landcaster-Oud-based-26361.html"
+    },
     {
       "id": "maison-margiela-replica-letter-never-sent-2026",
       "name": "Replica Letter Never Sent",
