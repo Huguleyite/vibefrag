@@ -20,18 +20,9 @@
     ═══════════════════════════════════════════════════
     HOW TO ADD A NEW POST
     ═══════════════════════════════════════════════════
-    Copy the <item> block below, paste it here ABOVE
-    any existing items (newest first), and fill in:
-
-    <item>
-      <title>Your Post Title</title>
-      <link>https://vibefrag.com/blog/your-post-slug.html</link>
-      <guid isPermaLink="true">https://vibefrag.com/blog/your-post-slug.html</guid>
-      <pubDate>Wed, 18 Jun 2026 09:00:00 -0500</pubDate>
-      <description><![CDATA[
-        One or two sentence summary of the post.
-      ]]></description>
-    </item>
+    Copy the newest existing <item> below, paste it ABOVE
+    the existing items (newest first), then update its title,
+    link, guid, pubDate and description.
 
     Zapier monitors this feed. Adding a new <item> and
     pushing to GitHub Pages will trigger the social post.
