@@ -1,6 +1,12 @@
 [
   {
     "type": "article",
+    "title": "1 Million Parfum — Rabanne · VibeFrag",
+    "excerpt": "Rabanne 1 Million Parfum — blood mandarin, cinnamon, rose, white leather, amber woods. The concentrated take on the icon, 51% off at BeautyHouse.",
+    "url": "https://vibefrag.com/blog/1-million-parfum-rabanne/"
+  },
+  {
+    "type": "article",
     "title": "Club de Nuit Iconic Extrait de Parfum by Armaf",
     "excerpt": "Club de Nuit Iconic Extrait de Parfum by Armaf: grapefruit, mint, ginger, jasmine, incense, sandalwood, patchouli. The Iconic line at extrait strength for $60. Reviewed by VibeFrag.",
     "url": "https://vibefrag.com/blog/armaf-club-de-nuit-iconic-extrait/"
@@ -43,15 +49,39 @@
   },
   {
     "type": "article",
+    "title": "Acqua di Parma's Cedro Virtuoso",
+    "excerpt": "Acqua di Parma Cedro Virtuoso: Virginian cedar, hazelnut, Calabrian bergamot, tonka bean, sandalwood, ambroxan. Part of the Signatures of the Sun collection.",
+    "url": "https://vibefrag.com/blog/cedro-virtuoso/"
+  },
+  {
+    "type": "article",
     "title": "Cloud Aurora by Ariana Grande — Notes & Where to Buy",
     "excerpt": "Cloud Aurora by Ariana Grande: spun sugar, blackcurrant, fluffy musk, vanilla-dipped petals, and golden amber. Available now at Ulta.",
     "url": "https://vibefrag.com/blog/cloud-aurora/"
   },
   {
     "type": "article",
+    "title": "Club de Nuit Bling Gold by Armaf",
+    "excerpt": "Club de Nuit Bling Gold by Armaf: bergamot, yuzu, peach, jasmine sambac, caramel, vanilla, Peru balsam, palo santo, amber. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/club-de-nuit-bling-gold/"
+  },
+  {
+    "type": "article",
+    "title": "Club De Nuit Elite: Notes, Price and Review",
+    "excerpt": "Armaf Club De Nuit Elite: green tea, bergamot, apple, Sichuan pepper, vetiver. A citrus aromatic for daily wear at $60. Notes and where to buy.",
+    "url": "https://vibefrag.com/blog/club-de-nuit-elite/"
+  },
+  {
+    "type": "article",
     "title": "Coco Mademoiselle Crush Absolu by Chanel",
     "excerpt": "Coco Mademoiselle Crush Absolu by Chanel: grapefruit, lychee, rose, jasmine, vetiver, vanilla, patchouli. The flanker that keeps the icon from acting its age. Reviewed by VibeFrag.",
     "url": "https://vibefrag.com/blog/coco-mademoiselle-crush-absolu/"
+  },
+  {
+    "type": "article",
+    "title": "Coffee Is Having a Moment in Fragrance Right Now",
+    "excerpt": "By Kilian Midnight Espresso, Fragrance Du Bois Lucius Maximus, and Essential Parfums Ambre Latte: three coffee-adjacent releases from the same two weeks, compared.",
+    "url": "https://vibefrag.com/blog/coffee-fragrance-trend/"
   },
   {
     "type": "article",
@@ -79,9 +109,21 @@
   },
   {
     "type": "article",
+    "title": "Fearless by Lattafa",
+    "excerpt": "Fearless by Lattafa: grapefruit, juniper, passion fruit, cocoa, lavender, cinnamon, benzoin, cedarwood, patchouli, tobacco. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/fearless-lattafa/"
+  },
+  {
+    "type": "article",
     "title": "The Best Fragrances for a First Date",
     "excerpt": "First impressions are multi-sensory. Here's what to wear when the stakes are high and the lighting is low.",
     "url": "https://vibefrag.com/blog/first-date/"
+  },
+  {
+    "type": "article",
+    "title": "Freeze in Flames by Riiffs",
+    "excerpt": "Freeze in Flames by Riiffs: passionfruit, raspberry, and red apple open into a cold hit of spearmint and bergamot, then settle into lavender, sage, cedarwood, and musk. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/freeze-in-flames/"
   },
   {
     "type": "article",
@@ -103,9 +145,15 @@
   },
   {
     "type": "article",
-    "title": "Hawas Addiction by Rasasi",
-    "excerpt": "Hawas Addiction by Rasasi: cotton candy, marshmallow, ice cream, coconut milk, cedarwood, amber, moss. The most dessert-forward Hawas flanker yet. Reviewed by VibeFrag.",
+    "title": "Hawas Addiction: The Cotton Candy Hawas",
+    "excerpt": "Hawas Addiction by Rasasi: cotton candy, marshmallow, coconut milk, cedarwood, amber. The most dessert-forward Hawas flanker yet. Notes and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-addiction/"
+  },
+  {
+    "type": "article",
+    "title": "Hawas Boa by Rasasi",
+    "excerpt": "Hawas Boa by Rasasi: Madagascar pomelo, prickly pear, tonka bean, frankincense, vanilla, vetiver. A limited 150,000-bottle run marking ten years of Hawas. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/hawas-boa/"
   },
   {
     "type": "article",
@@ -121,8 +169,8 @@
   },
   {
     "type": "article",
-    "title": "Hawas Gold Digger by Rasasi",
-    "excerpt": "Hawas Gold Digger by Rasasi: bergamot, pear, lavender, mint, cinnamon, sage, vanilla, amber. A near-identical map to Jean Paul Gaultier Ultra Male — at a fraction of the price.",
+    "title": "Hawas Gold Digger: Ultra Male Dupe?",
+    "excerpt": "Hawas Gold Digger by Rasasi: a near-identical note map to Jean Paul Gaultier Ultra Male at $44.50. Notes, how close it gets, and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-gold-digger/"
   },
   {
@@ -133,8 +181,8 @@
   },
   {
     "type": "article",
-    "title": "Hawas La Mer by Rasasi",
-    "excerpt": "Hawas La Mer by Rasasi: peppermint, bergamot, blackcurrant, carrot, fig, amber. A fresh-to-dark composition that follows Louis Vuitton Pacific Chill's blueprint closer than expected.",
+    "title": "Hawas La Mer: Louis Vuitton Pacific Chill Dupe?",
+    "excerpt": "Hawas La Mer by Rasasi follows Louis Vuitton Pacific Chill's blueprint closer than expected. Notes, how it stacks against Pacific Aura, and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-la-mer/"
   },
   {
@@ -146,13 +194,13 @@
   {
     "type": "article",
     "title": "Hawas London by Rasasi",
-    "excerpt": "Hawas London by Rasasi: saffron, pink pepper, pear, rose, white florals, blonde woods, amber, musk, vanilla. The Hawas line's foggiest, darkest entry yet. Reviewed by VibeFrag.",
+    "excerpt": "Hawas London by Rasasi: saffron, pink pepper, pear, rose, white florals, blonde woods, amber, musk, vanilla. The Hawas line's foggiest, darkest entry yet. $37 at BeautyHouse, now on Amazon for $34. Reviewed by VibeFrag.",
     "url": "https://vibefrag.com/blog/hawas-london/"
   },
   {
     "type": "article",
-    "title": "Hawas Majestic by Rasasi",
-    "excerpt": "Hawas Majestic by Rasasi: lemon, cardamom, rhubarb, pink pepper, moss, cedar, amber. The Hawas line's citrus-forward answer to Baccarat Rouge 540 comparisons. Reviewed by VibeFrag.",
+    "title": "Hawas Majestic vs Baccarat Rouge 540: Worth It?",
+    "excerpt": "Hawas Majestic by Rasasi: lemon, cardamom, rhubarb, pink pepper, amber. The citrus-forward answer to Baccarat Rouge 540 comparisons. Notes, where to buy.",
     "url": "https://vibefrag.com/blog/hawas-majestic/"
   },
   {
@@ -163,14 +211,20 @@
   },
   {
     "type": "article",
-    "title": "Hawas Reina by Rasasi",
-    "excerpt": "Hawas Reina by Rasasi: a warm tropical take on Olympéa Absolu. Apricot, coconut, and coffee in the heart — long-wearing and distinctive. Reviewed by VibeFrag.",
+    "title": "Hawas Private by Rasasi",
+    "excerpt": "Hawas Private: Rasasi's new sub-line, three flankers deep. Luceo, Dulce, and Terra — notes and a first look, reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/hawas-private-collection/"
+  },
+  {
+    "type": "article",
+    "title": "Hawas Reina: Olympéa Absolu Dupe?",
+    "excerpt": "Hawas Reina by Rasasi: a warm tropical take on Olympéa Absolu, with apricot, coconut and coffee in the heart. Notes and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-reina/"
   },
   {
     "type": "article",
-    "title": "Hawas Rouge by Rasasi",
-    "excerpt": "Hawas Rouge by Rasasi: a floral fruity dupe for Si Passione Edition Exclusive. Bergamot, pear, and pink pepper open into a rouge floral heart. Reviewed by VibeFrag.",
+    "title": "Hawas Rouge: Si Passione Edition Exclusive Dupe",
+    "excerpt": "Hawas Rouge by Rasasi is a floral fruity dupe for Si Passione Edition Exclusive: bergamot, pear, pink pepper. Notes and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-rouge/"
   },
   {
@@ -181,8 +235,8 @@
   },
   {
     "type": "article",
-    "title": "Hawas Thunder by Rasasi — Notes & Where to Buy",
-    "excerpt": "Hawas Thunder by Rasasi: a woody amber built on apple, ginger, mate, and ambergris — reading close to YSL MYSLF L'Absolu. Available at Jomashop.",
+    "title": "Hawas Thunder: Close to YSL MYSLF L'Absolu?",
+    "excerpt": "Hawas Thunder by Rasasi: apple, ginger, mate and ambergris in a woody amber that reads close to YSL MYSLF L'Absolu. Notes, price and where to buy.",
     "url": "https://vibefrag.com/blog/hawas-thunder/"
   },
   {
@@ -199,9 +253,45 @@
   },
   {
     "type": "article",
+    "title": "Creed's Iris Debonair",
+    "excerpt": "Creed Iris Debonair: pink pepper, bergamot, cardamom, fig, lavender, violet leaf, iris pallida, amberwood, ambrette. An aromatic fougere inspired by Charles Creed.",
+    "url": "https://vibefrag.com/blog/iris-debonair/"
+  },
+  {
+    "type": "article",
+    "title": "Khadlaj Island Sun",
+    "excerpt": "Khadlaj Island Sun: mango, coconut, lime, lemon, pink pepper, jasmine, orange blossom, musk, tonka bean, precious woods. Tropical, unisex, pre-order now.",
+    "url": "https://vibefrag.com/blog/khadlaj-island-sun/"
+  },
+  {
+    "type": "article",
     "title": "Khadlaj Shiyaaka Sky",
     "excerpt": "Khadlaj Shiyaaka Sky: verbena, bergamot, mandarin, orange blossom, musk, sandalwood. Budget house, no budget thinking. Unisex, clean, everyday.",
     "url": "https://vibefrag.com/blog/khadlaj-shiyaaka-sky/"
+  },
+  {
+    "type": "article",
+    "title": "Khamrah Mira by Lattafa",
+    "excerpt": "Khamrah Mira by Lattafa: red currant, cinnamon, mandarin, jasmine sambac, orange blossom, chestnut, benzoin, tonka, vanilla, cocoa, musk. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/khamrah-mira/"
+  },
+  {
+    "type": "article",
+    "title": "Khamrah Mira vs Khamrah vs Qahwa: Which One?",
+    "excerpt": "Three Khamrah bottles side by side: the original spice, Qahwa's coffee, Mira's red currant. Notes and where to buy.",
+    "url": "https://vibefrag.com/blog/khamrah-vs-mira-vs-qahwa/"
+  },
+  {
+    "type": "article",
+    "title": "By Kilian's Cocktail Collection: Three Rounds, No Hangover",
+    "excerpt": "Midnight Espresso, Piña Paraíso, and Sparkling Royal by Kilian: three cocktail-inspired fragrances, notes and where to find them.",
+    "url": "https://vibefrag.com/blog/kilian-cocktail-collection/"
+  },
+  {
+    "type": "article",
+    "title": "Jean Paul Gaultier's La Favorite",
+    "excerpt": "Jean Paul Gaultier La Favorite: Queen-of-the-Night, jasmine sambac, rose, benzoin, ylang-ylang, Virginia cedar, tonka bean, vanilla, white musk. JPG's first major women's fragrance in a decade.",
+    "url": "https://vibefrag.com/blog/la-favorite/"
   },
   {
     "type": "article",
@@ -217,8 +307,20 @@
   },
   {
     "type": "article",
-    "title": "Nitro White Intensely by Dumont",
-    "excerpt": "Dumont Nitro White Intensely: dark rum, saffron, caramel, sandalwood. Fourteen notes, three phases, one dupe-tier alternative to Kilian Black Phantom. Reviewed by VibeFrag.",
+    "title": "Max Mara Le Parfum: The Coat, Translated",
+    "excerpt": "Max Mara Le Parfum: tuberose, vanilla, sandalwood, cedarwood. The house's first fragrance since signing with Shiseido, launching August 24, 2026.",
+    "url": "https://vibefrag.com/blog/max-mara-le-parfum/"
+  },
+  {
+    "type": "article",
+    "title": "Momento Liquid Gold vs Khamrah vs Teriaq Intense",
+    "excerpt": "Momento Liquid Gold vs Khamrah and Teriaq Intense: bergamot and tonka bean on all three lists. $49.99 at BeautyHouse. Notes and where to buy.",
+    "url": "https://vibefrag.com/blog/momento-liquid-gold-vs-khamrah-vs-teriaq-intense/"
+  },
+  {
+    "type": "article",
+    "title": "Nitro White Intensely: Kilian Black Phantom Dupe",
+    "excerpt": "Dumont Nitro White Intensely: dark rum, saffron, caramel, sandalwood. A dupe-tier alternative to the $285 Kilian Black Phantom. Notes and where to buy.",
     "url": "https://vibefrag.com/blog/nitro-white-intensely/"
   },
   {
@@ -232,6 +334,18 @@
     "title": "Office Fragrance: Professional Without Being Forgettable",
     "excerpt": "Inoffensive doesn't have to mean invisible. A guide to scents that say capable without announcing themselves.",
     "url": "https://vibefrag.com/blog/office-fragrance/"
+  },
+  {
+    "type": "article",
+    "title": "Acqua di Parma's Oud Ambrosia",
+    "excerpt": "Acqua di Parma Oud Ambrosia: blood orange, clementine, papaya, violet leaf, saffron, oud, leather, tobacco, amber. Part of the Signatures of the Sun collection.",
+    "url": "https://vibefrag.com/blog/oud-ambrosia/"
+  },
+  {
+    "type": "article",
+    "title": "Maison Francis Kurkdjian's Oud Velvet Mood",
+    "excerpt": "Maison Francis Kurkdjian Oud Velvet Mood Extrait de Parfum (2026): peach, osmanthus, oud, suede. The third chapter of the OUD Mood trilogy, now widely available.",
+    "url": "https://vibefrag.com/blog/oud-velvet-mood/"
   },
   {
     "type": "article",
@@ -253,9 +367,15 @@
   },
   {
     "type": "article",
-    "title": "Pacific Aloha by Rayhaan",
-    "excerpt": "Blood orange, candied watermelon, coconut, and marine amberwood. Rayhaan Pacific Aloha is the $44.50 dupe of Room 1015 Wavechild — and the overlap is hard to argue with.",
+    "title": "Pacific Aloha: $44.50 Dupe of Room 1015 Wavechild",
+    "excerpt": "Rayhaan Pacific Aloha: blood orange, candied watermelon, coconut and marine amberwood. The $44.50 dupe of Room 1015 Wavechild, and how close it gets.",
     "url": "https://vibefrag.com/blog/rayhaan-pacific-aloha/"
+  },
+  {
+    "type": "article",
+    "title": "Vantage by Rayhaan",
+    "excerpt": "Rayhaan Vantage: cardamom, bergamot, pink pepper, frankincense, myrrh, juniper, cedarwood, patchouli — the closest note-for-note match to Amouage Decision yet.",
+    "url": "https://vibefrag.com/blog/rayhaan-vantage/"
   },
   {
     "type": "article",
@@ -286,6 +406,18 @@
     "title": "Tobacco Chocolat by Tom Ford — First Look",
     "excerpt": "Tobacco Chocolat by Tom Ford: orange and akigalawood over dark chocolate, tobacco, and Peru balsam. Sizes confirmed, not yet released — here's what's known.",
     "url": "https://vibefrag.com/blog/tobacco-chocolat/"
+  },
+  {
+    "type": "article",
+    "title": "Unforeseen Aer by Aesop",
+    "excerpt": "Unforeseen Aer by Aesop: lime, petitgrain, nutmeg, eucalyptus, geranium, lavandin, patchouli, cypress, labdanum. A fougère built around a redesigned bottle. Reviewed by VibeFrag.",
+    "url": "https://vibefrag.com/blog/unforeseen-aer/"
+  },
+  {
+    "type": "article",
+    "title": "Velvet Amber Sage vs. La Fede Intoxicate",
+    "excerpt": "Dolce&amp;Gabbana Velvet Amber Sage ($355) against Khadlaj La Fede Intoxicate ($19.89), note by note. Tonka bean, cinnamon, and amber on both lists. Sage advice costs $335 less.",
+    "url": "https://vibefrag.com/blog/velvet-amber-sage-vs-la-fede-intoxicate/"
   },
   {
     "type": "article",

@@ -1,10 +1,146 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-16",
+    "lastUpdated": "2026-10-20",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "3.8"
+    "version": "3.9"
   },
   "releases": [
+    {
+      "id": "riiffs-momento-liquid-gold-2026",
+      "name": "Momento Liquid Gold",
+      "house": "Riiffs",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top": [
+          "Blackberry",
+          "Tangerine",
+          "Blood Orange",
+          "Bergamot",
+          "Mandarin"
+        ],
+        "middle": [
+          "Tonka Bean",
+          "Praline",
+          "Pomarose",
+          "Mahonial"
+        ],
+        "base": [
+          "Akigalawood",
+          "Sylkolide",
+          "Cedar",
+          "White Musk"
+        ]
+      },
+      "source_url": "https://beautyhouse.com/products/riiffs-momento-liquid-gold-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m",
+      "view_url": "https://beautyhouse.com/products/riiffs-momento-liquid-gold-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m",
+      "blog_url": "/blog/momento-liquid-gold-vs-khamrah-vs-teriaq-intense/"
+    },
+    {
+      "id": "assaf-arrogate-pink-diva-2026",
+      "name": "Arrogate Pink Diva",
+      "house": "Assaf",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Orange",
+          "Peach",
+          "Raspberry"
+        ],
+        "middle": [
+          "Rose",
+          "Iris",
+          "Gardenia"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Arrogate-Pink-Diva-by-Assaf-A-Soft-Pink-Cloud-26396.html"
+    },
+    {
+      "id": "maison-violet-bon-voyage-2026",
+      "name": "Bon Voyage",
+      "house": "Maison Violet",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Gourmand Boozy",
+      "notes": {
+        "top": [
+          "Rum Extract"
+        ],
+        "middle": [
+          "Cinnamon",
+          "Dried Fruits",
+          "Canelé Accord"
+        ],
+        "base": [
+          "Vanilla",
+          "Smoky Woods",
+          "Blond Tobacco"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Maison-Violet-Launched-Bon-Voyage-26387.html"
+    },
+    {
+      "id": "the-nue-co-moon-rice-2026",
+      "name": "Moon Rice",
+      "house": "The Nue Co.",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Gourmand Creamy",
+      "notes": {
+        "top": [
+          "Cardamom Milk",
+          "Lavender",
+          "Bergamot"
+        ],
+        "middle": [
+          "Angelica",
+          "Jasmine",
+          "Rice"
+        ],
+        "base": [
+          "Amber",
+          "Suede",
+          "Woody Notes",
+          "Cream"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/The-Nue-Co-Launched-a-New-Functional-Fragrance-Moon-Rice-26386.html"
+    },
+    {
+      "id": "house-of-iyrah-petits-amis-2026",
+      "name": "Petits Amis",
+      "house": "House of Iyrah",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Gourmand Sweet",
+      "notes": {
+        "top": [
+          "Strawberry",
+          "Chantilly",
+          "Clove"
+        ],
+        "middle": [
+          "Roasted Hazelnut",
+          "Madagascar Vanilla",
+          "Jasmine"
+        ],
+        "base": [
+          "Incense",
+          "Tonka Bean",
+          "Sandalwood",
+          "Resins"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/New-From-House-of-Iyrah-PETITS-AMIS-26380.html"
+    },
     {
       "id": "landcaster-techno-oud-2026",
       "name": "Techno Oud",
@@ -6192,19 +6328,23 @@
       "family": "Oriental Gourmand",
       "notes": {
         "top": [
-          "Grape",
-          "Blackberry",
+          "Cinnamon",
+          "Nutmeg",
           "Bergamot"
         ],
         "middle": [
-          "Oud",
-          "Rose",
-          "Jasmine"
+          "Dates",
+          "Praline",
+          "Tuberose",
+          "Mahonial"
         ],
         "base": [
           "Vanilla",
-          "Musk",
-          "Amber"
+          "Tonka Bean",
+          "Amberwood",
+          "Myrrh",
+          "Benzoin",
+          "Akigalawood"
         ]
       },
       "source_url": "https://lattafaperfumes.com/products/khamrah"
