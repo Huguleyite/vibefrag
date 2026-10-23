@@ -644,6 +644,29 @@
 <!-- PAGE CONTENT -->
 <div class="page-content">
 
+  <!-- SPOOKY SALE NOTICE (Perfumania via CJ; auto-expires after Oct 26, 2026 ET) -->
+  <div class="site-notice" id="spooky-notice">
+    <div class="site-notice__inner">
+      <span class="site-notice__tag">Spooky Sale</span>
+      <span class="site-notice__text">Perfumania's Spooky Sale is on, online only, through Oct 26. Buy more, save more on fall scents.</span>
+      <a class="site-notice__link" href="https://www.dpbolvw.net/click-101826951-17370875?sid=spooky-home" target="_blank" rel="sponsored nofollow">Shop the sale &rarr;</a>
+      <button class="site-notice__close" id="spooky-close" aria-label="Dismiss notice">&#10005;</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var el = document.getElementById('spooky-notice');
+      if (!el) return;
+      if (Date.now() >= Date.parse('2026-10-27T00:00:00-04:00')) { el.classList.add('is-hidden'); return; }
+      try { if (sessionStorage.getItem('spooky-dismissed') === '1') el.classList.add('is-hidden'); } catch (e) {}
+      document.getElementById('spooky-close').addEventListener('click', function () {
+        el.classList.add('is-hidden');
+        try { sessionStorage.setItem('spooky-dismissed', '1'); } catch (e) {}
+      });
+    })();
+  </script>
+
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
