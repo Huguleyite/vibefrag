@@ -1,10 +1,152 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-23",
+    "lastUpdated": "2026-10-27",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
     "version": "4.0"
   },
   "releases": [
+    {
+      "id": "dove-original-fragrance-2026",
+      "name": "Original Fragrance",
+      "house": "Dove",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Fresh Floral Musky",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": []
+      },
+      "source_url": "https://www.fragrantica.com/news/Dove-Original-Fragrance-26422.html"
+    },
+    {
+      "id": "rabanne-fame-gummies-marshmallow-baby-2026",
+      "name": "Fame Gummies Marshmallow Baby",
+      "house": "Rabanne",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Sour Raspberry"
+        ],
+        "middle": [
+          "Marshmallow"
+        ],
+        "base": [
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Rabanne-Fame-Gummies-Three-Gourmand-Fragrances-Made-to-Mix-26431.html"
+    },
+    {
+      "id": "rabanne-fame-gummies-citrus-sweety-2026",
+      "name": "Fame Gummies Citrus Sweety",
+      "house": "Rabanne",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Citrus Gourmand",
+      "notes": {
+        "top": [
+          "Candied Lemon"
+        ],
+        "middle": [
+          "Orange Blossom"
+        ],
+        "base": [
+          "Velvety Milk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Rabanne-Fame-Gummies-Three-Gourmand-Fragrances-Made-to-Mix-26431.html"
+    },
+    {
+      "id": "rabanne-fame-gummies-peachy-girl-2026",
+      "name": "Fame Gummies Peachy Girl",
+      "house": "Rabanne",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Chantilly Cream"
+        ],
+        "middle": [
+          "Sweet Peach"
+        ],
+        "base": [
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Rabanne-Fame-Gummies-Three-Gourmand-Fragrances-Made-to-Mix-26431.html"
+    },
+    {
+      "id": "jo-malone-vanilla-scotch-2026",
+      "name": "Vanilla Scotch",
+      "house": "Jo Malone",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Oriental Vanilla",
+      "notes": {
+        "top": [
+          "Scotch Accord"
+        ],
+        "middle": [
+          "Vanilla"
+        ],
+        "base": [
+          "Amber",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/New-Jo-Malone-Holiday-Scents-in-Festive-Attire-26434.html"
+    },
+    {
+      "id": "jo-malone-tangerine-honey-2026",
+      "name": "Tangerine & Honey",
+      "house": "Jo Malone",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Citrus Gourmand",
+      "notes": {
+        "top": [
+          "Tangerine",
+          "Clove"
+        ],
+        "middle": [
+          "Honey"
+        ],
+        "base": [
+          "Tobacco Leaves"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/New-Jo-Malone-Holiday-Scents-in-Festive-Attire-26434.html"
+    },
+    {
+      "id": "the-firestone-sisters-golden-2026",
+      "name": "Golden",
+      "house": "The Firestone Sisters",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Red Mandarin",
+          "Lemon"
+        ],
+        "middle": [
+          "Frangipani",
+          "Jasmine",
+          "Peach",
+          "Clary Sage",
+          "Thyme Linalool"
+        ],
+        "base": [
+          "Woods",
+          "Vetiver"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/GOLDEN-New-From-The-Firestone-Sisters-26443.html"
+    },
     {
       "id": "kayali-yum-vanilla-cupcake-108-2026",
       "name": "Yum Vanilla Cupcake | 108",
