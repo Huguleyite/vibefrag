@@ -1,10 +1,63 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-27",
+    "lastUpdated": "2026-10-30",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.0"
+    "version": "4.1"
   },
   "releases": [
+    {
+      "id": "pigmentarium-paradiso-extrait-2026",
+      "name": "Paradiso Extrait",
+      "house": "Pigmentarium",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Citrus Woody",
+      "notes": {
+        "top": [
+          "Tangerine",
+          "Rhubarb",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Juniper Berries",
+          "Pepper"
+        ],
+        "base": [
+          "Vetiver",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Pigmentarium-Paradiso-EXTRAIT-26453.html"
+    },
+    {
+      "id": "ibrahim-fuhaid-nerolis-extrait-de-parfum-2026",
+      "name": "Nerolis Extrait de Parfum",
+      "house": "Ibrahim Fuhaid",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Amber Floral",
+      "notes": {
+        "top": [
+          "Moroccan Neroli",
+          "Saffron",
+          "Bergamot"
+        ],
+        "middle": [
+          "Omani Frankincense",
+          "Cardamom",
+          "Saffron",
+          "Sandalwood",
+          "Moroccan Neroli"
+        ],
+        "base": [
+          "Mysore Sandalwood",
+          "Natural Myrrh",
+          "Ambergris",
+          "Tunisian Orange Blossom Absolute"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Nerolis-Extrait-De-Parfum-The-New-Fragrance-From-Ibrahim-Fuhaid-26465.html"
+    },
     {
       "id": "dove-original-fragrance-2026",
       "name": "Original Fragrance",
