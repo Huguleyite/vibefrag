@@ -1,10 +1,123 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-30",
+    "lastUpdated": "2026-11-03",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.1"
+    "version": "4.2"
   },
   "releases": [
+    {
+      "id": "lattafa-asad-polar-2026",
+      "name": "Asad Polar",
+      "house": "Lattafa",
+      "released": "2026-11",
+      "category": "M",
+      "family": "Fruity Fougere",
+      "notes": {
+        "top": [
+          "Blackcurrant",
+          "Mandarin",
+          "Artemisia",
+          "Violet Leaf",
+          "Nutmeg"
+        ],
+        "middle": [
+          "White Lavender",
+          "Cashmeran",
+          "Frozen Pineapple"
+        ],
+        "base": [
+          "Fir Balsam",
+          "Dry Amber",
+          "Cedarwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/LATTAFA-Asad-Polar-26498.html",
+      "blog_url": "/blog/asad-polar-vs-asad-vs-asad-bourbon/"
+    },
+    {
+      "id": "lepoque-eyes-on-me-2026",
+      "name": "Eyes On Me",
+      "house": "L'Epoque",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Gourmand Woody",
+      "notes": {
+        "top": [
+          "Matcha Tea",
+          "Black Tea",
+          "Bergamot"
+        ],
+        "middle": [
+          "Almond Milk",
+          "Pistachio Milk",
+          "Vanilla Whipped Cream",
+          "Tonka"
+        ],
+        "base": [
+          "Vetiver",
+          "Sandalwood",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/L-Epoque-Launches-Eyes-On-Me-26496.html"
+    },
+    {
+      "id": "lattafa-falsafat-2026",
+      "name": "Falsafat",
+      "house": "Lattafa",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Amber Spicy",
+      "notes": {
+        "top": [
+          "Cinnamon",
+          "Carrot Seed",
+          "Cardamom",
+          "Anise"
+        ],
+        "middle": [
+          "Lavender",
+          "Artemisia",
+          "Saffron Milk",
+          "Davana"
+        ],
+        "base": [
+          "Patchouli",
+          "Vetiver",
+          "Tobacco",
+          "Sandalwood",
+          "Benzoin",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/LATTAFA-Falsafat-26491.html"
+    },
+    {
+      "id": "bwfh-dosaydo-2026",
+      "name": "Dosaydo",
+      "house": "BWFH (Drake)",
+      "released": "2026-10",
+      "category": "U",
+      "family": "Citrus Aromatic",
+      "notes": {
+        "top": [
+          "Passion Fruit White Wine Spritz",
+          "Cannabis",
+          "Clary Sage"
+        ],
+        "middle": [
+          "Petitgrain",
+          "Black Pepper",
+          "Rose"
+        ],
+        "base": [
+          "Cognac",
+          "White Cedarwood",
+          "Roasted Tonka"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Drake-s-BWFH-Launched-Dosaydo-26503.html"
+    },
     {
       "id": "pigmentarium-paradiso-extrait-2026",
       "name": "Paradiso Extrait",
