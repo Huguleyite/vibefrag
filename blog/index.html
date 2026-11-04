@@ -129,6 +129,16 @@
     .coming-soon-note a { color: var(--amber-warm); text-decoration: none; transition: color 0.3s; }
     .coming-soon-note a:hover { color: var(--silver); }
 
+
+    /* ── LADDER AD RAIL (wide screens only) ── */
+    .blog-grid-wrap { position: relative; }
+    .blog-rail { display: none; }
+    @media (min-width: 1780px) {
+      .blog-rail { display: block; position: absolute; top: 0; bottom: 0; width: 300px; right: calc(48px - ((100vw - 1100px) / 2 + 32px)); }
+      .blog-rail__sticky { position: sticky; top: 8.5rem; }
+      .blog-rail .vladder-wrap { padding: 0; display: block; }
+    }
+
     /* ── FOOTER ── */
     footer { position: relative; z-index: 5; padding: 2.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
@@ -212,6 +222,8 @@
       <button class="filter-btn" data-filter="sillage-showdown">Sillage Showdown</button>
     </div>
 
+    <div class="blog-grid-wrap">
+    <aside class="blog-rail" aria-label="Sponsored"><div class="blog-rail__sticky"><span id="ladder-rail-anchor"></span></div></aside>
     <div class="blog-grid" id="blog-grid">
 
       <a href="asad-polar-vs-asad-vs-asad-bourbon/" style="text-decoration:none;color:inherit;display:block;">
@@ -1248,6 +1260,7 @@
       </article>
 
     </div>
+    </div>
 
     <div class="coming-soon-note">
       New editorial pieces drop regularly. &nbsp;<a href="../quiz/index.html">Take the quiz →</a>
@@ -1310,6 +1323,7 @@
   }
 </script>
 <script src="/js/search.js"></script>
+<script defer src="/ladder-banner.js" data-site="vibefrag" data-size="300x250" data-after="#ladder-rail-anchor"></script><!-- PROMO:ladder -->
 <script defer src="/seasonal-halloween.js"></script><!-- SEASONAL:halloween -->
 <script defer src="/seasonal-election.js"></script><!-- SEASONAL:election -->
 </body>
