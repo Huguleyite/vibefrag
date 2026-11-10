@@ -50,6 +50,12 @@
   </url>
 
   <url>
+    <loc>https://vibefrag.com/blog/golden-elixir-crimson-riiffs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://vibefrag.com/blog/freeze-in-flames/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
