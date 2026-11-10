@@ -1,10 +1,360 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-03",
+    "lastUpdated": "2026-11-10",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.2"
+    "version": "4.4"
   },
   "releases": [
+    {
+      "id": "rasasi-daarej-silver-edition-2026",
+      "name": "Daarej Silver Edition",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "M",
+      "family": "Citrus Aromatic",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pink Pepper",
+          "Cinnamon",
+          "Cardamom",
+          "Lemon"
+        ],
+        "middle": [
+          "Orange Blossom",
+          "Frankincense",
+          "Geranium",
+          "Lavender",
+          "Green Apple"
+        ],
+        "base": [
+          "Ambroxan",
+          "Patchouli",
+          "Cashmere Wood",
+          "Oak Moss",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/daarej-silver-edition-rasasi/"
+    },
+    {
+      "id": "rasasi-daarej-gold-edition-2026",
+      "name": "Daarej Gold Edition",
+      "house": "Rasasi",
+      "released": "2026",
+      "category": "M",
+      "family": "Spicy Fruity Amber",
+      "notes": {
+        "top": [
+          "Cherry",
+          "Red Fruits",
+          "Saffron"
+        ],
+        "middle": [
+          "Jasmine",
+          "Orris"
+        ],
+        "base": [
+          "Moss",
+          "Patchouli",
+          "Vanilla",
+          "Leather"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/daarej-gold-edition-rasasi/"
+    },
+    {
+      "id": "coreterno-zen-anarchy-2026",
+      "name": "Zen Anarchy",
+      "house": "Coreterno",
+      "released": "2026",
+      "category": "U",
+      "family": "Citrus Green",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Mandarin",
+          "Pear"
+        ],
+        "middle": [
+          "Neroli",
+          "Long Jing Tea",
+          "Oolong Tea"
+        ],
+        "base": [
+          "Cedarwood",
+          "Patchouli",
+          "Ambroxan"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/zen-anarchy-coreterno/"
+    },
+    {
+      "id": "new-notes-vanilla-biscotto-2026",
+      "name": "Vanilla Biscotto",
+      "house": "New Notes",
+      "released": "2026",
+      "category": "U",
+      "family": "Spicy Gourmand",
+      "notes": {
+        "top": [
+          "Lotus Cookie",
+          "Cinnamon",
+          "Buttery Notes"
+        ],
+        "middle": [
+          "Caramel",
+          "Tonka Bean",
+          "Vanilla"
+        ],
+        "base": [
+          "Amber",
+          "Musk"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/vanilla-biscotto-new-notes/"
+    },
+    {
+      "id": "riiffs-golden-elixir-crimson-2026",
+      "name": "Golden Elixir Crimson",
+      "house": "Riiffs",
+      "released": "2026",
+      "category": "U",
+      "family": "Fruity Boozy Amber",
+      "notes": {
+        "top": [
+          "Raspberry",
+          "Rum Absolute",
+          "Caramel"
+        ],
+        "middle": [
+          "Vanilla Bean",
+          "Rose Petals",
+          "Liqueur",
+          "Praline"
+        ],
+        "base": [
+          "Cashmeran",
+          "Amberwood",
+          "Madagascar Vanilla Absolute"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/golden-elixir-crimson-riiffs/"
+    },
+    {
+      "id": "house-of-sillage-emerald-reign-2026",
+      "name": "Emerald Reign",
+      "house": "House of Sillage",
+      "released": "2026",
+      "category": "U",
+      "family": "Aromatic Floral Woody",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Olibanum Incense",
+          "Davana"
+        ],
+        "middle": [
+          "Rose Isparta",
+          "Orris Concrete",
+          "Tuberose Absolute",
+          "Gurjun Balsam",
+          "Thai Benzoin Resin"
+        ],
+        "base": [
+          "Leather",
+          "Oakmoss",
+          "Patchouli",
+          "Natural Oud Extract",
+          "Amber"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/emerald-reign-house-of-sillage/"
+    },
+    {
+      "id": "maison-margiela-replica-greenwood-getaway-2026",
+      "name": "Replica Greenwood Getaway",
+      "house": "Maison Margiela",
+      "released": "2026",
+      "category": "U",
+      "family": "Green Woody",
+      "notes": {
+        "top": [
+          "Fresh Rosemary"
+        ],
+        "middle": [
+          "Hinoki Wood"
+        ],
+        "base": [
+          "Georgywood"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/greenwood-getaway-maison-margiela/"
+    },
+    {
+      "id": "sol-de-janeiro-aurelia-nobels-2026",
+      "name": "Aurelia Nobels",
+      "house": "Sol de Janeiro",
+      "released": "2026",
+      "category": "F",
+      "family": "Fruity Amber",
+      "notes": {
+        "top": [
+          "Passionfruit Pulp",
+          "Brazilian Cachaça Accord"
+        ],
+        "middle": [
+          "Red Poppy",
+          "Sugarcane"
+        ],
+        "base": [
+          "Fresh Coconut",
+          "Vanilla",
+          "Smooth Driftwood"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/aurelia-nobels-sol-de-janeiro/"
+    },
+    {
+      "id": "armani-prive-jade-2026",
+      "name": "Armani Privé Jade",
+      "house": "Giorgio Armani",
+      "released": "2026",
+      "category": "U",
+      "family": "Aromatic Floral Woody",
+      "notes": {
+        "top": [
+          "Green Mandarin"
+        ],
+        "middle": [
+          "Spiranol",
+          "Peony"
+        ],
+        "base": [
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/armani-prive-jade-giorgio-armani/"
+    },
+    {
+      "id": "costa-brazil-breu-2026",
+      "name": "Breu",
+      "house": "Costa Brazil",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Woody Spicy",
+      "notes": {
+        "top": [
+          "Elemi",
+          "Bright Citrus",
+          "Tree Sap"
+        ],
+        "middle": [
+          "Breu Accord",
+          "Eaglewood (Oud)",
+          "Olibanum",
+          "Fresh Flower Petals"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vanilla",
+          "Amberwoods",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Costa-Brazil-Announces-Two-New-Fragrances-to-Launch-November-10-26558.html"
+    },
+    {
+      "id": "costa-brazil-capim-dourado-2026",
+      "name": "Capim Dourado",
+      "house": "Costa Brazil",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Aromatic Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pink Pepper",
+          "Cardamom",
+          "Fresh Ginger"
+        ],
+        "middle": [
+          "Mate Absolute",
+          "Tonka Bean Absolute",
+          "Orris",
+          "Golden Grass (Capim Dourado)",
+          "White Jasmine"
+        ],
+        "base": [
+          "Precious Musks",
+          "Vetiver",
+          "Saffron",
+          "Driftwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Costa-Brazil-Announces-Two-New-Fragrances-to-Launch-November-10-26558.html"
+    },
+    {
+      "id": "baron-filou-baron-royal-2026",
+      "name": "Baron Royal",
+      "house": "Baron Filou",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Oriental Spicy",
+      "notes": {
+        "top": [
+          "Saffron",
+          "Cinnamon",
+          "Cardamom",
+          "Clary Sage",
+          "Lavender",
+          "Gurjun",
+          "Cypriol"
+        ],
+        "middle": [
+          "Cashmere Wood",
+          "Cedarwood",
+          "Guaiac Wood",
+          "Orris Root",
+          "Rose"
+        ],
+        "base": [
+          "Oud",
+          "Sandalwood",
+          "White Musk",
+          "Tonka Bean",
+          "Amber",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Baron-Filou-Launches-Baron-Royal-26542.html"
+    },
+    {
+      "id": "orebella-cashmere-milk-2026",
+      "name": "Cashmere Milk",
+      "house": "Ôrəbella",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Woody Amber",
+      "notes": {
+        "top": [
+          "Creamy Milk",
+          "Bergamot"
+        ],
+        "middle": [
+          "Jasmine Milk",
+          "Vanilla Caviar",
+          "Amber"
+        ],
+        "base": [
+          "Cedarwood",
+          "Cashmere Woods",
+          "Soft Oak",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Orebella-Cashmere-Milk-26524.html"
+    },
     {
       "id": "lattafa-asad-polar-2026",
       "name": "Asad Polar",
