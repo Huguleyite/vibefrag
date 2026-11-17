@@ -1,10 +1,364 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-10",
+    "lastUpdated": "2026-11-17",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.4"
+    "version": "4.6"
   },
   "releases": [
+    {
+      "id": "astrophil-stella-paris-cheri-montmartre-2026",
+      "name": "Paris Chéri Montmartre",
+      "house": "Astrophil & Stella",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Gourmand Fruity",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Cardamom",
+          "Sweet Orange",
+          "Red Berries",
+          "Apple"
+        ],
+        "middle": [
+          "Iris",
+          "Coffee",
+          "Lily of the Valley",
+          "Chocolate",
+          "Baguette"
+        ],
+        "base": [
+          "Tobacco",
+          "Labdanum",
+          "Tonka Bean",
+          "Oakmoss",
+          "Vanilla",
+          "Ambroxan"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Paris-Cheri-Montmartre-New-From-Astrophil-Stella-26626.html"
+    },
+    {
+      "id": "strange-harvest-violet-below-2026",
+      "name": "Violet Below",
+      "house": "Strange Harvest",
+      "released": "2026-09",
+      "category": "U",
+      "family": "Floral Powdery",
+      "notes": {
+        "top": [
+          "Violet",
+          "Narcissus",
+          "Rhubarb"
+        ],
+        "middle": [
+          "Suede",
+          "Heliotrope",
+          "Carrot Seeds"
+        ],
+        "base": [
+          "Petroleum",
+          "Vetiver",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Introducing-the-Strange-Harvest-Brand-and-Their-Latest-Launch-Violet-Below-26622.html"
+    },
+    {
+      "id": "montale-omahata-love-2026",
+      "name": "Omahata Love",
+      "house": "Montale",
+      "released": "2026",
+      "category": "U",
+      "family": "Fruity Leather",
+      "notes": {
+        "top": [
+          "Raspberry",
+          "Lychee",
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Cashmeran",
+          "Rose",
+          "Suede"
+        ],
+        "base": [
+          "Ambrocenide",
+          "Muscenone",
+          "Oud",
+          "Leather"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/The-Raspberry-Heart-of-Omahata-Love-by-Montale-26620.html"
+    },
+    {
+      "id": "armaf-club-de-nuit-timeless-2026",
+      "name": "Club de Nuit Timeless",
+      "house": "Armaf",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Woody Spicy",
+      "notes": {
+        "top": [
+          "Nutmeg",
+          "Black Pepper",
+          "Hazelnut",
+          "Bergamot"
+        ],
+        "middle": [
+          "Frankincense",
+          "Olibanum",
+          "Lavender",
+          "Cinnamon",
+          "Rose",
+          "Rosyfolia"
+        ],
+        "base": [
+          "Vanilla",
+          "Leather",
+          "Tobacco",
+          "Sandalwood",
+          "Akigalawood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/ARMAF-Club-De-Nuit-Timeless-26579.html"
+    },
+    {
+      "id": "parfums-de-marly-crecy-extrait-2026",
+      "name": "Crécy Extrait de Parfum",
+      "house": "Parfums de Marly",
+      "released": "2026-11",
+      "category": "M",
+      "family": "Aromatic Woody",
+      "notes": {
+        "top": [
+          "Lavender",
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Iris",
+          "Rose"
+        ],
+        "base": [
+          "Benzoin",
+          "Ambrox",
+          "Woody Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Parfums-de-Marly-Presents-Crecy-Extrait-de-Parfum-26571.html"
+    },
+    {
+      "id": "future-society-snow-beginnings-2026",
+      "name": "Snow Beginnings",
+      "house": "Future Society",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Aromatic Fruity",
+      "notes": {
+        "top": [
+          "Japanese Mint",
+          "Mistletoe",
+          "Pink Grapefruit"
+        ],
+        "middle": [
+          "Moon Pear Saké",
+          "Crystallized Rose",
+          "Lychee"
+        ],
+        "base": [
+          "White Cypress Absolute",
+          "Musk",
+          "Deer Moss"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Future-Society-Snow-Beginnings-26569.html"
+    },
+    {
+      "id": "jupilo-roma-milky-oud-2026",
+      "name": "Milky Oud",
+      "house": "Jupilo Roma",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Amber Woody",
+      "notes": {
+        "top": [
+          "Coriander Seeds",
+          "Nutmeg",
+          "Saffron"
+        ],
+        "middle": [
+          "Cypriol",
+          "Milk Accord",
+          "Oud Accord",
+          "Sandalwood"
+        ],
+        "base": [
+          "Cistus",
+          "Candy Accord",
+          "Vanilla Absolute",
+          "Ambrofix"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Jupilo-Roma-Milky-Oud-26570.html"
+    },
+    {
+      "id": "pepe-jeans-london-bright-so-lucky-2026",
+      "name": "Bright So Lucky",
+      "house": "Pepe Jeans London",
+      "released": "2026-11",
+      "category": "F",
+      "family": "Floral Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Mandarin",
+          "Cherry",
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Gardenia",
+          "Creamy White Flower Bouquet"
+        ],
+        "base": [
+          "Vanilla",
+          "Amberwoods",
+          "Tonka Bean"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/PEPE-JEANS-LONDON-Bright-So-Lucky-and-SoBold-So-Lucky-26598.html"
+    },
+    {
+      "id": "pepe-jeans-london-sobold-so-lucky-2026",
+      "name": "SoBold So Lucky",
+      "house": "Pepe Jeans London",
+      "released": "2026-11",
+      "category": "M",
+      "family": "Aromatic Fougère",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Mandarin"
+        ],
+        "middle": [
+          "Geranium",
+          "Lavender"
+        ],
+        "base": [
+          "Vanilla Bourbon",
+          "Leather"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/PEPE-JEANS-LONDON-Bright-So-Lucky-and-SoBold-So-Lucky-26598.html"
+    },
+    {
+      "id": "natura-essencial-sentir-intenso-feminino-2026",
+      "name": "Essencial Sentir Intenso Feminino",
+      "house": "Natura",
+      "released": "2026-11",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Blackcurrant",
+          "Pear",
+          "Apple"
+        ],
+        "middle": [
+          "Jasmine",
+          "Ylang-Ylang",
+          "Tuberose",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Amber",
+          "Musk",
+          "Vanilla"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Natura-Launches-the-Intense-Versions-of-Essencial-Sentir-26574.html"
+    },
+    {
+      "id": "natura-essencial-sentir-intenso-masculino-2026",
+      "name": "Essencial Sentir Intenso Masculino",
+      "house": "Natura",
+      "released": "2026-11",
+      "category": "M",
+      "family": "Amber Woody",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Lavender",
+          "Blackcurrant",
+          "Pimenta-de-Macaco"
+        ],
+        "middle": [
+          "Pink Pepper",
+          "Cardamom",
+          "Lily-of-the-Valley"
+        ],
+        "base": [
+          "Amber",
+          "Tonka Bean",
+          "Patchouli",
+          "Musk",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Natura-Launches-the-Intense-Versions-of-Essencial-Sentir-26574.html"
+    },
+    {
+      "id": "borsalino-amber-note-2026",
+      "name": "Amber Note",
+      "house": "Borsalino",
+      "released": "2026-10",
+      "category": "M",
+      "family": "Amber Woody",
+      "notes": {
+        "top": [
+          "Italian Mandarin",
+          "Ginger",
+          "Cardamom"
+        ],
+        "middle": [
+          "Coffee",
+          "Geranium",
+          "Davana",
+          "Saffron"
+        ],
+        "base": [
+          "Patchouli",
+          "Vetiver",
+          "Cedarwood",
+          "Cypriol"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/BORSALINO-The-Note-Collection-Amber-Note-and-Rose-Note-26593.html"
+    },
+    {
+      "id": "borsalino-rose-note-2026",
+      "name": "Rose Note",
+      "house": "Borsalino",
+      "released": "2026-10",
+      "category": "F",
+      "family": "Floral Amber",
+      "notes": {
+        "top": [
+          "Italian Mandarin",
+          "Cardamom",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Damask Rose",
+          "Frankincense",
+          "Helvetolide"
+        ],
+        "base": [
+          "Cashmeran",
+          "Ambrox",
+          "Amberver"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/BORSALINO-The-Note-Collection-Amber-Note-and-Rose-Note-26593.html"
+    },
     {
       "id": "rasasi-daarej-silver-edition-2026",
       "name": "Daarej Silver Edition",
