@@ -644,33 +644,35 @@
 <!-- PAGE CONTENT -->
 <div class="page-content">
 
-  <!-- SPOOKY SALE BAND (Perfumania via CJ; auto-expires after Oct 26, 2026 ET) -->
+  <!-- CYBER MONDAY BAND (Perfumania via CJ link 17389366; shows Nov 30 - Dec 1, 2026 ET, hidden otherwise) -->
   <style>
-    #spooky-notice.promo-band { margin-top: 8rem; padding: 1.3rem 2.6rem; }
-    #spooky-notice .sp-row { display: flex; align-items: center; justify-content: center; gap: 1.6rem; flex-wrap: wrap; }
-    #spooky-notice .promo-eyebrow { margin: 0; }
-    #spooky-notice .sp-head { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.7rem; color: var(--silver); line-height: 1.1; }
-    #spooky-notice .sp-head em { font-style: italic; color: var(--amber-warm); }
-    #spooky-close { position: absolute; top: 0.5rem; right: 0.8rem; background: none; border: none; color: var(--silver-mid); font-size: 0.85rem; cursor: pointer; }
-    @media (max-width: 768px) { #spooky-notice.promo-band { margin-top: 6.5rem; padding: 1.2rem 1.2rem; } #spooky-notice .sp-row { gap: 0.8rem; } #spooky-notice .sp-head { font-size: 1.45rem; } }
+    #cm-notice.promo-band { margin-top: 8rem; padding: 1.3rem 2.6rem; display: none; }
+    #cm-notice .sp-row { display: flex; align-items: center; justify-content: center; gap: 1.6rem; flex-wrap: wrap; }
+    #cm-notice .promo-eyebrow { margin: 0; }
+    #cm-notice .sp-head { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.7rem; color: var(--silver); line-height: 1.1; }
+    #cm-notice .sp-head em { font-style: italic; color: var(--amber-warm); }
+    #cm-close { position: absolute; top: 0.5rem; right: 0.8rem; background: none; border: none; color: var(--silver-mid); font-size: 0.85rem; cursor: pointer; }
+    @media (max-width: 768px) { #cm-notice.promo-band { margin-top: 6.5rem; padding: 1.2rem 1.2rem; } #cm-notice .sp-row { gap: 0.8rem; } #cm-notice .sp-head { font-size: 1.45rem; } }
   </style>
-  <section class="promo-band" id="spooky-notice">
-    <button id="spooky-close" aria-label="Dismiss">&#10005;</button>
+  <section class="promo-band" id="cm-notice">
+    <button id="cm-close" aria-label="Dismiss">&#10005;</button>
     <div class="sp-row">
-      <span class="promo-eyebrow">Spooky Sale &middot; Through Oct 26</span>
-      <span class="sp-head">Buy more. <em>Save more.</em></span>
-      <a href="https://www.dpbolvw.net/click-101826951-17370875?sid=spooky-home" target="_blank" rel="sponsored nofollow" class="btn-primary">Shop the Sale &rarr;</a>
+      <span class="promo-eyebrow">Cyber Monday &middot; Online Nov 30&ndash;Dec 1</span>
+      <span class="sp-head">Perfumania <em>fragrance deals.</em></span>
+      <a href="https://www.dpbolvw.net/click-101826951-17389366?sid=cm-home" target="_blank" rel="sponsored nofollow" class="btn-primary">Shop the Deals &rarr;</a>
     </div>
   </section>
   <script>
     (function () {
-      var el = document.getElementById('spooky-notice');
+      var el = document.getElementById('cm-notice');
       if (!el) return;
-      if (Date.now() >= Date.parse('2026-10-27T00:00:00-04:00')) { el.style.display = 'none'; return; }
-      try { if (sessionStorage.getItem('spooky-dismissed') === '1') el.style.display = 'none'; } catch (e) {}
-      document.getElementById('spooky-close').addEventListener('click', function () {
+      var now = Date.now();
+      if (now < Date.parse('2026-11-30T00:00:00-05:00') || now >= Date.parse('2026-12-02T00:00:00-05:00')) return;
+      try { if (sessionStorage.getItem('cm-dismissed') === '1') return; } catch (e) {}
+      el.style.display = 'block';
+      document.getElementById('cm-close').addEventListener('click', function () {
         el.style.display = 'none';
-        try { sessionStorage.setItem('spooky-dismissed', '1'); } catch (e) {}
+        try { sessionStorage.setItem('cm-dismissed', '1'); } catch (e) {}
       });
     })();
   </script>
