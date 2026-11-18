@@ -355,6 +355,46 @@
       </div>
     </div>
 
+      <!-- BLACK FRIDAY PROMO (Perfumania via CJ; Early BF Nov 20-22, BF Weekend Nov 28-29, 2026 ET; hidden otherwise) -->
+      <style>
+        .bf-promo { display: none; gap: 1.4rem; align-items: center; margin: 0 0 1.6rem; padding: 1.1rem 1.2rem; border: 1px solid rgba(200,180,140,0.30); background: rgba(176,133,88,0.10); }
+        .bf-promo__img { flex: 0 0 auto; display: block; line-height: 0; }
+        .bf-promo__img img { display: block; height: auto; max-width: 100%; }
+        .bf-promo__img--wide img { width: 340px; }
+        .bf-promo__img--tall { width: 108px; height: 240px; overflow: hidden; }
+        .bf-promo__img--tall img { width: 170px; height: auto; max-width: none; margin: -6px 0 0 -31px; }
+        .bf-promo__body { font-size: 0.85rem; line-height: 1.65; color: var(--silver); }
+        .bf-promo__tag { display: block; font-size: 0.5rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); opacity: 0.8; margin-bottom: 0.5rem; }
+        .bf-promo__body p { margin: 0 0 0.6rem; }
+        .bf-promo__body a { color: var(--amber-warm); text-decoration: underline; text-underline-offset: 3px; }
+        @media (max-width: 640px) { .bf-promo { flex-direction: column; align-items: flex-start; } .bf-promo__img--wide img { width: 100%; } }
+      </style>
+      <div class="bf-promo" id="bf-promo" style="margin-top:2.2rem">
+        <a class="bf-promo__img" id="bf-promo-link" href="#" target="_blank" rel="sponsored nofollow"><img id="bf-promo-img" alt="Perfumania Black Friday offer" loading="lazy"></a>
+        <div class="bf-promo__body"><span class="bf-promo__tag">Sponsored &middot; Perfumania</span><p id="bf-promo-txt"></p></div>
+      </div>
+      <script>
+        (function () {
+          var el = document.getElementById('bf-promo');
+          if (!el) return;
+          var W = [
+            { s: '2026-11-20T00:00:00-05:00', e: '2026-11-23T00:00:00-05:00', img: '17389372', txt: '17390457', key: 'ebf', tall: true,
+              html: '<strong>Early Black Friday at Perfumania.</strong> $10 off $99+ with code <strong>EARLYSAVINGS</strong>. Online only, through Sunday, Nov 22. The minimum is $99, so a bottle from this page may need a companion or two to qualify.' },
+            { s: '2026-11-28T00:00:00-05:00', e: '2026-11-30T00:00:00-05:00', img: '17390440', txt: '17390467', key: 'bfw', tall: false,
+              html: '<strong>Black Friday Weekend at Perfumania.</strong> Spend more, save more: $10 off $100+ (code BFONLINE10), $20 off $200+ (BFONLINE20), $35 off $300+ (BFONLINE35). Online only, Nov 28&ndash;29. Stack a few bottles to climb a tier.' }
+          ];
+          var now = Date.now(), w = null;
+          for (var i = 0; i < W.length; i++) { if (now >= Date.parse(W[i].s) && now < Date.parse(W[i].e)) w = W[i]; }
+          if (!w) return;
+          var base = 'https://www.dpbolvw.net/', sid = w.key + '-momento';
+          var a = document.getElementById('bf-promo-link');
+          a.href = base + 'click-101826951-' + w.img + '?sid=' + sid;
+          a.className += w.tall ? ' bf-promo__img--tall' : ' bf-promo__img--wide';
+          document.getElementById('bf-promo-img').src = base + 'image-101826951-' + w.img;
+          document.getElementById('bf-promo-txt').innerHTML = w.html + ' <a href="' + base + 'click-101826951-' + w.txt + '?sid=' + sid + '" target="_blank" rel="sponsored nofollow">Shop the sale &rarr;</a>';
+          el.style.display = 'flex';
+        })();
+      </script>
     <div class="article-cta">
       <a href="https://beautyhouse.com/products/riiffs-momento-liquid-gold-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="btn btn-primary">Find Liquid Gold at BeautyHouse →</a>
       <a href="https://www.tkqlhce.com/click-101826951-16942179?url=https%3A%2F%2Fwww.fragranceshop.com%2Fproduct%2Flattafa-khamrah-for-unisex%2F&amp;sid=liquid-gold-trio" target="_blank" rel="sponsored nofollow noopener" class="btn btn-secondary">Khamrah at FragranceShop: check price →</a>

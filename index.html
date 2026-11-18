@@ -644,6 +644,56 @@
 <!-- PAGE CONTENT -->
 <div class="page-content">
 
+  <!-- BLACK FRIDAY BAND (Perfumania via CJ links 17390457 / 17390467; Early BF Nov 20-22 and BF Weekend Nov 28-29, 2026 ET; hidden otherwise) -->
+  <style>
+    #bf-notice.promo-band { margin-top: 8rem; padding: 1.3rem 2.6rem; display: none; }
+    #bf-notice .sp-row { display: flex; align-items: center; justify-content: center; gap: 1.6rem; flex-wrap: wrap; }
+    #bf-notice .promo-eyebrow { margin: 0; }
+    #bf-notice .sp-head { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.7rem; color: var(--silver); line-height: 1.1; }
+    #bf-notice .sp-head em { font-style: italic; color: var(--amber-warm); }
+    #bf-notice .sp-codes { text-align: center; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--silver-mid); margin-top: 0.7rem; line-height: 1.7; }
+    #bf-close { position: absolute; top: 0.5rem; right: 0.8rem; background: none; border: none; color: var(--silver-mid); font-size: 0.85rem; cursor: pointer; }
+    @media (max-width: 768px) { #bf-notice.promo-band { margin-top: 6.5rem; padding: 1.2rem 1.2rem; } #bf-notice .sp-row { gap: 0.8rem; } #bf-notice .sp-head { font-size: 1.45rem; } }
+  </style>
+  <section class="promo-band" id="bf-notice">
+    <button id="bf-close" aria-label="Dismiss">&#10005;</button>
+    <div class="sp-row">
+      <span class="promo-eyebrow" id="bf-eyebrow"></span>
+      <span class="sp-head" id="bf-head"></span>
+      <a id="bf-btn" href="#" target="_blank" rel="sponsored nofollow" class="btn-primary">Shop the Sale &rarr;</a>
+    </div>
+    <div class="sp-codes" id="bf-codes"></div>
+  </section>
+  <script>
+    (function () {
+      var el = document.getElementById('bf-notice');
+      if (!el) return;
+      var W = [
+        { s: '2026-11-20T00:00:00-05:00', e: '2026-11-23T00:00:00-05:00', link: '17390457', sid: 'ebf-home',
+          eyebrow: 'Early Black Friday &middot; Online Nov 20&ndash;22',
+          head: '$10 off <em>$99+</em> at Perfumania.',
+          codes: 'Use code EARLYSAVINGS' },
+        { s: '2026-11-28T00:00:00-05:00', e: '2026-11-30T00:00:00-05:00', link: '17390467', sid: 'bfw-home',
+          eyebrow: 'Black Friday Weekend &middot; Online Nov 28&ndash;29',
+          head: 'Buy more, <em>save more.</em>',
+          codes: '<span style="white-space:nowrap">$10 off $100+ &middot; code BFONLINE10</span> &nbsp;|&nbsp; <span style="white-space:nowrap">$20 off $200+ &middot; code BFONLINE20</span> &nbsp;|&nbsp; <span style="white-space:nowrap">$35 off $300+ &middot; code BFONLINE35</span>' }
+      ];
+      var now = Date.now(), w = null;
+      for (var i = 0; i < W.length; i++) { if (now >= Date.parse(W[i].s) && now < Date.parse(W[i].e)) w = W[i]; }
+      if (!w) return;
+      try { if (sessionStorage.getItem('bf-dismissed') === '1') return; } catch (e) {}
+      document.getElementById('bf-eyebrow').innerHTML = w.eyebrow;
+      document.getElementById('bf-head').innerHTML = w.head;
+      document.getElementById('bf-codes').innerHTML = w.codes;
+      document.getElementById('bf-btn').href = 'https://www.dpbolvw.net/click-101826951-' + w.link + '?sid=' + w.sid;
+      el.style.display = 'block';
+      document.getElementById('bf-close').addEventListener('click', function () {
+        el.style.display = 'none';
+        try { sessionStorage.setItem('bf-dismissed', '1'); } catch (e) {}
+      });
+    })();
+  </script>
+
   <!-- CYBER MONDAY BAND (Perfumania via CJ link 17389366; shows Nov 30 - Dec 1, 2026 ET, hidden otherwise) -->
   <style>
     #cm-notice.promo-band { margin-top: 8rem; padding: 1.3rem 2.6rem; display: none; }
