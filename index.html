@@ -728,6 +728,42 @@
   </script>
 
 
+  <!-- CODE VIBEFRAG BAND (Gold Digger + Pacific Aloha, BeautyHouse affiliate; always on, dismissible per session) -->
+  <style>
+    #vf-code-band.promo-band { margin-top: 8rem; padding: 2rem 2.6rem; }
+    #bf-notice[style*="block"] ~ #vf-code-band.promo-band, #cm-notice[style*="block"] ~ #vf-code-band.promo-band { margin-top: 1rem; }
+    #vf-code-band .promo-eyebrow { margin-bottom: 1rem; }
+    #vf-code-band .sp-head { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(1.7rem, 3.6vw, 2.4rem); color: var(--silver); line-height: 1.12; margin-bottom: 1.3rem; }
+    #vf-code-band .sp-head em { font-style: italic; color: var(--amber-warm); }
+    #vf-code-band .sp-btns { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+    #vf-code-band .sp-codeline { margin-top: 1.1rem; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver-mid); }
+    #vf-code-band .sp-codeline strong { color: var(--amber-warm); letter-spacing: 0.22em; font-weight: 500; }
+    #vf-code-close { position: absolute; top: 0.5rem; right: 0.8rem; background: none; border: none; color: var(--silver-mid); font-size: 0.85rem; cursor: pointer; }
+    @media (max-width: 768px) { #vf-code-band.promo-band { margin-top: 6.5rem; padding: 1.6rem 1.2rem; } #bf-notice[style*="block"] ~ #vf-code-band.promo-band, #cm-notice[style*="block"] ~ #vf-code-band.promo-band { margin-top: 1rem; } }
+  </style>
+  <section class="promo-band" id="vf-code-band">
+    <button id="vf-code-close" aria-label="Dismiss">&#10005;</button>
+    <span class="promo-eyebrow">Extra 5% off &middot; Code VIBEFRAG</span>
+    <div class="sp-head">Gold Digger <em>$59.99.</em> Pacific Aloha <em>$33.99.</em></div>
+    <div class="sp-btns">
+      <a href="blog/hawas-gold-digger/#deal" class="btn-primary">Gold Digger &rarr;</a>
+      <a href="blog/rayhaan-pacific-aloha/#deal" class="btn-primary">Pacific Aloha &rarr;</a>
+    </div>
+    <div class="sp-codeline">At BeautyHouse checkout, use code <strong>VIBEFRAG</strong></div>
+  </section>
+  <script>
+    (function () {
+      var el = document.getElementById('vf-code-band');
+      if (!el) return;
+      try { if (sessionStorage.getItem('vf-code-dismissed') === '1') { el.style.display = 'none'; return; } } catch (e) {}
+      document.getElementById('vf-code-close').addEventListener('click', function () {
+        el.style.display = 'none';
+        try { sessionStorage.setItem('vf-code-dismissed', '1'); } catch (e) {}
+      });
+    })();
+  </script>
+
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
