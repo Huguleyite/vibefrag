@@ -174,6 +174,30 @@
     .compare-table th, .compare-table td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.08); vertical-align: top; line-height: 1.5; }
     .compare-table th { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); font-weight: 400; opacity: 0.9; }
     .compare-table td:first-child { font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-mid); white-space: nowrap; }
+      /* DEAL PUSH */
+    .deal-ribbon { display: block; text-decoration: none; margin: 0 0 2.2rem; padding: 0.85rem 1.2rem; text-align: center; background: rgba(176,133,88,0.14); border: 1px solid rgba(200,180,140,0.40); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber-warm); transition: all 0.3s; }
+    .deal-ribbon:hover { background: rgba(176,133,88,0.26); color: var(--silver); }
+    .deal-ribbon strong { font-weight: 500; letter-spacing: 0.24em; }
+    .deal-block { margin: 2.5rem 0; padding: 2rem; background: rgba(176,133,88,0.12); border: 1px solid rgba(200,180,140,0.32); position: relative; scroll-margin-top: 6rem; }
+    .deal-block__label { font-size: 0.55rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber-warm); margin-bottom: 1.6rem; }
+    .deal-price { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.5rem; }
+    .deal-price__was { font-size: 1rem; color: var(--silver-mid); text-decoration: line-through; opacity: 0.45; letter-spacing: 0.02em; }
+    .deal-price__now { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--amber-warm); letter-spacing: 0.01em; line-height: 1; }
+    .deal-price__note { font-size: 0.6rem; color: var(--silver-mid); letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; margin-bottom: 1.8rem; }
+    .deal-cta { display: inline-block; text-decoration: none; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; padding: 0.85rem 2rem; background: rgba(176,133,88,0.20); border: 1px solid rgba(200,180,140,0.50); color: var(--amber-warm); transition: all 0.3s; margin-bottom: 1.6rem; }
+    .deal-cta:hover { background: rgba(176,133,88,0.32); border-color: rgba(200,180,140,0.75); color: var(--silver); }
+    .deal-code { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; padding: 0.9rem 1.3rem; background: rgba(176,133,88,0.08); border: 1px dashed rgba(200,180,140,0.45); }
+    .deal-code__label { font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-mid); opacity: 0.75; }
+    .deal-code__value { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; letter-spacing: 0.22em; color: var(--amber-warm); font-weight: 400; text-transform: uppercase; line-height: 1; }
+    .deal-code__hint { font-size: 0.55rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver-mid); opacity: 0.6; }
+    @media (max-width: 768px) { .deal-price__now { font-size: 2.2rem; } .deal-code__value { font-size: 1.45rem; } .deal-ribbon { font-size: 0.56rem; letter-spacing: 0.14em; } }
+    .deal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin-bottom: 1.6rem; }
+    .deal-item { padding-right: 0.5rem; }
+    .deal-item__name { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--silver); margin-bottom: 0.7rem; font-weight: 400; }
+    .deal-item .deal-price__now { font-size: 2.3rem; }
+    .deal-item .deal-cta { margin-bottom: 0; }
+    .deal-fine { font-size:0.6rem;color:rgba(135,135,144,0.50);letter-spacing:0.04em;margin:1.2rem 0 0;line-height:1.6; }
+    @media (max-width: 768px) { .deal-grid { grid-template-columns: 1fr; gap: 2rem; } }
   </style>
 
   <script type="application/ld+json">
@@ -248,6 +272,9 @@
       <h1>Rayhaan Vanilla Vibe vs. Rayhaan Elixir</h1>
       <p class="article-header__lead">One house, two vanillas, and neither one is plain.</p>
     </div>
+
+    <a href="#deal" class="deal-ribbon">Extra 5% off at BeautyHouse with code <strong>VIBEFRAG</strong> &darr;</a>
+
 
     <div class="article-body">
       <p>Rayhaan makes two vanilla eau de parfums worth putting side by side. Elixir, which arrived in 2024, opens fresh and herbal and settles into honey and vanilla. Vanilla Vibe, a 2026 release, opens on fruit and ends in a darker, resinous vanilla. It also carries a rumor: that it echoes Byredo&rsquo;s Vanille Antique. Both are unisex, and both sell for under $40 at BeautyHouse right now.</p>
@@ -328,12 +355,29 @@
       <p>Pick Elixir for the easy vanilla: fresh start, honey and tonka, the cheaper bottle. Pick Vanilla Vibe for the darker one: plum, amber and resin, and the one with the Byredo rumor behind it. The notes give that rumor plenty to stand on. Smell them side by side before you decide.</p>
     </div>
 
-    <div class="article-cta">
-      <a href="https://beautyhouse.com/products/rayhaan-vanilla-vibe-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="btn btn-primary">Find Vanilla Vibe at BeautyHouse →</a>
-      <a href="https://beautyhouse.com/products/rayhaan-elixir-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="btn btn-primary">Find Elixir at BeautyHouse →</a>
+    <div class="deal-block" id="deal">
+      <div class="deal-block__label">The Deal &middot; BeautyHouse</div>
+      <div class="deal-grid">
+        <div class="deal-item">
+          <div class="deal-item__name">Rayhaan Vanilla Vibe</div>
+          <div class="deal-price"><span class="deal-price__now">$39.99</span><span class="deal-price__was">$46.50</span></div>
+          <div class="deal-price__note">3.4 oz / 100 ml &middot; Eau de Parfum &middot; Unisex</div>
+          <a href="https://beautyhouse.com/products/rayhaan-vanilla-vibe-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="deal-cta">Shop at BeautyHouse &rarr;</a>
+        </div>
+        <div class="deal-item">
+          <div class="deal-item__name">Rayhaan Elixir</div>
+          <div class="deal-price"><span class="deal-price__now">$29.89</span><span class="deal-price__was">$39.95</span></div>
+          <div class="deal-price__note">3.4 oz / 100 ml &middot; Eau de Parfum &middot; Unisex</div>
+          <a href="https://beautyhouse.com/products/rayhaan-elixir-eau-de-parfum-for-everyone?sca_ref=11617181.ulVzJ3yK4m" target="_blank" rel="noopener sponsored" class="deal-cta">Shop at BeautyHouse &rarr;</a>
+        </div>
+      </div>
+      <div class="deal-code">
+        <span class="deal-code__label">Extra 5% off &middot; Code</span>
+        <span class="deal-code__value">VIBEFRAG</span>
+        <span class="deal-code__hint">Enter at checkout</span>
+      </div>
+      <p class="deal-fine">VibeFrag may earn a commission on purchases made through links on this page, at no cost to you. Prices as of November 21, 2026.</p>
     </div>
-    <p style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);opacity:0.75;margin-top:-0.4rem;margin-bottom:1.2rem;">Use code <strong>VIBEFRAG</strong> at checkout for a BeautyHouse discount.</p>
-    <p style="font-size:0.6rem;color:rgba(135,135,144,0.50);letter-spacing:0.04em;margin:0 0 2.5rem;line-height:1.6;">VibeFrag may earn a commission on purchases made through links on this page, at no cost to you. Prices as of November 21, 2026.</p>
 
     <!-- RELATED ARTICLES -->
     <div class="related-section">
