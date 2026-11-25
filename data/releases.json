@@ -1,10 +1,146 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-17",
+    "lastUpdated": "2026-11-24",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.6"
+    "version": "4.8"
   },
   "releases": [
+    {
+      "id": "yves-saint-laurent-black-opium-cream-rush-2026",
+      "name": "Black Opium Cream Rush",
+      "house": "Yves Saint Laurent",
+      "released": "2026-11",
+      "category": "F",
+      "family": "Amber Vanilla Gourmand",
+      "notes": {
+        "top": [
+          "Pear Accord",
+          "Ginger",
+          "Mandarin Essence"
+        ],
+        "middle": [
+          "Jasmine",
+          "Orange Blossom Absolute",
+          "Milk"
+        ],
+        "base": [
+          "Coffee Accord",
+          "Bourbon Vanilla Absolute",
+          "Benzoin Resinoid",
+          "Ambery Woods",
+          "Caramel Accord"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Yves-Saint-Laurent-Black-Opium-Cream-Rush-26695.html"
+    },
+    {
+      "id": "candier-candier-gabi-vol-1-pink-air-2026",
+      "name": "Candier & Gabi Vol 1. Pink Air",
+      "house": "Candier",
+      "released": "2026-11",
+      "category": "F",
+      "family": "Floral Fruity",
+      "notes": {
+        "top": [
+          "Blowout Accord",
+          "Pink Paloma Cocktail",
+          "Pear Juice"
+        ],
+        "middle": [
+          "Peony",
+          "Bubble Bath Accord",
+          "Plum"
+        ],
+        "base": [
+          "Almond",
+          "Amber",
+          "Spun Sugar"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/CANDIER-Gabi-Vol-1-Pink-Air-Eau-de-Parfum-26682.html"
+    },
+    {
+      "id": "clive-christian-uncovered-2026",
+      "name": "Uncovered",
+      "house": "Clive Christian",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Floral Musk Aldehydic",
+      "notes": {
+        "top": [
+          "Aldehydes",
+          "Eucalyptus",
+          "Pink Pepper",
+          "Bergamot"
+        ],
+        "middle": [
+          "Immortelle Absolute",
+          "Orris",
+          "Salty Accord",
+          "Ylang-Ylang Oil"
+        ],
+        "base": [
+          "White Musk",
+          "Sandalwood",
+          "Moss",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Clive-Christian-Uncovered-26540.html"
+    },
+    {
+      "id": "dolce-gabbana-the-one-elixir-2026",
+      "name": "The One Elixir",
+      "house": "Dolce&Gabbana",
+      "released": "2026-11",
+      "category": "F",
+      "family": "Amber Floral Fruity",
+      "notes": {
+        "top": [
+          "Crystallised Plum",
+          "Raspberry",
+          "Mandarin Orange"
+        ],
+        "middle": [
+          "Jasmine Sambac",
+          "Orange Blossom",
+          "Patchouli"
+        ],
+        "base": [
+          "Creamy Vanilla",
+          "Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/DOLCE-GABBANA-The-One-Elixir-and-The-One-For-Men-Elixir-26655.html"
+    },
+    {
+      "id": "dolce-gabbana-the-one-for-men-elixir-2026",
+      "name": "The One For Men Elixir",
+      "house": "Dolce&Gabbana",
+      "released": "2026-11",
+      "category": "M",
+      "family": "Woody Spicy Leather",
+      "notes": {
+        "top": [
+          "Cardamom",
+          "Lemon"
+        ],
+        "middle": [
+          "Oakwood",
+          "Guaiac Wood",
+          "Davana",
+          "Smokey Whiskey",
+          "Clary Sage",
+          "Patchouli"
+        ],
+        "base": [
+          "Leather",
+          "Tonka Bean",
+          "Dry Amber"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/DOLCE-GABBANA-The-One-Elixir-and-The-One-For-Men-Elixir-26655.html"
+    },
     {
       "id": "astrophil-stella-paris-cheri-montmartre-2026",
       "name": "Paris Chéri Montmartre",
