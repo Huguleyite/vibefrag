@@ -1,10 +1,297 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-24",
+    "lastUpdated": "2026-11-27",
     "note": "Seeded with verified 2025–2026 releases. Weekly pipeline will prepend new entries automatically.",
-    "version": "4.8"
+    "version": "5.0"
   },
   "releases": [
+    {
+      "id": "french-avenue-haute-peche-2026",
+      "name": "Haute Pêche",
+      "house": "French Avenue",
+      "released": "2026",
+      "category": "U",
+      "family": "Fruity Floral Woody",
+      "notes": {
+        "top": [
+          "Peach",
+          "Blackcurrant",
+          "Saffron"
+        ],
+        "middle": [
+          "Violet",
+          "Osmanthus"
+        ],
+        "base": [
+          "Leather",
+          "Amber",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/haute-peche-french-avenue/"
+    },
+    {
+      "id": "atelier-des-ors-pink-me-up-extrait-2026",
+      "name": "Pink Me Up Extrait",
+      "house": "Atelier Des Ors",
+      "released": "2026",
+      "category": "U",
+      "family": "Amber Spicy Floral",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Cognac Accord"
+        ],
+        "middle": [
+          "Centifolia Rose Infusion",
+          "Iris",
+          "Raspberry Nature Print"
+        ],
+        "base": [
+          "Cistus Absolute",
+          "Bourbon Vanilla SFE",
+          "Patchouli",
+          "Amber Woods"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/pink-me-up-extrait-atelier-des-ors/"
+    },
+    {
+      "id": "guess-seductive-in-capri-2026",
+      "name": "Seductive In Capri",
+      "house": "Guess",
+      "released": "2026",
+      "category": "F",
+      "family": "Aromatic Floral Amber",
+      "notes": {
+        "top": [
+          "Peach",
+          "Lemon",
+          "Green Apple"
+        ],
+        "middle": [
+          "Neroli",
+          "Jasmine"
+        ],
+        "base": [
+          "Amber",
+          "Musk"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/seductive-in-capri-for-women-guess/"
+    },
+    {
+      "id": "tiziana-terenzi-nox-2026",
+      "name": "Nox",
+      "house": "Tiziana Terenzi",
+      "released": "2026",
+      "category": "U",
+      "family": "Citrus Fruity Amber Woody",
+      "notes": {
+        "top": [
+          "Kumquat",
+          "Mandarin",
+          "Orange",
+          "Bergamot"
+        ],
+        "middle": [
+          "Amber",
+          "Magnolia",
+          "Violet",
+          "Myrrh",
+          "Jasmine",
+          "Rose"
+        ],
+        "base": [
+          "Musk",
+          "Cedarwood",
+          "Sandalwood",
+          "Tonka Bean",
+          "Siam Benzoin",
+          "Oak"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/nox-tiziana-terenzi/"
+    },
+    {
+      "id": "fragrance-world-havana-reserve-2026",
+      "name": "Havana Reserve",
+      "house": "Fragrance World",
+      "released": "2026",
+      "category": "M",
+      "family": "Aromatic Spicy Amber",
+      "notes": {
+        "top": [
+          "Lavender",
+          "Tobacco"
+        ],
+        "middle": [
+          "Clove",
+          "Cinnamon",
+          "Vanilla"
+        ],
+        "base": [
+          "Patchouli",
+          "Amber"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/havana-reserve-fragrance-world/"
+    },
+    {
+      "id": "fragrance-world-urban-man-absolute-elixir-2026",
+      "name": "Urban Man Absolute Elixir",
+      "house": "Fragrance World",
+      "released": "2026",
+      "category": "M",
+      "family": "Aromatic Spicy Amber",
+      "notes": {
+        "top": [
+          "Plum",
+          "Cinnamon",
+          "Cardamom"
+        ],
+        "middle": [
+          "Lavender",
+          "Davana"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Patchouli"
+        ]
+      },
+      "source_url": "https://ifragranceofficial.com/perfumes/urban-man-absolute-elixir/"
+    },
+    {
+      "id": "gritti-blue-torino-2026",
+      "name": "Blue Torino 2026",
+      "house": "Gritti",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Fruity Aromatic Woody",
+      "notes": {
+        "top": [
+          "Fruity Accord",
+          "Pink Pepper",
+          "Sweet Lemon"
+        ],
+        "middle": [
+          "Magnolia",
+          "Petitgrain",
+          "Lily of the Valley"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Sandalwood",
+          "Musk"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/GRITTI-Blue-Torino-2026-26717.html"
+    },
+    {
+      "id": "o-boticario-privee-sugardose-berry-rush-2026",
+      "name": "Privée Sugardose Berry Rush",
+      "house": "O Boticário",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Fruity Gourmand",
+      "notes": {
+        "top": [
+          "Cassis",
+          "Strawberry",
+          "Mandarin"
+        ],
+        "middle": [
+          "Magnolia",
+          "Frangipani",
+          "De Laire Rouge Groseille Base"
+        ],
+        "base": [
+          "Cacao",
+          "Vanilla",
+          "Moss"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/O-Boticario-s-New-Privee-Collection-Sugardose-Presents-Berry-Rush-Honey-Craving-and-Vanilla-Delight-26716.html"
+    },
+    {
+      "id": "o-boticario-privee-sugardose-honey-craving-2026",
+      "name": "Privée Sugardose Honey Craving",
+      "house": "O Boticário",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Floriental Gourmand",
+      "notes": {
+        "top": [
+          "Cyclamen",
+          "Fig",
+          "Plum"
+        ],
+        "middle": [
+          "Lilac",
+          "Honey Liqueur",
+          "De Laire Miel Essentiel Base"
+        ],
+        "base": [
+          "Bourbon Vanilla",
+          "Amber",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/O-Boticario-s-New-Privee-Collection-Sugardose-Presents-Berry-Rush-Honey-Craving-and-Vanilla-Delight-26716.html"
+    },
+    {
+      "id": "o-boticario-privee-sugardose-vanilla-delight-2026",
+      "name": "Privée Sugardose Vanilla Delight",
+      "house": "O Boticário",
+      "released": "2026-11",
+      "category": "U",
+      "family": "Oriental Gourmand",
+      "notes": {
+        "top": [
+          "Roasted Chestnuts",
+          "Apricot"
+        ],
+        "middle": [
+          "Jasmine",
+          "Tonka Bean"
+        ],
+        "base": [
+          "De Laire Vanille Heritage Base",
+          "Caramel",
+          "Sandalwood"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/O-Boticario-s-New-Privee-Collection-Sugardose-Presents-Berry-Rush-Honey-Craving-and-Vanilla-Delight-26716.html"
+    },
+    {
+      "id": "rmk-perfumes-abu-dhabi-2026",
+      "name": "Abu Dhabi",
+      "house": "RMK Perfumes",
+      "released": "2026",
+      "category": "U",
+      "family": "Oud Floral Powdery",
+      "notes": {
+        "top": [
+          "Oud",
+          "Saffron"
+        ],
+        "middle": [
+          "Jasmine",
+          "Rose",
+          "Sandalwood",
+          "Lilac",
+          "Magnolia",
+          "Nagarmotha",
+          "Iris"
+        ],
+        "base": [
+          "Musk",
+          "Cashmeran",
+          "Powdery Notes"
+        ]
+      },
+      "source_url": "https://www.fragrantica.com/news/Abu-Dhabi-by-RMK-Perfumes-Capital-Force-26702.html"
+    },
     {
       "id": "yves-saint-laurent-black-opium-cream-rush-2026",
       "name": "Black Opium Cream Rush",
